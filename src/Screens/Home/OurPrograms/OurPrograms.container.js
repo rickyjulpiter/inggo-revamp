@@ -13,12 +13,14 @@ const CardStyled = styled(Card)`
   border: none;
   padding: 1vw;
   margin-bottom: 1vw;
-  box-shadow: rgba(154, 64, 64, 0.08) 0px 8px 24px;
+  box-shadow: rgba(154, 64, 64, 0.08) 0 8px 24px;
   border-radius: 20px;
 `;
 
 const ContainerStyled = styled.div`
   margin-bottom: 8vw;
+  margin-right: 0.5vw;
+  margin-left: 0.5vw;
   @media (min-width: 1024px) {
     min-height: 602px;
   }
@@ -62,6 +64,7 @@ const ButtonMore = styled.a`
   border-radius: 8px;
   color: white;
   text-align: right;
+  float: right;
 
   &:hover {
     color: white;
@@ -115,13 +118,13 @@ const OurProgramsContainer = () => {
         </Col>
         <Col xl={4} md={4} sm={12}>
           <CardStyled>
-            <Row>
+            <Row className="pt-3">
               <Col xl={4} md={4} sm={4}>
                 <CardImg src={IELTSBalloon} />
               </Col>
               <Col xl={8} md={8} sm={8}>
                 <SectionCardSmall>IELTS</SectionCardSmall>
-                <SectionDescription className="mb-4">
+                <SectionDescription className="mb-3">
                   Dreaming of going abroad for studying or working? This is the answer for you!
                   Improve your English skills by taking IELTS classes with us!
                 </SectionDescription>
@@ -134,13 +137,13 @@ const OurProgramsContainer = () => {
         </Col>
         <Col xl={4} md={4} sm={12}>
           <CardStyled>
-            <Row>
+            <Row className="pt-3">
               <Col xl={4} md={4} sm={4}>
                 <CardImg src={IELTSBalloon} />
               </Col>
               <Col xl={8} md={8} sm={8}>
                 <SectionCardSmall>TOEFL</SectionCardSmall>
-                <SectionDescription className="mb-4">
+                <SectionDescription className="mb-3">
                   Dreaming of going abroad for studying or working? This is the answer for you!
                   Improve your English skills by taking TOEFL classes with us!
                 </SectionDescription>
@@ -153,13 +156,13 @@ const OurProgramsContainer = () => {
         </Col>
         <Col xl={4} md={4} sm={12}>
           <CardStyled>
-            <Row>
+            <Row className="pt-3">
               <Col xl={4} md={4} sm={4}>
                 <CardImg src={GeneralEnglishBalloon} />
               </Col>
               <Col xl={8} md={8} sm={8}>
                 <SectionCardSmall>General English</SectionCardSmall>
-                <SectionDescription className="mb-4">
+                <SectionDescription className="mb-3">
                   Tired of checking your dictionary every time you watch your favorite movies? Sick
                   of using body language to communicate when you are travelling?
                 </SectionDescription>
