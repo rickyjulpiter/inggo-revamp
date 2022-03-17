@@ -12,6 +12,7 @@ import {
   ROUTE_TOEFL
 } from '../../Assets/utils';
 import { Logo, NavbarStyled, NavDropdownStyled, NavLinkStyled } from './Navbar.styled';
+import LogoImage from '../../Assets/Images/logo.png';
 
 const NavbarComponent = () => {
   return (
@@ -21,8 +22,8 @@ const NavbarComponent = () => {
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Brand href="#home">
             <Logo
-              alt=""
-              src="http://inggo.co/img/logo.png"
+              alt="Logo"
+              src={LogoImage}
               width="30"
               height="30"
               className="d-inline-block align-top"
