@@ -1,32 +1,22 @@
 import React from 'react';
-import { CardImg, Col, Row } from 'react-bootstrap';
+import { Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 import {
   ButtonMore,
+  CardImgStyled,
   CardStyled,
+  ColStyled,
   ContainerStyled,
+  ImgContainer,
   SectionCardSmall,
   SectionDescription,
   SectionTitle
 } from './MainPrograms.styled';
-import styled from 'styled-components';
 import EnglishCourseBalloon from '../../../Assets/Images/english_course_baloon.png';
 import ProofReadingBalloon from '../../../Assets/Images/proofreading_baloon.png';
 import TranslationCourseBalloon from '../../../Assets/Images/translation_baloon.png';
-
-const ColStyled = styled(Col)`
-  animation: fadeInUp 0.9s both 0.8s;
-`;
-
-const CardImgStyled = styled(CardImg)`
-  width: 60%;
-  text-align: center;
-`;
-
-const ImgContainer = styled.div`
-  min-height: 16.5vw;
-`;
+import { ROUTE_ENGLISH_COURSES } from '../../../Assets/utils';
 
 const MainPrograms = () => {
   const { t } = useTranslation();
@@ -41,7 +31,7 @@ const MainPrograms = () => {
             </ImgContainer>
             <SectionCardSmall>{t('englishCourses')}</SectionCardSmall>
             <SectionDescription>{t('englishCoursesDescription')}</SectionDescription>
-            <ButtonMore>{t('exploreMore')}</ButtonMore>
+            <ButtonMore href={ROUTE_ENGLISH_COURSES}>{t('exploreMore')}</ButtonMore>
           </CardStyled>
         </ColStyled>
         <ColStyled xl={4} md={12} sm={12}>

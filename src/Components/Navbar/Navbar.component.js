@@ -23,7 +23,7 @@ const NavbarComponent = ({ onChangeLang }) => {
       <NavbarStyled collapseOnSelect variant="light" expand="lg">
         <Container>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href={ROUTE_HOME}>
             <Logo
               alt="Logo"
               src={LogoImage}

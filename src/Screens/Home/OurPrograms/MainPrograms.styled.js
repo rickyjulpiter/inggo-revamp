@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Card } from 'react-bootstrap';
+import { Card, CardImg, Col } from 'react-bootstrap';
 import { PrimaryColor, SecondaryColor, WhiteColor } from '../../../Assets/colorPalette';
 
 export const CardStyled = styled(Card)`
@@ -56,7 +56,7 @@ export const SectionCardSmall = styled.h3`
   font-size: 24px;
   font-weight: bolder;
   line-height: 32px;
-  
+
   @media (max-width: 768px) {
     font-size: 20px;
   }
@@ -93,4 +93,17 @@ export const ButtonMore = styled.a`
   @media (max-width: 768px) {
     font-size: 12px;
   }
+`;
+
+export const ColStyled = styled(Col)`
+  animation: fadeInUp 0.9s both 0.8s;
+`;
+
+export const CardImgStyled = styled(CardImg)`
+  width: 60%;
+  text-align: center;
+`;
+
+export const ImgContainer = styled.div`
+  min-height: 16.5vw;
 `;
