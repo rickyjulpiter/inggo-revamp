@@ -62,6 +62,7 @@ const NavbarComponent = ({ onChangeLang }) => {
                 <NavDropdown.Item onClick={() => onChangeLang('en')}>English</NavDropdown.Item>
                 <NavDropdown.Item onClick={() => onChangeLang('id')}>Indonesia</NavDropdown.Item>
               </NavDropdownStyled>
+              <NavLinkStyled href="#">{t('beOurTeacher')}</NavLinkStyled>
             </Nav>
           </Navbar.Collapse>
         </Container>

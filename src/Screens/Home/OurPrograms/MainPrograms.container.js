@@ -39,7 +39,6 @@ const MainPrograms = () => {
             <ImgContainer>
               <CardImgStyled variant="top" src={EnglishCourseBalloon} className="mx-auto d-block" />
             </ImgContainer>
-
             <SectionCardSmall>{t('englishCourses')}</SectionCardSmall>
             <SectionDescription>{t('englishCoursesDescription')}</SectionDescription>
             <ButtonMore>{t('exploreMore')}</ButtonMore>

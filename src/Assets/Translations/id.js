@@ -8,6 +8,7 @@ export const TRANSLATIONS_ID = {
   menuOurTeam: 'Tim Kami',
   menuOurPrograms: 'Program Kami',
   menuLanguages: 'Bahasa',
+  beOurTeacher: 'Jadi Guru',
 
   freeTrial: 'Coba Gratis',
   contactUs: 'Hubungi Kami',

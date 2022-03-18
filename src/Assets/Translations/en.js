@@ -8,6 +8,7 @@ export const TRANSLATIONS_EN = {
   menuOurTeam: 'Our Team',
   menuOurPrograms: 'Our Programs',
   menuLanguages: 'Languages',
+  beOurTeacher: 'Be Our Teacher',
 
   freeTrial: 'Free Trial',
   contactUs: 'Contact Us',
