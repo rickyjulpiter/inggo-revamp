@@ -9,7 +9,7 @@ const SectionTitle = styled.h3`
   color: #f3c58e;
   font-weight: 700;
   text-align: center;
-  margin-top: 15vw;
+  margin-top: 5vw;
 `;
 
 const SectionSectionTitle = styled.h1`

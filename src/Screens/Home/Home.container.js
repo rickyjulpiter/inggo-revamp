@@ -14,6 +14,15 @@ import {
 import { useTranslation } from 'react-i18next';
 import MainPrograms from './OurPrograms/MainPrograms.container';
 import TestimonialsContainer from './Testimonials/Testimonials.container';
+import styled from 'styled-components';
+
+const CustomMarginToParent = styled.div`
+  margin-top: 3rem !important;
+
+  @media (max-width: 768px) {
+    margin-top: 0.2rem !important;
+  }
+`;
 
 const HomeContainer = () => {
   const { t } = useTranslation();
@@ -24,7 +33,7 @@ const HomeContainer = () => {
           <WelcomeSection>
             <Row className="mt-5">
               <Col xl={6} md={12} sm={12}>
-                <div className="mt-5">
+                <CustomMarginToParent>
                   <WelcomeHeading>{t('welcome')}</WelcomeHeading>
                   <WelcomeDescription>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
@@ -39,7 +48,7 @@ const HomeContainer = () => {
                       {t('contactUs')}
                     </ButtonPrimaryComponent>
                   </div>
-                </div>
+                </CustomMarginToParent>
               </Col>
               <Col xl={6} md={0} sm={0}>
                 <WelcomeImage

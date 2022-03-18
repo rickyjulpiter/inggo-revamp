@@ -57,4 +57,9 @@ export const ButtonPrimaryComponent = styled.button.attrs((props: { color: strin
     border: 1px solid ${(props) => props.color};
     font-weight: bolder;
   }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+    padding: 8px 38px;
+  }
 `;

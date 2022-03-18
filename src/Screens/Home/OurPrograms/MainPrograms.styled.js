@@ -38,6 +38,10 @@ export const SectionTitle = styled.h1`
   font-size: 40px;
   text-align: center;
   margin-bottom: 3vw;
+
+  @media (max-width: 768px) {
+    margin-bottom: 10vw;
+  }
 `;
 
 export const SectionCard = styled.h3`
@@ -52,6 +56,10 @@ export const SectionCardSmall = styled.h3`
   font-size: 24px;
   font-weight: bolder;
   line-height: 32px;
+  
+  @media (max-width: 768px) {
+    font-size: 20px;
+  }
 `;
 
 export const SectionDescription = styled.p`
@@ -80,5 +88,9 @@ export const ButtonMore = styled.a`
   &:hover {
     color: white;
     background-color: ${PrimaryColor};
+  }
+
+  @media (max-width: 768px) {
+    font-size: 12px;
   }
 `;
