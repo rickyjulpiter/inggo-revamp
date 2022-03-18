@@ -1,21 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.f2483171.css",
-    "main.js": "/static/js/main.4d379841.js",
+    "main.js": "/static/js/main.cfb6e23f.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
-    "static/media/general_english_baloon.png": "/static/media/general_english_baloon.e2d22239adff5b8e8d4e.png",
-    "static/media/ielts_baloon.png": "/static/media/ielts_baloon.ecdb171617dcb7728dae.png",
-    "static/media/academic_baloon.png": "/static/media/academic_baloon.6cfa9a48bee072dd498f.png",
-    "static/media/business_english_baloon.png": "/static/media/business_english_baloon.bb4b15dd2fd7cec04877.png",
+    "static/media/proofreading_baloon.png": "/static/media/proofreading_baloon.e703b5f69a01a636540e.png",
+    "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
+    "static/media/english_course_baloon.png": "/static/media/english_course_baloon.4f65f255a9953b8d3965.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.ba798576364f109ce57b.png",
     "static/media/logo.png": "/static/media/logo.fa1927f1c961ce223b06.png",
     "index.html": "/index.html",
     "main.f2483171.css.map": "/static/css/main.f2483171.css.map",
-    "main.4d379841.js.map": "/static/js/main.4d379841.js.map",
+    "main.cfb6e23f.js.map": "/static/js/main.cfb6e23f.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f2483171.css",
-    "static/js/main.4d379841.js"
+    "static/js/main.cfb6e23f.js"
   ]
 }
