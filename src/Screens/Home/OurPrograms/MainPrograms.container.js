@@ -34,7 +34,7 @@ const MainPrograms = () => {
     <ContainerStyled className="mt-5">
       <SectionTitle>{t('menuOurPrograms')}</SectionTitle>
       <Row>
-        <ColStyled xl={4} md={4} sm={12}>
+        <ColStyled xl={4} md={12} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled variant="top" src={EnglishCourseBalloon} className="mx-auto d-block" />
@@ -44,7 +44,7 @@ const MainPrograms = () => {
             <ButtonMore>{t('exploreMore')}</ButtonMore>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={4} sm={12}>
+        <ColStyled xl={4} md={12} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled
@@ -58,7 +58,7 @@ const MainPrograms = () => {
             <ButtonMore>{t('exploreMore')}</ButtonMore>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={4} sm={12}>
+        <ColStyled xl={4} md={12} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled variant="top" src={ProofReadingBalloon} className="mx-auto d-block" />

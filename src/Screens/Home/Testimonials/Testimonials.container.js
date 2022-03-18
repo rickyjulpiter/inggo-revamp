@@ -9,6 +9,7 @@ const SectionTitle = styled.h3`
   color: #f3c58e;
   font-weight: 700;
   text-align: center;
+  margin-top: 15vw;
 `;
 
 const SectionSectionTitle = styled.h1`
@@ -38,6 +39,10 @@ const CardTestimonials = styled(Card)`
   &:hover {
     box-shadow: rgb(154, 64, 64, 0.5) 0 8px 24px;
   }
+
+  @media (max-width: 412px) {
+    padding: 4vw;
+  }
 `;
 
 const TestimonialsDescription = styled.p`
@@ -48,6 +53,10 @@ const TestimonialsDescription = styled.p`
 const LineStyled = styled.hr`
   margin-top: 0;
   margin-bottom: 0.7vw;
+
+  @media (max-width: 412px) {
+    margin-bottom: 2vw;
+  }
 `;
 
 const TestimonialsPerson = styled.p`

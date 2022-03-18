@@ -23,7 +23,7 @@ const HomeContainer = () => {
         <Container>
           <WelcomeSection>
             <Row className="mt-5">
-              <Col xl={6} md={6} sm={12}>
+              <Col xl={6} md={12} sm={12}>
                 <div className="mt-5">
                   <WelcomeHeading>{t('welcome')}</WelcomeHeading>
                   <WelcomeDescription>
@@ -41,7 +41,7 @@ const HomeContainer = () => {
                   </div>
                 </div>
               </Col>
-              <Col xl={6} md={6} sm={0}>
+              <Col xl={6} md={0} sm={0}>
                 <WelcomeImage
                   src="https://buildwithangga.com/storage/assets/slider/Tsgl3Kt8ZWZ4CPy18A53LZruMZW7KgIMmjXMg3JA.png"
                   className="img-fluid"
