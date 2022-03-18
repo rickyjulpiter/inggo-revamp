@@ -12,7 +12,8 @@ import {
 } from './Home.styled';
 
 import { useTranslation } from 'react-i18next';
-import OurProgramsContainer from './OurPrograms/OurPrograms.container';
+import MainPrograms from './OurPrograms/MainPrograms.container';
+import TestimonialsContainer from './Testimonials/Testimonials.container';
 
 const HomeContainer = () => {
   const { t } = useTranslation();
@@ -31,9 +32,11 @@ const HomeContainer = () => {
                     convallis.
                   </WelcomeDescription>
                   <div className="mt-5">
-                    <ButtonPrimaryComponent color={PrimaryColor}>Free Trial</ButtonPrimaryComponent>
+                    <ButtonPrimaryComponent color={PrimaryColor}>
+                      {t('freeTrial')}
+                    </ButtonPrimaryComponent>
                     <ButtonPrimaryComponent color={SecondaryColor}>
-                      Contact Us
+                      {t('contactUs')}
                     </ButtonPrimaryComponent>
                   </div>
                 </div>
@@ -49,7 +52,8 @@ const HomeContainer = () => {
           </WelcomeSection>
         </Container>
       </WelcomeContainer>
-      <OurProgramsContainer />
+      <MainPrograms />
+      <TestimonialsContainer />
     </>
   );
 };

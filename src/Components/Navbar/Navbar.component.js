@@ -1,6 +1,7 @@
 import { Container, Nav, Navbar, NavDropdown } from 'react-bootstrap';
 import React from 'react';
 import PropTypes from 'prop-types';
+import { useTranslation } from 'react-i18next';
 
 import {
   ROUTE_ABOUT_US,
@@ -16,6 +17,7 @@ import { Logo, NavbarStyled, NavDropdownStyled, NavLinkStyled } from './Navbar.s
 import LogoImage from '../../Assets/Images/logo.png';
 
 const NavbarComponent = ({ onChangeLang }) => {
+  const { t } = useTranslation();
   return (
     <Container>
       <NavbarStyled collapseOnSelect variant="light" expand="lg">
@@ -40,17 +42,23 @@ const NavbarComponent = ({ onChangeLang }) => {
               </Nav.Link>
             </Nav>
             <Nav>
-              <NavLinkStyled href={ROUTE_HOME}>Home</NavLinkStyled>
-              <NavLinkStyled href={ROUTE_ABOUT_US}>About Us</NavLinkStyled>
-              <NavLinkStyled href={ROUTE_OUR_TEAM}>Our Team</NavLinkStyled>
-              <NavDropdownStyled title="Our Programs" id="collasible-nav-dropdown">
+              <NavLinkStyled href={ROUTE_HOME}>{t('menuHome')}</NavLinkStyled>
+              <NavLinkStyled href={ROUTE_ABOUT_US}>{t('menuAboutUs')}</NavLinkStyled>
+              <NavLinkStyled href={ROUTE_OUR_TEAM}>{t('menuOurTeam')}</NavLinkStyled>
+              <NavDropdownStyled title={t('menuOurPrograms')} id="collasible-nav-dropdown">
                 <NavDropdown.Item href={ROUTE_BUSINESS_ENGLISH}>Business English</NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_ACADEMIC_WRITING}>Academic Writing</NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_IELTS}>IELTS</NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_TOEFL}>TOEFL</NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>General English</NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>
+                  {t('translationServices')}
+                </NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>
+                  {t('proofReadingServices')}
+                </NavDropdown.Item>
               </NavDropdownStyled>
-              <NavDropdownStyled title="Languages" id="collasible-nav-dropdown">
+              <NavDropdownStyled title={t('menuLanguages')} id="collasible-nav-dropdown">
                 <NavDropdown.Item onClick={() => onChangeLang('en')}>English</NavDropdown.Item>
                 <NavDropdown.Item onClick={() => onChangeLang('id')}>Indonesia</NavDropdown.Item>
               </NavDropdownStyled>
