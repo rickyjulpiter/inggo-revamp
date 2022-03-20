@@ -58,3 +58,26 @@ code {
         margin-right: -40px;
     }
 }
+
+.p_absoulte {
+    position: absolute;
+}
+
+.t_four {
+    transition: 0.8s;
+    top: 110px;
+    left: 50%;
+    transform: translateX(60%);
+}
+
+.t_two {
+    right: 220px;
+    bottom: 185px;
+    transition: 0.8s;
+}
+
+.t_first {
+    left: 80px;
+    top: 275px;
+    transition: 0.8s;
+}

@@ -52,6 +52,26 @@ export const WelcomeContainer = styled.div`
 
   @media (max-width: 450px) {
     min-height: 100vw;
+
+    .p_absoulte {
+      display: none;
+    }
+  }
+
+  &:hover {
+    .t_four {
+      top: 90px;
+    }
+
+    .t_two {
+      right: 180px;
+      bottom: 185px;
+    }
+
+    .t_first {
+      left: 50px;
+      top: 275px;
+    }
   }
 `;
 

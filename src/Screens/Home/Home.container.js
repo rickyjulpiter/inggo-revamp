@@ -31,6 +31,16 @@ const CustomMarginToParent = styled.div`
   }
 `;
 
+const FloatingImage = styled.img`
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  transform: translate3d(-2.17813px, 0px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+`;
+
 const HomeContainer = () => {
   const { t } = useTranslation();
   return (
@@ -41,6 +51,32 @@ const HomeContainer = () => {
             <Row className="mt-5 mb-3">
               <Col xl={12} md={12} sm={12}>
                 <CustomMarginToParent>
+                  <div className="t_four p_absoulte">
+                    <FloatingImage
+                      className="layer layer2"
+                      data-depth="0.30"
+                      src="http://inggo.co/img/home_one/triangle_shap_three.png"
+                      alt=""
+                    />
+                  </div>
+                  <div className="t_two p_absoulte">
+                    <FloatingImage
+                      className="layer layer2"
+                      data-depth="0.30"
+                      src="http://inggo.co/img/home_one/triangle_shap_two.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div className="t_first p_absoulte">
+                    <FloatingImage
+                      className="layer layer2"
+                      data-depth="0.30"
+                      src="http://inggo.co/img/home_one/t_angle.png"
+                      alt=""
+                    />
+                  </div>
+
                   <WelcomeHeading>{t('welcome')}</WelcomeHeading>
                   <WelcomeDescription>
                     Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
@@ -57,13 +93,6 @@ const HomeContainer = () => {
                   </div>
                 </CustomMarginToParent>
               </Col>
-              {/*<Col xl={6} md={0} sm={0}>*/}
-              {/*  <WelcomeImage*/}
-              {/*    src="https://buildwithangga.com/storage/assets/slider/Tsgl3Kt8ZWZ4CPy18A53LZruMZW7KgIMmjXMg3JA.png"*/}
-              {/*    className="img-fluid"*/}
-              {/*    alt="image"*/}
-              {/*  />*/}
-              {/*</Col>*/}
             </Row>
           </WelcomeSection>
         </Container>
