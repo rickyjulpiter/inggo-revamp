@@ -48,3 +48,13 @@ code {
 .carousel-indicators {
     display: none !important;
 }
+
+@media (max-width: 414px) {
+    .carousel-control-prev {
+        margin-left: -40px;
+    }
+
+    .carousel-control-next {
+        margin-right: -40px;
+    }
+}

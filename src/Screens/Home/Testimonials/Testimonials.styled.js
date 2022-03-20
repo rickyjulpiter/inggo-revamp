@@ -32,9 +32,7 @@ export const CardTestimonials = styled(Card)`
   padding: 2vw 2vw 1vw 2vw;
   transition: all 0.3s linear;
   margin-top: 3.3vw;
-
   background: linear-gradient(130.2deg, rgb(156, 177, 249) -2.91%, rgb(54, 119, 217) 119.44%);
-
   border: 0.5px solid #2d84b3;
   box-shadow: 6px 6px 0 rgb(45 132 179 / 25%);
   border-radius: 10px;
@@ -45,6 +43,7 @@ export const CardTestimonials = styled(Card)`
 
   @media (max-width: 414px) {
     padding: 5vw;
+    margin-top: 7vw;
   }
 `;
 
@@ -53,6 +52,10 @@ export const TestimonialsDescription = styled.p`
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
+
+  @media (max-width: 412px) {
+    font-size: 12px;
+  }
 `;
 
 export const LineStyled = styled.hr`

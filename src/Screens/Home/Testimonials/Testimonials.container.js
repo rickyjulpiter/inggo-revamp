@@ -21,6 +21,10 @@ const AvatarImg = styled.img`
 const PersonStyled = styled.span`
   color: #ffffff;
   font-weight: 600;
+
+  @media (max-width: 412px) {
+    font-size: 12px;
+  }
 `;
 
 const ImgStyled = styled.img`
@@ -31,6 +35,10 @@ const ImgStyled = styled.img`
   border-style: none;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 412px) {
+    width: 50px;
+  }
 `;
 
 const CenterDiv = styled.div`

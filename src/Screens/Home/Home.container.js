@@ -37,7 +37,7 @@ const HomeContainer = () => {
       <WelcomeContainer>
         <Container>
           <WelcomeSection>
-            <Row className="mt-5">
+            <Row className="mt-5 mb-3">
               <Col xl={12} md={12} sm={12}>
                 <CustomMarginToParent>
                   <WelcomeHeading>{t('welcome')}</WelcomeHeading>
