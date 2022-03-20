@@ -19,7 +19,7 @@ export const WelcomeDescription = styled.p`
   color: #34364a;
   line-height: 32px;
   text-align: center;
-  
+
   @media (max-width: 768px) {
     font-size: 15px;
     line-height: 28px;
@@ -65,12 +65,12 @@ export const ButtonPrimaryComponent = styled.button.attrs((props: { color: strin
   border-radius: 100px;
   font-weight: 500;
   margin-right: 5px;
+  border: 1px solid ${(props) => props.color};
 
   &:hover {
     background: ${WhiteColor};
     color: ${(props) => props.color};
     border: 1px solid ${(props) => props.color};
-    font-weight: bolder;
   }
 
   @media (max-width: 768px) {

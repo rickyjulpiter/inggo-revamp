@@ -26,6 +26,11 @@ export const ContainerStyled = styled.div`
     min-height: 668px;
     background-image: none;
   }
+
+  @media (max-width: 425px) {
+    min-height: 400px;
+    background-image: none;
+  }
 `;
 
 export const CardTestimonials = styled(Card)`
@@ -43,7 +48,7 @@ export const CardTestimonials = styled(Card)`
     box-shadow: rgb(139, 171, 250) 0 8px 24px;
   }
 
-  @media (max-width: 414px) {
+  @media (max-width: 425px) {
     padding: 5vw;
     margin-top: 7vw;
   }
@@ -55,7 +60,7 @@ export const TestimonialsDescription = styled.p`
   line-height: 22px;
   color: #ffffff;
 
-  @media (max-width: 412px) {
+  @media (max-width: 425px) {
     font-size: 12px;
   }
 `;
@@ -66,7 +71,7 @@ export const LineStyled = styled.hr`
   color: #ffffff;
   font-weight: 800;
 
-  @media (max-width: 412px) {
+  @media (max-width: 425px) {
     margin-bottom: 2vw;
   }
 `;
@@ -86,7 +91,7 @@ export const PersonStyled = styled.span`
   color: #ffffff;
   font-weight: 600;
 
-  @media (max-width: 412px) {
+  @media (max-width: 425px) {
     font-size: 12px;
   }
 `;
@@ -100,7 +105,7 @@ export const ImgStyled = styled.img`
   display: flex;
   justify-content: center;
 
-  @media (max-width: 412px) {
+  @media (max-width: 425px) {
     width: 50px;
   }
 `;

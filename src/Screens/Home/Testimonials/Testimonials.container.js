@@ -2,18 +2,16 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Carousel, Col, Row } from 'react-bootstrap';
-import {
-  CardTestimonials,
-  CenterDiv,
-  ContainerStyled,
-  ImgStyled,
-  LineStyled,
-  PersonStyled,
-  SectionSectionTitle,
-  SectionTitle,
-  TestimonialsDescription,
-  TestimonialsPerson
-} from './Testimonials.styled';
+import { ContainerStyled, SectionSectionTitle, SectionTitle } from './Testimonials.styled';
+import { ExampleCardPerson } from './Testimonials.component';
+import MobileList from './MobileList';
+import styled from 'styled-components';
+
+const CarouselResponsive = styled(Carousel)`
+  @media (max-width: 425px) {
+    display: none;
+  }
+`;
 
 const TestimonialsContainer = () => {
   const { t } = useTranslation();
@@ -21,136 +19,35 @@ const TestimonialsContainer = () => {
     <ContainerStyled>
       <SectionTitle>{t('testimonials')}</SectionTitle>
       <SectionSectionTitle className="mb-5">A Word From Our Customer</SectionSectionTitle>
-      <Carousel fade variant="dark">
+      <CarouselResponsive fade variant="dark">
         <Carousel.Item interval={1000}>
           <Row>
             <Col md={4} xl={4} className="mb-4">
-              <CenterDiv>
-                <ImgStyled
-                  className="position-absolute index-1 center"
-                  src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
-                  alt="a"
-                />
-              </CenterDiv>
-              <CardTestimonials>
-                <TestimonialsDescription>
-                  <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo
-                  in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                  finibus est."
-                </TestimonialsDescription>
-                <LineStyled />
-                <TestimonialsPerson>
-                  <PersonStyled> Ricky J</PersonStyled>
-                </TestimonialsPerson>
-              </CardTestimonials>
+              <ExampleCardPerson />
             </Col>
             <Col md={4} xl={4} className="mb-4">
-              <CenterDiv>
-                <ImgStyled
-                  className="position-absolute index-1 center"
-                  src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
-                  alt="a"
-                />
-              </CenterDiv>
-              <CardTestimonials>
-                <TestimonialsDescription>
-                  <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo
-                  in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                  finibus est."
-                </TestimonialsDescription>
-                <LineStyled />
-                <TestimonialsPerson>
-                  <PersonStyled> Ricky J</PersonStyled>
-                </TestimonialsPerson>
-              </CardTestimonials>
+              <ExampleCardPerson />
             </Col>
             <Col md={4} xl={4} className="mb-4">
-              <CenterDiv>
-                <ImgStyled
-                  className="position-absolute index-1 center"
-                  src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
-                  alt="a"
-                />
-              </CenterDiv>
-              <CardTestimonials>
-                <TestimonialsDescription>
-                  <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo
-                  in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                  finibus est."
-                </TestimonialsDescription>
-                <LineStyled />
-                <TestimonialsPerson>
-                  <PersonStyled> Ricky J</PersonStyled>
-                </TestimonialsPerson>
-              </CardTestimonials>
+              <ExampleCardPerson />
             </Col>
           </Row>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
           <Row>
             <Col md={4} xl={4} className="mb-4">
-              <CenterDiv>
-                <ImgStyled
-                  className="position-absolute index-1 center"
-                  src="https://www.kobieducation.com/static/media/AlaaQaharuddin.7db783ed.png"
-                  alt="a"
-                />
-              </CenterDiv>
-              <CardTestimonials style={{ marginTop: '3..3vw' }}>
-                <TestimonialsDescription>
-                  <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo
-                  in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                  finibus est."
-                </TestimonialsDescription>
-                <LineStyled />
-                <TestimonialsPerson>
-                  <PersonStyled> Ricky J</PersonStyled>
-                </TestimonialsPerson>
-              </CardTestimonials>
+              <ExampleCardPerson />
             </Col>
             <Col md={4} xl={4} className="mb-4">
-              <CenterDiv>
-                <ImgStyled
-                  className="position-absolute index-1 center"
-                  src="https://www.kobieducation.com/static/media/AlaaQaharuddin.7db783ed.png"
-                  alt="a"
-                />
-              </CenterDiv>
-              <CardTestimonials>
-                <TestimonialsDescription>
-                  <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo
-                  in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                  finibus est."
-                </TestimonialsDescription>
-                <LineStyled />
-                <TestimonialsPerson>
-                  <PersonStyled> Ricky J</PersonStyled>
-                </TestimonialsPerson>
-              </CardTestimonials>
+              <ExampleCardPerson />
             </Col>
             <Col md={4} xl={4} className="mb-4">
-              <CenterDiv>
-                <ImgStyled
-                  className="position-absolute index-1 center"
-                  src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
-                  alt="a"
-                />
-              </CenterDiv>
-              <CardTestimonials>
-                <TestimonialsDescription>
-                  <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo
-                  in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
-                  finibus est."
-                </TestimonialsDescription>
-                <LineStyled />
-                <TestimonialsPerson>
-                  <PersonStyled> Ricky J</PersonStyled>
-                </TestimonialsPerson>
-              </CardTestimonials>
+              <ExampleCardPerson />
             </Col>
           </Row>
         </Carousel.Item>
-      </Carousel>
+      </CarouselResponsive>
+      <MobileList />
     </ContainerStyled>
   );
 };
