@@ -4,47 +4,16 @@ import { useTranslation } from 'react-i18next';
 import { Carousel, Col, Row } from 'react-bootstrap';
 import {
   CardTestimonials,
+  CenterDiv,
   ContainerStyled,
+  ImgStyled,
   LineStyled,
+  PersonStyled,
   SectionSectionTitle,
   SectionTitle,
   TestimonialsDescription,
   TestimonialsPerson
 } from './Testimonials.styled';
-import styled from 'styled-components';
-import Avatar from '../../../Assets/Images/avatar.png';
-
-const AvatarImg = styled.img`
-  width: 20%;
-`;
-
-const PersonStyled = styled.span`
-  color: #ffffff;
-  font-weight: 600;
-
-  @media (max-width: 412px) {
-    font-size: 12px;
-  }
-`;
-
-const ImgStyled = styled.img`
-  width: 75px;
-  position: absolute !important;
-  z-index: 1;
-  outline: none !important;
-  border-style: none;
-  display: flex;
-  justify-content: center;
-
-  @media (max-width: 412px) {
-    width: 50px;
-  }
-`;
-
-const CenterDiv = styled.div`
-  margin: auto;
-  width: 20%;
-`;
 
 const TestimonialsContainer = () => {
   const { t } = useTranslation();
@@ -63,7 +32,7 @@ const TestimonialsContainer = () => {
                   alt="a"
                 />
               </CenterDiv>
-              <CardTestimonials style={{ marginTop: '3..3vw' }}>
+              <CardTestimonials>
                 <TestimonialsDescription>
                   <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo
                   in, vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius
@@ -71,7 +40,6 @@ const TestimonialsContainer = () => {
                 </TestimonialsDescription>
                 <LineStyled />
                 <TestimonialsPerson>
-                  <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
                   <PersonStyled> Ricky J</PersonStyled>
                 </TestimonialsPerson>
               </CardTestimonials>
@@ -92,7 +60,6 @@ const TestimonialsContainer = () => {
                 </TestimonialsDescription>
                 <LineStyled />
                 <TestimonialsPerson>
-                  <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
                   <PersonStyled> Ricky J</PersonStyled>
                 </TestimonialsPerson>
               </CardTestimonials>
@@ -113,7 +80,6 @@ const TestimonialsContainer = () => {
                 </TestimonialsDescription>
                 <LineStyled />
                 <TestimonialsPerson>
-                  <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
                   <PersonStyled> Ricky J</PersonStyled>
                 </TestimonialsPerson>
               </CardTestimonials>
@@ -138,7 +104,6 @@ const TestimonialsContainer = () => {
                 </TestimonialsDescription>
                 <LineStyled />
                 <TestimonialsPerson>
-                  <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
                   <PersonStyled> Ricky J</PersonStyled>
                 </TestimonialsPerson>
               </CardTestimonials>
@@ -159,7 +124,6 @@ const TestimonialsContainer = () => {
                 </TestimonialsDescription>
                 <LineStyled />
                 <TestimonialsPerson>
-                  <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
                   <PersonStyled> Ricky J</PersonStyled>
                 </TestimonialsPerson>
               </CardTestimonials>
@@ -180,7 +144,6 @@ const TestimonialsContainer = () => {
                 </TestimonialsDescription>
                 <LineStyled />
                 <TestimonialsPerson>
-                  <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
                   <PersonStyled> Ricky J</PersonStyled>
                 </TestimonialsPerson>
               </CardTestimonials>

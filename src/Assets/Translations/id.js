@@ -42,5 +42,7 @@ export const TRANSLATIONS_ID = {
     'Bermimpi untuk melanjutkan kuliah atau bekerja di luar negeri? Inilah jawaban untuk Anda! Tingkatkan kemampuan Bahasa Inggris Anda dengan mengambil kelas IELTS/TOEFL dengan kami!',
   generalEnglish: 'Bahasa Inggris Umum',
   generalEnglishDescription:
-    'Lelah melihat kamus setiap kali Anda menonton film kesukaan anda? Tidak ingin menggunakan bahasa tubuh untuk berkomunikasi setiap Anda pergi berpergian ke luar negeri? Anda harus meningkatkan kemampuan Bahasa Inggris Anda dengan kami!'
+    'Lelah melihat kamus setiap kali Anda menonton film kesukaan anda? Tidak ingin menggunakan bahasa tubuh untuk berkomunikasi setiap Anda pergi berpergian ke luar negeri? Anda harus meningkatkan kemampuan Bahasa Inggris Anda dengan kami!',
+
+  ourClients: 'Daftar Klien'
 };

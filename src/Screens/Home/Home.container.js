@@ -14,6 +14,7 @@ import { useTranslation } from 'react-i18next';
 import MainPrograms from './OurPrograms/MainPrograms.container';
 import TestimonialsContainer from './Testimonials/Testimonials.container';
 import styled from 'styled-components';
+import OurClientsContainer from './OurClients/OurClients.container';
 
 const CustomMarginToParent = styled.div`
   margin-top: 3rem !important;
@@ -69,6 +70,7 @@ const HomeContainer = () => {
       </WelcomeContainer>
       <MainPrograms />
       <TestimonialsContainer />
+      <OurClientsContainer />
     </>
   );
 };

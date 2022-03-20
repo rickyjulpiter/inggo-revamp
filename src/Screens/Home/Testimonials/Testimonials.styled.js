@@ -37,6 +37,8 @@ export const CardTestimonials = styled(Card)`
   box-shadow: 6px 6px 0 rgb(45 132 179 / 25%);
   border-radius: 10px;
 
+  min-height: 10vw;
+
   &:hover {
     box-shadow: rgb(139, 171, 250) 0 8px 24px;
   }
@@ -74,4 +76,36 @@ export const TestimonialsPerson = styled.p`
   border-radius: 8px;
   text-align: right;
   margin-bottom: 0;
+`;
+
+export const AvatarImg = styled.img`
+  width: 20%;
+`;
+
+export const PersonStyled = styled.span`
+  color: #ffffff;
+  font-weight: 600;
+
+  @media (max-width: 412px) {
+    font-size: 12px;
+  }
+`;
+
+export const ImgStyled = styled.img`
+  width: 75px;
+  position: absolute !important;
+  z-index: 1;
+  outline: none !important;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: 412px) {
+    width: 50px;
+  }
+`;
+
+export const CenterDiv = styled.div`
+  margin: auto;
+  width: 20%;
 `;

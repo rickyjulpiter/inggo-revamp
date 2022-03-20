@@ -42,5 +42,7 @@ export const TRANSLATIONS_EN = {
     'Dreaming of going abroad for studying or working? This is the answer for you! Improve your English skills by taking IELTS/TOEFL classes with us!',
   generalEnglish: 'General English',
   generalEnglishDescription:
-    'Tired of checking your dictionary every time you watch your favorite movies? Sick of using body language to communicate when you are travelling? You need to improve your English skills with us!'
+    'Tired of checking your dictionary every time you watch your favorite movies? Sick of using body language to communicate when you are travelling? You need to improve your English skills with us!',
+
+  ourClients: 'Our Clients'
 };
