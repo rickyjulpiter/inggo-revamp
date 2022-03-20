@@ -16,6 +16,10 @@ import TestimonialsContainer from './Testimonials/Testimonials.container';
 import styled from 'styled-components';
 import OurClientsContainer from './OurClients/OurClients.container';
 
+import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
+import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
+import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
+
 const CustomMarginToParent = styled.div`
   margin-top: 3rem !important;
   margin-right: 4rem;
@@ -55,7 +59,7 @@ const HomeContainer = () => {
                     <FloatingImage
                       className="layer layer2"
                       data-depth="0.30"
-                      src="http://inggo.co/img/home_one/triangle_shap_three.png"
+                      src={Playfull3}
                       alt=""
                     />
                   </div>
@@ -63,7 +67,7 @@ const HomeContainer = () => {
                     <FloatingImage
                       className="layer layer2"
                       data-depth="0.30"
-                      src="http://inggo.co/img/home_one/triangle_shap_two.png"
+                      src={Playfull2}
                       alt=""
                     />
                   </div>
@@ -72,7 +76,7 @@ const HomeContainer = () => {
                     <FloatingImage
                       className="layer layer2"
                       data-depth="0.30"
-                      src="http://inggo.co/img/home_one/t_angle.png"
+                      src={Playfull1}
                       alt=""
                     />
                   </div>
