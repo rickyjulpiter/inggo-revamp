@@ -1,67 +1,41 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Col, Row } from 'react-bootstrap';
+import {
+  CardTestimonials,
+  ContainerStyled,
+  LineStyled,
+  SectionSectionTitle,
+  SectionTitle,
+  TestimonialsDescription,
+  TestimonialsPerson
+} from './Testimonials.styled';
 import styled from 'styled-components';
-import { Card, Col, Row } from 'react-bootstrap';
-import { PrimaryColor } from '../../../Assets/colorPalette';
+import Avatar from '../../../Assets/Images/avatar.png';
 
-const SectionTitle = styled.h3`
-  color: #f3c58e;
-  font-weight: 700;
-  text-align: center;
-  margin-top: 5vw;
+const AvatarImg = styled.img`
+  width: 20%;
 `;
 
-const SectionSectionTitle = styled.h1`
-  text-align: center;
+const PersonStyled = styled.span`
   color: #ffffff;
-  font-weight: bolder;
-`;
-
-const ContainerStyled = styled.div`
-  padding: 2vw 11vw 8vw 11vw;
-  background-color: ${PrimaryColor};
-  @media (min-width: 1024px) {
-    min-height: 602px;
-  }
-
-  @media (max-width: 768px) {
-    min-height: 668px;
-    background-image: none;
-  }
-`;
-
-const CardTestimonials = styled(Card)`
-  padding: 2vw 2vw 1vw 2vw;
-  border-radius: 40px;
-  transition: all 0.3s linear;
-
-  &:hover {
-    box-shadow: rgb(154, 64, 64, 0.5) 0 8px 24px;
-  }
-
-  @media (max-width: 412px) {
-    padding: 4vw;
-  }
-`;
-
-const TestimonialsDescription = styled.p`
-  font-style: italic;
-  text-align: justify;
-`;
-
-const LineStyled = styled.hr`
-  margin-top: 0;
-  margin-bottom: 0.7vw;
-
-  @media (max-width: 412px) {
-    margin-bottom: 2vw;
-  }
-`;
-
-const TestimonialsPerson = styled.p`
-  text-align: right;
   font-weight: 600;
+`;
+
+const ImgStyled = styled.img`
+  width: 75px;
+  position: absolute !important;
+  z-index: 1;
+  outline: none !important;
+  border-style: none;
+  display: flex;
+  justify-content: center;
+`;
+
+const CenterDiv = styled.div`
+  margin: auto;
+  width: 20%;
 `;
 
 const TestimonialsContainer = () => {
@@ -72,17 +46,34 @@ const TestimonialsContainer = () => {
       <SectionSectionTitle>A Word From Our Customer</SectionSectionTitle>
       <Row className="mt-5">
         <Col md={4} xl={4} className="mb-4">
-          <CardTestimonials>
+          <CenterDiv>
+            <ImgStyled
+              className="position-absolute index-1 center"
+              src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
+              alt="a"
+            />
+          </CenterDiv>
+          <CardTestimonials style={{ marginTop: '3..3vw' }}>
             <TestimonialsDescription>
               <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo in,
               vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
               est."
             </TestimonialsDescription>
             <LineStyled />
-            <TestimonialsPerson>Ricky J - Corporate Slave</TestimonialsPerson>
+            <TestimonialsPerson>
+              <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
+              <PersonStyled> Ricky J</PersonStyled>
+            </TestimonialsPerson>
           </CardTestimonials>
         </Col>
         <Col md={4} xl={4} className="mb-4">
+          <CenterDiv>
+            <ImgStyled
+              className="position-absolute index-1 center"
+              src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
+              alt="a"
+            />
+          </CenterDiv>
           <CardTestimonials>
             <TestimonialsDescription>
               <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo in,
@@ -90,10 +81,20 @@ const TestimonialsContainer = () => {
               est."
             </TestimonialsDescription>
             <LineStyled />
-            <TestimonialsPerson>Ricky J - Corporate Slave</TestimonialsPerson>
+            <TestimonialsPerson>
+              <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
+              <PersonStyled> Ricky J</PersonStyled>
+            </TestimonialsPerson>
           </CardTestimonials>
         </Col>
         <Col md={4} xl={4} className="mb-4">
+          <CenterDiv>
+            <ImgStyled
+              className="position-absolute index-1 center"
+              src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
+              alt="a"
+            />
+          </CenterDiv>
           <CardTestimonials>
             <TestimonialsDescription>
               <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo in,
@@ -101,10 +102,20 @@ const TestimonialsContainer = () => {
               est."
             </TestimonialsDescription>
             <LineStyled />
-            <TestimonialsPerson>Ricky J - Corporate Slave</TestimonialsPerson>
+            <TestimonialsPerson>
+              <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
+              <PersonStyled> Ricky J</PersonStyled>
+            </TestimonialsPerson>
           </CardTestimonials>
         </Col>
         <Col md={4} xl={4} className="mb-4">
+          <CenterDiv>
+            <ImgStyled
+              className="position-absolute index-1 center"
+              src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
+              alt="a"
+            />
+          </CenterDiv>
           <CardTestimonials>
             <TestimonialsDescription>
               <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo in,
@@ -112,10 +123,20 @@ const TestimonialsContainer = () => {
               est."
             </TestimonialsDescription>
             <LineStyled />
-            <TestimonialsPerson>Ricky J - Corporate Slave</TestimonialsPerson>
+            <TestimonialsPerson>
+              <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
+              <PersonStyled> Ricky J</PersonStyled>
+            </TestimonialsPerson>
           </CardTestimonials>
         </Col>
         <Col md={4} xl={4} className="mb-4">
+          <CenterDiv>
+            <ImgStyled
+              className="position-absolute index-1 center"
+              src="https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png"
+              alt="a"
+            />
+          </CenterDiv>
           <CardTestimonials>
             <TestimonialsDescription>
               <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo in,
@@ -123,18 +144,10 @@ const TestimonialsContainer = () => {
               est."
             </TestimonialsDescription>
             <LineStyled />
-            <TestimonialsPerson>Ricky J - Corporate Slave</TestimonialsPerson>
-          </CardTestimonials>
-        </Col>
-        <Col md={4} xl={4} className="mb-4">
-          <CardTestimonials>
-            <TestimonialsDescription>
-              <i className="bi bi-chat-right-quote" /> "Aenean tortor est, vulputate quis leo in,
-              vehicula rhoncus lacus. Praesent aliquam in tellus eu gravida. Aliquam varius finibus
-              est."
-            </TestimonialsDescription>
-            <LineStyled />
-            <TestimonialsPerson>Ricky J - Corporate Slave</TestimonialsPerson>
+            <TestimonialsPerson>
+              <AvatarImg src={Avatar} className="img-fluid" alt="client-logo" />
+              <PersonStyled> Ricky J</PersonStyled>
+            </TestimonialsPerson>
           </CardTestimonials>
         </Col>
       </Row>

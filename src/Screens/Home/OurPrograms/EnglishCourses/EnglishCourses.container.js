@@ -1,5 +1,5 @@
 import React from 'react';
-import { CardImg, Col, Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 import {
@@ -17,30 +17,11 @@ import IELTSBalloon from '../../../../Assets/Images/ielts_baloon.png';
 import AcademicBalloon from '../../../../Assets/Images/academic_baloon.png';
 import GeneralEnglishBalloon from '../../../../Assets/Images/general_english_baloon.png';
 import { ROUTE_ENGLISH_COURSES } from '../../../../Assets/utils';
-import styled from 'styled-components';
-
-const CardImgStyledCustom = styled(CardImg)`
-  width: 100%;
-  text-align: center;
-`;
-
-const ContainerStyled = styled.div`
-  margin: 2vw 6vw 8vw 6vw;
-  @media (min-width: 1024px) {
-    min-height: 602px;
-  }
-
-  @media (max-width: 768px) {
-    min-height: 668px;
-    background-image: none;
-  }
-`;
-
-const SectionDescriptionCustom = styled.p`
-  margin-top: 0.5vw;
-  min-height: 12vw;
-  text-align: justify;
-`;
+import {
+  ContainerStyled,
+  CardImgStyledCustom,
+  SectionDescriptionCustom
+} from './EnglishCourses.styled';
 
 const EnglishCoursesContainer = () => {
   const { t } = useTranslation();

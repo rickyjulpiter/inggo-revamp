@@ -21,10 +21,10 @@ import { ROUTE_ENGLISH_COURSES } from '../../../Assets/utils';
 const MainPrograms = () => {
   const { t } = useTranslation();
   return (
-    <ContainerStyled className="mt-5">
+    <ContainerStyled>
       <SectionTitle>{t('menuOurPrograms')}</SectionTitle>
       <Row>
-        <ColStyled xl={4} md={12} sm={12}>
+        <ColStyled xl={4} md={4} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled variant="top" src={EnglishCourseBalloon} className="mx-auto d-block" />
@@ -34,7 +34,7 @@ const MainPrograms = () => {
             <ButtonMore href={ROUTE_ENGLISH_COURSES}>{t('exploreMore')}</ButtonMore>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={12} sm={12}>
+        <ColStyled xl={4} md={4} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled
@@ -48,7 +48,7 @@ const MainPrograms = () => {
             <ButtonMore>{t('exploreMore')}</ButtonMore>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={12} sm={12}>
+        <ColStyled xl={4} md={4} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled variant="top" src={ProofReadingBalloon} className="mx-auto d-block" />

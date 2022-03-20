@@ -13,7 +13,13 @@ import {
   ROUTE_OUR_TEAM,
   ROUTE_TOEFL
 } from '../../Assets/utils';
-import { Logo, NavbarStyled, NavDropdownStyled, NavLinkStyled } from './Navbar.styled';
+import {
+  Logo,
+  NavbarStyled,
+  NavDropdownStyled,
+  NavDropdownStyledResponsive,
+  NavLinkStyled
+} from './Navbar.styled';
 import LogoImage from '../../Assets/Images/logo.png';
 
 const NavbarComponent = ({ onChangeLang }) => {
@@ -34,10 +40,10 @@ const NavbarComponent = ({ onChangeLang }) => {
           </Navbar.Brand>
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-              <Nav.Link href="#phone">
+              <Nav.Link href="#phone" className="responsive-hidden">
                 <i className="bi-telephone" /> (+62) 857-7290-0593
               </Nav.Link>
-              <Nav.Link href="#email">
+              <Nav.Link href="#email" className="responsive-hidden">
                 <i className="bi-envelope" /> info@inggo.co
               </Nav.Link>
             </Nav>
@@ -58,10 +64,10 @@ const NavbarComponent = ({ onChangeLang }) => {
                   {t('proofReadingServices')}
                 </NavDropdown.Item>
               </NavDropdownStyled>
-              <NavDropdownStyled title={t('menuLanguages')} id="collasible-nav-dropdown">
+              <NavDropdownStyledResponsive title={t('menuLanguages')} id="collasible-nav-dropdown">
                 <NavDropdown.Item onClick={() => onChangeLang('en')}>English</NavDropdown.Item>
                 <NavDropdown.Item onClick={() => onChangeLang('id')}>Indonesia</NavDropdown.Item>
-              </NavDropdownStyled>
+              </NavDropdownStyledResponsive>
               <NavLinkStyled href="#">{t('beOurTeacher')}</NavLinkStyled>
             </Nav>
           </Navbar.Collapse>

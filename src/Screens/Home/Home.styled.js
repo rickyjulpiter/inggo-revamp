@@ -6,6 +6,11 @@ export const WelcomeHeading = styled.h1`
   color: #34364a;
   font-weight: 700;
   font-size: 40px;
+  text-align: center;
+
+  @media (max-width: 768px) {
+    font-size: 28px;
+  }
 `;
 
 export const WelcomeDescription = styled.p`
@@ -13,6 +18,12 @@ export const WelcomeDescription = styled.p`
   font-size: 18px;
   color: #34364a;
   line-height: 32px;
+  text-align: center;
+  
+  @media (max-width: 768px) {
+    font-size: 15px;
+    line-height: 28px;
+  }
 `;
 
 export const WelcomeImage = styled.img`
@@ -37,6 +48,10 @@ export const WelcomeContainer = styled.div`
   @media (max-width: 768px) {
     min-height: 668px;
     background-image: none;
+  }
+
+  @media (max-width: 450px) {
+    min-height: 100vw;
   }
 `;
 

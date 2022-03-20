@@ -1,6 +1,6 @@
 export const TRANSLATIONS_ID = {
   welcome:
-    'Want to speak English with confidence? Study with us now because learning English will never be the same anymore.',
+    'Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat.',
   exploreMore: 'Selengkapnya',
 
   menuHome: 'Beranda',

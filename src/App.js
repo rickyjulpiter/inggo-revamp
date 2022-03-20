@@ -7,6 +7,7 @@ import { ROUTE_ABOUT_US, ROUTE_ENGLISH_COURSES } from './Assets/utils';
 import AboutUsContainer from './Screens/AboutUs/AboutUs.container';
 import i18n from './Assets/Translations/i18n';
 import EnglishCoursesContainer from './Screens/Home/OurPrograms/EnglishCourses/EnglishCourses.container';
+import NavtopComponent from './Components/Navtop/Navtop.component';
 
 const App = () => {
   const [language, setLanguage] = useState('en');
@@ -17,6 +18,7 @@ const App = () => {
   };
   return (
     <>
+      <NavtopComponent onChangeLang={handleLanguage} />
       <NavbarComponent onChangeLang={handleLanguage} />
       <BrowserRouter>
         <Routes>

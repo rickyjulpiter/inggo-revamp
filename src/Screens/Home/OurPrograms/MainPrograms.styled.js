@@ -21,7 +21,8 @@ export const CardStyled = styled(Card)`
 `;
 
 export const ContainerStyled = styled.div`
-  margin: 2vw 11vw 8vw 11vw;
+  background-color: ${PrimaryColor};
+  padding: 2vw 11vw 8vw 11vw;
   @media (min-width: 1024px) {
     min-height: 602px;
   }
@@ -33,14 +34,20 @@ export const ContainerStyled = styled.div`
 `;
 
 export const SectionTitle = styled.h1`
-  color: #34364a;
+  color: #ffffff;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
-  margin-bottom: 3vw;
+  margin-bottom: 4vw;
+  margin-top: 3vw;
 
   @media (max-width: 768px) {
     margin-bottom: 10vw;
+  }
+
+  @media (max-width: 450px) {
+    font-size: 28px;
+    margin-bottom: 3.5vw;
   }
 `;
 
@@ -60,12 +67,23 @@ export const SectionCardSmall = styled.h3`
   @media (max-width: 768px) {
     font-size: 20px;
   }
+
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 5vw;
+  }
 `;
 
 export const SectionDescription = styled.p`
   margin-top: 0.5vw;
   min-height: 10vw;
   text-align: justify;
+
+  @media (max-width: 1024px) {
+    min-height: 19vw;
+    font-size: 15px;
+  }
 `;
 
 export const ButtonMore = styled.a`
@@ -92,6 +110,11 @@ export const ButtonMore = styled.a`
 
   @media (max-width: 768px) {
     font-size: 12px;
+  }
+
+  @media (max-width: 1024px) {
+    font-size: 10px;
+    font-weight: bold;
   }
 `;
 

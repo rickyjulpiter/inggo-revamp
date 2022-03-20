@@ -28,6 +28,25 @@ export const NavDropdownStyled = styled(NavDropdown)`
   font-weight: 500;
 `;
 
+export const NavDropdownStyledResponsive = styled(NavDropdown)`
+  color: ${BlackColor} !important;
+  font-size: 15px;
+  line-height: 20px;
+  display: inline-block;
+  letter-spacing: 1.3px;
+  font-weight: 500;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
+export const NavResponsive = styled(Nav)`
+  @media (min-width: 1024px) {
+    display: none;
+  }
+`;
+
 export const Logo = styled.img`
   display: inline-block;
   padding-top: 0.3125rem;

@@ -7,7 +7,6 @@ import {
   WelcomeContainer,
   WelcomeDescription,
   WelcomeHeading,
-  WelcomeImage,
   WelcomeSection
 } from './Home.styled';
 
@@ -18,9 +17,16 @@ import styled from 'styled-components';
 
 const CustomMarginToParent = styled.div`
   margin-top: 3rem !important;
+  margin-right: 4rem;
+  margin-left: 4rem;
 
   @media (max-width: 768px) {
     margin-top: 0.2rem !important;
+  }
+
+  @media (max-width: 450px) {
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 `;
 
@@ -32,7 +38,7 @@ const HomeContainer = () => {
         <Container>
           <WelcomeSection>
             <Row className="mt-5">
-              <Col xl={6} md={12} sm={12}>
+              <Col xl={12} md={12} sm={12}>
                 <CustomMarginToParent>
                   <WelcomeHeading>{t('welcome')}</WelcomeHeading>
                   <WelcomeDescription>
@@ -40,7 +46,7 @@ const HomeContainer = () => {
                     sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis
                     convallis.
                   </WelcomeDescription>
-                  <div className="mt-5">
+                  <div className="d-flex justify-content-center mt-5">
                     <ButtonPrimaryComponent color={PrimaryColor}>
                       {t('freeTrial')}
                     </ButtonPrimaryComponent>
@@ -50,13 +56,13 @@ const HomeContainer = () => {
                   </div>
                 </CustomMarginToParent>
               </Col>
-              <Col xl={6} md={0} sm={0}>
-                <WelcomeImage
-                  src="https://buildwithangga.com/storage/assets/slider/Tsgl3Kt8ZWZ4CPy18A53LZruMZW7KgIMmjXMg3JA.png"
-                  className="img-fluid"
-                  alt="image"
-                />
-              </Col>
+              {/*<Col xl={6} md={0} sm={0}>*/}
+              {/*  <WelcomeImage*/}
+              {/*    src="https://buildwithangga.com/storage/assets/slider/Tsgl3Kt8ZWZ4CPy18A53LZruMZW7KgIMmjXMg3JA.png"*/}
+              {/*    className="img-fluid"*/}
+              {/*    alt="image"*/}
+              {/*  />*/}
+              {/*</Col>*/}
             </Row>
           </WelcomeSection>
         </Container>
