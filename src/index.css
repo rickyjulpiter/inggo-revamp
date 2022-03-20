@@ -36,3 +36,15 @@ code {
         display: none !important;
     }
 }
+
+.carousel-control-prev {
+    margin-left: -120px;
+}
+
+.carousel-control-next {
+    margin-right: -120px;
+}
+
+.carousel-indicators {
+    display: none !important;
+}
