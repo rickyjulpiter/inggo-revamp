@@ -1,8 +1,10 @@
 import styled from 'styled-components';
+
 import { TABLET_SIZE } from '../../Assets/utils';
+import { PrimaryColor } from '../../Assets/colorPalette';
 
 export const ContainerBottomStyled = styled.div`
-  background-color: #434343;
+  background-color: ${PrimaryColor};
   padding: 1vw;
 `;
 

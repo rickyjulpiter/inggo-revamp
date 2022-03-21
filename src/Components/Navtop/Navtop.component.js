@@ -1,10 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import { PrimaryColor } from '../../Assets/colorPalette';
 import PropTypes from 'prop-types';
 
+import { LAPTOP_SIZE } from '../../Assets/utils';
+import { PrimaryColor } from '../../Assets/colorPalette';
+
 const ContainerStyled = styled.div`
-  background-color: #efefef;
+  background-color: ${PrimaryColor};
   padding: 0.5vw;
 
   @media (max-width: 768px) {
@@ -14,15 +16,18 @@ const ContainerStyled = styled.div`
 
 const LinkStyled = styled.a`
   text-decoration: none;
-  color: #818181;
-  font-size: 12px;
+  color: #ffffff;
+  font-size: 15px;
   margin-left: 1vw;
   margin-right: 1vw;
   cursor: pointer;
 
   &:hover {
-    color: ${PrimaryColor};
-    font-weight: bold;
+    color: white;
+  }
+
+  @media (max-width: ${LAPTOP_SIZE}) {
+    font-size: 13px !important;
   }
 `;
 

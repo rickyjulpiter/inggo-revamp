@@ -3,13 +3,19 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import NavbarComponent from './Components/Navbar/Navbar.component';
 import HomeContainer from './Screens/Home/Home.container';
-import { ROUTE_ABOUT_US, ROUTE_BUSINESS_ENGLISH, ROUTE_ENGLISH_COURSES } from './Assets/utils';
+import {
+  ROUTE_ABOUT_US,
+  ROUTE_BUSINESS_ENGLISH,
+  ROUTE_ENGLISH_COURSES,
+  ROUTE_FREE_TRIAL
+} from './Assets/utils';
 import AboutUsContainer from './Screens/AboutUs/AboutUs.container';
 import i18n from './Assets/Translations/i18n';
 import EnglishCoursesContainer from './Screens/Home/OurPrograms/EnglishCourses/EnglishCourses.container';
 import NavtopComponent from './Components/Navtop/Navtop.component';
 import NavbottomComponent from './Components/Navbottom/Navbottom.component';
 import ProgramDetailContainer from './Screens/Home/OurPrograms/ProgramDetail/ProgramDetail.container';
+import FreeTrialContainer from './Screens/FreeTrial/FreeTrial.container';
 
 const App = () => {
   const [language, setLanguage] = useState('en');
@@ -30,6 +36,7 @@ const App = () => {
             path={ROUTE_ENGLISH_COURSES}
             element={<EnglishCoursesContainer lang={language} />}
           />
+          <Route path={ROUTE_FREE_TRIAL} element={<FreeTrialContainer lang={language} />} />
           <Route
             path={ROUTE_BUSINESS_ENGLISH}
             element={<ProgramDetailContainer lang={language} />}

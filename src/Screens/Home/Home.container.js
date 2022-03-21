@@ -4,6 +4,8 @@ import { Col, Container, Row } from 'react-bootstrap';
 import { PrimaryColor, SecondaryColor } from '../../Assets/colorPalette';
 import {
   ButtonPrimaryComponent,
+  CustomMarginToParent,
+  FloatingImage,
   WelcomeContainer,
   WelcomeDescription,
   WelcomeHeading,
@@ -13,38 +15,13 @@ import {
 import { useTranslation } from 'react-i18next';
 import MainPrograms from './OurPrograms/MainPrograms.container';
 import TestimonialsContainer from './Testimonials/Testimonials.container';
-import styled from 'styled-components';
 import OurClientsContainer from './OurClients/OurClients.container';
 
 import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import ContactContainer from './Contact/Contact.container';
-
-const CustomMarginToParent = styled.div`
-  margin-top: 3rem !important;
-  margin-right: 4rem;
-  margin-left: 4rem;
-
-  @media (max-width: 768px) {
-    margin-top: 0.2rem !important;
-  }
-
-  @media (max-width: 450px) {
-    margin-right: 1rem;
-    margin-left: 1rem;
-  }
-`;
-
-const FloatingImage = styled.img`
-  position: absolute;
-  display: block;
-  left: 0;
-  top: 0;
-  transform: translate3d(-2.17813px, 0px, 0px);
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-`;
+import { ROUTE_FREE_TRIAL } from '../../Assets/utils';
 
 const HomeContainer = () => {
   const { t } = useTranslation();
@@ -72,7 +49,6 @@ const HomeContainer = () => {
                       alt=""
                     />
                   </div>
-
                   <div className="t_first p_absoulte">
                     <FloatingImage
                       className="layer layer2"
@@ -89,7 +65,7 @@ const HomeContainer = () => {
                     convallis.
                   </WelcomeDescription>
                   <div className="d-flex justify-content-center mt-5">
-                    <ButtonPrimaryComponent color={PrimaryColor}>
+                    <ButtonPrimaryComponent href={ROUTE_FREE_TRIAL} color={PrimaryColor}>
                       {t('freeTrial')}
                     </ButtonPrimaryComponent>
                     <ButtonPrimaryComponent color={SecondaryColor}>

@@ -75,7 +75,8 @@ export const WelcomeContainer = styled.div`
   }
 `;
 
-export const ButtonPrimaryComponent = styled.button.attrs((props: { color: string }) => props)`
+export const ButtonPrimaryComponent = styled.a.attrs((props: { color: string }) => props)`
+  text-decoration: none;
   background: ${(props) => props?.color};
   color: #fff;
   transition: all 0.4s;
@@ -85,6 +86,7 @@ export const ButtonPrimaryComponent = styled.button.attrs((props: { color: strin
   font-weight: 500;
   margin-right: 5px;
   border: 1px solid ${(props) => props.color};
+  cursor: pointer;
 
   &:hover {
     background: ${WhiteColor};
@@ -96,4 +98,29 @@ export const ButtonPrimaryComponent = styled.button.attrs((props: { color: strin
     font-size: 16px;
     padding: 8px 38px;
   }
+`;
+
+export const CustomMarginToParent = styled.div`
+  margin-top: 3rem !important;
+  margin-right: 4rem;
+  margin-left: 4rem;
+
+  @media (max-width: 768px) {
+    margin-top: 0.2rem !important;
+  }
+
+  @media (max-width: 450px) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+`;
+
+export const FloatingImage = styled.img`
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  transform: translate3d(-2.17813px, 0px, 0px);
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
 `;

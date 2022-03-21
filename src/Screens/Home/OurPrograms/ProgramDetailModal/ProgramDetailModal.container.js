@@ -10,9 +10,9 @@ import {
   ProgramDescription,
   ProgramTitle,
   ULStyled
-} from './ProgramDetail.styled';
+} from './ProgramDetailModal.styled';
 
-const ProgramDetailContainer = () => {
+const ProgramDetailModalContainer = () => {
   const { t } = useTranslation();
 
   return (
@@ -38,4 +38,4 @@ const ProgramDetailContainer = () => {
   );
 };
 
-export default ProgramDetailContainer;
+export default ProgramDetailModalContainer;
