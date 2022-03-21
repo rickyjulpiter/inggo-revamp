@@ -113,8 +113,9 @@ export const ButtonMore = styled.a`
   }
 
   @media (max-width: 1024px) {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: bold;
+    padding: 11px 20px 10px;
   }
 `;
 

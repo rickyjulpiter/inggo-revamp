@@ -44,5 +44,10 @@ export const TRANSLATIONS_EN = {
   generalEnglishDescription:
     'Tired of checking your dictionary every time you watch your favorite movies? Sick of using body language to communicate when you are travelling? You need to improve your English skills with us!',
 
-  ourClients: 'Our Clients'
+  ourClients: 'Our Clients',
+
+  contactTitle: 'Anything you want to ask?',
+  contactDescription: 'Consult Inggo Team for Further Questions',
+  contactViaWA: 'Contact via WA',
+  contactViaEmail: 'Contact via Email'
 };

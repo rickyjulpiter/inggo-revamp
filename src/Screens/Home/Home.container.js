@@ -19,6 +19,7 @@ import OurClientsContainer from './OurClients/OurClients.container';
 import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
+import ContactContainer from './Contact/Contact.container';
 
 const CustomMarginToParent = styled.div`
   margin-top: 3rem !important;
@@ -104,6 +105,7 @@ const HomeContainer = () => {
       <MainPrograms />
       <TestimonialsContainer />
       <OurClientsContainer />
+      <ContactContainer />
     </>
   );
 };

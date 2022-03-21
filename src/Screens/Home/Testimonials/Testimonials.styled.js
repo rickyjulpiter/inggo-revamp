@@ -17,7 +17,6 @@ export const SectionSectionTitle = styled.h1`
 
 export const ContainerStyled = styled.div`
   padding: 2vw 11vw 8vw 11vw;
-  background-color: #ffffff;
   @media (min-width: 1024px) {
     min-height: 602px;
   }
@@ -37,7 +36,7 @@ export const CardTestimonials = styled(Card)`
   padding: 2vw 2vw 1vw 2vw;
   transition: all 0.3s linear;
   margin-top: 3.3vw;
-  background: linear-gradient(130.2deg, rgb(156, 177, 249) -2.91%, rgb(54, 119, 217) 119.44%);
+  background: linear-gradient(130.2deg, rgb(41,60,119) -2.91%, rgb(54, 119, 217) 119.44%);
   border: 0.5px solid #2d84b3;
   box-shadow: 6px 6px 0 rgb(45 132 179 / 25%);
   border-radius: 10px;
@@ -59,6 +58,10 @@ export const TestimonialsDescription = styled.p`
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
 
   @media (max-width: 425px) {
     font-size: 12px;
@@ -104,6 +107,10 @@ export const ImgStyled = styled.img`
   border-style: none;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 1024px) {
+    width: 50px;
+  }
 
   @media (max-width: 425px) {
     width: 50px;

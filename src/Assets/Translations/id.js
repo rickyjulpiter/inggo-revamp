@@ -44,5 +44,10 @@ export const TRANSLATIONS_ID = {
   generalEnglishDescription:
     'Lelah melihat kamus setiap kali Anda menonton film kesukaan anda? Tidak ingin menggunakan bahasa tubuh untuk berkomunikasi setiap Anda pergi berpergian ke luar negeri? Anda harus meningkatkan kemampuan Bahasa Inggris Anda dengan kami!',
 
-  ourClients: 'Daftar Klien'
+  ourClients: 'Daftar Klien',
+
+  contactTitle: 'Ada yang mau kamu tanyakan?',
+  contactDescription: 'Konsultasikan dengan Tim Inggo untuk Pertanyaan Lebih Lanjut',
+  contactViaWA: 'Hubungi lewat WA',
+  contactViaEmail: 'Hubungi lewat Email'
 };

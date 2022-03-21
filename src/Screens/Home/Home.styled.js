@@ -78,7 +78,6 @@ export const WelcomeContainer = styled.div`
 export const ButtonPrimaryComponent = styled.button.attrs((props: { color: string }) => props)`
   background: ${(props) => props?.color};
   color: #fff;
-  border: 0;
   transition: all 0.4s;
   font-size: 16px;
   padding: 11px 42px;
