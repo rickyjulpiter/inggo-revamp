@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.f79347cc.css",
-    "main.js": "/static/js/main.ed72af99.js",
+    "main.css": "/static/css/main.2ab72d71.css",
+    "main.js": "/static/js/main.179c9dd4.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/general_english_baloon.png": "/static/media/general_english_baloon.e2d22239adff5b8e8d4e.png",
     "static/media/ielts_baloon.png": "/static/media/ielts_baloon.ecdb171617dcb7728dae.png",
@@ -13,16 +13,17 @@
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/client-reynolds.png": "/static/media/client-reynolds.5892521a5b9ac8746862.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.ba798576364f109ce57b.png",
+    "static/media/choose.png": "/static/media/choose.864d463212cbcc78788f.png",
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "static/media/client-pusaka.png": "/static/media/client-pusaka.69688b275a78a23eeb66.png",
     "static/media/logo.png": "/static/media/logo.fa1927f1c961ce223b06.png",
     "index.html": "/index.html",
-    "main.f79347cc.css.map": "/static/css/main.f79347cc.css.map",
-    "main.ed72af99.js.map": "/static/js/main.ed72af99.js.map",
+    "main.2ab72d71.css.map": "/static/css/main.2ab72d71.css.map",
+    "main.179c9dd4.js.map": "/static/js/main.179c9dd4.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f79347cc.css",
-    "static/js/main.ed72af99.js"
+    "static/css/main.2ab72d71.css",
+    "static/js/main.179c9dd4.js"
   ]
 }
