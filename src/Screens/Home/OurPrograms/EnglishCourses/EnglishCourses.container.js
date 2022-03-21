@@ -9,18 +9,18 @@ import {
   ColStyled,
   ImgContainer,
   SectionCardSmall,
-  SectionDescription,
-  SectionTitle
+  SectionDescription
 } from '../MainPrograms.styled';
 import BusinessEnglishBalloon from '../../../../Assets/Images/business_english_baloon.png';
 import IELTSBalloon from '../../../../Assets/Images/ielts_baloon.png';
 import AcademicBalloon from '../../../../Assets/Images/academic_baloon.png';
 import GeneralEnglishBalloon from '../../../../Assets/Images/general_english_baloon.png';
-import { ROUTE_ENGLISH_COURSES } from '../../../../Assets/utils';
+import { ROUTE_BUSINESS_ENGLISH } from '../../../../Assets/utils';
 import {
-  ContainerStyled,
   CardImgStyledCustom,
-  SectionDescriptionCustom
+  ContainerStyled,
+  SectionDescriptionCustom,
+  SectionTitle
 } from './EnglishCourses.styled';
 
 const EnglishCoursesContainer = () => {
@@ -40,7 +40,7 @@ const EnglishCoursesContainer = () => {
               <Col xl={8} md={8} sm={8}>
                 <SectionCardSmall>{t('businessEnglish')}</SectionCardSmall>
                 <SectionDescription>{t('businessEnglishDescription')}</SectionDescription>
-                <ButtonMore href={ROUTE_ENGLISH_COURSES}>{t('exploreMore')}</ButtonMore>
+                <ButtonMore href={ROUTE_BUSINESS_ENGLISH}>{t('exploreMore')}</ButtonMore>
               </Col>
             </Row>
           </CardStyled>

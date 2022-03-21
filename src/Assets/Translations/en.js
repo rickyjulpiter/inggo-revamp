@@ -34,6 +34,15 @@ export const TRANSLATIONS_EN = {
   businessEnglish: 'Business English',
   businessEnglishDescription:
     'Bored of the same old Business English modules? Our materials have been designed to help you communicate in a formal business context. Come and learn with us!',
+  BAFirstList:
+    'You will learn all aspects related to using English in a professional setting (e.g. giving presentation, negotiating effectively, writing a report, etc).',
+  BASecondList: 'You will get personalized feedback to help you improve your English in no time.',
+  BAThirdList:
+    'A course with flexible learning hours and days will be specifically designed for you.',
+  BAFourthList: 'A regular assessment will be given so that you can track your own progress.',
+  BAFifthList: 'Free handout materials are provided in each session.',
+  BASixthList: 'Private one-on-one and group classes are available (offline/online).',
+
   ielts: 'IELTS',
   ieltsDescription:
     'Dreaming of going abroad for studying or working? This is the answer for you! Improve your English skills by taking IELTS/TOEFL classes with us!',

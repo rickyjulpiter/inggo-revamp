@@ -34,6 +34,16 @@ export const TRANSLATIONS_ID = {
   businessEnglish: 'Bahasa Inggris Bisnis',
   businessEnglishDescription:
     'Bosan dengan modul Bahasa Inggris bisnis yang sama dari waktu ke waktu? Materi kami telah dirancang sedemikian rupa untuk membantu Anda berkomunikasi dalam konteks bisnis. Belajarlah dengan kami!',
+  BAFirstList:
+    'Anda akan mempelajari bagaimana menggunakan Bahasa Inggris dalam konteks bisnis (membawakan presentasi, bernegosiasi dengan efektif, menulis laporan dan sebagainya)',
+  BASecondList:
+    'Anda akan mendapatkan masukan-masukan khusus untuk membantu Anda meningkatkan Bahasa Inggris Anda dengan sesegera mungkin.',
+  BAThirdList: 'Kelas dengan waktu belajar fleksible akan dirancang khusus untuk Anda.',
+  BAFourthList:
+    'Penilaian berkala akan diberikan sehingga Anda dapat memantau perkembangan Anda sendiri. ',
+  BAFifthList: 'Materi gratis akan diberikan di setiap sesi.',
+  BASixthList: 'Tersedia kelas privat dan kelompok (tatap muka atau daring).',
+
   ielts: 'IELTS',
   ieltsDescription:
     'Bermimpi untuk melanjutkan kuliah atau bekerja di luar negeri? Inilah jawaban untuk Anda! Tingkatkan kemampuan Bahasa Inggris Anda dengan mengambil kelas IELTS/TOEFL dengan kami!',
