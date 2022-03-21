@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { Card, CardImg, Col } from 'react-bootstrap';
 import { PrimaryColor, SecondaryColor, WhiteColor } from '../../../Assets/colorPalette';
+import { TABLET_SIZE } from '../../../Assets/utils';
 
 export const CardStyled = styled(Card)`
   background-color: ${WhiteColor};
@@ -65,13 +66,13 @@ export const SectionCardSmall = styled.h3`
   line-height: 32px;
 
   @media (max-width: 768px) {
-    font-size: 20px;
+    font-size: 16px !important;
   }
 
   @media (max-width: 1024px) {
     font-size: 18px;
     line-height: 24px;
-    min-height: 5vw;
+    min-height: 6.5vw;
   }
 `;
 
@@ -79,6 +80,10 @@ export const SectionDescription = styled.p`
   margin-top: 0.5vw;
   min-height: 10vw;
   text-align: justify;
+
+  @media (max-width: ${TABLET_SIZE}) {
+    font-size: 11px !important;
+  }
 
   @media (max-width: 1024px) {
     min-height: 19vw;
@@ -130,4 +135,8 @@ export const CardImgStyled = styled(CardImg)`
 
 export const ImgContainer = styled.div`
   min-height: 16.5vw;
+
+  @media (max-width: 768px) {
+    min-height: 12.5vw;
+  }
 `;

@@ -8,3 +8,8 @@ export const ROUTE_ABOUT_US = 'about-us';
 export const ROUTE_OUR_TEAM = 'our-team';
 export const ROUTE_OUR_PROGRAM = 'our-program';
 export const ROUTE_ENGLISH_COURSES = 'english-course';
+
+export const DESKTOP_SIZE = '1440';
+export const LAPTOP_SIZE = '1024';
+export const TABLET_SIZE = '768px';
+export const PHONE_SIZE = '425px';

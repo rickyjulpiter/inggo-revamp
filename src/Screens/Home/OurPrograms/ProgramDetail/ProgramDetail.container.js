@@ -58,7 +58,7 @@ const ProgramDetailContainer = () => {
   return (
     <ContainerStyled>
       <Row>
-        <Col xl={4} md={4} sm={0}>
+        <Col xl={4} md={4} sm={0} className="mb-3">
           <ImgStyled src={BusinessEnglishDetail} className="img-fluid" alt="img" />
         </Col>
         <Col xl={8} md={8} sm={12}>

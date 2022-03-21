@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { TABLET_SIZE } from '../../Assets/utils';
 
 export const ContainerBottomStyled = styled.div`
   background-color: #434343;
@@ -17,7 +18,11 @@ export const LinkStyled = styled.a`
     color: #ffffff;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 425px) {
+    font-size: 10px;
+  }
+
+  @media (max-width: ${TABLET_SIZE}) {
     font-size: 10px;
   }
 `;
@@ -27,8 +32,13 @@ export const Brand = styled.h1`
   color: #ffffff;
   margin-left: 2vw;
 
-  @media (max-width: 400px) {
+  @media (max-width: 425px) {
     font-size: 14px;
+    margin-top: 5px;
+  }
+
+  @media (max-width: ${TABLET_SIZE}) {
+    font-size: 12px;
     margin-top: 5px;
   }
 `;

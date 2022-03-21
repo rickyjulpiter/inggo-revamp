@@ -3,7 +3,6 @@ import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 import {
-  ButtonMore,
   CardImgStyled,
   CardStyled,
   ColStyled,
@@ -20,7 +19,8 @@ import {
   CardImgStyledCustom,
   ContainerStyled,
   SectionDescriptionCustom,
-  SectionTitle
+  SectionTitle,
+  ButtonMore
 } from './EnglishCourses.styled';
 
 const EnglishCoursesContainer = () => {
@@ -29,7 +29,7 @@ const EnglishCoursesContainer = () => {
     <ContainerStyled className="mt-5">
       <SectionTitle>{t('englishCourses')}</SectionTitle>
       <Row>
-        <ColStyled xl={6} md={12} sm={12}>
+        <ColStyled xl={6} md={6} sm={12}>
           <CardStyled>
             <Row>
               <Col xl={4} md={4} sm={4}>
@@ -37,15 +37,15 @@ const EnglishCoursesContainer = () => {
                   <CardImgStyledCustom src={BusinessEnglishBalloon} className="mx-auto d-block" />
                 </ImgContainer>
               </Col>
-              <Col xl={8} md={8} sm={8}>
+              <Col xl={8} md={8} sm={12}>
                 <SectionCardSmall>{t('businessEnglish')}</SectionCardSmall>
                 <SectionDescription>{t('businessEnglishDescription')}</SectionDescription>
-                <ButtonMore href={ROUTE_BUSINESS_ENGLISH}>{t('exploreMore')}</ButtonMore>
               </Col>
+              <ButtonMore href={ROUTE_BUSINESS_ENGLISH}>{t('exploreMore')}</ButtonMore>
             </Row>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={6} md={12} sm={12}>
+        <ColStyled xl={6} md={6} sm={12}>
           <CardStyled>
             <Row>
               <Col xl={4} md={4} sm={4}>
@@ -56,12 +56,12 @@ const EnglishCoursesContainer = () => {
               <Col xl={8} md={8} sm={8}>
                 <SectionCardSmall>{t('academicWriting')}</SectionCardSmall>
                 <SectionDescription>{t('academicWritingDescription')}</SectionDescription>
-                <ButtonMore>{t('exploreMore')}</ButtonMore>
               </Col>
+              <ButtonMore>{t('exploreMore')}</ButtonMore>
             </Row>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={12} sm={12}>
+        <ColStyled xl={4} md={4} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled variant="top" src={IELTSBalloon} className="mx-auto d-block" />
@@ -71,7 +71,7 @@ const EnglishCoursesContainer = () => {
             <ButtonMore>{t('exploreMore')}</ButtonMore>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={12} sm={12}>
+        <ColStyled xl={4} md={4} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled variant="top" src={IELTSBalloon} className="mx-auto d-block" />
@@ -81,7 +81,7 @@ const EnglishCoursesContainer = () => {
             <ButtonMore>{t('exploreMore')}</ButtonMore>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={12} sm={12}>
+        <ColStyled xl={4} md={4} sm={12}>
           <CardStyled>
             <ImgContainer>
               <CardImgStyled
