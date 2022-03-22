@@ -175,7 +175,7 @@ const FreeTrialContainer = () => {
       <Modal className="rounded" show={show} onHide={handleClose} size="xl" centered>
         <Modal.Body>
           <ProgramDetailModalContainer />
-          <div className="text-center mt-3 mb-4">
+          <div className="mt-3 mb-4" style={{ textAlign: 'right' }}>
             <ButtonPrimaryComponent onClick={handleClose} color="grey">
               Close
             </ButtonPrimaryComponent>
