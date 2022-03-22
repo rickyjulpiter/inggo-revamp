@@ -4,7 +4,7 @@ export const TRANSLATIONS_EN = {
   exploreMore: 'Explore More',
 
   menuHome: 'Home',
-  menuAboutUs: 'About Us',
+  menuAboutUs: 'About',
   menuOurTeam: 'Our Team',
   menuOurPrograms: 'Our Programs',
   menuLanguages: 'Languages',

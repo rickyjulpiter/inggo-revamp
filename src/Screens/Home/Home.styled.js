@@ -1,12 +1,18 @@
 import styled from 'styled-components';
 import BannerHomeTransparent from '../../Assets/Images/bannerhome-transparent.png';
-import { WhiteColor } from '../../Assets/colorPalette';
 
 export const WelcomeHeading = styled.h1`
   color: #34364a;
   font-weight: 700;
   font-size: 40px;
   text-align: center;
+
+  &:before {
+    opacity: 0;
+    transition: opacity 0.95s ease-in-out;
+    -moz-transition: opacity 0.95s ease-in-out;
+    -webkit-transition: opacity 0.95s ease-in-out;
+  }
 
   @media (max-width: 768px) {
     font-size: 28px;
@@ -72,31 +78,6 @@ export const WelcomeContainer = styled.div`
       left: 50px;
       top: 275px;
     }
-  }
-`;
-
-export const ButtonPrimaryComponent = styled.a.attrs((props: { color: string }) => props)`
-  text-decoration: none;
-  background: ${(props) => props?.color};
-  color: #fff;
-  transition: all 0.4s;
-  font-size: 16px;
-  padding: 11px 42px;
-  border-radius: 100px;
-  font-weight: 500;
-  margin-right: 5px;
-  border: 1px solid ${(props) => props.color};
-  cursor: pointer;
-
-  &:hover {
-    background: ${WhiteColor};
-    color: ${(props) => props.color};
-    border: 1px solid ${(props) => props.color};
-  }
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-    padding: 8px 38px;
   }
 `;
 

@@ -4,7 +4,7 @@ export const TRANSLATIONS_ID = {
   exploreMore: 'Selengkapnya',
 
   menuHome: 'Beranda',
-  menuAboutUs: 'Tentang Kami',
+  menuAboutUs: 'Tentang',
   menuOurTeam: 'Tim Kami',
   menuOurPrograms: 'Program Kami',
   menuLanguages: 'Bahasa',

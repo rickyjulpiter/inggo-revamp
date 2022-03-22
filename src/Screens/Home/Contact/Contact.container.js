@@ -3,12 +3,12 @@ import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
 import { useTranslation } from 'react-i18next';
 import {
   CenterDiv,
-  ContactButton,
   ContainerStyled,
   IconStyled,
   SectionParagraph,
   SectionTitle
 } from './Contact.styled';
+import ButtonComponent from '../../../Components/Button/Button.component';
 
 const ContactContainer = () => {
   const { t } = useTranslation();
@@ -21,8 +21,8 @@ const ContactContainer = () => {
         <SectionTitle>{t('contactTitle')}</SectionTitle>
         <SectionParagraph>{t('contactDescription')}</SectionParagraph>
         <CenterDiv className="mx-auto">
-          <ContactButton color={PrimaryColor}>{t('contactViaWA')}</ContactButton>
-          <ContactButton color={SecondaryColor}>{t('contactViaEmail')}</ContactButton>
+          <ButtonComponent color={PrimaryColor} text={t('contactViaWA')} />
+          <ButtonComponent color={SecondaryColor} text={t('contactViaEmail')} />
         </CenterDiv>
       </ContainerStyled>
     </>

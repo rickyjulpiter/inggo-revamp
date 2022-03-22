@@ -5,9 +5,10 @@ import { Card, Col, Container, Form, Modal, Row } from 'react-bootstrap';
 import { PrimaryColor } from '../../Assets/colorPalette';
 import ImgChoose from '../../Assets/Images/choose.png';
 import { useTranslation } from 'react-i18next';
-import ProgramDetailModalContainer from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
-import { ButtonPrimaryComponent } from '../Home/Home.styled';
+import ProgramDetailModalContainer
+  from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
 import { ROUTE_BUSINESS_ENGLISH } from '../../Assets/utils';
+import ButtonComponent from '../../Components/Button/Button.component';
 
 const ContainerStyled = styled(Container)`
   margin-top: 5vw;
@@ -114,13 +115,13 @@ const FreeTrialContainer = () => {
                 <Row>
                   <Col xl={4} md={4} sm={12} className="mx-auto text-center">
                     <Title className="mb-4">Calendar Here</Title>
-                    <ButtonPrimaryComponent
-                      onClick={() => {
+                    <ButtonComponent
+                      color={PrimaryColor}
+                      text="Set Date"
+                      handleClick={() => {
                         setIsDateSelected(true);
                       }}
-                      color={PrimaryColor}>
-                      Set Date
-                    </ButtonPrimaryComponent>
+                    />
                   </Col>
                 </Row>
               </CardStyled>
@@ -157,13 +158,13 @@ const FreeTrialContainer = () => {
                     <Form.Control type="text" placeholder="+62XXX XXX" />
                   </Form.Group>
                   <div className="mt-4 text-center">
-                    <ButtonPrimaryComponent
-                      onClick={() => {
+                    <ButtonComponent
+                      color={PrimaryColor}
+                      handleClick={() => {
                         setIsDateSelected(true);
                       }}
-                      color={PrimaryColor}>
-                      SEND
-                    </ButtonPrimaryComponent>
+                      text="SEND"
+                    />
                   </div>
                 </Form>
               </CardStyled>
@@ -176,17 +177,15 @@ const FreeTrialContainer = () => {
         <Modal.Body>
           <ProgramDetailModalContainer />
           <div className="mt-3 mb-4" style={{ textAlign: 'right' }}>
-            <ButtonPrimaryComponent onClick={handleClose} color="grey">
-              Close
-            </ButtonPrimaryComponent>
-            <ButtonPrimaryComponent
-              onClick={() => {
+            <ButtonComponent color="grey" handleClick={handleClose} text="Close" />
+            <ButtonComponent
+              color={PrimaryColor}
+              handleClick={() => {
                 handleClose();
                 setIsProgramSelected(true);
               }}
-              color={PrimaryColor}>
-              Try Now
-            </ButtonPrimaryComponent>
+              text="Try Now"
+            />
           </div>
         </Modal.Body>
       </Modal>

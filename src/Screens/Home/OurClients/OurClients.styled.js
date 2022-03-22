@@ -51,5 +51,4 @@ export const ImgStyled = styled.img`
   align-items: center;
   overflow: hidden;
   background: #fff;
-  height: 160px;
 `;

@@ -1,7 +1,12 @@
 import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
+import BannerHomeTransparent from '../../../Assets/Images/bannerhome-transparent.png';
 
 export const ContainerStyled = styled.div`
+  background-color: white;
+  background-image: url(${BannerHomeTransparent});
+  background-repeat: no-repeat;
+  background-size: contain;
   padding: 2vw 11vw 8vw 11vw;
   @media (min-width: 1024px) {
     min-height: 302px;
@@ -51,27 +56,6 @@ export const CenterDiv = styled.div`
   }
 `;
 
-export const ContactButton = styled.a.attrs((props: { color: string }) => props)`
-  text-decoration: none;
-  color: #ffffff;
-  background-color: ${(props) => props?.color};
-  padding: 10px;
-  border-radius: 8px;
-  font-weight: bold;
-  margin-right: 5px;
-  transition: 1s;
-  border: 1px solid ${(props) => props?.color};
-
-  &:hover {
-    color: #484848;
-    background-color: #ffffff;
-  }
-
-  @media (max-width: 400px) {
-    font-size: 14px;
-  }
-`;
-
 export const IconStyled = styled.i`
   text-align: center;
   font-size: 35px;
@@ -79,7 +63,7 @@ export const IconStyled = styled.i`
   margin-left: 47.5%;
   background-color: ${SecondaryColor};
   border-radius: 50%;
-  padding: 10px 15px 10px 15px;
+  padding: 14px 15px 9px 15px;
   color: white;
 
   @media (max-width: 400px) {

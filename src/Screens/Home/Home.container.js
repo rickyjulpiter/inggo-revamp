@@ -3,7 +3,6 @@ import { Col, Container, Row } from 'react-bootstrap';
 
 import { PrimaryColor, SecondaryColor } from '../../Assets/colorPalette';
 import {
-  ButtonPrimaryComponent,
   CustomMarginToParent,
   FloatingImage,
   WelcomeContainer,
@@ -22,6 +21,7 @@ import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import ContactContainer from './Contact/Contact.container';
 import { ROUTE_FREE_TRIAL } from '../../Assets/utils';
+import ButtonComponent from '../../Components/Button/Button.component';
 
 const HomeContainer = () => {
   const { t } = useTranslation();
@@ -65,12 +65,12 @@ const HomeContainer = () => {
                     convallis.
                   </WelcomeDescription>
                   <div className="d-flex justify-content-center mt-5">
-                    <ButtonPrimaryComponent href={ROUTE_FREE_TRIAL} color={PrimaryColor}>
-                      {t('freeTrial')}
-                    </ButtonPrimaryComponent>
-                    <ButtonPrimaryComponent color={SecondaryColor}>
-                      {t('contactUs')}
-                    </ButtonPrimaryComponent>
+                    <ButtonComponent
+                      color={PrimaryColor}
+                      text={t('freeTrial')}
+                      actionhref={ROUTE_FREE_TRIAL}
+                    />
+                    <ButtonComponent color={SecondaryColor} text={t('contactUs')} actionhref="#" />
                   </div>
                 </CustomMarginToParent>
               </Col>
