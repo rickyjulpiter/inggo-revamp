@@ -20,7 +20,7 @@ const ContactContainer = () => {
         <IconStyled className="bi bi-chat-square-text" />
         <SectionTitle>{t('contactTitle')}</SectionTitle>
         <SectionParagraph>{t('contactDescription')}</SectionParagraph>
-        <CenterDiv className="mx-auto">
+        <CenterDiv className="d-flex justify-content-center ">
           <ButtonComponent color={PrimaryColor} text={t('contactViaWA')} />
           <ButtonComponent color={SecondaryColor} text={t('contactViaEmail')} />
         </CenterDiv>

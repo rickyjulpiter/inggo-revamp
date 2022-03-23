@@ -11,6 +11,7 @@ import {
   ROUTE_HOME,
   ROUTE_IELTS,
   ROUTE_OUR_TEAM,
+  ROUTE_TESTIMONIALS,
   ROUTE_TOEFL
 } from '../../Assets/utils';
 import {
@@ -49,7 +50,10 @@ const NavbarComponent = ({ onChangeLang }) => {
             </Nav>
             <Nav>
               <NavLinkStyled href={ROUTE_HOME}>{t('menuHome')}</NavLinkStyled>
-              <NavLinkStyled href={ROUTE_ABOUT_US}>{t('menuAboutUs')}</NavLinkStyled>
+              <NavDropdownStyled title={t('menuAboutUs')} id="collasible-nav-dropdown">
+                <NavDropdown.Item href={ROUTE_ABOUT_US}>{t('menuAboutUs')} Inggo</NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_TESTIMONIALS}>{t('testimonials')}</NavDropdown.Item>
+              </NavDropdownStyled>
               <NavLinkStyled href={ROUTE_OUR_TEAM}>{t('menuOurTeam')}</NavLinkStyled>
               <NavDropdownStyled title={t('menuOurPrograms')} id="collasible-nav-dropdown">
                 <NavDropdown.Item href={ROUTE_BUSINESS_ENGLISH}>Business English</NavDropdown.Item>
