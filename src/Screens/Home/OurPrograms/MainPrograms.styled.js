@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { Card, CardImg, Col } from 'react-bootstrap';
 import { PrimaryColor, SecondaryColor, WhiteColor } from '../../../Assets/colorPalette';
-import { TABLET_SIZE } from '../../../Assets/utils';
+import { PHONE_SIZE, TABLET_SIZE } from '../../../Assets/utils';
 
 export const CardStyled = styled(Card)`
   background-color: ${WhiteColor};
@@ -86,18 +86,25 @@ export const SectionDescription = styled.p`
   min-height: 8.4vw;
   text-align: justify;
 
-  @media (max-width: ${TABLET_SIZE}) {
-    font-size: 11px !important;
+  @media (max-width: ${PHONE_SIZE}) {
+    font-size: 14px !important;
   }
 
-  @media (max-width: 1024px) {
-    min-height: 20vw;
-    font-size: 15px;
+  @media (min-width: ${TABLET_SIZE}) {
+    font-size: 11px;
   }
 
-  @media (max-width: 1280px) {
-    min-height: 14vw;
+  @media (min-width: 1024px) {
+    font-size: 16px;
   }
+
+  @media (min-width: 1280px) {
+    min-height: 9vw;
+  }
+`;
+
+export const CenterDiv = styled.div`
+  text-align: center;
 `;
 
 export const ButtonMore = styled.a`
@@ -106,7 +113,6 @@ export const ButtonMore = styled.a`
   background-color: ${SecondaryColor};
   color: white;
   text-align: center;
-  float: right;
 
   font-size: 13px;
   font-weight: 500;
@@ -140,6 +146,10 @@ export const ColStyled = styled(Col)`
 export const CardImgStyled = styled(CardImg)`
   width: 80%;
   text-align: center;
+
+  @media (max-width: ${PHONE_SIZE}) {
+    width: 50%;
+  }
 `;
 
 export const ImgContainer = styled.div`

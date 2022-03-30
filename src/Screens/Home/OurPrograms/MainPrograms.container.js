@@ -6,6 +6,7 @@ import {
   ButtonMore,
   CardImgStyled,
   CardStyled,
+  CenterDiv,
   ColStyled,
   ContainerStyled,
   ImgContainer,
@@ -31,13 +32,17 @@ const MainPrograms = () => {
                   <CardImgStyled src={EnglishCourseBalloon} className="mx-auto d-block" />
                 </ImgContainer>
               </Col>
-              <Col>
+              <Col xl={7} sm={7} md={7}>
                 <SectionCardSmall>{t('englishCourses')}</SectionCardSmall>
                 <SectionDescription>{t('englishCoursesDescription')}</SectionDescription>
               </Col>
-              <ButtonMore href={ROUTE_ENGLISH_COURSES} className="mt-2">
-                {t('exploreMore')}
-              </ButtonMore>
+              <Col md={12} sm={12} xl={4} className="mx-auto">
+                <CenterDiv>
+                  <ButtonMore href={ROUTE_ENGLISH_COURSES} className="mt-2">
+                    {t('exploreMore')}
+                  </ButtonMore>
+                </CenterDiv>
+              </Col>
             </Row>
           </CardStyled>
         </ColStyled>
@@ -49,13 +54,17 @@ const MainPrograms = () => {
                   <CardImgStyled src={TranslationCourseBalloon} className="mx-auto d-block" />
                 </ImgContainer>
               </Col>
-              <Col>
+              <Col xl={7} sm={7} md={7}>
                 <SectionCardSmall>
                   <span dangerouslySetInnerHTML={{ __html: t('translationServices') }} />
                 </SectionCardSmall>
                 <SectionDescription>{t('translationServicesDescription')}</SectionDescription>
               </Col>
-              <ButtonMore className="mt-2">{t('exploreMore')}</ButtonMore>
+              <Col md={12} sm={12} xl={4} className="mx-auto">
+                <CenterDiv>
+                  <ButtonMore className="mt-2">{t('exploreMore')}</ButtonMore>
+                </CenterDiv>
+              </Col>
             </Row>
           </CardStyled>
         </ColStyled>

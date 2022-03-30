@@ -61,10 +61,10 @@ export const IconStyled = styled.i`
   font-size: 35px;
   margin-right: 47.5%;
   margin-left: 47.5%;
-  background-color: ${SecondaryColor};
+  //background-color: ${SecondaryColor};
   border-radius: 50%;
   padding: 14px 15px 9px 15px;
-  color: white;
+  color: ${SecondaryColor};
 
   @media (max-width: 400px) {
     margin-right: 40%;

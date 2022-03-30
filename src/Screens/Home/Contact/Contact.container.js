@@ -8,7 +8,6 @@ import {
   SectionTitle
 } from './Contact.styled';
 import IconContainer from '../../../Components/Icon/Icon.container';
-import { PrimaryColor } from '../../../Assets/colorPalette';
 
 const ContactContainer = () => {
   const { t } = useTranslation();
@@ -23,7 +22,7 @@ const ContactContainer = () => {
         <CenterDiv className="d-flex justify-content-center ">
           <IconContainer icon="bi bi-whatsapp" color="#25d366" />
           <div className="m-1" />
-          <IconContainer icon="bi bi-envelope" color={PrimaryColor} />
+          {/*<IconContainer icon="bi bi-envelope" color={PrimaryColor} />*/}
         </CenterDiv>
       </ContainerStyled>
     </>

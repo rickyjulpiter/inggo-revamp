@@ -59,7 +59,7 @@ export const WelcomeContainer = styled.div`
   }
 
   @media (max-width: 450px) {
-    min-height: 100vw;
+    min-height: 50vw;
 
     .p_absoulte {
       display: none;

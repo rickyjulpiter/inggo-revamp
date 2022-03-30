@@ -21,6 +21,7 @@ import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import ContactContainer from './Contact/Contact.container';
 import { ROUTE_FREE_TRIAL } from '../../Assets/utils';
 import ButtonComponent from '../../Components/Button/Button.component';
+import WhyChooseUsContainer from './WhyChooseUs/WhyChooseUs.container';
 
 const HomeContainer = () => {
   const { t } = useTranslation();
@@ -76,6 +77,7 @@ const HomeContainer = () => {
         </Container>
       </WelcomeContainer>
       <MainPrograms />
+      <WhyChooseUsContainer />
       <TestimonialsContainer />
       <OurClientsContainer />
       <ContactContainer />
