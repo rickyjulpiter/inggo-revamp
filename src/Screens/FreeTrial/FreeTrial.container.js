@@ -7,8 +7,8 @@ import ImgChoose from '../../Assets/Images/choose.png';
 import { useTranslation } from 'react-i18next';
 import ProgramDetailModalContainer
   from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
-import { ROUTE_BUSINESS_ENGLISH } from '../../Assets/utils';
 import ButtonComponent from '../../Components/Button/Button.component';
+import { InlineWidget } from 'react-calendly';
 
 const ContainerStyled = styled(Container)`
   margin-top: 5vw;
@@ -58,8 +58,9 @@ const FreeTrialContainer = () => {
 
   const handleClose = () => {
     setShow(false);
-    setProgram('');
   };
+
+  console.log(program);
 
   const handleShow = () => setShow(true);
 
@@ -83,7 +84,7 @@ const FreeTrialContainer = () => {
                     <ProgramCard
                       onClick={() => {
                         handleShow();
-                        setProgram(ROUTE_BUSINESS_ENGLISH);
+                        setProgram('Bahasa Inggris Bisnis');
                       }}>
                       {t('businessEnglish')}
                     </ProgramCard>
@@ -115,13 +116,14 @@ const FreeTrialContainer = () => {
                 <Row>
                   <Col xl={4} md={4} sm={12} className="mx-auto text-center">
                     <Title className="mb-4">Calendar Here</Title>
-                    <ButtonComponent
-                      color={PrimaryColor}
-                      text="Set Date"
-                      handleClick={() => {
-                        setIsDateSelected(true);
-                      }}
-                    />
+                    <InlineWidget url="https://calendly.com/inggodev/free-trial-class?hide_gdpr_banner=1" />
+                    {/*<ButtonComponent*/}
+                    {/*  color={PrimaryColor}*/}
+                    {/*  text="Set Date"*/}
+                    {/*  handleClick={() => {*/}
+                    {/*    setIsDateSelected(true);*/}
+                    {/*  }}*/}
+                    {/*/>*/}
                   </Col>
                 </Row>
               </CardStyled>

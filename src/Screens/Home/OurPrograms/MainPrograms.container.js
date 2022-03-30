@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
 
 import {
@@ -23,26 +23,40 @@ const MainPrograms = () => {
     <ContainerStyled>
       <SectionTitle>{t('menuOurPrograms')}</SectionTitle>
       <Row className="justify-content-center">
-        <ColStyled xl={4} md={4} sm={12}>
+        <ColStyled xl={6} md={6} sm={12}>
           <CardStyled>
-            <ImgContainer>
-              <CardImgStyled src={EnglishCourseBalloon} className="mx-auto d-block" />
-            </ImgContainer>
-            <SectionCardSmall>{t('englishCourses')}</SectionCardSmall>
-            <SectionDescription>{t('englishCoursesDescription')}</SectionDescription>
-            <ButtonMore href={ROUTE_ENGLISH_COURSES}>{t('exploreMore')}</ButtonMore>
+            <Row>
+              <Col xl={5} sm={5} md={5}>
+                <ImgContainer>
+                  <CardImgStyled src={EnglishCourseBalloon} className="mx-auto d-block" />
+                </ImgContainer>
+              </Col>
+              <Col>
+                <SectionCardSmall>{t('englishCourses')}</SectionCardSmall>
+                <SectionDescription>{t('englishCoursesDescription')}</SectionDescription>
+              </Col>
+              <ButtonMore href={ROUTE_ENGLISH_COURSES} className="mt-2">
+                {t('exploreMore')}
+              </ButtonMore>
+            </Row>
           </CardStyled>
         </ColStyled>
-        <ColStyled xl={4} md={4} sm={12}>
+        <ColStyled xl={6} md={6} sm={12}>
           <CardStyled>
-            <ImgContainer>
-              <CardImgStyled src={TranslationCourseBalloon} className="mx-auto d-block" />
-            </ImgContainer>
-            <SectionCardSmall>
-              <span dangerouslySetInnerHTML={{ __html: t('translationServices') }} />
-            </SectionCardSmall>
-            <SectionDescription>{t('translationServicesDescription')}</SectionDescription>
-            <ButtonMore>{t('exploreMore')}</ButtonMore>
+            <Row>
+              <Col xl={5} sm={5} md={5}>
+                <ImgContainer>
+                  <CardImgStyled src={TranslationCourseBalloon} className="mx-auto d-block" />
+                </ImgContainer>
+              </Col>
+              <Col>
+                <SectionCardSmall>
+                  <span dangerouslySetInnerHTML={{ __html: t('translationServices') }} />
+                </SectionCardSmall>
+                <SectionDescription>{t('translationServicesDescription')}</SectionDescription>
+              </Col>
+              <ButtonMore className="mt-2">{t('exploreMore')}</ButtonMore>
+            </Row>
           </CardStyled>
         </ColStyled>
       </Row>

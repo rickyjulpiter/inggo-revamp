@@ -23,7 +23,7 @@ export const CardStyled = styled(Card)`
 
 export const ContainerStyled = styled.div`
   background-color: ${PrimaryColor};
-  padding: 2vw 11vw 8vw 11vw;
+  padding: 2vw 4vw 8vw 4vw;
   @media (min-width: 1024px) {
     min-height: 602px;
   }
@@ -83,7 +83,7 @@ export const SectionCardSmall = styled.h3`
 
 export const SectionDescription = styled.p`
   margin-top: 0.5vw;
-  min-height: 11vw;
+  min-height: 8.4vw;
   text-align: justify;
 
   @media (max-width: ${TABLET_SIZE}) {
