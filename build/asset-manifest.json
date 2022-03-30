@@ -1,11 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.fdba5d2c.css",
-    "main.js": "/static/js/main.073b2a9e.js",
+    "main.css": "/static/css/main.c26c2456.css",
+    "main.js": "/static/js/main.c7075c49.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/general_english_baloon.png": "/static/media/general_english_baloon.e2d22239adff5b8e8d4e.png",
     "static/media/ielts_baloon.png": "/static/media/ielts_baloon.ecdb171617dcb7728dae.png",
-    "static/media/proofreading_baloon.png": "/static/media/proofreading_baloon.e703b5f69a01a636540e.png",
     "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
     "static/media/academic_baloon.png": "/static/media/academic_baloon.6cfa9a48bee072dd498f.png",
     "static/media/business_english_baloon.png": "/static/media/business_english_baloon.bb4b15dd2fd7cec04877.png",
@@ -18,12 +17,12 @@
     "static/media/client-pusaka.png": "/static/media/client-pusaka.69688b275a78a23eeb66.png",
     "static/media/logo.png": "/static/media/logo.fa1927f1c961ce223b06.png",
     "index.html": "/index.html",
-    "main.fdba5d2c.css.map": "/static/css/main.fdba5d2c.css.map",
-    "main.073b2a9e.js.map": "/static/js/main.073b2a9e.js.map",
+    "main.c26c2456.css.map": "/static/css/main.c26c2456.css.map",
+    "main.c7075c49.js.map": "/static/js/main.c7075c49.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.fdba5d2c.css",
-    "static/js/main.073b2a9e.js"
+    "static/css/main.c26c2456.css",
+    "static/js/main.c7075c49.js"
   ]
 }
