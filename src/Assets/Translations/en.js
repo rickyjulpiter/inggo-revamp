@@ -4,7 +4,8 @@ export const TRANSLATIONS_EN = {
   exploreMore: 'Explore More',
 
   menuHome: 'Home',
-  menuAboutUs: 'About',
+  menuAboutUs: 'About Us',
+  about: 'About',
   menuOurTeam: 'Our Team',
   menuOurPrograms: 'Our Programs',
   menuLanguages: 'Languages',
@@ -15,13 +16,11 @@ export const TRANSLATIONS_EN = {
 
   englishCourses: 'English Courses',
   englishCoursesDescription:
-    'Want to speak English with confidence? Study with us now because learning English will never be the same anymore.',
-  translationServices: 'Translation Services',
+    'Want to speak English with confidence? Study with us because learning English will never feel the same anymore!',
+
+  translationServices: 'Translation and Proofreading Services',
   translationServicesDescription:
-    'Looking for a professional translation service? You have come to the right place! Sit back as we translate all your documents for you!',
-  proofReadingServices: 'Proofreading Services',
-  proofReadingDescription:
-    'Before submitting your documents, do you constantly worry about grammar errors, content, or choice of words? If yes, you should not miss our proofreading services!',
+    'Looking for a professional translation service or constantly worrying about grammar errors and word choice in your documents? If yes, you have come to the right place!\n',
 
   testimonials: 'Testimonials',
 
@@ -58,5 +57,7 @@ export const TRANSLATIONS_EN = {
   contactTitle: 'Anything you want to ask?',
   contactDescription: 'Consult Inggo Team for Further Questions',
   contactViaWA: 'Contact via WA',
-  contactViaEmail: 'Contact via Email'
+  contactViaEmail: 'Contact via Email',
+
+  welcomeTitle: 'Learn English with the best from now on!'
 };

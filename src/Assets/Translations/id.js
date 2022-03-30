@@ -4,9 +4,10 @@ export const TRANSLATIONS_ID = {
   exploreMore: 'Selengkapnya',
 
   menuHome: 'Beranda',
-  menuAboutUs: 'Tentang',
+  menuAboutUs: 'Tentang Kami',
+  about: 'Tentang',
   menuOurTeam: 'Tim Kami',
-  menuOurPrograms: 'Program Kami',
+  menuOurPrograms: 'Program',
   menuLanguages: 'Bahasa',
   beOurTeacher: 'Jadi Guru',
 
@@ -15,13 +16,12 @@ export const TRANSLATIONS_ID = {
 
   englishCourses: 'Kelas Bahasa Inggris',
   englishCoursesDescription:
-    'Ingin lebih percaya diri berbahasa Inggris? Ayo belajar dengan kami sekarang karena belajar Bahasa Inggris tidak akan pernah sama lagi.',
-  translationServices: 'Layanan Penerjemahan',
+    'Ingin berbicara bahasa Inggris dengan percaya diri? \n' +
+    'Belajarlah dengan kami dan pengalaman belajar bahasa Inggris Anda tidak akan pernah terasa sama lagi! ',
+
+  translationServices: 'Layanan Penerjemahan </br> dan Penyuntingan',
   translationServicesDescription:
-    'Sedang mencari layanan penerjemahan profesional? Anda ada di tempat yang tepat! Jangan khawatir karena kami akan menerjemahkan semua dokumen untuk anda',
-  proofReadingServices: 'Layanan Penyuntingan',
-  proofReadingDescription:
-    'Sebelum mengirim dokumen Anda, apakah Anda senantiasa khawatir tentang kesalahan tata bahasa, isi, atau pilihan kata? Jika iya, Anda tidak boleh melewatkan layanan penyuntingan kami! ',
+    'Sedang mencari layanan penerjemahan profesional atau sering khawatir dengan kesalahan tata bahasa dan pemilihan kata-kata dalam dokumen Anda? Jika iya, Anda ada di tempat yang tepat!',
 
   testimonials: 'Testimonial',
 
@@ -57,7 +57,9 @@ export const TRANSLATIONS_ID = {
   ourClients: 'Daftar Klien',
 
   contactTitle: 'Ada yang mau kamu tanyakan?',
-  contactDescription: 'Konsultasikan dengan Tim Inggo untuk Pertanyaan Lebih Lanjut',
+  contactDescription: 'Konsultasikan dengan Tim INGGO untuk Pertanyaan Lebih Lanjut',
   contactViaWA: 'Hubungi lewat WA',
-  contactViaEmail: 'Hubungi lewat Email'
+  contactViaEmail: 'Hubungi lewat Email',
+
+  welcomeTitle: 'Belajar bahasa Inggris dengan yang terbaik <br /> mulai dari sekarang!'
 };

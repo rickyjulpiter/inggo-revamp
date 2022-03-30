@@ -6,7 +6,6 @@ import {
   CustomMarginToParent,
   FloatingImage,
   WelcomeContainer,
-  WelcomeDescription,
   WelcomeHeading,
   WelcomeSection
 } from './Home.styled';
@@ -58,13 +57,11 @@ const HomeContainer = () => {
                     />
                   </div>
 
-                  <WelcomeHeading>{t('welcome')}</WelcomeHeading>
-                  <WelcomeDescription>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex
-                    sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis
-                    convallis.
-                  </WelcomeDescription>
-                  <div className="d-flex justify-content-center mt-5">
+                  <WelcomeHeading
+                    className="slideUp mt-5"
+                    dangerouslySetInnerHTML={{ __html: t('welcomeTitle') }}
+                  />
+                  <div className="d-flex justify-content-center mt-5 slideUp">
                     <ButtonComponent
                       color={PrimaryColor}
                       text={t('freeTrial')}

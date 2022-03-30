@@ -10,7 +10,6 @@ import {
   ROUTE_GENERAL_ENGLISH,
   ROUTE_HOME,
   ROUTE_IELTS,
-  ROUTE_OUR_TEAM,
   ROUTE_TESTIMONIALS,
   ROUTE_TOEFL
 } from '../../Assets/utils';
@@ -51,21 +50,25 @@ const NavbarComponent = ({ onChangeLang }) => {
             <Nav>
               <NavLinkStyled href={ROUTE_HOME}>{t('menuHome')}</NavLinkStyled>
               <NavDropdownStyled title={t('menuAboutUs')} id="collasible-nav-dropdown">
-                <NavDropdown.Item href={ROUTE_ABOUT_US}>{t('menuAboutUs')} Inggo</NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_ABOUT_US}>{t('about')} INGGO</NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_TESTIMONIALS}>{t('testimonials')}</NavDropdown.Item>
               </NavDropdownStyled>
-              <NavLinkStyled href={ROUTE_OUR_TEAM}>{t('menuOurTeam')}</NavLinkStyled>
+              {/*<NavLinkStyled href={ROUTE_OUR_TEAM}>{t('menuOurTeam')}</NavLinkStyled>*/}
               <NavDropdownStyled title={t('menuOurPrograms')} id="collasible-nav-dropdown">
-                <NavDropdown.Item href={ROUTE_BUSINESS_ENGLISH}>Business English</NavDropdown.Item>
-                <NavDropdown.Item href={ROUTE_ACADEMIC_WRITING}>Academic Writing</NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_BUSINESS_ENGLISH}>
+                  {t('businessEnglish')}
+                </NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_ACADEMIC_WRITING}>
+                  {t('academicWriting')}
+                </NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_IELTS}>IELTS</NavDropdown.Item>
-                <NavDropdown.Item href={ROUTE_TOEFL}>TOEFL</NavDropdown.Item>
-                <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>General English</NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_TOEFL}>TOEFL iBT</NavDropdown.Item>
+                <NavDropdown.Item href={ROUTE_TOEFL}>TOEFL ITP</NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>
-                  {t('translationServices')}
+                  {t('generalEnglish')}
                 </NavDropdown.Item>
                 <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>
-                  {t('proofReadingServices')}
+                  <span dangerouslySetInnerHTML={{ __html: t('translationServices') }} />
                 </NavDropdown.Item>
               </NavDropdownStyled>
               <NavDropdownStyledResponsive title={t('menuLanguages')} id="collasible-nav-dropdown">

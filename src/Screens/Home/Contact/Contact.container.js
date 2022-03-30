@@ -1,5 +1,4 @@
 import React from 'react';
-import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
 import { useTranslation } from 'react-i18next';
 import {
   CenterDiv,
@@ -8,7 +7,8 @@ import {
   SectionParagraph,
   SectionTitle
 } from './Contact.styled';
-import ButtonComponent from '../../../Components/Button/Button.component';
+import IconContainer from '../../../Components/Icon/Icon.container';
+import { PrimaryColor } from '../../../Assets/colorPalette';
 
 const ContactContainer = () => {
   const { t } = useTranslation();
@@ -21,8 +21,9 @@ const ContactContainer = () => {
         <SectionTitle>{t('contactTitle')}</SectionTitle>
         <SectionParagraph>{t('contactDescription')}</SectionParagraph>
         <CenterDiv className="d-flex justify-content-center ">
-          <ButtonComponent color={PrimaryColor} text={t('contactViaWA')} />
-          <ButtonComponent color={SecondaryColor} text={t('contactViaEmail')} />
+          <IconContainer icon="bi bi-whatsapp" color="#25d366" />
+          <div className="m-1" />
+          <IconContainer icon="bi bi-envelope" color={PrimaryColor} />
         </CenterDiv>
       </ContainerStyled>
     </>

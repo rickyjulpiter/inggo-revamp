@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import BannerHomeTransparent from '../../Assets/Images/bannerhome-transparent.png';
+import { PHONE_SIZE } from '../../Assets/utils';
 
 export const WelcomeHeading = styled.h1`
   color: #34364a;
@@ -7,20 +8,17 @@ export const WelcomeHeading = styled.h1`
   font-size: 40px;
   text-align: center;
 
-  &:before {
-    opacity: 0;
-    transition: opacity 0.95s ease-in-out;
-    -moz-transition: opacity 0.95s ease-in-out;
-    -webkit-transition: opacity 0.95s ease-in-out;
-  }
-
   @media (max-width: 768px) {
     font-size: 28px;
+  }
+
+  @media (min-width: 1280px) {
+    margin-top: 7rem !important;
   }
 `;
 
 export const WelcomeDescription = styled.p`
-  margin-top: 2vw;
+  margin-top: 7vw;
   font-size: 18px;
   color: #34364a;
   line-height: 32px;
@@ -29,6 +27,10 @@ export const WelcomeDescription = styled.p`
   @media (max-width: 768px) {
     font-size: 15px;
     line-height: 28px;
+    margin-top: 15vw;
+  }
+  @media (max-width: ${PHONE_SIZE}) {
+    margin-top: 25vw;
   }
 `;
 

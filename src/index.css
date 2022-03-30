@@ -120,3 +120,35 @@ li {
         opacity: 1;
     }
 }
+
+.slideDown, .slideUp {
+    opacity: 0;
+}
+
+.slideDown {
+    animation: slideDown ease .4s forwards .6s;
+}
+
+.slideUp {
+    animation: slideUp ease .5s forwards 1.2s;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(40px);
+        opacity: 1;
+    }
+}

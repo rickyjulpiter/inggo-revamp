@@ -64,6 +64,7 @@ export const SectionCardSmall = styled.h3`
   font-size: 24px;
   font-weight: bolder;
   line-height: 32px;
+  min-height: 5vw;
 
   @media (max-width: 768px) {
     font-size: 16px !important;
@@ -74,11 +75,15 @@ export const SectionCardSmall = styled.h3`
     line-height: 24px;
     min-height: 6.5vw;
   }
+
+  @media (max-width: 1280px) {
+    min-height: 8vw;
+  }
 `;
 
 export const SectionDescription = styled.p`
   margin-top: 0.5vw;
-  min-height: 10vw;
+  min-height: 11vw;
   text-align: justify;
 
   @media (max-width: ${TABLET_SIZE}) {
@@ -86,8 +91,12 @@ export const SectionDescription = styled.p`
   }
 
   @media (max-width: 1024px) {
-    min-height: 19vw;
+    min-height: 20vw;
     font-size: 15px;
+  }
+
+  @media (max-width: 1280px) {
+    min-height: 14vw;
   }
 `;
 
@@ -105,7 +114,7 @@ export const ButtonMore = styled.a`
   letter-spacing: 1.3px;
   text-transform: uppercase;
   display: inline-block;
-  padding: 11px 53px 10px;
+  padding: 11px 25px 10px;
   transition: all 0.3s linear;
 
   &:hover {
@@ -129,12 +138,12 @@ export const ColStyled = styled(Col)`
 `;
 
 export const CardImgStyled = styled(CardImg)`
-  width: 60%;
+  width: 80%;
   text-align: center;
 `;
 
 export const ImgContainer = styled.div`
-  min-height: 16.5vw;
+  min-height: 13.5vw;
 
   @media (max-width: 768px) {
     min-height: 12.5vw;
