@@ -6,7 +6,7 @@ import { PHONE_SIZE } from '../../../Assets/utils';
 import { useTranslation } from 'react-i18next';
 
 const ContainerSection = styled.div`
-  padding: 2vw 2vw;
+  padding: 2vw 4vw;
   min-height: 35rem;
   background-color: #f5f5f5;
 `;
