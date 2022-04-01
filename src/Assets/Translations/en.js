@@ -59,5 +59,23 @@ export const TRANSLATIONS_EN = {
   contactViaWA: 'Contact via WA',
   contactViaEmail: 'Contact via Email',
 
-  welcomeTitle: 'Learn English with the best from now on!'
+  welcomeTitle: 'Learn English with the best from now on!',
+
+  whyChooseUsFirstTitle: 'Your one-stop language solution',
+  whyChooseUsSecondTitle: 'Why INGGO?',
+
+  whyChooseUsFirstReasonTitle: 'Qualified Tutors',
+  whyChooseUsFirstReasonDescription:
+    'Our tutors, who are graduates of local and foreign universities, are highly qualified and the best in English language teaching',
+
+  whyChooseUsSecondReasonTitle: 'Flexibility',
+  whyChooseUsSecondReasonDescription:
+    'You can choose to study anytime, and our tutors will adjust to your chosen time.',
+
+  whyChooseUsThirdReasonTitle: 'Tailored Materials',
+  whyChooseUsThirdReasonDescription:
+    'Our materials are specifically designed to cater for your needs.',
+
+  whyChooseUsFourthReasonTitle: 'Affordability',
+  whyChooseUsFourthReasonDescription: 'You will get more that what you pay for.'
 };

@@ -61,5 +61,22 @@ export const TRANSLATIONS_ID = {
   contactViaWA: 'Hubungi lewat WA',
   contactViaEmail: 'Hubungi lewat Email',
 
-  welcomeTitle: 'Belajar bahasa Inggris dengan yang terbaik <br /> mulai dari sekarang!'
+  welcomeTitle: 'Belajar bahasa Inggris dengan yang terbaik <br /> mulai dari sekarang!',
+
+  whyChooseUsFirstTitle: 'Solusi Bahasa Anda',
+  whyChooseUsSecondTitle: 'Kenapa INGGO?',
+
+  whyChooseUsFirstReasonTitle: 'Tutor Berkualitas',
+  whyChooseUsFirstReasonDescription:
+    'Tutor kami merupakan lulusan dalam dan luar negeri yang berkualitas dan terbaik di bidang pengajaran bahasa Inggris.',
+
+  whyChooseUsSecondReasonTitle: 'Fleksibilitas',
+  whyChooseUsSecondReasonDescription:
+    'Anda bisa memilih waktu belajar kapan saja dan tutor kami akan menyesuaikan dengan waktu Anda.',
+
+  whyChooseUsThirdReasonTitle: 'Materi Khusus',
+  whyChooseUsThirdReasonDescription: 'Bahan ajar kami dirancang khusus hanya untuk Anda.',
+
+  whyChooseUsFourthReasonTitle: 'Biaya Terjangkau',
+  whyChooseUsFourthReasonDescription: 'Anda akan mendapatkan lebih daripada yang Anda bayarkan.'
 };

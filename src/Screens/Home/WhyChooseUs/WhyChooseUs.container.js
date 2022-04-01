@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
 import { Col, Row } from 'react-bootstrap';
 import { PHONE_SIZE } from '../../../Assets/utils';
+import { useTranslation } from 'react-i18next';
 
 const ContainerSection = styled.div`
   padding: 2vw 2vw;
@@ -67,46 +68,41 @@ const IconStyled = styled.i`
 `;
 
 const WhyChooseUsContainer = () => {
+  const { t } = useTranslation();
+
   return (
     <ContainerSection>
-      <SectionTitle>Your one-stop language solution</SectionTitle>
-      <SectionTitleSecond>Why Inggo?</SectionTitleSecond>
+      <SectionTitle>{t('whyChooseUsFirstTitle')}</SectionTitle>
+      <SectionTitleSecond>{t('whyChooseUsSecondTitle')}</SectionTitleSecond>
       <RowStyled>
         <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-person-check" />
           </div>
-          <ReasonTitle>Qualified Tutors</ReasonTitle>
-          <ReasonDescription>
-            Our tutors, who are graduates of local and foreign universities, are highly qualified
-            and the best in English language teaching.{' '}
-          </ReasonDescription>
+          <ReasonTitle>{t('whyChooseUsFirstReasonTitle')}</ReasonTitle>
+          <ReasonDescription>{t('whyChooseUsFirstReasonDescription')}</ReasonDescription>
         </ColStyled>
         <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-calendar-check" />
           </div>
-          <ReasonTitle>Flexibility</ReasonTitle>
-          <ReasonDescription>
-            You can choose to study anytime, and our tutors will adjust to your chosen time.
-          </ReasonDescription>
+          <ReasonTitle>{t('whyChooseUsSecondReasonTitle')}</ReasonTitle>
+          <ReasonDescription>{t('whyChooseUsSecondReasonDescription')}</ReasonDescription>
         </ColStyled>
         <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-bookmark-star-fill" />
           </div>
-          <ReasonTitle>Tailored Materials</ReasonTitle>
-          <ReasonDescription>
-            Our materials are specifically designed to cater for your needs.
-          </ReasonDescription>
+          <ReasonTitle>{t('whyChooseUsThirdReasonTitle')}</ReasonTitle>
+          <ReasonDescription>{t('whyChooseUsThirdReasonDescription')}</ReasonDescription>
         </ColStyled>
 
         <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-tags" />
           </div>
-          <ReasonTitle>Affordability</ReasonTitle>
-          <ReasonDescription>You will get more that what you pay for.</ReasonDescription>
+          <ReasonTitle>{t('whyChooseUsFourthReasonTitle')}</ReasonTitle>
+          <ReasonDescription>{t('whyChooseUsFourthReasonDescription')}</ReasonDescription>
         </ColStyled>
       </RowStyled>
     </ContainerSection>
