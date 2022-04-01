@@ -37,7 +37,7 @@ export const ContainerStyled = styled.div`
 export const SectionTitle = styled.h1`
   color: #ffffff;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 2.5rem;
   text-align: center;
   margin-bottom: 4vw;
   margin-top: 3vw;

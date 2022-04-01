@@ -2,17 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
 import { Col, Row } from 'react-bootstrap';
+import { PHONE_SIZE } from '../../../Assets/utils';
 
 const ContainerSection = styled.div`
-  padding: 2vw 14vw;
-  min-height: 20rem;
+  padding: 2vw 2vw;
+  min-height: 35rem;
   background-color: #f5f5f5;
 `;
 
 const SectionTitle = styled.h4`
+  margin-top: 2vw;
   font-weight: bolder;
   color: ${PrimaryColor};
   text-align: center;
+
+  @media (max-width: ${PHONE_SIZE}) {
+    margin-top: 14vw;
+  }
 `;
 
 const SectionTitleSecond = styled.h1`
@@ -66,9 +72,9 @@ const WhyChooseUsContainer = () => {
       <SectionTitle>Your one-stop language solution</SectionTitle>
       <SectionTitleSecond>Why Inggo?</SectionTitleSecond>
       <RowStyled>
-        <ColStyled xl={6} md={6} sm={6}>
+        <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
-            <IconStyled className="bi bi-whatsapp" />
+            <IconStyled className="bi bi-person-check" />
           </div>
           <ReasonTitle>Qualified Tutors</ReasonTitle>
           <ReasonDescription>
@@ -76,7 +82,7 @@ const WhyChooseUsContainer = () => {
             and the best in English language teaching.{' '}
           </ReasonDescription>
         </ColStyled>
-        <ColStyled xl={6} md={6} sm={6}>
+        <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-calendar-check" />
           </div>
@@ -85,7 +91,7 @@ const WhyChooseUsContainer = () => {
             You can choose to study anytime, and our tutors will adjust to your chosen time.
           </ReasonDescription>
         </ColStyled>
-        <ColStyled xl={6} md={6} sm={6}>
+        <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-bookmark-star-fill" />
           </div>
@@ -95,7 +101,7 @@ const WhyChooseUsContainer = () => {
           </ReasonDescription>
         </ColStyled>
 
-        <ColStyled xl={6} md={6} sm={6}>
+        <ColStyled xl={3} md={3} sm={3}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-tags" />
           </div>

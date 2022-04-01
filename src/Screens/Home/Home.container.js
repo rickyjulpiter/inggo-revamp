@@ -76,8 +76,8 @@ const HomeContainer = () => {
           </WelcomeSection>
         </Container>
       </WelcomeContainer>
-      <MainPrograms />
       <WhyChooseUsContainer />
+      <MainPrograms />
       <TestimonialsContainer />
       <OurClientsContainer />
       <ContactContainer />
