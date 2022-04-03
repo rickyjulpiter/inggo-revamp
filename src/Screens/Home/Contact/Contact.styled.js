@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
-import BannerHomeTransparent from '../../../Assets/Images/bannerhome-transparent.png';
+import BannerHomeTransparent from '../../../Assets/Images/bannerhome-transparent-copy.png';
 
 export const ContainerStyled = styled.div`
   background-color: white;

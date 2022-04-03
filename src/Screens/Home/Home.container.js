@@ -30,7 +30,7 @@ const HomeContainer = () => {
       <WelcomeContainer>
         <Container>
           <WelcomeSection>
-            <Row className="mt-5 mb-3">
+            <Row className="pt-5 mb-3">
               <Col xl={12} md={12} sm={12}>
                 <CustomMarginToParent>
                   <div className="t_four p_absoulte">
@@ -73,10 +73,10 @@ const HomeContainer = () => {
                 </CustomMarginToParent>
               </Col>
             </Row>
+            <WhyChooseUsContainer />
           </WelcomeSection>
         </Container>
       </WelcomeContainer>
-      <WhyChooseUsContainer />
       <MainPrograms />
       <TestimonialsContainer />
       <OurClientsContainer />
