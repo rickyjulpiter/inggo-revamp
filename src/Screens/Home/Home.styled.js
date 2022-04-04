@@ -45,11 +45,9 @@ export const WelcomeSection = styled.div`
 `;
 
 export const WelcomeContainer = styled.div`
-  margin-top: -7.7vw;
-  padding-top: 7.7vw;
   background-image: url(${BannerHomeTransparent});
   background-repeat: no-repeat;
-  background-size: 80%;
+  background-size: 60%;
   background-position: right 0 top 0;
 
   @media (min-width: 1024px) {
