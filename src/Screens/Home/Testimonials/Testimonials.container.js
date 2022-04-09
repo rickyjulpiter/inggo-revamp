@@ -1,15 +1,22 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Carousel, Col, Row } from 'react-bootstrap';
+import { Carousel, Row } from 'react-bootstrap';
 import { ContainerStyled, SectionSectionTitle, SectionTitle } from './Testimonials.styled';
-import { ExampleCardPerson } from './Testimonials.component';
 import MobileList from './MobileList';
 import styled from 'styled-components';
 import ButtonComponent from '../../../Components/Button/Button.component';
 import { SecondaryColor } from '../../../Assets/colorPalette';
+import {
+  AkmiliaAswarini,
+  AyuDewilestariNapitupulu,
+  BeatrixMarendeng,
+  NahlaJovial,
+  PutriAyudita,
+  SyahzamiPutra
+} from './List/TestimonialList';
 
 const CarouselResponsive = styled(Carousel)`
+  min-height: 45vw;
   @media (max-width: 425px) {
     display: none;
   }
@@ -22,30 +29,18 @@ const TestimonialsContainer = () => {
       <SectionTitle>{t('testimonials')}</SectionTitle>
       <SectionSectionTitle className="mb-5">A Word From Our Customer</SectionSectionTitle>
       <CarouselResponsive fade variant="dark">
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={3000}>
           <Row>
-            <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
-            </Col>
-            <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
-            </Col>
-            <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
-            </Col>
+            <PutriAyudita />
+            <NahlaJovial />
+            <BeatrixMarendeng />
           </Row>
         </Carousel.Item>
-        <Carousel.Item interval={1000}>
+        <Carousel.Item interval={3000}>
           <Row>
-            <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
-            </Col>
-            <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
-            </Col>
-            <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
-            </Col>
+            <SyahzamiPutra />
+            <AkmiliaAswarini />
+            <AyuDewilestariNapitupulu />
           </Row>
         </Carousel.Item>
       </CarouselResponsive>

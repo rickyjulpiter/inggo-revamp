@@ -49,9 +49,8 @@ export const Logo = styled.img`
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
-  width: 100%;
+  width: 171px;
   height: 100%;
 `;

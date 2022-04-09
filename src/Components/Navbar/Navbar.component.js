@@ -31,8 +31,6 @@ const NavbarComponent = ({ onChangeLang }) => {
         <Logo
           alt="Logo"
           src={LogoImage}
-          width="30"
-          height="30"
           className="d-inline-block align-top"
         />
       </Navbar.Brand>

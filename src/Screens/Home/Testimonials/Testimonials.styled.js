@@ -36,7 +36,7 @@ export const CardTestimonials = styled(Card)`
   padding: 2vw 2vw 1vw 2vw;
   transition: all 0.3s linear;
   margin-top: 3.3vw;
-  background: linear-gradient(130.2deg, rgb(41,60,119) -2.91%, rgb(54, 119, 217) 119.44%);
+  background: linear-gradient(130.2deg, rgb(41, 60, 119) -2.91%, rgb(54, 119, 217) 119.44%);
   border: 0.5px solid #2d84b3;
   box-shadow: 6px 6px 0 rgb(45 132 179 / 25%);
   border-radius: 10px;
@@ -58,6 +58,7 @@ export const TestimonialsDescription = styled.p`
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
+  margin-top: 1vw;
 
   @media (max-width: 1024px) {
     font-size: 12px;
@@ -99,14 +100,20 @@ export const PersonStyled = styled.span`
   }
 `;
 
+export const SourceStyled = styled.p`
+  color: #ffffff;
+`;
+
 export const ImgStyled = styled.img`
   width: 75px;
+  height: 75px;
   position: absolute !important;
   z-index: 1;
   outline: none !important;
   border-style: none;
   display: flex;
   justify-content: center;
+  border-radius: 80px;
 
   @media (max-width: 1024px) {
     width: 50px;
