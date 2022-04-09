@@ -1,29 +1,36 @@
 {
   "files": {
     "main.css": "/static/css/main.c26c2456.css",
-    "main.js": "/static/js/main.3c16bf30.js",
+    "main.js": "/static/js/main.314f7567.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/general_english_baloon.png": "/static/media/general_english_baloon.e2d22239adff5b8e8d4e.png",
     "static/media/ielts_baloon.png": "/static/media/ielts_baloon.ecdb171617dcb7728dae.png",
     "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
     "static/media/academic_baloon.png": "/static/media/academic_baloon.6cfa9a48bee072dd498f.png",
     "static/media/business_english_baloon.png": "/static/media/business_english_baloon.bb4b15dd2fd7cec04877.png",
+    "static/media/logo.png": "/static/media/logo.b82e8cf8dc6aec52f776.png",
     "static/media/english_course_baloon.png": "/static/media/english_course_baloon.4f65f255a9953b8d3965.png",
+    "static/media/BeatrixMarendeng.jpeg": "/static/media/BeatrixMarendeng.8fa325ae9cb2ea56a2de.jpeg",
+    "static/media/AkmiliaAswarini.jpeg": "/static/media/AkmiliaAswarini.33c4b84a34267ee19795.jpeg",
+    "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
+    "static/media/SyahzamiPutra.jpeg": "/static/media/SyahzamiPutra.d3938f354747d3d0b778.jpeg",
+    "static/media/NahlaJovial.jpeg": "/static/media/NahlaJovial.e1cb2017fab249f65039.jpeg",
+    "static/media/AfiyaMaritza.jpeg": "/static/media/AfiyaMaritza.9f4cb7daf29ca464aa5c.jpeg",
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
     "static/media/client-reynolds.png": "/static/media/client-reynolds.5892521a5b9ac8746862.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.bae1a4678ac7dab26d05.png",
+    "static/media/PutriAyudita.jpeg": "/static/media/PutriAyudita.2d40c5ce37b3a4c0b1bf.jpeg",
     "static/media/choose.png": "/static/media/choose.864d463212cbcc78788f.png",
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "static/media/client-pusaka.png": "/static/media/client-pusaka.69688b275a78a23eeb66.png",
-    "static/media/logo.png": "/static/media/logo.fa1927f1c961ce223b06.png",
     "index.html": "/index.html",
     "main.c26c2456.css.map": "/static/css/main.c26c2456.css.map",
-    "main.3c16bf30.js.map": "/static/js/main.3c16bf30.js.map",
+    "main.314f7567.js.map": "/static/js/main.314f7567.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c26c2456.css",
-    "static/js/main.3c16bf30.js"
+    "static/js/main.314f7567.js"
   ]
 }
