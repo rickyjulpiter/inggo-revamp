@@ -8,7 +8,7 @@ import {
   SourceStyled,
   TestimonialsDescription,
   TestimonialsPerson
-} from './Testimonials.styled';
+} from './TestimonialsComponent.styled';
 import React from 'react';
 
 const dummyDescription =

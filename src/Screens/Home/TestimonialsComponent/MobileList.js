@@ -1,5 +1,5 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
-import { ExampleCardPerson } from './Testimonials.component';
+import { ExampleCardPerson } from './TestimonialsComponent.component';
 import React from 'react';
 import styled from 'styled-components';
 

@@ -1,14 +1,19 @@
 import { Col } from 'react-bootstrap';
 import React from 'react';
 
-import { ExampleCardPerson } from '../Testimonials.component';
+import { ExampleCardPerson } from '../TestimonialsComponent.component';
 import {
+  AfiyaMaritzaImages,
   AkmiliaAswariniImages,
+  AyuDewilestariNapitupuluImages,
   BeatrixMarendengImages,
+  FachriAkbarImages,
+  FandiAfianataDarmawanImages,
+  MuhammadHafizhAsadImages,
   NahlaJovialImages,
   PutriAyuditaImages,
-  SyahzamiPutraImages,
-  AyuDewilestariNapitupuluImages
+  RifkaCharmelitaImages,
+  SyahzamiPutraImages
 } from '../../../../Assets/Images/testimonials';
 
 export const PutriAyudita = () => (
@@ -68,9 +73,53 @@ export const AkmiliaAswarini = () => (
 export const AyuDewilestariNapitupulu = () => (
   <Col md={4} xl={4} className="mb-4">
     <ExampleCardPerson
-      description="NGGO adalah tempat yang paling tepat untuk belajar Business English. Awalnya saya agak ragu karena akan belajar online tapi ternyata sangat efektif. Materi yang disampaikan cukup beragam dan terstruktur, penyampaian tutor juga sangat jelas. Suasana kelas juga sangat komunikatif yang membuat saya makin percaya diri. Sebelum kelas dimulai, tutornya biasanya mengulang kembali materi pelajaran di pertemuan sebelumnya. Les di INGGO, buat saya, adalah pengalaman dan kesempatan yang bagus!"
+      description="INGGO adalah tempat yang paling tepat untuk belajar Business English. Awalnya saya agak ragu karena akan belajar online tapi ternyata sangat efektif. Materi yang disampaikan cukup beragam dan terstruktur, penyampaian tutor juga sangat jelas. Suasana kelas juga sangat komunikatif yang membuat saya makin percaya diri. Sebelum kelas dimulai, tutornya biasanya mengulang kembali materi pelajaran di pertemuan sebelumnya. Les di INGGO, buat saya, adalah pengalaman dan kesempatan yang bagus!"
       person="Ayu Dewilestari Napitupulu"
       images={AyuDewilestariNapitupuluImages}
+    />
+  </Col>
+);
+
+export const AfiyaMaritza = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPerson
+      description="Kelas TOEFL INGGO sangat bagus! Tutor saya sangat sabar dalam mengajar dan juga memberikan banyak pengetahuan baru bagi saya. Pengajaran tutor saya juga sangat interaktif sehingga saya semakin paham materi yang disampaikan."
+      images={AfiyaMaritzaImages}
+    />
+  </Col>
+);
+
+export const FachriAkbar = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPerson
+      description="Belajar TOEFL di INGGO seru karena di setiap penyampaian materinya ada intermezzo berupa games atau fun fact jadi suasana kelas ngga membosankan walaupun secara daring. Materi dan tips-tips structure, listening, writing, dan reading yang disampaikan juga bermanfaat banget buat ngerjain soal-soal tes TOEFL."
+      images={FachriAkbarImages}
+    />
+  </Col>
+);
+
+export const FandiAfianataDarmawan = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPerson
+      description="Kelas General English di INGGO sangat menyenangkan. Penyampaian materi tutor saya sangat bagus dan pastinya dia sangat sabar menghadapi aku yang banyak banget pertanyaannya. Setiap pertemuan juga sangat seru sehingga lesnya tidak berasa membosankan sama sekali."
+      images={FandiAfianataDarmawanImages}
+    />
+  </Col>
+);
+export const MuhammadHafizhAsad = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPerson
+      description="Paket komplit belajar TOEFL benar-benar hanya ada di INGGO. Materinya sangat to the point, penyampaian tutornya asik banget untuk dan pengajarnya enak diajak diskusi. Pokoknya ga nyesel pernah belajar di INGGO karena ga ngebosenin sama sekali! "
+      images={MuhammadHafizhAsadImages}
+    />
+  </Col>
+);
+
+export const RifkaCharmelita = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPerson
+      description="Senang sekali bisa belajar TOEFL di INGGO. Tutorku sangat sabar menjawab pertanyaan-pertanyaanku dan selalu mendorongku untuk berbicara dalam bahasa Inggris walaupun kadang masih terbata-bata. Penyampaian materi juga dikemas dengan seru sehingga waktu belajar 2 jam tidak terasa."
+      images={RifkaCharmelitaImages}
     />
   </Col>
 );

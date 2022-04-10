@@ -22,7 +22,7 @@ export const TRANSLATIONS_EN = {
   translationServicesDescription:
     'Looking for a professional translation service or constantly worrying about grammar errors and word choice in your documents? If yes, you have come to the right place!\n',
 
-  testimonials: 'Testimonials',
+  testimonials: 'TestimonialsComponent',
 
   academicWriting: 'Academic Writing',
   academicWritingDescription:

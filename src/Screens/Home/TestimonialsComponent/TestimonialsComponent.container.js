@@ -1,9 +1,14 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { Carousel, Row } from 'react-bootstrap';
-import { ContainerStyled, SectionSectionTitle, SectionTitle } from './Testimonials.styled';
+
+import {
+  CarouselResponsive,
+  ContainerStyled,
+  SectionSectionTitle,
+  SectionTitle
+} from './TestimonialsComponent.styled';
 import MobileList from './MobileList';
-import styled from 'styled-components';
 import ButtonComponent from '../../../Components/Button/Button.component';
 import { SecondaryColor } from '../../../Assets/colorPalette';
 import {
@@ -13,16 +18,9 @@ import {
   NahlaJovial,
   PutriAyudita,
   SyahzamiPutra
-} from './List/TestimonialList';
+} from './List/TestimonialComponentList';
 
-const CarouselResponsive = styled(Carousel)`
-  min-height: 45vw;
-  @media (max-width: 425px) {
-    display: none;
-  }
-`;
-
-const TestimonialsContainer = () => {
+const TestimonialsComponentContainer = () => {
   const { t } = useTranslation();
   return (
     <ContainerStyled>
@@ -52,4 +50,4 @@ const TestimonialsContainer = () => {
   );
 };
 
-export default TestimonialsContainer;
+export default TestimonialsComponentContainer;

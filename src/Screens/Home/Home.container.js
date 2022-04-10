@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
 
 import { PrimaryColor, SecondaryColor } from '../../Assets/colorPalette';
 import {
@@ -9,12 +10,9 @@ import {
   WelcomeHeading,
   WelcomeSection
 } from './Home.styled';
-
-import { useTranslation } from 'react-i18next';
 import MainPrograms from './OurPrograms/MainPrograms.container';
-import TestimonialsContainer from './Testimonials/Testimonials.container';
+import TestimonialsComponentContainer from './TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from './OurClients/OurClients.container';
-
 import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
@@ -78,7 +76,7 @@ const HomeContainer = () => {
         </Container>
       </WelcomeContainer>
       <MainPrograms />
-      <TestimonialsContainer />
+      <TestimonialsComponentContainer />
       <OurClientsContainer />
       <ContactContainer />
     </>

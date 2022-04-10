@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
-import { Card } from 'react-bootstrap';
+import { Card, Carousel } from 'react-bootstrap';
 
 export const SectionTitle = styled.h3`
   color: ${SecondaryColor};
@@ -59,6 +59,7 @@ export const TestimonialsDescription = styled.p`
   line-height: 22px;
   color: #ffffff;
   margin-top: 1vw;
+  min-height: 28vw;
 
   @media (max-width: 1024px) {
     font-size: 12px;
@@ -85,6 +86,7 @@ export const TestimonialsPerson = styled.p`
   border-radius: 8px;
   text-align: right;
   margin-bottom: 0;
+  min-height: 5vw;
 `;
 
 export const AvatarImg = styled.img`
@@ -102,11 +104,14 @@ export const PersonStyled = styled.span`
 
 export const SourceStyled = styled.p`
   color: #ffffff;
+  font-size: 13px;
+  min-height: 3vw;
 `;
 
 export const ImgStyled = styled.img`
   width: 75px;
   height: 75px;
+  object-fit: cover;
   position: absolute !important;
   z-index: 1;
   outline: none !important;
@@ -127,4 +132,11 @@ export const ImgStyled = styled.img`
 export const CenterDiv = styled.div`
   margin: auto;
   width: 20%;
+`;
+
+export const CarouselResponsive = styled(Carousel)`
+  min-height: 45vw;
+  @media (max-width: 425px) {
+    display: none;
+  }
 `;

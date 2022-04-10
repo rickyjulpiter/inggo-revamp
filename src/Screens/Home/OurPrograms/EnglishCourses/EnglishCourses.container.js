@@ -22,7 +22,7 @@ import {
   SectionTitle,
   ButtonMore
 } from './EnglishCourses.styled';
-import TestimonialsContainer from '../../Testimonials/Testimonials.container';
+import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
 
@@ -102,7 +102,7 @@ const EnglishCoursesContainer = () => {
         </Row>
       </ContainerStyled>
       <OurClientsContainer />
-      <TestimonialsContainer />
+      <TestimonialsComponentContainer />
       <ContactContainer />
     </>
   );

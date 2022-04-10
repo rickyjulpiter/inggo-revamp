@@ -7,7 +7,8 @@ import {
   ROUTE_ABOUT_US,
   ROUTE_BUSINESS_ENGLISH,
   ROUTE_ENGLISH_COURSES,
-  ROUTE_FREE_TRIAL
+  ROUTE_FREE_TRIAL,
+  ROUTE_TESTIMONIALS
 } from './Assets/utils';
 import AboutUsContainer from './Screens/AboutUs/AboutUs.container';
 import i18n from './Assets/Translations/i18n';
@@ -16,6 +17,7 @@ import NavtopComponent from './Components/Navtop/Navtop.component';
 import NavbottomComponent from './Components/Navbottom/Navbottom.component';
 import ProgramDetailContainer from './Screens/Home/OurPrograms/ProgramDetail/ProgramDetail.container';
 import FreeTrialContainer from './Screens/FreeTrial/FreeTrial.container';
+import TestimonialsContainer from './Screens/Testimonials/Testimonials.container';
 
 const App = () => {
   const [language, setLanguage] = useState('en');
@@ -41,6 +43,7 @@ const App = () => {
             path={ROUTE_BUSINESS_ENGLISH}
             element={<ProgramDetailContainer lang={language} />}
           />
+          <Route path={ROUTE_TESTIMONIALS} element={<TestimonialsContainer lang={language} />} />
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />
