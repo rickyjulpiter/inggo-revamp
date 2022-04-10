@@ -20,12 +20,25 @@ import {
   RifkaCharmelita,
   SyahzamiPutra
 } from '../Home/TestimonialsComponent/List/TestimonialComponentList';
+import { FloatingImage } from '../Home/Home.styled';
+import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
+import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
+import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
 
 const TestimonialsContainer = () => {
   const { t } = useTranslation();
 
   return (
     <ContainerStyled>
+      <div className="t_four p_absoulte">
+        <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull3} alt="" />
+      </div>
+      <div className="t_two p_absoulte">
+        <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull2} alt="" />
+      </div>
+      <div className="t_first p_absoulte">
+        <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull1} alt="" />
+      </div>
       <SectionTitle>{t('testimonials')}</SectionTitle>
       <SectionSectionTitle className="mb-5">A Word From Our Customer</SectionSectionTitle>
       <CarouselResponsive fade variant="dark">

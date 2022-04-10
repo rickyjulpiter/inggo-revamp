@@ -30,6 +30,22 @@ export const ContainerStyled = styled.div`
     min-height: 400px;
     background-image: none;
   }
+
+  &:hover {
+    .t_four {
+      top: 90px;
+    }
+
+    .t_two {
+      right: 180px;
+      bottom: 185px;
+    }
+
+    .t_first {
+      left: 50px;
+      top: 275px;
+    }
+  }
 `;
 
 export const CardTestimonials = styled(Card)`
