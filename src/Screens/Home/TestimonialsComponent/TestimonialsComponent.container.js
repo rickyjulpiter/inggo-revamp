@@ -25,7 +25,7 @@ const TestimonialsComponentContainer = () => {
   return (
     <ContainerStyled>
       <SectionTitle>{t('testimonials')}</SectionTitle>
-      <SectionSectionTitle className="mb-5">A Word From Our Customer</SectionSectionTitle>
+      <SectionSectionTitle className="mb-5">{t('testimonialsDescription')}</SectionSectionTitle>
       <CarouselResponsive fade variant="dark">
         <Carousel.Item interval={3000}>
           <Row>
@@ -44,7 +44,11 @@ const TestimonialsComponentContainer = () => {
       </CarouselResponsive>
       <MobileList />
       <div className="text-center mt-5">
-        <ButtonComponent color={SecondaryColor} actionhref="/testimonials" text="Lihat Testimoni Lainnya" />
+        <ButtonComponent
+          color={SecondaryColor}
+          actionhref="/testimonials"
+          text="Lihat Testimoni Lainnya"
+        />
       </div>
     </ContainerStyled>
   );

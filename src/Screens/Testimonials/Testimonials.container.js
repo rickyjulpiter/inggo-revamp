@@ -45,7 +45,7 @@ const TestimonialsContainer = () => {
         <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull1} alt="" />
       </div>
       <SectionTitle>{t('testimonials')}</SectionTitle>
-      <SectionSectionTitle className="mb-5">A Word From Our Customer</SectionSectionTitle>
+      <SectionSectionTitle className="mb-5">{t('testimonialsDescription')}</SectionSectionTitle>
       <ContainerCarousel>
         <CarouselResponsive fade variant="dark">
           <Carousel.Item interval={2000}>

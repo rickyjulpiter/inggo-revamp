@@ -39,9 +39,7 @@ export const NavDropdownStyledResponsive = styled(NavDropdown)`
 `;
 
 export const NavResponsive = styled(Nav)`
-  @media (min-width: 1024px) {
-    display: none;
-  }
+  padding-right: 4vw;
 `;
 
 export const Logo = styled.img`

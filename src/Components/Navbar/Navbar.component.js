@@ -7,18 +7,21 @@ import {
   ROUTE_ABOUT_US,
   ROUTE_ACADEMIC_WRITING,
   ROUTE_BUSINESS_ENGLISH,
+  ROUTE_ENGLISH_CONVERSATION,
   ROUTE_GENERAL_ENGLISH,
   ROUTE_HOME,
   ROUTE_IELTS,
   ROUTE_TESTIMONIALS,
-  ROUTE_TOEFL
+  ROUTE_TOEFL,
+  ROUTE_TRANSLATION_SERVICE
 } from '../../Assets/utils';
 import {
   Logo,
   NavbarStyled,
   NavDropdownStyled,
   NavDropdownStyledResponsive,
-  NavLinkStyled
+  NavLinkStyled,
+  NavResponsive
 } from './Navbar.styled';
 import LogoImage from '../../Assets/Images/logo.png';
 
@@ -28,11 +31,7 @@ const NavbarComponent = ({ onChangeLang }) => {
     <NavbarStyled collapseOnSelect variant="light" expand="xl">
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Brand href={ROUTE_HOME}>
-        <Logo
-          alt="Logo"
-          src={LogoImage}
-          className="d-inline-block align-top"
-        />
+        <Logo alt="Logo" src={LogoImage} className="d-inline-block align-top" />
       </Navbar.Brand>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
@@ -43,7 +42,7 @@ const NavbarComponent = ({ onChangeLang }) => {
             <i className="bi-envelope" /> info@inggo.co
           </Nav.Link>
         </Nav>
-        <Nav>
+        <NavResponsive>
           <NavLinkStyled href={ROUTE_HOME}>{t('menuHome')}</NavLinkStyled>
           <NavDropdownStyled title={t('menuAboutUs')} id="collasible-nav-dropdown">
             <NavDropdown.Item href={ROUTE_ABOUT_US}>{t('about')} INGGO</NavDropdown.Item>
@@ -58,10 +57,12 @@ const NavbarComponent = ({ onChangeLang }) => {
               {t('academicWriting')}
             </NavDropdown.Item>
             <NavDropdown.Item href={ROUTE_IELTS}>IELTS</NavDropdown.Item>
-            <NavDropdown.Item href={ROUTE_TOEFL}>TOEFL iBT</NavDropdown.Item>
-            <NavDropdown.Item href={ROUTE_TOEFL}>TOEFL ITP</NavDropdown.Item>
+            <NavDropdown.Item href={ROUTE_TOEFL}>TOEFL</NavDropdown.Item>
+            <NavDropdown.Item href={ROUTE_ENGLISH_CONVERSATION}>
+              {t('englishConversation')}
+            </NavDropdown.Item>
             <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>{t('generalEnglish')}</NavDropdown.Item>
-            <NavDropdown.Item href={ROUTE_GENERAL_ENGLISH}>
+            <NavDropdown.Item href={ROUTE_TRANSLATION_SERVICE}>
               <span dangerouslySetInnerHTML={{ __html: t('translationServices') }} />
             </NavDropdown.Item>
           </NavDropdownStyled>
@@ -69,8 +70,10 @@ const NavbarComponent = ({ onChangeLang }) => {
             <NavDropdown.Item onClick={() => onChangeLang('en')}>English</NavDropdown.Item>
             <NavDropdown.Item onClick={() => onChangeLang('id')}>Indonesia</NavDropdown.Item>
           </NavDropdownStyledResponsive>
-          <NavLinkStyled href="#">{t('beOurTeacher')}</NavLinkStyled>
-        </Nav>
+          <NavLinkStyled href="https://bit.ly/inggo-recruitment" target="_blank">
+            {t('beOurTeacher')}
+          </NavLinkStyled>
+        </NavResponsive>
       </Navbar.Collapse>
     </NavbarStyled>
   );

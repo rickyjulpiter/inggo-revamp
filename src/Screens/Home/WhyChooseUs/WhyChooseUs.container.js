@@ -55,9 +55,9 @@ const RowStyled = styled(Row)`
 const IconStyled = styled.i`
   background-color: ${PrimaryColor};
   color: #ffffff;
-  border-radius: 50%;
-  font-size: 50px;
-  padding: 14px 19px;
+  border-radius: 60%;
+  font-size: 40px;
+  padding: 17px 26px;
   cursor: pointer;
   transition: all 0.8s;
 
@@ -74,21 +74,28 @@ const WhyChooseUsContainer = () => {
       <SectionTitle>{t('whyChooseUsFirstTitle')}</SectionTitle>
       <SectionTitleSecond>{t('whyChooseUsSecondTitle')}</SectionTitleSecond>
       <RowStyled>
-        <ColStyled xl={3} md={3} sm={3}>
+        <ColStyled xl={4} md={4} sm={4}>
+          <div className="text-center mb-4">
+            <IconStyled className="bi bi-wallet" />
+          </div>
+          <ReasonTitle>{t('whyChooseUsSixthReasonTitle')}</ReasonTitle>
+          <ReasonDescription>{t('whyChooseUsSixthReasonDescription')}</ReasonDescription>
+        </ColStyled>
+        <ColStyled xl={4} md={4} sm={4}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-person-check" />
           </div>
           <ReasonTitle>{t('whyChooseUsFirstReasonTitle')}</ReasonTitle>
           <ReasonDescription>{t('whyChooseUsFirstReasonDescription')}</ReasonDescription>
         </ColStyled>
-        <ColStyled xl={3} md={3} sm={3}>
+        <ColStyled xl={4} md={4} sm={4}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-calendar-check" />
           </div>
           <ReasonTitle>{t('whyChooseUsSecondReasonTitle')}</ReasonTitle>
           <ReasonDescription>{t('whyChooseUsSecondReasonDescription')}</ReasonDescription>
         </ColStyled>
-        <ColStyled xl={3} md={3} sm={3}>
+        <ColStyled xl={4} md={4} sm={4}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-bookmark-star-fill" />
           </div>
@@ -96,12 +103,20 @@ const WhyChooseUsContainer = () => {
           <ReasonDescription>{t('whyChooseUsThirdReasonDescription')}</ReasonDescription>
         </ColStyled>
 
-        <ColStyled xl={3} md={3} sm={3}>
+        <ColStyled xl={4} md={4} sm={4}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-tags" />
           </div>
           <ReasonTitle>{t('whyChooseUsFourthReasonTitle')}</ReasonTitle>
           <ReasonDescription>{t('whyChooseUsFourthReasonDescription')}</ReasonDescription>
+        </ColStyled>
+
+        <ColStyled xl={4} md={4} sm={4}>
+          <div className="text-center mb-4">
+            <IconStyled className="bi bi-people" />
+          </div>
+          <ReasonTitle>{t('whyChooseUsFifthReasonTitle')}</ReasonTitle>
+          <ReasonDescription>{t('whyChooseUsFifthReasonDescription')}</ReasonDescription>
         </ColStyled>
       </RowStyled>
     </ContainerSection>

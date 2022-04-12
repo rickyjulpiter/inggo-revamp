@@ -22,7 +22,8 @@ export const TRANSLATIONS_EN = {
   translationServicesDescription:
     'Looking for a professional translation service or constantly worrying about grammar errors and word choice in your documents? If yes, you have come to the right place!\n',
 
-  testimonials: 'TestimonialsComponent',
+  testimonials: 'Testimonials',
+  testimonialsDescription: 'What Students Say',
 
   academicWriting: 'Academic Writing',
   academicWritingDescription:
@@ -54,12 +55,12 @@ export const TRANSLATIONS_EN = {
 
   ourClients: 'Our Clients',
 
-  contactTitle: 'Anything you want to ask?',
-  contactDescription: 'Consult Inggo Team for Further Questions',
+  contactTitle: 'Any questions?',
+  contactDescription: 'Contact us now!',
   contactViaWA: 'Contact via WA',
   contactViaEmail: 'Contact via Email',
 
-  welcomeTitle: 'Learn English with the best from now on!',
+  welcomeTitle: 'Learn English from the best from now on!',
 
   whyChooseUsFirstTitle: 'Your one-stop language solution',
   whyChooseUsSecondTitle: 'Why INGGO?',
@@ -68,7 +69,7 @@ export const TRANSLATIONS_EN = {
   whyChooseUsFirstReasonDescription:
     'Our tutors, who are graduates of local and foreign universities, are highly qualified and the best in English language teaching',
 
-  whyChooseUsSecondReasonTitle: 'Flexibility',
+  whyChooseUsSecondReasonTitle: 'Flexible',
   whyChooseUsSecondReasonDescription:
     'You can choose to study anytime, and our tutors will adjust to your chosen time.',
 
@@ -76,6 +77,14 @@ export const TRANSLATIONS_EN = {
   whyChooseUsThirdReasonDescription:
     'Our materials are specifically designed to cater for your needs.',
 
-  whyChooseUsFourthReasonTitle: 'Affordability',
-  whyChooseUsFourthReasonDescription: 'You will get more that what you pay for.'
+  whyChooseUsFourthReasonTitle: 'Affordable',
+  whyChooseUsFourthReasonDescription: 'You will get more than what you pay for.',
+
+  whyChooseUsFifthReasonTitle: 'Conducive',
+  whyChooseUsFifthReasonDescription:
+    'You can choose to study in a one-on-one class or small groups!',
+
+  whyChooseUsSixthReasonTitle: 'Free Trial',
+  whyChooseUsSixthReasonDescription:
+    'You will get a 1-hour free trial class before starting your program. Don’t pay unless you are sure of our tutors and programs!'
 };

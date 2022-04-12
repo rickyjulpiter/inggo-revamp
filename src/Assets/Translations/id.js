@@ -11,7 +11,7 @@ export const TRANSLATIONS_ID = {
   menuLanguages: 'Bahasa',
   beOurTeacher: 'Jadi Guru',
 
-  freeTrial: 'Coba Gratis',
+  freeTrial: 'Gratis Free Trial',
   contactUs: 'Hubungi Kami',
 
   englishCourses: 'Kelas Bahasa Inggris',
@@ -23,7 +23,8 @@ export const TRANSLATIONS_ID = {
   translationServicesDescription:
     'Sedang mencari layanan penerjemahan profesional atau sering khawatir dengan kesalahan tata bahasa dan pemilihan kata-kata dalam dokumen Anda? Jika iya, Anda ada di tempat yang tepat!',
 
-  testimonials: 'Testimonial',
+  testimonials: 'Testimoni',
+  testimonialsDescription: 'Apa Kata Mereka?',
 
   academicWriting: 'Penulisan Akademik',
   academicWritingDescription:
@@ -54,14 +55,14 @@ export const TRANSLATIONS_ID = {
   generalEnglishDescription:
     'Lelah melihat kamus setiap kali Anda menonton film kesukaan anda? Tidak ingin menggunakan bahasa tubuh untuk berkomunikasi setiap Anda pergi berpergian ke luar negeri? Anda harus meningkatkan kemampuan Bahasa Inggris Anda dengan kami!',
 
-  ourClients: 'Daftar Klien',
+  ourClients: 'Klien Kami',
 
-  contactTitle: 'Ada yang mau kamu tanyakan?',
-  contactDescription: 'Konsultasikan dengan Tim INGGO untuk Pertanyaan Lebih Lanjut',
+  contactTitle: 'Punya pertanyaan?',
+  contactDescription: 'Hubungi kami sekarang!',
   contactViaWA: 'Hubungi lewat WA',
   contactViaEmail: 'Hubungi lewat Email',
 
-  welcomeTitle: 'Belajar bahasa Inggris dengan yang terbaik <br /> mulai dari sekarang!',
+  welcomeTitle: 'Belajar bahasa Inggris dari yang terbaik <br /> mulai dari sekarang!',
 
   whyChooseUsFirstTitle: 'Solusi Bahasa Anda',
   whyChooseUsSecondTitle: 'Kenapa INGGO?',
@@ -70,13 +71,21 @@ export const TRANSLATIONS_ID = {
   whyChooseUsFirstReasonDescription:
     'Tutor kami merupakan lulusan dalam dan luar negeri yang berkualitas dan terbaik di bidang pengajaran bahasa Inggris.',
 
-  whyChooseUsSecondReasonTitle: 'Fleksibilitas',
+  whyChooseUsSecondReasonTitle: 'Fleksibel',
   whyChooseUsSecondReasonDescription:
     'Anda bisa memilih waktu belajar kapan saja dan tutor kami akan menyesuaikan dengan waktu Anda.',
 
   whyChooseUsThirdReasonTitle: 'Materi Khusus',
   whyChooseUsThirdReasonDescription: 'Bahan ajar kami dirancang khusus hanya untuk Anda.',
 
-  whyChooseUsFourthReasonTitle: 'Biaya Terjangkau',
-  whyChooseUsFourthReasonDescription: 'Anda akan mendapatkan lebih daripada yang Anda bayarkan.'
+  whyChooseUsFourthReasonTitle: 'Terjangkau',
+  whyChooseUsFourthReasonDescription: 'Anda akan mendapatkan lebih daripada yang Anda bayarkan.',
+
+  whyChooseUsFifthReasonTitle: 'Kondusif',
+  whyChooseUsFifthReasonDescription:
+    'Anda dapat memilih kelas privat sendiri atau belajar di dalam grup kecil (maksimal 5 orang)!',
+
+  whyChooseUsSixthReasonTitle: 'Kelas Trial Gratis',
+  whyChooseUsSixthReasonDescription:
+    'Anda akan mendapatkan satu kelas gratis selama satu jam sebelum memulai program Anda. Jangan bayar dulu sebelum Anda yakin dengan tutor dan program kami!'
 };

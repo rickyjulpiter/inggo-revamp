@@ -7,7 +7,7 @@ const NavbottomComponent = () => {
     <ContainerBottomStyled>
       <div className="d-flex justify-content-between">
         <div>
-          <Brand>Inggo.co</Brand>
+          <Brand>inggo.co</Brand>
         </div>
         <div>
           <LinkStyled>
