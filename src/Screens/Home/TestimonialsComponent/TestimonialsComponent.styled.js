@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
+import { BlackColor, PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
 import { Card, Carousel } from 'react-bootstrap';
 
 export const SectionTitle = styled.h3`
@@ -56,7 +56,6 @@ export const CardTestimonials = styled(Card)`
   border: 0.5px solid #2d84b3;
   box-shadow: 6px 6px 0 rgb(45 132 179 / 25%);
   border-radius: 10px;
-
   min-height: 10vw;
 
   &:hover {
@@ -66,6 +65,27 @@ export const CardTestimonials = styled(Card)`
   @media (max-width: 425px) {
     padding: 5vw;
     margin-top: 7vw;
+  }
+  @media (min-width: 1400px) {
+    min-height: 5vw;
+  }
+`;
+
+export const CardTestimonialsBlue = styled(Card)`
+  padding: 2vw 2vw 1vw 2vw;
+  transition: all 0.3s linear;
+  margin-top: 3.3vw;
+  border: 0.5px solid #2d84b3;
+  box-shadow: 6px 6px 0 rgb(45 132 179 / 25%);
+  border-radius: 10px;
+  min-height: 10vw;
+
+  @media (max-width: 425px) {
+    padding: 5vw;
+    margin-top: 7vw;
+  }
+  @media (min-width: 1400px) {
+    min-height: 5vw;
   }
 `;
 
@@ -84,12 +104,48 @@ export const TestimonialsDescription = styled.p`
   @media (max-width: 425px) {
     font-size: 12px;
   }
+
+  @media (min-width: 1400px) {
+    min-height: 16vw;
+  }
+`;
+
+export const TestimonialsDescriptionBlue = styled.p`
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: ${BlackColor};
+  margin-top: 1vw;
+  min-height: 28vw;
+
+  @media (max-width: 1024px) {
+    font-size: 12px;
+  }
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+
+  @media (min-width: 1400px) {
+    min-height: 16vw;
+  }
 `;
 
 export const LineStyled = styled.hr`
   margin-top: 0;
   margin-bottom: 0.7vw;
   color: #ffffff;
+  font-weight: 800;
+
+  @media (max-width: 425px) {
+    margin-bottom: 2vw;
+  }
+`;
+
+export const LineStyledBlue = styled.hr`
+  margin-top: 0;
+  margin-bottom: 0.7vw;
+  color: ${BlackColor};
   font-weight: 800;
 
   @media (max-width: 425px) {
@@ -118,10 +174,23 @@ export const PersonStyled = styled.span`
   }
 `;
 
+export const PersonStyledBlue = styled.span`
+  color: ${BlackColor};
+  font-weight: 600;
+
+  @media (max-width: 425px) {
+    font-size: 12px;
+  }
+`;
+
 export const SourceStyled = styled.p`
   color: #ffffff;
   font-size: 13px;
-  min-height: 3vw;
+`;
+
+export const SourceStyledBlue = styled.p`
+  color: ${BlackColor};
+  font-size: 13px;
 `;
 
 export const ImgStyled = styled.img`
@@ -151,8 +220,12 @@ export const CenterDiv = styled.div`
 `;
 
 export const CarouselResponsive = styled(Carousel)`
+  padding: 0.5vw;
   min-height: 45vw;
   @media (max-width: 425px) {
     display: none;
+  }
+  @media (min-width: 1400px) {
+    min-height: 20vw;
   }
 `;

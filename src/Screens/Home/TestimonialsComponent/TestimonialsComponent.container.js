@@ -44,7 +44,7 @@ const TestimonialsComponentContainer = () => {
       </CarouselResponsive>
       <MobileList />
       <div className="text-center mt-5">
-        <ButtonComponent color={SecondaryColor} actionhref="#" text="Lihat Testimoni Lainnya" />
+        <ButtonComponent color={SecondaryColor} actionhref="/testimonials" text="Lihat Testimoni Lainnya" />
       </div>
     </ContainerStyled>
   );

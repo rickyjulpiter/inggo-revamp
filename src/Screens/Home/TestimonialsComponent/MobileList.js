@@ -1,5 +1,5 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
-import { ExampleCardPerson } from './TestimonialsComponent.component';
+import { ExampleCardPersonBlue } from './TestimonialsComponent.component';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,14 +16,14 @@ const MobileList = () => {
         <Carousel.Item interval={1000}>
           <Row>
             <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
+              <ExampleCardPersonBlue />
             </Col>
           </Row>
         </Carousel.Item>
         <Carousel.Item interval={1000}>
           <Row>
             <Col md={4} xl={4} className="mb-4">
-              <ExampleCardPerson />
+              <ExampleCardPersonBlue />
             </Col>
           </Row>
         </Carousel.Item>

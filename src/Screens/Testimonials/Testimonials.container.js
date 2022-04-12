@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import styled from 'styled-components';
 
 import {
   CarouselResponsive,
@@ -25,6 +26,10 @@ import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
 import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
 
+const ContainerCarousel = styled.div`
+  min-height: 48vw;
+`;
+
 const TestimonialsContainer = () => {
   const { t } = useTranslation();
 
@@ -41,32 +46,34 @@ const TestimonialsContainer = () => {
       </div>
       <SectionTitle>{t('testimonials')}</SectionTitle>
       <SectionSectionTitle className="mb-5">A Word From Our Customer</SectionSectionTitle>
-      <CarouselResponsive fade variant="dark">
-        <Carousel.Item interval={2000}>
-          <Row>
-            <PutriAyudita />
-            <NahlaJovial />
-            <BeatrixMarendeng />
-          </Row>
-        </Carousel.Item>
-        <Carousel.Item interval={2000}>
-          <Row>
-            <SyahzamiPutra />
-            <AkmiliaAswarini />
-            <AyuDewilestariNapitupulu />
-          </Row>
-        </Carousel.Item>
-      </CarouselResponsive>
+      <ContainerCarousel>
+        <CarouselResponsive fade variant="dark">
+          <Carousel.Item interval={2000}>
+            <Row>
+              <PutriAyudita />
+              <NahlaJovial />
+              <BeatrixMarendeng />
+            </Row>
+          </Carousel.Item>
+          <Carousel.Item interval={2000}>
+            <Row>
+              <SyahzamiPutra />
+              <AkmiliaAswarini />
+              <AyuDewilestariNapitupulu />
+            </Row>
+          </Carousel.Item>
+        </CarouselResponsive>
+      </ContainerCarousel>
       <hr />
       <CarouselResponsive fade variant="dark">
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={200000}>
           <Row>
             <FachriAkbar />
             <FandiAfianataDarmawan />
             <MuhammadHafizhAsad />
           </Row>
         </Carousel.Item>
-        <Carousel.Item interval={2000}>
+        <Carousel.Item interval={200000}>
           <Row>
             <RifkaCharmelita />
           </Row>
