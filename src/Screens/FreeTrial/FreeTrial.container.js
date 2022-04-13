@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable no-unused-vars */
 import React, { useState } from 'react';
 import { Col, Modal, Row } from 'react-bootstrap';
 import { InlineWidget } from 'react-calendly';
@@ -6,15 +6,9 @@ import { useTranslation } from 'react-i18next';
 
 import { PrimaryColor, SecondaryColor } from '../../Assets/colorPalette';
 import ImgChoose from '../../Assets/Images/choose.png';
-import ProgramDetailModalContainer
-  from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
+import ProgramDetailModalContainer from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
 import ButtonComponent from '../../Components/Button/Button.component';
-import {
-  CardStyled,
-  ContainerStyled,
-  ProgramCard,
-  Title
-} from './FreeTrial.styled';
+import { CardStyled, ContainerStyled, ProgramCard, Title } from './FreeTrial.styled';
 import { FloatingImage } from '../Home/Home.styled';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';

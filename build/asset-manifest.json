@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5c0180e8.css",
-    "main.js": "/static/js/main.ac5c11cd.js",
+    "main.js": "/static/js/main.08fdcd3c.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/general_english_baloon.png": "/static/media/general_english_baloon.e2d22239adff5b8e8d4e.png",
     "static/media/ielts_baloon.png": "/static/media/ielts_baloon.ecdb171617dcb7728dae.png",
@@ -21,20 +21,20 @@
     "static/media/NahlaJovial.jpeg": "/static/media/NahlaJovial.e1cb2017fab249f65039.jpeg",
     "static/media/AfiyaMaritza.jpeg": "/static/media/AfiyaMaritza.9f4cb7daf29ca464aa5c.jpeg",
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
-    "static/media/client-reynolds.png": "/static/media/client-reynolds.5892521a5b9ac8746862.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.bae1a4678ac7dab26d05.png",
+    "static/media/reynolds.png": "/static/media/reynolds.478752d2fdee40937c36.png",
     "static/media/PutriAyudita.jpeg": "/static/media/PutriAyudita.2d40c5ce37b3a4c0b1bf.jpeg",
     "static/media/FachriAkbar.jpeg": "/static/media/FachriAkbar.324bbb8ac3a20164446f.jpeg",
     "static/media/choose.png": "/static/media/choose.864d463212cbcc78788f.png",
+    "static/media/seed.jpeg": "/static/media/seed.e4f5714d32fbe5324abc.jpeg",
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
-    "static/media/client-pusaka.png": "/static/media/client-pusaka.69688b275a78a23eeb66.png",
     "index.html": "/index.html",
     "main.5c0180e8.css.map": "/static/css/main.5c0180e8.css.map",
-    "main.ac5c11cd.js.map": "/static/js/main.ac5c11cd.js.map",
+    "main.08fdcd3c.js.map": "/static/js/main.08fdcd3c.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c0180e8.css",
-    "static/js/main.ac5c11cd.js"
+    "static/js/main.08fdcd3c.js"
   ]
 }

@@ -35,8 +35,8 @@ export const SectionTitle = styled.h3`
 `;
 
 export const ImgStyled = styled.img`
-  border-radius: 20px;
-  padding: 30px;
+  //border-radius: 20px;
+  //padding: 2vw;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -50,5 +50,4 @@ export const ImgStyled = styled.img`
   -ms-flex-align: center;
   align-items: center;
   overflow: hidden;
-  background: #fff;
 `;

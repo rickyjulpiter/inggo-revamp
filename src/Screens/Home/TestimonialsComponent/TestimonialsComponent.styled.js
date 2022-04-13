@@ -90,7 +90,7 @@ export const CardTestimonialsBlue = styled(Card)`
 `;
 
 export const TestimonialsDescription = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
@@ -111,7 +111,7 @@ export const TestimonialsDescription = styled.p`
 `;
 
 export const TestimonialsDescriptionBlue = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   color: ${BlackColor};
