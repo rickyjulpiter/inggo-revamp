@@ -35,19 +35,19 @@ export const SectionTitle = styled.h3`
 `;
 
 export const ImgStyled = styled.img`
-  //border-radius: 20px;
-  //padding: 2vw;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  overflow: hidden;
+  //display: -webkit-box;
+  //display: -webkit-flex;
+  //display: -ms-flexbox;
+  //display: flex;
+  //-webkit-box-pack: center;
+  //-webkit-justify-content: center;
+  //-ms-flex-pack: center;
+  //justify-content: center;
+  //-webkit-box-align: center;
+  //-webkit-align-items: center;
+  //-ms-flex-align: center;
+  //align-items: center;
+  //overflow: hidden;
+  height: 5vw;
+  border-radius: 8px;
 `;

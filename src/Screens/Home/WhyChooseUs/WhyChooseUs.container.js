@@ -69,33 +69,35 @@ const IconStyled = styled.i`
 const WhyChooseUsContainer = () => {
   const { t } = useTranslation();
 
+  const COL = 4;
+
   return (
     <ContainerSection>
       <SectionTitle>{t('whyChooseUsFirstTitle')}</SectionTitle>
       <SectionTitleSecond>{t('whyChooseUsSecondTitle')}</SectionTitleSecond>
       <RowStyled>
-        <ColStyled xl={4} md={4} sm={4}>
+        <ColStyled xl={COL} md={COL} sm={COL}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-wallet" />
           </div>
           <ReasonTitle>{t('whyChooseUsSixthReasonTitle')}</ReasonTitle>
           <ReasonDescription>{t('whyChooseUsSixthReasonDescription')}</ReasonDescription>
         </ColStyled>
-        <ColStyled xl={4} md={4} sm={4}>
+        <ColStyled xl={COL} md={COL} sm={COL}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-person-check" />
           </div>
           <ReasonTitle>{t('whyChooseUsFirstReasonTitle')}</ReasonTitle>
           <ReasonDescription>{t('whyChooseUsFirstReasonDescription')}</ReasonDescription>
         </ColStyled>
-        <ColStyled xl={4} md={4} sm={4}>
+        <ColStyled xl={COL} md={COL} sm={COL}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-calendar-check" />
           </div>
           <ReasonTitle>{t('whyChooseUsSecondReasonTitle')}</ReasonTitle>
           <ReasonDescription>{t('whyChooseUsSecondReasonDescription')}</ReasonDescription>
         </ColStyled>
-        <ColStyled xl={4} md={4} sm={4}>
+        <ColStyled xl={COL} md={COL} sm={COL}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-bookmark-star-fill" />
           </div>
@@ -103,7 +105,7 @@ const WhyChooseUsContainer = () => {
           <ReasonDescription>{t('whyChooseUsThirdReasonDescription')}</ReasonDescription>
         </ColStyled>
 
-        <ColStyled xl={4} md={4} sm={4}>
+        <ColStyled xl={COL} md={COL} sm={COL}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-tags" />
           </div>
@@ -111,7 +113,7 @@ const WhyChooseUsContainer = () => {
           <ReasonDescription>{t('whyChooseUsFourthReasonDescription')}</ReasonDescription>
         </ColStyled>
 
-        <ColStyled xl={4} md={4} sm={4}>
+        <ColStyled xl={COL} md={COL} sm={COL}>
           <div className="text-center mb-4">
             <IconStyled className="bi bi-people" />
           </div>

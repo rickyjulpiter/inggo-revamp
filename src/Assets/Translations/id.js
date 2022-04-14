@@ -28,13 +28,17 @@ export const TRANSLATIONS_ID = {
 
   academicWriting: 'Penulisan Akademik',
   academicWritingDescription:
-    'Apakah Anda sedang mempersiapkan gelar pascasarjana? Ingin ahli dalam penulisan akademik, sehingga Anda tidak merasa khwatir dengan tugas-tugas, tesis, atau disertasi Anda? Kami akan memandu Anda selangkah demi selangkah!',
+    'Program ini dirancang khusus bagi Anda yang ingin memperdalam kemampuan penulisan akademik Anda untuk keperluan kuliah di luar negeri. Anda akan mempelajari bagaimana cara penulisan tugas, laporan dan disertasi dari tutor-tutor lulusan luar negeri yang berpengalaman. Jangan tunda lagi agar Anda siap menghadapi kehidupan akademik saat Anda berkuliah nanti!',
+  academicWritingDescriptionSecond:
+    'Cocok bagi Anda yang tidak terbiasa dengan penulisan akademik dan akan menempuh pendidikan S2 di universitas mana pun di seluruh dunia.',
   englishConversation: 'Percakapan Bahasa Inggris',
   englishConversationDescription:
     'Ingin berbicara selayaknya penutur asli? Berlatihlah dengan kami! Semakin sering Anda berlatih, semakin tinggi rasa kepercayaan diri Anda!',
   businessEnglish: 'Bahasa Inggris Bisnis',
   businessEnglishDescription:
-    'Bosan dengan modul Bahasa Inggris bisnis yang sama dari waktu ke waktu? Materi kami telah dirancang sedemikian rupa untuk membantu Anda berkomunikasi dalam konteks bisnis. Belajarlah dengan kami!',
+    'Program ini dirancang khusus bagi Anda yang ingin meningkatkan kemampuan berbahasa Inggris dalam konteks bisnis. Anda akan mempelajari banyak kosa kata, ungkapan, tata bahasa yang berhubungan dengan Bahasa Inggris bisnis. Anda juga dapat meningkatkan pengetahuan Anda mengenai cara menulis email dan laporan serta memberikan presentasi dalam Bahasa Inggris dengan percaya diri!',
+  businessEnglishDescriptionSecond:
+    'Cocok bagi Anda yang baru memulai karir ataupun yang sudah memiliki pengalaman bekerja bertahun-tahun. Tidak pernah ada kata terlambat untuk meningkatkan kemampuan Bahasa Inggris Anda mulai dari sekarang!',
   BAFirstList:
     'Anda akan mempelajari bagaimana menggunakan Bahasa Inggris dalam konteks bisnis (membawakan presentasi, bernegosiasi dengan efektif, menulis laporan dan sebagainya)',
   BASecondList:
@@ -46,8 +50,11 @@ export const TRANSLATIONS_ID = {
   BASixthList: 'Tersedia kelas privat dan kelompok (tatap muka atau daring).',
 
   ielts: 'IELTS',
+  ieltsDetail: 'IELTS (International English Language Testing System)',
   ieltsDescription:
-    'Bermimpi untuk melanjutkan kuliah atau bekerja di luar negeri? Inilah jawaban untuk Anda! Tingkatkan kemampuan Bahasa Inggris Anda dengan mengambil kelas IELTS/TOEFL dengan kami!',
+    'Program ini dirancang khusus bagi Anda yang ingin mempelajari berbagai tips dan triks bermanfaat dalam ujian IELTS agar Anda dapat memperoleh nilai yang diinginkan ketika mengikuti ujian resmi. Materi program dikompilasi dari berbagai sumber yang terpercaya dan dikemas secara singkat dan padat untuk Anda.',
+  ieltsDescriptionSecond:
+    'Cocok bagi Anda yang ingin mengikuti ujian IELTS untuk keperluan kuliah ataupun bekerja di luar negeri. ',
   toefl: 'TOEFL',
   toeflDescription:
     'Bermimpi untuk melanjutkan kuliah atau bekerja di luar negeri? Inilah jawaban untuk Anda! Tingkatkan kemampuan Bahasa Inggris Anda dengan mengambil kelas IELTS/TOEFL dengan kami!',

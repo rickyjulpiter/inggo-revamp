@@ -11,7 +11,7 @@ import {
   ClientPusaka,
   ClientReynolds,
   ClientSeedScholarship,
-  // ClientYayasanMataAirBiru
+  ClientYayasanMataAirBiru
 } from '../../../Assets/Images/client';
 
 const CarouselResponsive = styled(Carousel)`
@@ -22,7 +22,6 @@ const CarouselResponsive = styled(Carousel)`
 
 const OurClientsContainer = () => {
   const { t } = useTranslation();
-
   const COL = 3;
 
   return (
@@ -31,7 +30,7 @@ const OurClientsContainer = () => {
       <CarouselResponsive variant="light">
         {/*interval={3000}*/}
         <Carousel.Item>
-          <Row>
+          <Row style={{ paddingTop: '2.3vw' }}>
             <Col md={COL} xl={COL}>
               <OurClientsComponent images={ClientEcody} />
             </Col>
@@ -46,13 +45,13 @@ const OurClientsContainer = () => {
             </Col>
           </Row>
         </Carousel.Item>
-        {/*<Carousel.Item>*/}
-        {/*  <Row className="mt-5">*/}
-        {/*    <Col md={COL} xl={COL}>*/}
-        {/*      <OurClientsComponent images={ClientYayasanMataAirBiru} />*/}
-        {/*    </Col>*/}
-        {/*  </Row>*/}
-        {/*</Carousel.Item>*/}
+        <Carousel.Item>
+          <Row className="mt-5">
+            <Col md={COL} xl={COL}>
+              <OurClientsComponent images={ClientYayasanMataAirBiru} />
+            </Col>
+          </Row>
+        </Carousel.Item>
       </CarouselResponsive>
       <MobileList />
     </ContainerStyled>

@@ -27,13 +27,17 @@ export const TRANSLATIONS_EN = {
 
   academicWriting: 'Academic Writing',
   academicWritingDescription:
-    'Are you preparing for your postgraduate degree? Want to excel in academic writing, so you will not feel stressed out by your assignments, thesis, or dissertation? We will guide you step-by-step!',
+    'This program is specifically designed for those who would like to improve their Academic Writing skills for studying abroad. You will learn how to write assignments, reports and dissertations from our qualified tutors who graduated from overseas universities. Do not postpone any more so that you are ready to face the academic life when you study abroad!',
+  academicWritingDescriptionSecond:
+    'This program is suitable for those who are not accustomed to academic writing and would like to pursue their Master’s Degree at overseas universities around the world.',
   englishConversation: 'English Conversation',
   englishConversationDescription:
     'Want to be able to speak like a native speaker? Let’s practice speaking with us! The more you speak, the more confidence you gain!',
   businessEnglish: 'Business English',
   businessEnglishDescription:
-    'Bored of the same old Business English modules? Our materials have been designed to help you communicate in a formal business context. Come and learn with us!',
+    'This program is specifically designed for those who want to develop their Business English skills. You will learn various lexical resources, such as vocabulary, phrases and idioms, and grammar patterns related to Business English. You will also improve your knowledge on writing emails and reports and deliver presentation in English confidently!',
+  businessEnglishDescriptionSecond:
+    'This program is suitable for you who have just embarked on your career or possess years of work experience. It is never too late to improve your English skills from now on.',
   BAFirstList:
     'You will learn all aspects related to using English in a professional setting (e.g. giving presentation, negotiating effectively, writing a report, etc).',
   BASecondList: 'You will get personalized feedback to help you improve your English in no time.',
@@ -44,8 +48,11 @@ export const TRANSLATIONS_EN = {
   BASixthList: 'Private one-on-one and group classes are available (offline/online).',
 
   ielts: 'IELTS',
+  ieltsDetail: 'IELTS (International English Language Testing System)',
   ieltsDescription:
-    'Dreaming of going abroad for studying or working? This is the answer for you! Improve your English skills by taking IELTS/TOEFL classes with us!',
+    'This program is specifically designed for those who would like to learn useful tips and tricks to nail their IELTS exam. The materials are compiled from various reliable sources and arranged concisely for you.',
+  ieltsDescriptionSecond:
+    'This program is for those who want to take the IELTS exam for studying or working abroad.',
   toefl: 'TOEFL',
   toeflDescription:
     'Dreaming of going abroad for studying or working? This is the answer for you! Improve your English skills by taking IELTS/TOEFL classes with us!',

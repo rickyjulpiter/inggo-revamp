@@ -62,3 +62,9 @@ export const LiStyled = styled.li`
     color: ${PrimaryColor};
   }
 `;
+
+export const H5 = styled.h5`
+  font-weight: bold;
+  font-size: 16px;
+  color: ${PrimaryColor};
+`;

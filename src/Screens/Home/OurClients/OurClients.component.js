@@ -1,15 +1,22 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styled from 'styled-components';
 
 import { CardClients, ImgStyled } from './OurClients.styled';
 import { ClientEcody } from '../../../Assets/Images/client';
 
+const Div = styled.div`
+  border-radius: 8px;
+  background-color: white;
+  padding: 1vw;
+`;
+
 const OurClientsComponent = ({ images }) => {
   return (
     <CardClients>
-      <div style={{ backgroundColor: 'white', minHeight: '20vw' }}>
+      <Div>
         <ImgStyled src={images} className="img-fluid" alt="client-logo" />
-      </div>
+      </Div>
     </CardClients>
   );
 };
