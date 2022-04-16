@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { PrimaryColor } from '../../../../Assets/colorPalette';
+import { Row } from 'react-bootstrap';
 
 export const ContainerStyled = styled.div`
-  //margin-top: 5vw;
-  padding: 1vw 5vw 8vw 5vw;
+  //padding: 1vw 5vw 8vw 5vw;
   @media (min-width: 1024px) {
     min-height: 602px;
   }
@@ -72,8 +72,14 @@ export const H5 = styled.h5`
 
 export const ImgBanner = styled.img`
   display: block;
-  width: 100%;
+  height: 350px;
+  width: 100% !important;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3vw;
+`;
+
+export const RowContainer = styled(Row)`
+  padding-right: 2vw;
+  padding-left: 2vw;
 `;

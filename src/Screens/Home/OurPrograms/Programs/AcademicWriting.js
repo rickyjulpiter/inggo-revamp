@@ -6,6 +6,7 @@ import {
   ImgBanner,
   LiStyled,
   ProgramDescription,
+  RowContainer,
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
@@ -22,14 +23,12 @@ const AcademicWriting = ({ lang }) => {
   return (
     <>
       <ContainerStyled>
-        <Row>
-          <Col xl={12} md={12} sm={12}>
-            <ImgBanner
-              className="img-fluid"
-              src={lang === 'id' ? BannerIndonesia : BannerEnglish}
-              alt=""
-            />
-          </Col>
+        <ImgBanner
+          className="img-fluid"
+          src={lang === 'id' ? BannerIndonesia : BannerEnglish}
+          alt=""
+        />
+        <RowContainer>
           <Col xl={12} md={12} sm={12}>
             <Row>
               <Col xl={5} md={5} sm={5}>
@@ -92,7 +91,7 @@ const AcademicWriting = ({ lang }) => {
               </Col>
             </Row>
           </Col>
-        </Row>
+        </RowContainer>
       </ContainerStyled>
       <WhyChooseUsContainer />
       <TestimonialsComponentContainer />

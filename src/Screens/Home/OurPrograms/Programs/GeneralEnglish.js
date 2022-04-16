@@ -2,9 +2,11 @@ import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import {
   ContainerStyled,
-  H5, ImgBanner,
+  H5,
+  ImgBanner,
   LiStyled,
   ProgramDescription,
+  RowContainer,
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
@@ -30,7 +32,7 @@ const GeneralEnglish = ({ lang }) => {
             />
           </Col>
           <Col xl={12} md={12} sm={12}>
-            <Row>
+            <RowContainer>
               <Col xl={6} md={6} sm={6}>
                 <ProgramDescription>{t('generalEnglishDescription')}</ProgramDescription>
                 <ProgramDescription>{t('generalEnglishDescriptionSecond')}</ProgramDescription>
@@ -88,7 +90,7 @@ const GeneralEnglish = ({ lang }) => {
                   </Row>
                 )}
               </Col>
-            </Row>
+            </RowContainer>
           </Col>
         </Row>
       </ContainerStyled>
