@@ -30,29 +30,54 @@ const IELTS = ({ lang }) => {
       </div>
       <Row>
         <Col xl={12} md={12} sm={12}>
-          <ProgramTitle>{t('ieltsDetail')}</ProgramTitle>
-          <ProgramDescription>{t('ieltsDescription')}</ProgramDescription>
-          <ProgramDescription>{t('ieltsDescriptionSecond')}</ProgramDescription>
+          <ProgramTitle>{t('toeflDetail')}</ProgramTitle>
+          <ProgramDescription>{t('toeflDescription')}</ProgramDescription>
+          <ProgramDescription>{t('toeflDescriptionSecond')}</ProgramDescription>
 
           {lang === 'id' ? (
             <Row>
               <Col>
                 <H5>Anda akan belajar tentang:</H5>
+                <h6>
+                  <b>TOEFL iBT</b>
+                </h6>
                 <ULStyled>
                   <LiStyled>
                     Strategi yang berguna untuk menjawab berbagai jenis pertanyaan Listening,
                     Reading, Writing, dan Speaking
                   </LiStyled>
+                  <LiStyled>Listening (main idea, detail, purpose, organization, imply)</LiStyled>
                   <LiStyled>
-                    Listening (short-answer questions, labelling, multiple choice, dan matching)
+                    Reading (vocabulary, detail, purpose, negative factual information, essential
+                    information, reference, and inference, insert a sentence, complete the
+                    summary/table)
                   </LiStyled>
-                  <LiStyled>Membentuk argumen</LiStyled>
                   <LiStyled>
-                    Menyisipkan student voice untuk memperkuat argument dalam esai Anda
+                    Speaking (independent task, read/listen/speak, listen and speak
+                  </LiStyled>
+                  <LiStyled>Writing (integrated and independent tasks)</LiStyled>
+                </ULStyled>
+
+                <h6>
+                  <b>TOEFL ITP</b>
+                </h6>
+                <ULStyled>
+                  <LiStyled>
+                    Strategi yang berguna untuk menjawab berbagai jenis pertanyaan Listening,
+                    Structure and Written Expressions, Reading
                   </LiStyled>
                   <LiStyled>
-                    Mengidentifikasi dan menggunakan sumber-sumber terpercaya seperti jurnal dan
-                    buku bacaan
+                    Listening (synonyms, similar sounds, drawing conclusions, negative and various
+                    expressions)
+                  </LiStyled>
+                  <LiStyled>
+                    Structure and Written Expressions (one-clause and multiple-clause sentences,
+                    reduced clauses, sentences with inverted subjects and verbs, subject-verb
+                    agreement)
+                  </LiStyled>
+                  <LiStyled>
+                    Reading (main idea of the text, the organization of ideas, implicit and explicit
+                    answers)
                   </LiStyled>
                 </ULStyled>
               </Col>
@@ -70,26 +95,47 @@ const IELTS = ({ lang }) => {
             <Row>
               <Col>
                 <H5>You will learn about:</H5>
+                <h6>
+                  <b>TOEFL iBT</b>
+                </h6>
                 <ULStyled>
                   <LiStyled>
                     Useful strategies to deal with numerous question types in Listening, Reading,
                     Writing, and Speaking
                   </LiStyled>
+                  <LiStyled>Listening (main idea, detail, purpose, organization, imply)</LiStyled>
                   <LiStyled>
-                    Listening (short-answer questions, labelling, multiple choice, dan matching)
+                    Reading (vocabulary, detail, purpose, negative factual information, essential
+                    information, reference, and inference, insert a sentence, complete the
+                    summary/table)
                   </LiStyled>
                   <LiStyled>
-                    Reading (short-answer questions, True/False/Not Given, multiple choice,
-                    summary/table completion, headings)
+                    Speaking (independent task, read/listen/speak, listen and speak
+                  </LiStyled>
+                  <LiStyled>Writing (integrated and independent tasks)</LiStyled>
+                </ULStyled>
+
+                <h6>
+                  <b>TOEFL ITP</b>
+                </h6>
+                <ULStyled>
+                  <LiStyled>
+                    Useful strategies to deal with numerous question types in Listening, Structure
+                    and Written Expressions, Reading
                   </LiStyled>
                   <LiStyled>
-                    Writing Task 1 (pie chart, bar graphs, maps, diagrams, dan tables)
+                    Listening (synonyms, similar sounds, drawing conclusions, negative and various
+                    expressions)
                   </LiStyled>
                   <LiStyled>
-                    Writing Task 2 (agree-disagree, advantages-disadvantages, discuss both views,
-                    cause-solution, positive-negative, dan open questions)
+                    Structure and Written Expressions (one-clause and multiple-clause sentences,
+                    reduced clauses, sentences with inverted subjects and verbs, subject-verb
+                    agreement)
                   </LiStyled>
-                  <LiStyled>Speaking (part 1 to 3)</LiStyled>
+                  <LiStyled>
+                    Reading (main idea of the text, the organization of ideas, implicit and explicit
+                    answers)
+                  </LiStyled>
                 </ULStyled>
               </Col>
               <Col>

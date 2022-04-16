@@ -89,6 +89,27 @@ export const CardTestimonialsBlue = styled(Card)`
   }
 `;
 
+export const CardTestimonialsWhite = styled(Card)`
+  padding: 2vw 2vw 1vw 2vw;
+  transition: all 0.3s linear;
+  margin-top: 3.3vw;
+  border: 1px solid #f3c58e;
+  color: #fff;
+  min-height: 10vw;
+
+  &:hover {
+    box-shadow: 0 0 0 rgb(243, 197, 142);
+  }
+
+  @media (max-width: 425px) {
+    padding: 5vw;
+    margin-top: 7vw;
+  }
+  @media (min-width: 1400px) {
+    min-height: 5vw;
+  }
+`;
+
 export const TestimonialsDescription = styled.p`
   font-size: 14px;
   font-weight: 500;

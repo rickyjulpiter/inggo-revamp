@@ -33,7 +33,9 @@ export const TRANSLATIONS_ID = {
     'Cocok bagi Anda yang tidak terbiasa dengan penulisan akademik dan akan menempuh pendidikan S2 di universitas mana pun di seluruh dunia.',
   englishConversation: 'Percakapan Bahasa Inggris',
   englishConversationDescription:
-    'Ingin berbicara selayaknya penutur asli? Berlatihlah dengan kami! Semakin sering Anda berlatih, semakin tinggi rasa kepercayaan diri Anda!',
+    'Program ini akan memberikan Anda banyak kesempatan untuk berlatih berbicara dengan menggunakan topik terkini yang menarik. Selain itu, Anda dapat mengajukan topik-topik yang Anda sukai agar belajar bahasa Inggris terasa lebih menyenangkan!',
+  englishConversationDescriptionSecond:
+    'Cocok bagi Anda yang ingin meningkatkan kemampuan berbicara bahasa Inggris Anda baik untuk komunikasi sehari-hari atau ketika Anda hendak bepergian ke negara lain. ',
   businessEnglish: 'Bahasa Inggris Bisnis',
   businessEnglishDescription:
     'Program ini dirancang khusus bagi Anda yang ingin meningkatkan kemampuan berbahasa Inggris dalam konteks bisnis. Anda akan mempelajari banyak kosa kata, ungkapan, tata bahasa yang berhubungan dengan Bahasa Inggris bisnis. Anda juga dapat meningkatkan pengetahuan Anda mengenai cara menulis email dan laporan serta memberikan presentasi dalam Bahasa Inggris dengan percaya diri!',
@@ -56,11 +58,16 @@ export const TRANSLATIONS_ID = {
   ieltsDescriptionSecond:
     'Cocok bagi Anda yang ingin mengikuti ujian IELTS untuk keperluan kuliah ataupun bekerja di luar negeri. ',
   toefl: 'TOEFL',
+  toeflDetail: 'TOEFL (Test of English as a Foreign Language)',
   toeflDescription:
-    'Bermimpi untuk melanjutkan kuliah atau bekerja di luar negeri? Inilah jawaban untuk Anda! Tingkatkan kemampuan Bahasa Inggris Anda dengan mengambil kelas IELTS/TOEFL dengan kami!',
+    'Program ini dirancang khusus bagi Anda yang ingin memperdalam pengetahuan Anda tentang TOEFL. TOEFL terbagi atas dua jenis yaitu TOEFL ITP (Institutional Testing Program) dan TOEFL iBT (The Internet Based Test of English as Foreign Language). ',
+  toeflDescriptionSecond:
+    'Cocok bagi Anda yang ingin berkuliah di luar negeri (TOEFL iBT) atau keperluan kuliah/pekerjaan di dalam negeri (TOEFL ITP).',
   generalEnglish: 'Bahasa Inggris Umum',
   generalEnglishDescription:
-    'Lelah melihat kamus setiap kali Anda menonton film kesukaan anda? Tidak ingin menggunakan bahasa tubuh untuk berkomunikasi setiap Anda pergi berpergian ke luar negeri? Anda harus meningkatkan kemampuan Bahasa Inggris Anda dengan kami!',
+    'Program ini dirancang khusus bagi Anda ingin meningkatkan kemampuan bahasa Inggris Anda secara umum. Anda akan mempelajari empat area yang berbeda yaitu Listening, Reading, Speaking, dan Writing sehingga kemampuan aktif dan pasif Anda akan menjadi lebih baik. Setelah mengikuti program ini, Anda akan dapat membaca novel bahasa Inggris tanpa kamus atau menonton serial Netflix kesukaan Anda tanpa teks film!',
+  generalEnglishDescriptionSecond:
+    'Cocok bagi Anda yang ingin mempelajari bahasa Inggris di waktu luang tanpa bertujuan mengikuti ujian kompetensi bahasa Inggris. ',
 
   ourClients: 'Klien Kami',
 

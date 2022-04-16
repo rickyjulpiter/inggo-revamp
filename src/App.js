@@ -7,10 +7,13 @@ import {
   ROUTE_ABOUT_US,
   ROUTE_ACADEMIC_WRITING,
   ROUTE_BUSINESS_ENGLISH,
+  ROUTE_ENGLISH_CONVERSATION,
   ROUTE_ENGLISH_COURSES,
   ROUTE_FREE_TRIAL,
+  ROUTE_GENERAL_ENGLISH,
   ROUTE_IELTS,
-  ROUTE_TESTIMONIALS
+  ROUTE_TESTIMONIALS,
+  ROUTE_TOEFL
 } from './Assets/utils';
 import AboutUsContainer from './Screens/AboutUs/AboutUs.container';
 import i18n from './Assets/Translations/i18n';
@@ -21,15 +24,19 @@ import FreeTrialContainer from './Screens/FreeTrial/FreeTrial.container';
 import TestimonialsContainer from './Screens/Testimonials/Testimonials.container';
 import BusinessEnglish from './Screens/Home/OurPrograms/Programs/BusinessEnglish';
 import AcademicWriting from './Screens/Home/OurPrograms/Programs/AcademicWriting';
-import IELTS from './Screens/Home/OurPrograms/Programs/Ielts';
+import IELTS from './Screens/Home/OurPrograms/Programs/IELTS';
+import TOEFL from './Screens/Home/OurPrograms/Programs/TOEFL';
+import EnglishConversation from './Screens/Home/OurPrograms/Programs/EnglishConversation';
+import GeneralEnglish from './Screens/Home/OurPrograms/Programs/GeneralEnglish';
 
 const App = () => {
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState('id');
 
   const handleLanguage = async (lang) => {
     setLanguage(lang);
     await i18n.changeLanguage(lang);
   };
+
   return (
     <>
       <NavtopComponent onChangeLang={handleLanguage} />
@@ -47,6 +54,12 @@ const App = () => {
           <Route path={ROUTE_BUSINESS_ENGLISH} element={<BusinessEnglish lang={language} />} />
           <Route path={ROUTE_ACADEMIC_WRITING} element={<AcademicWriting lang={language} />} />
           <Route path={ROUTE_IELTS} element={<IELTS lang={language} />} />
+          <Route path={ROUTE_TOEFL} element={<TOEFL lang={language} />} />
+          <Route
+            path={ROUTE_ENGLISH_CONVERSATION}
+            element={<EnglishConversation lang={language} />}
+          />
+          <Route path={ROUTE_GENERAL_ENGLISH} element={<GeneralEnglish lang={language} />} />
 
           <Route path={ROUTE_TESTIMONIALS} element={<TestimonialsContainer lang={language} />} />
         </Routes>

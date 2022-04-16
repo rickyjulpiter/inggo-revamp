@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import { PrimaryColor } from '../../../../Assets/colorPalette';
 
 export const ContainerStyled = styled.div`
-  margin-top: 5vw;
-  padding: 2vw 5vw 8vw 5vw;
+  //margin-top: 5vw;
+  padding: 1vw 5vw 8vw 5vw;
   @media (min-width: 1024px) {
     min-height: 602px;
   }
@@ -46,6 +46,7 @@ export const ProgramTitle = styled.h1`
 
 export const ProgramDescription = styled.p`
   line-height: 1.6em;
+  text-align: justify;
 `;
 
 export const ULStyled = styled.ul`
@@ -67,4 +68,12 @@ export const H5 = styled.h5`
   font-weight: bold;
   font-size: 16px;
   color: ${PrimaryColor};
+`;
+
+export const ImgBanner = styled.img`
+  display: block;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3vw;
 `;

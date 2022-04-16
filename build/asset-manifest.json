@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5c0180e8.css",
-    "main.js": "/static/js/main.64c08b42.js",
+    "main.js": "/static/js/main.f5c42b21.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/general_english_baloon.png": "/static/media/general_english_baloon.e2d22239adff5b8e8d4e.png",
     "static/media/ielts_baloon.png": "/static/media/ielts_baloon.ecdb171617dcb7728dae.png",
@@ -9,11 +9,18 @@
     "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
     "static/media/academic_baloon.png": "/static/media/academic_baloon.6cfa9a48bee072dd498f.png",
     "static/media/business_english_baloon.png": "/static/media/business_english_baloon.bb4b15dd2fd7cec04877.png",
+    "static/media/IMG-0744.JPG": "/static/media/IMG-0744.834f46a1d440257c0f7a.JPG",
+    "static/media/IMG-0747.JPG": "/static/media/IMG-0747.487a61f6f8f9f8db7e09.JPG",
     "static/media/logo.png": "/static/media/logo.b82e8cf8dc6aec52f776.png",
     "static/media/english_course_baloon.png": "/static/media/english_course_baloon.4f65f255a9953b8d3965.png",
+    "static/media/INGGO_REV_APR_2022_ielts_merah.png": "/static/media/INGGO_REV_APR_2022_ielts_merah.209a60d8f2fa22f0ccbd.png",
+    "static/media/INGGO_REV_APR_2022_bahasa_inggris_umum_biru.png": "/static/media/INGGO_REV_APR_2022_bahasa_inggris_umum_biru.8118405e00b1214ce964.png",
+    "static/media/INGGO_REV_APR_2022_general_english_biru.png": "/static/media/INGGO_REV_APR_2022_general_english_biru.a1054a49e3a52059cdaa.png",
     "static/media/MuhammadHafizhAsad.jpeg": "/static/media/MuhammadHafizhAsad.17cddbcbcd5da2cf1b79.jpeg",
     "static/media/RifkaCharmelita.jpeg": "/static/media/RifkaCharmelita.7dadda82f47f0a2297df.jpeg",
+    "static/media/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.png": "/static/media/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.3ed0705c57948a17635f.png",
     "static/media/BeatrixMarendeng.jpeg": "/static/media/BeatrixMarendeng.8fa325ae9cb2ea56a2de.jpeg",
+    "static/media/INGGO_REV_APR_2022_business_english_biru.png": "/static/media/INGGO_REV_APR_2022_business_english_biru.5d3b5bf49ac844c92c60.png",
     "static/media/AkmiliaAswarini.jpeg": "/static/media/AkmiliaAswarini.33c4b84a34267ee19795.jpeg",
     "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
@@ -30,11 +37,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.5c0180e8.css.map": "/static/css/main.5c0180e8.css.map",
-    "main.64c08b42.js.map": "/static/js/main.64c08b42.js.map",
+    "main.f5c42b21.js.map": "/static/js/main.f5c42b21.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c0180e8.css",
-    "static/js/main.64c08b42.js"
+    "static/js/main.f5c42b21.js"
   ]
 }

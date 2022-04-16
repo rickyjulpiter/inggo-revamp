@@ -2,12 +2,17 @@
 import {
   CardTestimonials,
   CardTestimonialsBlue,
+  CardTestimonialsWhite,
   CenterDiv,
   ImgStyled,
-  LineStyled, LineStyledBlue,
-  PersonStyled, PersonStyledBlue,
-  SourceStyled, SourceStyledBlue,
-  TestimonialsDescription, TestimonialsDescriptionBlue,
+  LineStyled,
+  LineStyledBlue,
+  PersonStyled,
+  PersonStyledBlue,
+  SourceStyled,
+  SourceStyledBlue,
+  TestimonialsDescription,
+  TestimonialsDescriptionBlue,
   TestimonialsPerson
 } from './TestimonialsComponent.styled';
 import React from 'react';
@@ -56,7 +61,7 @@ export const ExampleCardPersonWhite = ({
     <CenterDiv>
       <ImgStyled className="position-absolute index-1 center" src={images} alt="images" />
     </CenterDiv>
-    <CardTestimonialsBlue>
+    <CardTestimonialsWhite>
       <TestimonialsDescriptionBlue>{description}</TestimonialsDescriptionBlue>
       <LineStyledBlue />
       <TestimonialsPerson>
@@ -68,6 +73,6 @@ export const ExampleCardPersonWhite = ({
           </b>
         </SourceStyledBlue>
       </TestimonialsPerson>
-    </CardTestimonialsBlue>
+    </CardTestimonialsWhite>
   </>
 );

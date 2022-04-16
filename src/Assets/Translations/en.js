@@ -32,7 +32,9 @@ export const TRANSLATIONS_EN = {
     'This program is suitable for those who are not accustomed to academic writing and would like to pursue their Master’s Degree at overseas universities around the world.',
   englishConversation: 'English Conversation',
   englishConversationDescription:
-    'Want to be able to speak like a native speaker? Let’s practice speaking with us! The more you speak, the more confidence you gain!',
+    'This program will give you many opportunities to practice speaking about the most updated and interesting topics. You can also request topics that you like so that learning English will feel more enjoyable!',
+  englishConversationDescriptionSecond:
+    'This program is suitable for those who want to improve their English-speaking skills for daily communication or travelling abroad. ',
   businessEnglish: 'Business English',
   businessEnglishDescription:
     'This program is specifically designed for those who want to develop their Business English skills. You will learn various lexical resources, such as vocabulary, phrases and idioms, and grammar patterns related to Business English. You will also improve your knowledge on writing emails and reports and deliver presentation in English confidently!',
@@ -54,11 +56,16 @@ export const TRANSLATIONS_EN = {
   ieltsDescriptionSecond:
     'This program is for those who want to take the IELTS exam for studying or working abroad.',
   toefl: 'TOEFL',
+  toeflDetail: 'TOEFL (Test of English as a Foreign Language)',
   toeflDescription:
-    'Dreaming of going abroad for studying or working? This is the answer for you! Improve your English skills by taking IELTS/TOEFL classes with us!',
+    'This program is specifically designed for those who want to enhance their English skills in the TOEFL test. There are two types of the TOEFL test, namely the TOEFL ITP (Institutional Testing Program) and the TOEFL iBT (The Internet Based Test of English as Foreign Language).\n',
+  toeflDescriptionSecond:
+    'This program is suitable for those who want to pursue their study abroad (TOEFL iBT) or their study/work in Indonesia (TOEFL ITP).',
   generalEnglish: 'General English',
   generalEnglishDescription:
-    'Tired of checking your dictionary every time you watch your favorite movies? Sick of using body language to communicate when you are travelling? You need to improve your English skills with us!',
+    'This program is specifically designed for those who want to improve their English skills. You will learn four different skills, which are Listening, Reading, Speaking, and Writing so that you can develop your active and passive language skills. After completing the program, you will be able to read English novels and watch your favorite Netflix series without subtitles!',
+  generalEnglishDescriptionSecond:
+    'This program is suitable for those who would like to study English during their free time without any intention of taking English proficiency tests.',
 
   ourClients: 'Our Clients',
 

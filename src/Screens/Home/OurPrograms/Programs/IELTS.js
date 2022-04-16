@@ -10,14 +10,14 @@ import {
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import BannerIndonesia from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/IMG-0744.JPG';
-import BannerEnglish from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/IMG-0747.JPG';
+import BannerIndonesia from '../../../../Assets/Images/new-banner/IELTS/INGGO_REV_APR_2022_ielts_merah.png';
+import BannerEnglish from '../../../../Assets/Images/new-banner/IELTS/INGGO_REV_APR_2022_ielts_merah.png';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
 
-const AcademicWriting = ({ lang }) => {
+const IELTS = ({ lang }) => {
   const { t } = useTranslation();
   return (
     <>
@@ -32,31 +32,42 @@ const AcademicWriting = ({ lang }) => {
           </Col>
           <Col xl={12} md={12} sm={12}>
             <Row>
-              <Col xl={5} md={5} sm={5}>
-                <ProgramDescription>{t('academicWritingDescription')}</ProgramDescription>
-                <ProgramDescription>{t('academicWritingDescriptionSecond')}</ProgramDescription>
+              <Col xl={4} md={4} sm={4}>
+                <ProgramDescription>{t('ieltsDescription')}</ProgramDescription>
+                <ProgramDescription>{t('ieltsDescriptionSecond')}</ProgramDescription>
               </Col>
-              <Col xl={7} md={7} sm={7}>
+              <Col xl={8} md={8} sm={8}>
                 {lang === 'id' ? (
                   <Row>
                     <Col>
-                      <H5>Anda akan belajar cara:</H5>
+                      <H5>Anda akan belajar tentang:</H5>
                       <ULStyled>
-                        <LiStyled>Menulis sitasi</LiStyled>
-                        <LiStyled>Menulis parafrasa</LiStyled>
-                        <LiStyled>Membentuk argumen</LiStyled>
                         <LiStyled>
-                          Menyisipkan student voice untuk memperkuat argument dalam esai Anda
+                          Strategi yang berguna untuk menjawab berbagai jenis pertanyaan Listening,
+                          Reading, Writing, dan Speaking
                         </LiStyled>
                         <LiStyled>
-                          Mengidentifikasi dan menggunakan sumber-sumber terpercaya seperti jurnal
-                          dan buku bacaan
+                          Listening (short-answer questions, labelling, multiple choice, dan
+                          matching)
                         </LiStyled>
+                        <LiStyled>
+                          Reading (short-answer questions, True/False/Not Given, multiple choice,
+                          summary/table completion, headings)
+                        </LiStyled>
+                        <LiStyled>
+                          Writing Task 1 (pie chart, bar graphs, maps, diagrams, dan tables)
+                        </LiStyled>
+                        <LiStyled>
+                          Writing Task 2 (agree-disagree, advantages-disadvantages, discuss both
+                          views, cause-solution, positive-negative, dan open questions)
+                        </LiStyled>
+                        <LiStyled>Speaking (part 1 to 3)</LiStyled>
                       </ULStyled>
                     </Col>
                     <Col>
                       <H5>Anda akan mendapatkan</H5>
                       <ULStyled>
+                        <LiStyled>Pre-test, progress test, post-test</LiStyled>
                         <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
                         <LiStyled>Laporan Kemajuan Belajar</LiStyled>
                         <LiStyled>Sertifikat elektronik</LiStyled>
@@ -68,20 +79,32 @@ const AcademicWriting = ({ lang }) => {
                     <Col>
                       <H5>You will learn about:</H5>
                       <ULStyled>
-                        <LiStyled>Citing</LiStyled>
-                        <LiStyled>Paraphrasing</LiStyled>
-                        <LiStyled>Building arguments</LiStyled>
                         <LiStyled>
-                          Inserting student voice to strengthen your arguments in your essay
+                          Useful strategies to deal with numerous question types in Listening,
+                          Reading, Writing, and Speaking
                         </LiStyled>
                         <LiStyled>
-                          Identifying and using reliable sources, such as journal and text books
+                          Listening (short-answer questions, labelling, multiple choice, dan
+                          matching)
                         </LiStyled>
+                        <LiStyled>
+                          Reading (short-answer questions, True/False/Not Given, multiple choice,
+                          summary/table completion, headings)
+                        </LiStyled>
+                        <LiStyled>
+                          Writing Task 1 (pie chart, bar graphs, maps, diagrams, dan tables)
+                        </LiStyled>
+                        <LiStyled>
+                          Writing Task 2 (agree-disagree, advantages-disadvantages, discuss both
+                          views, cause-solution, positive-negative, dan open questions)
+                        </LiStyled>
+                        <LiStyled>Speaking (part 1 to 3)</LiStyled>
                       </ULStyled>
                     </Col>
                     <Col>
                       <H5>You will have and obtain:</H5>
                       <ULStyled>
+                        <LiStyled>Pre-test, progress test, post-test</LiStyled>
                         <LiStyled>Regular and constructive feedback from your tutor</LiStyled>
                         <LiStyled>Performance report</LiStyled>
                         <LiStyled>E-certificate</LiStyled>
@@ -102,8 +125,8 @@ const AcademicWriting = ({ lang }) => {
   );
 };
 
-AcademicWriting.propTypes = {
+IELTS.propTypes = {
   lang: PropTypes.string
 };
 
-export default AcademicWriting;
+export default IELTS;
