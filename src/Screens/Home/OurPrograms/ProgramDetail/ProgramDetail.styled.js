@@ -47,6 +47,10 @@ export const ProgramTitle = styled.h1`
 export const ProgramDescription = styled.p`
   line-height: 1.6em;
   text-align: justify;
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
 `;
 
 export const ULStyled = styled.ul`
@@ -61,6 +65,10 @@ export const LiStyled = styled.li`
     margin-left: -1.3em;
     width: 1.3em;
     color: ${PrimaryColor};
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
   }
 `;
 
@@ -77,7 +85,7 @@ export const ImgBanner = styled.img`
   margin-right: auto;
   margin-bottom: 3vw;
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     height: 120%;
     width: 120%;
   }
