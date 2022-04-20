@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5c0180e8.css",
-    "main.js": "/static/js/main.1ced0e07.js",
+    "main.js": "/static/js/main.6193f21f.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
@@ -13,11 +13,11 @@
     "static/media/INGGO_REV_APR_2022_bahasa_inggris_umum_biru.png": "/static/media/INGGO_REV_APR_2022_bahasa_inggris_umum_biru.8118405e00b1214ce964.png",
     "static/media/INGGO_REV_APR_2022_general_english_biru.png": "/static/media/INGGO_REV_APR_2022_general_english_biru.a1054a49e3a52059cdaa.png",
     "static/media/MuhammadHafizhAsad.jpeg": "/static/media/MuhammadHafizhAsad.17cddbcbcd5da2cf1b79.jpeg",
+    "static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png": "/static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.4cc06f6809327ce00583.png",
     "static/media/RifkaCharmelita.jpeg": "/static/media/RifkaCharmelita.7dadda82f47f0a2297df.jpeg",
     "static/media/BeatrixMarendeng.jpeg": "/static/media/BeatrixMarendeng.8fa325ae9cb2ea56a2de.jpeg",
     "static/media/AkmiliaAswarini.jpeg": "/static/media/AkmiliaAswarini.33c4b84a34267ee19795.jpeg",
     "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
-    "static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png": "/static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.d82a7dc4e3436720d189.png",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/SyahzamiPutra.jpeg": "/static/media/SyahzamiPutra.d3938f354747d3d0b778.jpeg",
     "static/media/NahlaJovial.jpeg": "/static/media/NahlaJovial.e1cb2017fab249f65039.jpeg",
@@ -33,11 +33,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.5c0180e8.css.map": "/static/css/main.5c0180e8.css.map",
-    "main.1ced0e07.js.map": "/static/js/main.1ced0e07.js.map",
+    "main.6193f21f.js.map": "/static/js/main.6193f21f.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c0180e8.css",
-    "static/js/main.1ced0e07.js"
+    "static/js/main.6193f21f.js"
   ]
 }

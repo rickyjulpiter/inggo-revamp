@@ -81,14 +81,10 @@ export const H5 = styled.h5`
 export const ImgBanner = styled.img`
   display: block;
   width: 100%;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 3vw;
-
-  @media (max-width: 500px) {
-    height: 120%;
-    width: 120%;
-  }
 `;
 
 export const RowContainer = styled(Row)`
