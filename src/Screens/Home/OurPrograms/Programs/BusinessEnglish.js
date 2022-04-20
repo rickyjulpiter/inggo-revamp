@@ -25,7 +25,7 @@ import styled from 'styled-components';
 const BannerBackground = styled.div`
   @media (max-width: 500px) {
     background-image: url(${ExampleNewBanner});
-    min-height: 21.5vh;
+    min-height: 26vh;
   }
 
   background-image: url(${ExampleOldBanner});
@@ -40,7 +40,7 @@ const BusinessEnglish = ({ lang }) => {
     <>
       <ContainerStyled>
         <Row>
-          <Col xl={12} md={12} sm={12} className="mb-4">
+          <Col xl={12} md={12} sm={12} className="mb-1">
             <BannerBackground />
             {/*<ImgBanner src={lang === 'id' ? ExampleNewBanner : ExampleNewBanner} alt="" />*/}
           </Col>

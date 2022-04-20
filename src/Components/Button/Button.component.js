@@ -21,7 +21,7 @@ const ButtonStyled = styled.a.attrs((props: { color: string }) => props)`
     background-color: #ffffff;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 500px) {
     font-size: 14px;
     padding: 11px 22px;
   }

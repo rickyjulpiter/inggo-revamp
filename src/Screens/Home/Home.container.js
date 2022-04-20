@@ -32,28 +32,13 @@ const HomeContainer = () => {
               <Col xl={12} md={12} sm={12}>
                 <CustomMarginToParent>
                   <div className="t_four p_absoulte">
-                    <FloatingImage
-                      className="layer layer2"
-                      data-depth="0.30"
-                      src={Playfull3}
-                      alt=""
-                    />
+                    <FloatingImage data-depth="0.30" src={Playfull3} alt="" />
                   </div>
                   <div className="t_two p_absoulte">
-                    <FloatingImage
-                      className="layer layer2"
-                      data-depth="0.30"
-                      src={Playfull2}
-                      alt=""
-                    />
+                    <FloatingImage data-depth="0.30" src={Playfull2} alt="" />
                   </div>
                   <div className="t_first p_absoulte">
-                    <FloatingImage
-                      className="layer layer2"
-                      data-depth="0.30"
-                      src={Playfull1}
-                      alt=""
-                    />
+                    <FloatingImage data-depth="0.30" src={Playfull1} alt="" />
                   </div>
 
                   <WelcomeHeading

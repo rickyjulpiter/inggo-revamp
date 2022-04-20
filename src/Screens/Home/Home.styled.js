@@ -56,14 +56,14 @@ export const WelcomeContainer = styled.div`
 
   @media (max-width: 768px) {
     min-height: 668px;
-    background-image: none;
+    //background-image: none;
   }
 
   @media (max-width: 450px) {
     min-height: 50vw;
 
     .p_absoulte {
-      display: none;
+      //display: none;
     }
   }
 
@@ -85,7 +85,6 @@ export const WelcomeContainer = styled.div`
 `;
 
 export const CustomMarginToParent = styled.div`
-  //margin-top: 3rem !important;
   margin-right: 4rem;
   margin-left: 4rem;
 
