@@ -1,14 +1,10 @@
 {
   "files": {
     "main.css": "/static/css/main.5c0180e8.css",
-    "main.js": "/static/js/main.b5ee27f6.js",
+    "main.js": "/static/js/main.b97e64ef.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
-    "static/media/general_english_baloon.png": "/static/media/general_english_baloon.e2d22239adff5b8e8d4e.png",
-    "static/media/ielts_baloon.png": "/static/media/ielts_baloon.ecdb171617dcb7728dae.png",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
-    "static/media/academic_baloon.png": "/static/media/academic_baloon.6cfa9a48bee072dd498f.png",
-    "static/media/business_english_baloon.png": "/static/media/business_english_baloon.bb4b15dd2fd7cec04877.png",
     "static/media/IMG-0744.JPG": "/static/media/IMG-0744.834f46a1d440257c0f7a.JPG",
     "static/media/IMG-0747.JPG": "/static/media/IMG-0747.487a61f6f8f9f8db7e09.JPG",
     "static/media/logo.png": "/static/media/logo.b82e8cf8dc6aec52f776.png",
@@ -18,15 +14,15 @@
     "static/media/INGGO_REV_APR_2022_general_english_biru.png": "/static/media/INGGO_REV_APR_2022_general_english_biru.a1054a49e3a52059cdaa.png",
     "static/media/MuhammadHafizhAsad.jpeg": "/static/media/MuhammadHafizhAsad.17cddbcbcd5da2cf1b79.jpeg",
     "static/media/RifkaCharmelita.jpeg": "/static/media/RifkaCharmelita.7dadda82f47f0a2297df.jpeg",
-    "static/media/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.png": "/static/media/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.3ed0705c57948a17635f.png",
     "static/media/BeatrixMarendeng.jpeg": "/static/media/BeatrixMarendeng.8fa325ae9cb2ea56a2de.jpeg",
-    "static/media/INGGO_REV_APR_2022_business_english_biru.png": "/static/media/INGGO_REV_APR_2022_business_english_biru.5d3b5bf49ac844c92c60.png",
     "static/media/AkmiliaAswarini.jpeg": "/static/media/AkmiliaAswarini.33c4b84a34267ee19795.jpeg",
     "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
+    "static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png": "/static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.d82a7dc4e3436720d189.png",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/SyahzamiPutra.jpeg": "/static/media/SyahzamiPutra.d3938f354747d3d0b778.jpeg",
     "static/media/NahlaJovial.jpeg": "/static/media/NahlaJovial.e1cb2017fab249f65039.jpeg",
     "static/media/AfiyaMaritza.jpeg": "/static/media/AfiyaMaritza.9f4cb7daf29ca464aa5c.jpeg",
+    "static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_lingkaran_biru.png": "/static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_lingkaran_biru.26bab4f0c7f0e5bae0e4.png",
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.bae1a4678ac7dab26d05.png",
     "static/media/reynolds.png": "/static/media/reynolds.478752d2fdee40937c36.png",
@@ -37,11 +33,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.5c0180e8.css.map": "/static/css/main.5c0180e8.css.map",
-    "main.b5ee27f6.js.map": "/static/js/main.b5ee27f6.js.map",
+    "main.b97e64ef.js.map": "/static/js/main.b97e64ef.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5c0180e8.css",
-    "static/js/main.b5ee27f6.js"
+    "static/js/main.b97e64ef.js"
   ]
 }

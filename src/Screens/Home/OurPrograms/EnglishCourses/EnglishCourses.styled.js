@@ -26,7 +26,7 @@ export const ContainerStyled = styled.div`
 
 export const SectionDescriptionCustom = styled.p`
   margin-top: 0.5vw;
-  min-height: 12vw;
+  min-height: 20vw;
   text-align: justify;
 
   @media (max-width: 768px) {
@@ -35,7 +35,19 @@ export const SectionDescriptionCustom = styled.p`
   }
 
   @media (max-width: 1024px) {
-    min-height: 24vw;
+    min-height: 45vw;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 30vw;
+  }
+
+  @media (min-width: 1400px) {
+    min-height: 20vw;
+  }
+
+  @media (min-width: 1600px) {
+    min-height: 13vw;
   }
 `;
 

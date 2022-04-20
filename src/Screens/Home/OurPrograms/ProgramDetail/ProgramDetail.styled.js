@@ -72,7 +72,6 @@ export const H5 = styled.h5`
 
 export const ImgBanner = styled.img`
   display: block;
-  height: 350px;
   width: 100% !important;
   margin-left: auto;
   margin-right: auto;

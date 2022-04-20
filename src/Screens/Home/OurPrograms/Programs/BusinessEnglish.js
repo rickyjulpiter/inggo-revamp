@@ -11,8 +11,9 @@ import {
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import BannerIndonesia from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.png';
-import BannerEnglish from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_business_english_biru.png';
+// import BannerIndonesia from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.png';
+// import BannerEnglish from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_business_english_biru.png';
+import ExampleNewBanner from '../../../../Assets/Images/new-banner/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
@@ -25,7 +26,7 @@ const BusinessEnglish = ({ lang }) => {
       <ContainerStyled>
         <Row>
           <Col xl={12} md={12} sm={12}>
-            <ImgBanner src={lang === 'id' ? BannerIndonesia : BannerEnglish} alt="" />
+            <ImgBanner src={lang === 'id' ? ExampleNewBanner : ExampleNewBanner} alt="" />
           </Col>
           <Col xl={12} md={12} sm={12}>
             <RowContainer>
