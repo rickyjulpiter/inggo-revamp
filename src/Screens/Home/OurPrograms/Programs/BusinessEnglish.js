@@ -25,7 +25,7 @@ const BusinessEnglish = ({ lang }) => {
     <>
       <ContainerStyled>
         <Row>
-          <Col xl={12} md={12} sm={12}>
+          <Col xl={12} md={12} sm={12} className="mb-4">
             <ImgBanner src={lang === 'id' ? ExampleNewBanner : ExampleNewBanner} alt="" />
           </Col>
           <Col xl={12} md={12} sm={12}>
