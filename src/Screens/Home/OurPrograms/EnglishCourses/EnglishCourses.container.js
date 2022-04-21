@@ -15,7 +15,7 @@ import {
 // import BusinessEnglishBalloon from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_business_english_lingkaran_biru.png';
 // import AcademicWritingBalloon from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/IMG-0719.PNG';
 // import EnglishConversationBalloon from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/IMG-0727.PNG';
-import ExampleBalloon from '../../../../Assets/Images/new-banner/INGGO_REV_2_APR_2022_translation_proofreading_services_lingkaran_biru.png';
+import ExampleBalloon from '../../../../Assets/Images/new-banner/ExampleBalloon.jpeg';
 import {
   ButtonMore,
   ContainerStyled,

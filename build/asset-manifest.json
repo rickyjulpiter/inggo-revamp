@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.560557c5.js",
+    "main.js": "/static/js/main.3cc37ce0.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
@@ -18,27 +18,28 @@
     "static/media/BeatrixMarendeng.jpeg": "/static/media/BeatrixMarendeng.8fa325ae9cb2ea56a2de.jpeg",
     "static/media/AkmiliaAswarini.jpeg": "/static/media/AkmiliaAswarini.33c4b84a34267ee19795.jpeg",
     "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
-    "static/media/1INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png": "/static/media/1INGGO_REV_2_APR_2022_translation_proofreading_services_biru.d82a7dc4e3436720d189.png",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/SyahzamiPutra.jpeg": "/static/media/SyahzamiPutra.d3938f354747d3d0b778.jpeg",
     "static/media/NahlaJovial.jpeg": "/static/media/NahlaJovial.e1cb2017fab249f65039.jpeg",
     "static/media/AfiyaMaritza.jpeg": "/static/media/AfiyaMaritza.9f4cb7daf29ca464aa5c.jpeg",
-    "static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_lingkaran_biru.png": "/static/media/INGGO_REV_2_APR_2022_translation_proofreading_services_lingkaran_biru.26bab4f0c7f0e5bae0e4.png",
+    "static/media/ExampleBalloon.jpeg": "/static/media/ExampleBalloon.1eccb2277aa9ae573684.jpeg",
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.bae1a4678ac7dab26d05.png",
     "static/media/reynolds.png": "/static/media/reynolds.478752d2fdee40937c36.png",
     "static/media/PutriAyudita.jpeg": "/static/media/PutriAyudita.2d40c5ce37b3a4c0b1bf.jpeg",
+    "static/media/ExampleBannerId.jpeg": "/static/media/ExampleBannerId.69fcd99d1ce21fe9ba66.jpeg",
     "static/media/FachriAkbar.jpeg": "/static/media/FachriAkbar.324bbb8ac3a20164446f.jpeg",
     "static/media/choose.png": "/static/media/choose.864d463212cbcc78788f.png",
+    "static/media/ExampleBannerEn.jpeg": "/static/media/ExampleBannerEn.66de6183ef14c32bdbc8.jpeg",
     "static/media/seed.jpeg": "/static/media/seed.e4f5714d32fbe5324abc.jpeg",
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.560557c5.js.map": "/static/js/main.560557c5.js.map",
+    "main.3cc37ce0.js.map": "/static/js/main.3cc37ce0.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.560557c5.js"
+    "static/js/main.3cc37ce0.js"
   ]
 }

@@ -14,7 +14,10 @@ import PropTypes from 'prop-types';
 // import BannerIndonesia from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.png';
 // import BannerEnglish from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_business_english_biru.png';
 import ExampleNewBanner from '../../../../Assets/Images/new-banner/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png';
-import ExampleOldBanner from '../../../../Assets/Images/new-banner/1INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png';
+// import ExampleOldBanner from '../../../../Assets/Images/new-banner/1INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png';
+
+import ExampleBannerId from '../../../../Assets/Images/new-banner/ExampleBannerId.jpeg';
+import ExampleBannerEn from '../../../../Assets/Images/new-banner/ExampleBannerEn.jpeg';
 
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
@@ -28,7 +31,8 @@ const BannerBackground = styled.div`
     min-height: 26vh;
   }
 
-  background-image: url(${ExampleOldBanner});
+  background-image: url(${(props) =>
+    props?.language === 'id' ? ExampleBannerId : ExampleBannerEn});
   min-height: 35vh;
   background-size: contain;
   background-repeat: no-repeat;
@@ -36,12 +40,17 @@ const BannerBackground = styled.div`
 
 const BusinessEnglish = ({ lang }) => {
   const { t } = useTranslation();
+  console.log(lang);
   return (
     <>
       <ContainerStyled>
         <Row>
           <Col xl={12} md={12} sm={12} className="mb-1">
-            <BannerBackground />
+            <BannerBackground
+              language={lang}
+              bannerId={ExampleBannerId}
+              bannerEn={ExampleBannerEn}
+            />
             {/*<ImgBanner src={lang === 'id' ? ExampleNewBanner : ExampleNewBanner} alt="" />*/}
           </Col>
           <Col xl={12} md={12} sm={12}>

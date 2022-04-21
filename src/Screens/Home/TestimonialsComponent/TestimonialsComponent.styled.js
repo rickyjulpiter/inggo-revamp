@@ -108,6 +108,10 @@ export const TestimonialsDescription = styled.p`
   @media (min-width: 1400px) {
     min-height: 28vw;
   }
+
+  @media (min-width: 1600px) {
+    min-height: 15vw;
+  }
 `;
 
 export const LineStyled = styled.hr`
@@ -127,6 +131,10 @@ export const TestimonialsPerson = styled.p`
   text-align: right;
   margin-bottom: 0;
   min-height: 9.8vw;
+
+  @media (min-width: 1600px) {
+    min-height: 7vw;
+  }
 `;
 
 export const AvatarImg = styled.img`
