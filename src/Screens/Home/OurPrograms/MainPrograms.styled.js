@@ -14,6 +14,7 @@ export const CardStyled = styled(Card)`
   position: relative;
   transition: all 0.3s linear;
   z-index: 1;
+  min-height: 26vw;
 
   &:hover {
     border: 1px solid ${PrimaryColor};

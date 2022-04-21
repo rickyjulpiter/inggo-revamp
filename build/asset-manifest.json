@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.5c0180e8.css",
-    "main.js": "/static/js/main.70cd8ab1.js",
+    "main.css": "/static/css/main.085c0f30.css",
+    "main.js": "/static/js/main.560557c5.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
@@ -33,12 +33,12 @@
     "static/media/seed.jpeg": "/static/media/seed.e4f5714d32fbe5324abc.jpeg",
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
-    "main.5c0180e8.css.map": "/static/css/main.5c0180e8.css.map",
-    "main.70cd8ab1.js.map": "/static/js/main.70cd8ab1.js.map",
+    "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
+    "main.560557c5.js.map": "/static/js/main.560557c5.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5c0180e8.css",
-    "static/js/main.70cd8ab1.js"
+    "static/css/main.085c0f30.css",
+    "static/js/main.560557c5.js"
   ]
 }

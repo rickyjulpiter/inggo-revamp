@@ -48,14 +48,14 @@ const TestimonialsContainer = () => {
       <SectionSectionTitle className="mb-5">{t('testimonialsDescription')}</SectionSectionTitle>
       <ContainerCarousel>
         <CarouselResponsive fade variant="dark">
-          <Carousel.Item interval={2000}>
+          <Carousel.Item interval={5000}>
             <Row>
               <PutriAyudita />
               <NahlaJovial />
               <BeatrixMarendeng />
             </Row>
           </Carousel.Item>
-          <Carousel.Item interval={2000}>
+          <Carousel.Item interval={5000}>
             <Row>
               <SyahzamiPutra />
               <AkmiliaAswarini />
@@ -66,14 +66,14 @@ const TestimonialsContainer = () => {
       </ContainerCarousel>
       <hr />
       <CarouselResponsive fade variant="dark">
-        <Carousel.Item interval={200000}>
+        <Carousel.Item interval={5000}>
           <Row>
             <FachriAkbar />
             <FandiAfianataDarmawan />
             <MuhammadHafizhAsad />
           </Row>
         </Carousel.Item>
-        <Carousel.Item interval={200000}>
+        <Carousel.Item interval={5000}>
           <Row>
             <RifkaCharmelita />
           </Row>

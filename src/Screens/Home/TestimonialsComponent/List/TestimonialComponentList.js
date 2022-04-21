@@ -1,10 +1,7 @@
 import { Col } from 'react-bootstrap';
 import React from 'react';
 
-import {
-  ExampleCardPersonBlue,
-  ExampleCardPersonWhite
-} from '../TestimonialsComponent.component';
+import { ExampleCardPersonBlue } from '../TestimonialsComponent.component';
 import {
   AfiyaMaritzaImages,
   AkmiliaAswariniImages,
@@ -58,7 +55,7 @@ export const BeatrixMarendeng = () => (
 export const SyahzamiPutra = () => (
   <Col md={4} xl={4} className="mb-4">
     <ExampleCardPersonBlue
-      description="NGGO banyak berjasa kepada saya dalam proses persiapan sekolah hingga proses kuliah saya sekarang. Saya berhutang budi kepada para pengajar di INGGO karena berhasil mengantarkan saya meraih nilai IELTS yang saya butuhkan utk meraih beasiswa dan kuliah di Jepang. Selain itu saya mendapatkan bekal Academic Writing juga sehingga saya dapat meraih nilai yang sangat baik selama saya kuliah. Saya selalu merekomendasikan INGGO kepada rekan kantor saya dan teman-teman lainnya yang ingin persiapan sekolah ke luar negeri, konsultasi, IELTS, maupun kursus Academic Writing yang sangat dibutuhkan dalam pembuatan paper, tugas, maupun tesis."
+      description="INGGO banyak berjasa kepada saya dalam proses persiapan sekolah hingga proses kuliah saya sekarang. Saya berhutang budi kepada para pengajar di INGGO karena berhasil mengantarkan saya meraih nilai IELTS yang saya butuhkan utk meraih beasiswa dan kuliah di Jepang. Selain itu saya mendapatkan bekal Academic Writing juga sehingga saya dapat meraih nilai yang sangat baik selama saya kuliah. Saya selalu merekomendasikan INGGO kepada rekan kantor saya dan teman-teman lainnya yang ingin persiapan sekolah ke luar negeri, konsultasi, IELTS, maupun kursus Academic Writing yang sangat dibutuhkan dalam pembuatan paper, tugas, maupun tesis."
       person="Syahzami Putra"
       source="Master of Law, Kobe University"
       images={SyahzamiPutraImages}
@@ -102,7 +99,7 @@ export const AfiyaMaritza = () => (
 
 export const FachriAkbar = () => (
   <Col md={4} xl={4} className="mb-4">
-    <ExampleCardPersonWhite
+    <ExampleCardPersonBlue
       description="Belajar TOEFL di INGGO seru karena di setiap penyampaian materinya ada intermezzo berupa games atau fun fact jadi suasana kelas ngga membosankan walaupun secara daring. Materi dan tips-tips structure, listening, writing, dan reading yang disampaikan juga bermanfaat banget buat ngerjain soal-soal tes TOEFL."
       images={FachriAkbarImages}
       programs="TOEFL"
@@ -113,7 +110,7 @@ export const FachriAkbar = () => (
 
 export const FandiAfianataDarmawan = () => (
   <Col md={4} xl={4} className="mb-4">
-    <ExampleCardPersonWhite
+    <ExampleCardPersonBlue
       description="Kelas General English di INGGO sangat menyenangkan. Penyampaian materi tutor saya sangat bagus dan pastinya dia sangat sabar menghadapi aku yang banyak banget pertanyaannya. Setiap pertemuan juga sangat seru sehingga lesnya tidak berasa membosankan sama sekali."
       images={FandiAfianataDarmawanImages}
       programs="General English"
@@ -123,7 +120,7 @@ export const FandiAfianataDarmawan = () => (
 );
 export const MuhammadHafizhAsad = () => (
   <Col md={4} xl={4} className="mb-4">
-    <ExampleCardPersonWhite
+    <ExampleCardPersonBlue
       description="Paket komplit belajar TOEFL benar-benar hanya ada di INGGO. Materinya sangat to the point, penyampaian tutornya asik banget untuk dan pengajarnya enak diajak diskusi. Pokoknya ga nyesel pernah belajar di INGGO karena ga ngebosenin sama sekali! "
       images={MuhammadHafizhAsadImages}
       programs="TOEFL"
@@ -134,7 +131,7 @@ export const MuhammadHafizhAsad = () => (
 
 export const RifkaCharmelita = () => (
   <Col md={4} xl={4} className="mb-4">
-    <ExampleCardPersonWhite
+    <ExampleCardPersonBlue
       description="Senang sekali bisa belajar TOEFL di INGGO. Tutorku sangat sabar menjawab pertanyaan-pertanyaanku dan selalu mendorongku untuk berbicara dalam bahasa Inggris walaupun kadang masih terbata-bata. Penyampaian materi juga dikemas dengan seru sehingga waktu belajar 2 jam tidak terasa."
       images={RifkaCharmelitaImages}
       programs="TOEFL"

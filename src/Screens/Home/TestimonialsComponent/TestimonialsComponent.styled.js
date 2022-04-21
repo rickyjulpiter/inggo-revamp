@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { BlackColor, PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
+import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
 import { Card, Carousel } from 'react-bootstrap';
 
 export const SectionTitle = styled.h3`
@@ -89,34 +89,13 @@ export const CardTestimonialsBlue = styled(Card)`
   }
 `;
 
-export const CardTestimonialsWhite = styled(Card)`
-  padding: 2vw 2vw 1vw 2vw;
-  transition: all 0.3s linear;
-  margin-top: 3.3vw;
-  border: 1px solid #f3c58e;
-  color: #fff;
-  min-height: 10vw;
-
-  &:hover {
-    box-shadow: 0 0 0 rgb(243, 197, 142);
-  }
-
-  @media (max-width: 425px) {
-    padding: 5vw;
-    margin-top: 7vw;
-  }
-  @media (min-width: 1400px) {
-    min-height: 5vw;
-  }
-`;
-
 export const TestimonialsDescription = styled.p`
   font-size: 14px;
   font-weight: 500;
   line-height: 22px;
   color: #ffffff;
   margin-top: 1vw;
-  min-height: 28vw;
+  min-height: 30vw;
 
   @media (max-width: 1024px) {
     font-size: 12px;
@@ -127,28 +106,7 @@ export const TestimonialsDescription = styled.p`
   }
 
   @media (min-width: 1400px) {
-    min-height: 16vw;
-  }
-`;
-
-export const TestimonialsDescriptionBlue = styled.p`
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 22px;
-  color: ${BlackColor};
-  margin-top: 1vw;
-  min-height: 28vw;
-
-  @media (max-width: 1024px) {
-    font-size: 12px;
-  }
-
-  @media (max-width: 425px) {
-    font-size: 12px;
-  }
-
-  @media (min-width: 1400px) {
-    min-height: 16vw;
+    min-height: 28vw;
   }
 `;
 
@@ -163,23 +121,12 @@ export const LineStyled = styled.hr`
   }
 `;
 
-export const LineStyledBlue = styled.hr`
-  margin-top: 0;
-  margin-bottom: 0.7vw;
-  color: ${BlackColor};
-  font-weight: 800;
-
-  @media (max-width: 425px) {
-    margin-bottom: 2vw;
-  }
-`;
-
 export const TestimonialsPerson = styled.p`
   padding: 2px;
   border-radius: 8px;
   text-align: right;
   margin-bottom: 0;
-  min-height: 5vw;
+  min-height: 9.8vw;
 `;
 
 export const AvatarImg = styled.img`
@@ -195,22 +142,8 @@ export const PersonStyled = styled.span`
   }
 `;
 
-export const PersonStyledBlue = styled.span`
-  color: ${BlackColor};
-  font-weight: 600;
-
-  @media (max-width: 425px) {
-    font-size: 12px;
-  }
-`;
-
 export const SourceStyled = styled.p`
   color: #ffffff;
-  font-size: 13px;
-`;
-
-export const SourceStyledBlue = styled.p`
-  color: ${BlackColor};
   font-size: 13px;
 `;
 

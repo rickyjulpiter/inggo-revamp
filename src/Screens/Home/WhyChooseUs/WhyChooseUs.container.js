@@ -56,13 +56,18 @@ const IconStyled = styled.i`
   background-color: ${PrimaryColor};
   color: #ffffff;
   border-radius: 60%;
-  font-size: 40px;
-  padding: 17px 26px;
+  font-size: 30px;
+  padding: 12px 18px;
   cursor: pointer;
   transition: all 0.8s;
 
   &:hover {
     background-color: ${SecondaryColor};
+  }
+
+  @media (max-width: 500px) {
+    font-size: 24px;
+    padding: 10px 15px;
   }
 `;
 

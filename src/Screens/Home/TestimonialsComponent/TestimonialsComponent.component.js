@@ -1,18 +1,12 @@
 /* eslint-disable */
 import {
   CardTestimonials,
-  CardTestimonialsBlue,
-  CardTestimonialsWhite,
   CenterDiv,
   ImgStyled,
   LineStyled,
-  LineStyledBlue,
   PersonStyled,
-  PersonStyledBlue,
   SourceStyled,
-  SourceStyledBlue,
   TestimonialsDescription,
-  TestimonialsDescriptionBlue,
   TestimonialsPerson
 } from './TestimonialsComponent.styled';
 import React from 'react';
@@ -47,32 +41,5 @@ export const ExampleCardPersonBlue = ({
         </SourceStyled>
       </TestimonialsPerson>
     </CardTestimonials>
-  </>
-);
-
-export const ExampleCardPersonWhite = ({
-  description = dummyDescription,
-  person = dummyPerson,
-  source = '',
-  images = 'https://www.kobieducation.com/static/media/RachmadiantiSukmaHanifa.4cfb28bb.png',
-  programs = ''
-}) => (
-  <>
-    <CenterDiv>
-      <ImgStyled className="position-absolute index-1 center" src={images} alt="images" />
-    </CenterDiv>
-    <CardTestimonialsWhite>
-      <TestimonialsDescriptionBlue>{description}</TestimonialsDescriptionBlue>
-      <LineStyledBlue />
-      <TestimonialsPerson>
-        <PersonStyledBlue>{person}</PersonStyledBlue>
-        <SourceStyled>{source}</SourceStyled>
-        <SourceStyledBlue>
-          <b>
-            <i>{programs}</i>
-          </b>
-        </SourceStyledBlue>
-      </TestimonialsPerson>
-    </CardTestimonialsWhite>
   </>
 );
