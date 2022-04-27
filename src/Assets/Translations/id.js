@@ -28,19 +28,26 @@ export const TRANSLATIONS_ID = {
 
   academicWriting: 'Penulisan Akademik',
   academicWritingDescription:
-    'Program ini dirancang khusus bagi Anda yang ingin memperdalam kemampuan penulisan akademik Anda untuk keperluan kuliah di luar negeri. Anda akan mempelajari bagaimana cara penulisan tugas, laporan dan disertasi dari tutor-tutor lulusan luar negeri yang berpengalaman. Jangan tunda lagi agar Anda siap menghadapi kehidupan akademik saat Anda berkuliah nanti!',
+    'Anda akan segera berkuliah ke luar negeri? Ini program yang paling cocok untuk Anda karena dirancang khusus bagi Anda yang ingin memperdalam kemampuan penulisan akademik Anda saat berkuliah di luar negeri. ',
   academicWritingDescriptionSecond:
+    'Banyak mahasiswa Indonesia yang mengalami kesusahan ketika menjalani perkuliahan di luar negeri karena mereka tidak paham dasar-dasar penulisan akademik. Di program ini, Anda akan dibimbing dari dasar sehingga ketika Anda tiba di negara tujuan Anda, Anda tidak akan merasa kesulitan lagi! Anda akan mempelajari bagaimana cara penulisan tugas, laporan dan disertasi dari tutor-tutor lulusan luar negeri yang berpengalaman. \n' +
+    'Jangan tunda lagi agar Anda siap menghadapi kehidupan akademik saat Anda berkuliah nanti!',
+  academicWritingDescriptionThird:
     'Cocok bagi Anda yang tidak terbiasa dengan penulisan akademik dan akan menempuh pendidikan S2 di universitas mana pun di seluruh dunia.',
   englishConversation: 'Percakapan Bahasa Inggris',
   englishConversationDescription:
-    'Program ini akan memberikan Anda banyak kesempatan untuk berlatih berbicara dengan menggunakan topik terkini yang menarik. Selain itu, Anda dapat mengajukan topik-topik yang Anda sukai agar belajar bahasa Inggris terasa lebih menyenangkan!',
+    'Anda masih sering bingung cara menanyakan arah saat jalan-jalan ke luar negeri? Atau Anda memiliki banyak ide tapi tidak bisa terucapkan dengan baik? Hal ini menunjukkan Anda butuh lebih banyak latihan berbicara dalam Bahasa Inggris!',
   englishConversationDescriptionSecond:
+    'Di Program ini, Anda akan memiliki banyak kesempatan untuk berlatih berbicara dengan menggunakan topik terkini yang menarik. Selain itu, Anda dapat mengajukan topik-topik yang Anda sukai agar belajar bahasa Inggris terasa lebih menyenangkan. Setelah latihan rutin, Anda pasti dapat meningkatkan kemampuan bahasa Inggris Anda sehingga Anda tidak akan khawatir lagi ketika harus berkomunikasi dalam bahasa Inggris!',
+  englishConversationDescriptionThird:
     'Cocok bagi Anda yang ingin meningkatkan kemampuan berbicara bahasa Inggris Anda baik untuk komunikasi sehari-hari atau ketika Anda hendak bepergian ke negara lain. ',
   businessEnglish: 'Bahasa Inggris Bisnis',
   businessEnglishDescription:
-    'Program ini dirancang khusus bagi Anda yang ingin meningkatkan kemampuan berbahasa Inggris dalam konteks bisnis. Anda akan mempelajari banyak kosa kata, ungkapan, tata bahasa yang berhubungan dengan Bahasa Inggris bisnis. Anda juga dapat meningkatkan pengetahuan Anda mengenai cara menulis email dan laporan serta memberikan presentasi dalam Bahasa Inggris dengan percaya diri!',
+    'Anda masih sering merasa gugup ketika berkomunikasi dengan klien atau rekan kerja orang asing? Jika iya, Anda harus mengikuti program bahasa Inggris Bisnis agar Anda dapat meningkatkan kemampuan berbahasa Inggris dalam konteks bisnis!',
   businessEnglishDescriptionSecond:
-    'Cocok bagi Anda yang baru memulai karir ataupun yang sudah memiliki pengalaman bekerja bertahun-tahun. Tidak pernah ada kata terlambat untuk meningkatkan kemampuan Bahasa Inggris Anda mulai dari sekarang!',
+    'Di dunia kerja, kemampuan bahasa Inggris sudah merupakan sebuah keharusan. Dengan kemampuan bahasa Inggris yang baik, Anda dapat mempercepat jenjang karir Anda. Di program ini, Anda akan mempelajari banyak kosa kata, ungkapan, tata bahasa yang berhubungan dengan Bahasa Inggris bisnis. Anda juga dapat meningkatkan pengetahuan Anda mengenai cara menulis email dan laporan serta memberikan presentasi dalam Bahasa Inggris dengan percaya diri!',
+  businessEnglishDescriptionThird:
+    'Cocok bagi Anda yang ingin melamar pekerjaan, baru memulai karir ataupun yang sudah memiliki pengalaman bekerja bertahun-tahun. Tidak pernah ada kata terlambat untuk meningkatkan kemampuan Bahasa Inggris Anda mulai dari sekarang!',
   BAFirstList:
     'Anda akan mempelajari bagaimana menggunakan Bahasa Inggris dalam konteks bisnis (membawakan presentasi, bernegosiasi dengan efektif, menulis laporan dan sebagainya)',
   BASecondList:
@@ -54,20 +61,26 @@ export const TRANSLATIONS_ID = {
   ielts: 'IELTS',
   ieltsDetail: 'IELTS (International English Language Testing System)',
   ieltsDescription:
-    'Program ini dirancang khusus bagi Anda yang ingin mempelajari berbagai tips dan triks bermanfaat dalam ujian IELTS agar Anda dapat memperoleh nilai yang diinginkan ketika mengikuti ujian resmi. Materi program dikompilasi dari berbagai sumber yang terpercaya dan dikemas secara singkat dan padat untuk Anda.',
+    'Anda baru akan ujian IELTS atau sudah ujian berkali-kali tapi belum mendapatkan nilai yang diharapkan? Mungkin Anda belum bertemu dengan tutor yang tepat atau Anda tidak mengerti strategi yang diperlukan dalam ujian IELTS. Saatnya bergabung dengan kami! ',
   ieltsDescriptionSecond:
-    'Cocok bagi Anda yang ingin mengikuti ujian IELTS untuk keperluan kuliah ataupun bekerja di luar negeri. ',
+    'IELTS terbagi dalam dua jenis, yaitu Academic dan General Training. Yang pertama dikhususkan bagi Anda yang ingin menempuh pendidikan di luar negeri sedangkan yang kedua cocok untuk Anda yang mau bekerja di luar negeri. Bagi Anda yang baru mau mempelajari IELTS, Anda dapat mengikuti program IELTS Intro sebelum mengikuti IELTS Advanced. Di program ini, Anda akan mempelajari berbagai tips dan triks bermanfaat agar Anda dapat memperoleh nilai yang diinginkan ketika mengikuti ujian resmi. Materi program dirancang sesuai dengan topik terkini dari berbagai sumber yang terpercaya, dan setiap materi dikemas secara singkat dan padat untuk Anda. Apabila Anda hanya ingin memperdalam kemampuan Writing dan Speaking Anda, kami dapat merancang modul khusus sesuai kebutuhan Anda. Anda juga akan mendapatkan banyak soal latihan gratis sehingga Anda dapat berlatih secara rutin. Jangan biarkan nilai IELTS yang rendah menghalangi Anda untuk mencapai impian Anda!',
+  ieltsDescriptionThird:
+    'Cocok bagi Anda yang ingin mengikuti ujian IELTS untuk keperluan kuliah ataupun bekerja di luar negeri.',
   toefl: 'TOEFL',
   toeflDetail: 'TOEFL (Test of English as a Foreign Language)',
   toeflDescription:
-    'Program ini dirancang khusus bagi Anda yang ingin memperdalam pengetahuan Anda tentang TOEFL. TOEFL terbagi atas dua jenis yaitu TOEFL ITP (Institutional Testing Program) dan TOEFL iBT (The Internet Based Test of English as Foreign Language). ',
+    'Anda akan berkuliah ke luar negeri, terutama di Amerika atau Anda sedang mau masuk ke perguruan tinggi dalam negeri? Anda dapat memilih program TOEFL kami!',
   toeflDescriptionSecond:
+    'TOEFL terbagi atas dua jenis yaitu TOEFL ITP (Institutional Testing Program) dan TOEFL iBT (The Internet Based Test of English as Foreign Language). Program ini dirancang khusus bagi Anda yang ingin memperdalam pengetahuan Anda tentang TOEFL. Anda akan belajar berbagai strategi bermanfaat bagi Anda agar Anda berhasil di test TOEFL nantinya. Materi program ini diambil dari berbagai sumber yang terpercaya, dan setiap materi dikemas sesuai dengan kebutuhan Anda. Apabila Anda hanya ingin memperdalam kemampuan Writing dan Speaking Anda, kami dapat membuatkan modul khusus untuk Anda juga. Anda juga akan mendapatkan akses ke beragam soal latihan gratis agar Anda dapat berlatih secara rutin. Mendapatkan nilai TOEFL yang tinggi akan membuka peluang Anda!',
+  toeflDescriptionThird:
     'Cocok bagi Anda yang ingin berkuliah di luar negeri (TOEFL iBT) atau keperluan kuliah/pekerjaan di dalam negeri (TOEFL ITP).',
   generalEnglish: 'Bahasa Inggris Umum',
   generalEnglishDescription:
-    'Program ini dirancang khusus bagi Anda ingin meningkatkan kemampuan bahasa Inggris Anda secara umum. Anda akan mempelajari empat area yang berbeda yaitu Listening, Reading, Speaking, dan Writing sehingga kemampuan aktif dan pasif Anda akan menjadi lebih baik. Setelah mengikuti program ini, Anda akan dapat membaca novel bahasa Inggris tanpa kamus atau menonton serial Netflix kesukaan Anda tanpa teks film!',
+    'Anda ingin membaca novel bahasa Inggris tanpa kamus atau menonton serial Netflix kesukaan Anda tanpa teks film? Atau Anda butuh bantuan tutor untuk pelajaran bahasa Inggris sekolah Anda? Kelas Bahasa Inggris Umum adalah jawaban bagi Anda!',
   generalEnglishDescriptionSecond:
-    'Cocok bagi Anda yang ingin mempelajari bahasa Inggris di waktu luang tanpa bertujuan mengikuti ujian kompetensi bahasa Inggris. ',
+    'Program ini dirancang khusus bagi Anda ingin meningkatkan kemampuan bahasa Inggris Anda secara umum. Anda akan mempelajari empat area yang berbeda yaitu Listening, Reading, Speaking, dan Writing sehingga kemampuan aktif dan pasif Anda akan menjadi lebih baik. Anda dapat meminta topik khusus untuk dibahas di kelas dan tutor kami akan membuatkan modul yang sesuai dengan kebutuhan Anda.',
+  generalEnglishDescriptionThird:
+    'Cocok bagi Anda yang ingin mempelajari bahasa Inggris di waktu luang tanpa bertujuan mengikuti ujian kompetensi bahasa Inggris.',
 
   ourClients: 'Klien Kami',
 

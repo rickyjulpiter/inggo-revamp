@@ -78,7 +78,7 @@ const EnglishCoursesContainer = () => {
               <ImgContainer>
                 <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
               </ImgContainer>
-              <SectionCardSmall>{t('ielts')}</SectionCardSmall>
+              <SectionCardSmall>{t('ieltsDetail')}</SectionCardSmall>
               <SectionDescriptionCustom>{t('ieltsDescription')}</SectionDescriptionCustom>
               <ButtonMore href={ROUTE_IELTS}>{t('exploreMore')}</ButtonMore>
             </CardStyled>
@@ -88,7 +88,7 @@ const EnglishCoursesContainer = () => {
               <ImgContainer>
                 <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
               </ImgContainer>
-              <SectionCardSmall>{t('toefl')}</SectionCardSmall>
+              <SectionCardSmall>{t('toeflDetail')}</SectionCardSmall>
               <SectionDescriptionCustom>{t('toeflDescription')}</SectionDescriptionCustom>
               <ButtonMore href={ROUTE_TOEFL}>{t('exploreMore')}</ButtonMore>
             </CardStyled>

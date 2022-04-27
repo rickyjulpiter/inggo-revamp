@@ -33,6 +33,7 @@ const IELTS = ({ lang }) => {
           <ProgramTitle>{t('toeflDetail')}</ProgramTitle>
           <ProgramDescription>{t('toeflDescription')}</ProgramDescription>
           <ProgramDescription>{t('toeflDescriptionSecond')}</ProgramDescription>
+          <ProgramDescription>{t('toeflDescriptionThird')}</ProgramDescription>
 
           {lang === 'id' ? (
             <Row>

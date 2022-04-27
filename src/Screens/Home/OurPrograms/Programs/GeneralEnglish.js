@@ -36,6 +36,7 @@ const GeneralEnglish = ({ lang }) => {
               <Col xl={6} md={6} sm={6}>
                 <ProgramDescription>{t('generalEnglishDescription')}</ProgramDescription>
                 <ProgramDescription>{t('generalEnglishDescriptionSecond')}</ProgramDescription>
+                <ProgramDescription>{t('generalEnglishDescriptionThird')}</ProgramDescription>
               </Col>
               <Col xl={6} md={6} sm={6}>
                 {lang === 'id' ? (

@@ -33,6 +33,7 @@ const EnglishConversation = ({ lang }) => {
           <ProgramTitle>{t('englishConversation')}</ProgramTitle>
           <ProgramDescription>{t('englishConversationDescription')}</ProgramDescription>
           <ProgramDescription>{t('englishConversationDescriptionSecond')}</ProgramDescription>
+          <ProgramDescription>{t('englishConversationDescriptionThird')}</ProgramDescription>
 
           {lang === 'id' ? (
             <Row>

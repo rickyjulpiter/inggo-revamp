@@ -34,6 +34,7 @@ const AcademicWriting = ({ lang }) => {
               <Col xl={5} md={5} sm={5}>
                 <ProgramDescription>{t('academicWritingDescription')}</ProgramDescription>
                 <ProgramDescription>{t('academicWritingDescriptionSecond')}</ProgramDescription>
+                <ProgramDescription>{t('academicWritingDescriptionThird')}</ProgramDescription>
               </Col>
               <Col xl={7} md={7} sm={7}>
                 {lang === 'id' ? (

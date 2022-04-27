@@ -5,7 +5,8 @@ import {
   H5,
   ImgBanner,
   LiStyled,
-  ProgramDescription, RowContainer,
+  ProgramDescription,
+  RowContainer,
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
@@ -35,6 +36,7 @@ const IELTS = ({ lang }) => {
               <Col xl={4} md={4} sm={4}>
                 <ProgramDescription>{t('ieltsDescription')}</ProgramDescription>
                 <ProgramDescription>{t('ieltsDescriptionSecond')}</ProgramDescription>
+                <ProgramDescription>{t('ieltsDescriptionThird')}</ProgramDescription>
               </Col>
               <Col xl={8} md={8} sm={8}>
                 {lang === 'id' ? (

@@ -50,9 +50,10 @@ const BusinessEnglish = ({ lang }) => {
           </Col>
           <Col xl={12} md={12} sm={12}>
             <RowContainer>
-              <Col xl={6} md={6} sm={6}>
+              <Col xl={12} md={12} sm={12}>
                 <ProgramDescription>{t('businessEnglishDescription')}</ProgramDescription>
                 <ProgramDescription>{t('businessEnglishDescriptionSecond')}</ProgramDescription>
+                <ProgramDescription>{t('businessEnglishDescriptionThird')}</ProgramDescription>
               </Col>
               <Col xl={6} md={6} sm={6}>
                 {lang === 'id' ? (
