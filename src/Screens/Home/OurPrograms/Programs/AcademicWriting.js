@@ -1,5 +1,8 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
+
 import {
   BannerBackground,
   ContainerStyled,
@@ -9,8 +12,6 @@ import {
   RowContainer,
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
-import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';

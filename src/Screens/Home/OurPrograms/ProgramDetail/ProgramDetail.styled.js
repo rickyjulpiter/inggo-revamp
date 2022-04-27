@@ -71,9 +71,30 @@ export const LiStyled = styled.li`
   }
 `;
 
+export const LiStyledArrow = styled.li`
+  &:before {
+    content: '\\f105';
+    font-family: FontAwesome;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+    color: ${PrimaryColor};
+  }
+
+  @media (max-width: 500px) {
+    font-size: 14px;
+  }
+`;
+
 export const H5 = styled.h5`
   font-weight: bold;
   font-size: 16px;
+  color: ${PrimaryColor};
+`;
+
+
+export const H4 = styled.h5`
+  font-weight: bold;
   color: ${PrimaryColor};
 `;
 
@@ -97,10 +118,12 @@ export const BannerBackground = styled.div.attrs(
   @media (max-width: 500px) {
     background-image: url(${(props) => props?.mobileBanner});
     min-height: 24vh;
+    margin-bottom: 0.2vw;
   }
 
   background-image: url(${(props) => props?.desktopBanner});
   min-height: 35vh;
   background-size: contain;
   background-repeat: no-repeat;
+  margin-bottom: 1vw;
 `;

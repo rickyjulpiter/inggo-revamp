@@ -22,6 +22,8 @@ export const TRANSLATIONS_ID = {
   translationServices: 'Layanan Penerjemahan </br> dan Penyuntingan',
   translationServicesDescription:
     'Sedang mencari layanan penerjemahan profesional atau sering khawatir dengan kesalahan tata bahasa dan pemilihan kata-kata dalam dokumen Anda? Jika iya, Anda ada di tempat yang tepat!',
+  translationServicesDescriptionSecond:
+    'Kami melayani pelayanan penerjemahan berbagai jenis teks dari bahasa Indonesia ke bahasa Inggris dan sebaliknya. Dokumen yang kami terjemahkan adalah sebagai berikut:',
 
   testimonials: 'Testimoni',
   testimonialsDescription: 'Apa Kata Mereka?',

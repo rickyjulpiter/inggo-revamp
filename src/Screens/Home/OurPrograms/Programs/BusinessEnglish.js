@@ -40,7 +40,7 @@ const BusinessEnglish = ({ lang }) => {
                 <ProgramDescription>{t('businessEnglishDescriptionSecond')}</ProgramDescription>
                 <ProgramDescription>{t('businessEnglishDescriptionThird')}</ProgramDescription>
               </Col>
-              <Col xl={6} md={6} sm={6}>
+              <Col xl={12} md={12} sm={12}>
                 {lang === 'id' ? (
                   <Row>
                     <Col>

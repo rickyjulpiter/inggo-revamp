@@ -13,7 +13,8 @@ import {
   ROUTE_GENERAL_ENGLISH,
   ROUTE_IELTS,
   ROUTE_TESTIMONIALS,
-  ROUTE_TOEFL
+  ROUTE_TOEFL,
+  ROUTE_TRANSLATION_SERVICE
 } from './Assets/utils';
 import AboutUsContainer from './Screens/AboutUs/AboutUs.container';
 import i18n from './Assets/Translations/i18n';
@@ -28,6 +29,7 @@ import IELTS from './Screens/Home/OurPrograms/Programs/IELTS';
 import TOEFL from './Screens/Home/OurPrograms/Programs/TOEFL';
 import EnglishConversation from './Screens/Home/OurPrograms/Programs/EnglishConversation';
 import GeneralEnglish from './Screens/Home/OurPrograms/Programs/GeneralEnglish';
+import TranslationAndProofReading from './Screens/Home/OurPrograms/Programs/TranslationAndProofReading';
 
 const App = () => {
   const [language, setLanguage] = useState('id');
@@ -62,6 +64,10 @@ const App = () => {
           <Route path={ROUTE_GENERAL_ENGLISH} element={<GeneralEnglish lang={language} />} />
 
           <Route path={ROUTE_TESTIMONIALS} element={<TestimonialsContainer lang={language} />} />
+          <Route
+            path={ROUTE_TRANSLATION_SERVICE}
+            element={<TranslationAndProofReading lang={language} />}
+          />
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />

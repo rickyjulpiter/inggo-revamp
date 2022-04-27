@@ -14,8 +14,8 @@ import {
   SectionDescription,
   SectionTitle
 } from './MainPrograms.styled';
-import EnglishCourseBalloon from '../../../Assets/Images/english_course_baloon.png';
-import TranslationCourseBalloon from '../../../Assets/Images/translation_baloon.png';
+import EnglishCourseBalloon from '../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_lingkaran_biru.png';
+import TranslationCourseBalloon from '../../../Assets/Images/new-banner/TRANSLATION-PROOFREADING-SERVICES/INGGO_translation_n_proofreading_services_lingkaran_merah.png';
 import { ROUTE_ENGLISH_COURSES } from '../../../Assets/utils';
 
 const MainPrograms = () => {

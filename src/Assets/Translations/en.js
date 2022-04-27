@@ -21,6 +21,8 @@ export const TRANSLATIONS_EN = {
   translationServices: 'Translation and Proofreading Services',
   translationServicesDescription:
     'Looking for a professional translation service or constantly worrying about grammar errors and word choice in your documents? If yes, you have come to the right place!\n',
+  translationServicesDescriptionSecond:
+    'We provide translation services for various types of texts from Indonesian to English and vice versa. The documents we translate are as follows:',
 
   testimonials: 'Testimonials',
   testimonialsDescription: 'What Students Say',
