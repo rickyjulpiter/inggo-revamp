@@ -114,5 +114,8 @@ export const TRANSLATIONS_EN = {
 
   whyChooseUsSixthReasonTitle: 'Free Trial',
   whyChooseUsSixthReasonDescription:
-    'You will get a 1-hour free trial class before starting your program. Don’t pay unless you are sure of our tutors and programs!'
+    'You will get a 1-hour free trial class before starting your program. Don’t pay unless you are sure of our tutors and programs!',
+
+  aboutUsDescription:
+    'INGGO was established in Jakarta in 2020, aiming to give students a whole different English learning experience. Our team consists of qualified teachers from local and foreign universities. Our teachers are Master’s graduates from world-renowned universities majoring in teaching English (Teaching English to Speakers of Other Languages/TESOL or Applied Linguistics). In addition, we focus on private 1-1 classes so students can learn at their own pace as well as small group classes (maximum 6 people) to keep the atmosphere conducive!'
 };
