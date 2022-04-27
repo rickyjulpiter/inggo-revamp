@@ -1,41 +1,23 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
+
 import {
+  BannerBackground,
   ContainerStyled,
   H5,
-  // ImgBanner,
   LiStyled,
   ProgramDescription,
   RowContainer,
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
-import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
-// import BannerIndonesia from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_bahasa_inggris_bisnis_biru.png';
-// import BannerEnglish from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_business_english_biru.png';
-import ExampleNewBanner from '../../../../Assets/Images/new-banner/INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png';
-import ExampleOldBanner from '../../../../Assets/Images/new-banner/1INGGO_REV_2_APR_2022_translation_proofreading_services_biru.png';
-
-// import ExampleBannerId from '../../../../Assets/Images/new-banner/ExampleBannerId.jpeg';
-// import ExampleBannerEn from '../../../../Assets/Images/new-banner/ExampleBannerEn.jpeg';
-
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
-import styled from 'styled-components';
-
-const BannerBackground = styled.div`
-  @media (max-width: 500px) {
-    background-image: url(${ExampleNewBanner});
-    min-height: 26vh;
-  }
-
-  background-image: url(${ExampleOldBanner});
-  min-height: 35vh;
-  background-size: contain;
-  background-repeat: no-repeat;
-`;
+import DesktopBanner from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_biru.png';
+import MobileBanner from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_biru_mobile_english.png';
 
 const BusinessEnglish = ({ lang }) => {
   const { t } = useTranslation();
@@ -45,8 +27,11 @@ const BusinessEnglish = ({ lang }) => {
       <ContainerStyled>
         <Row>
           <Col xl={12} md={12} sm={12} className="mb-1">
-            <BannerBackground language={lang} />
-            {/*<ImgBanner src={lang === 'id' ? ExampleNewBanner : ExampleNewBanner} alt="" />*/}
+            <BannerBackground
+              language={lang}
+              mobileBanner={MobileBanner}
+              desktopBanner={DesktopBanner}
+            />
           </Col>
           <Col xl={12} md={12} sm={12}>
             <RowContainer>

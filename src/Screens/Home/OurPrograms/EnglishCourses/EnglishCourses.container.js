@@ -9,13 +9,6 @@ import {
   ImgContainer,
   SectionCardSmall
 } from '../MainPrograms.styled';
-// import IELTSBalloon from '../../../../Assets/Images/new-banner/IELTS/INGGO_REV_APR_2022_ielts_lingkaran_merah.png';
-// import TOEFLBalloon from '../../../../Assets/Images/new-banner/TOEFL/INGGO_REV_APR_2022_toefl_lingkaran_merah.png';
-// import GeneralEnglishBalloon from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_REV_APR_2022_general_english_lingkaran_biru.png';
-// import BusinessEnglishBalloon from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_REV_APR_2022_business_english_lingkaran_biru.png';
-// import AcademicWritingBalloon from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/IMG-0719.PNG';
-// import EnglishConversationBalloon from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/IMG-0727.PNG';
-import ExampleBalloon from '../../../../Assets/Images/new-banner/ExampleBalloon.jpeg';
 import {
   ButtonMore,
   ContainerStyled,
@@ -34,6 +27,13 @@ import {
   ROUTE_TOEFL
 } from '../../../../Assets/utils';
 
+import BusinessEnglishBalloon from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_lingkaran_biru.png';
+import AcademicWritingBalloon from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/INGGO_academic_writing_lingkaran_biru.png';
+import EnglishConversationBalloon from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_lingkaran_biru.png';
+import IELTSBalloon from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_lingkaran_merah.png';
+import TOEFLBalloon from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_lingkaran_merah.png';
+import GeneralEnglishBalloon from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_lingkaran_merah.png';
+
 const EnglishCoursesContainer = () => {
   const { t } = useTranslation();
   return (
@@ -44,7 +44,11 @@ const EnglishCoursesContainer = () => {
           <ColStyled xl={4} md={4} sm={12}>
             <CardStyled>
               <ImgContainer>
-                <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
+                <CardImgStyled
+                  variant="top"
+                  src={BusinessEnglishBalloon}
+                  className="mx-auto d-block"
+                />
               </ImgContainer>
               <SectionCardSmall>{t('businessEnglish')}</SectionCardSmall>
               <SectionDescriptionCustom>{t('businessEnglishDescription')}</SectionDescriptionCustom>
@@ -54,7 +58,11 @@ const EnglishCoursesContainer = () => {
           <ColStyled xl={4} md={4} sm={12}>
             <CardStyled>
               <ImgContainer>
-                <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
+                <CardImgStyled
+                  variant="top"
+                  src={AcademicWritingBalloon}
+                  className="mx-auto d-block"
+                />
               </ImgContainer>
               <SectionCardSmall>{t('academicWriting')}</SectionCardSmall>
               <SectionDescriptionCustom>{t('academicWritingDescription')}</SectionDescriptionCustom>
@@ -64,7 +72,11 @@ const EnglishCoursesContainer = () => {
           <ColStyled xl={4} md={4} sm={12}>
             <CardStyled>
               <ImgContainer>
-                <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
+                <CardImgStyled
+                  variant="top"
+                  src={EnglishConversationBalloon}
+                  className="mx-auto d-block"
+                />
               </ImgContainer>
               <SectionCardSmall>{t('englishConversation')}</SectionCardSmall>
               <SectionDescriptionCustom>
@@ -76,7 +88,7 @@ const EnglishCoursesContainer = () => {
           <ColStyled xl={4} md={4} sm={12}>
             <CardStyled>
               <ImgContainer>
-                <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
+                <CardImgStyled variant="top" src={IELTSBalloon} className="mx-auto d-block" />
               </ImgContainer>
               <SectionCardSmall>{t('ieltsDetail')}</SectionCardSmall>
               <SectionDescriptionCustom>{t('ieltsDescription')}</SectionDescriptionCustom>
@@ -86,7 +98,7 @@ const EnglishCoursesContainer = () => {
           <ColStyled xl={4} md={4} sm={12}>
             <CardStyled>
               <ImgContainer>
-                <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
+                <CardImgStyled variant="top" src={TOEFLBalloon} className="mx-auto d-block" />
               </ImgContainer>
               <SectionCardSmall>{t('toeflDetail')}</SectionCardSmall>
               <SectionDescriptionCustom>{t('toeflDescription')}</SectionDescriptionCustom>
@@ -96,7 +108,11 @@ const EnglishCoursesContainer = () => {
           <ColStyled xl={4} md={4} sm={12}>
             <CardStyled>
               <ImgContainer>
-                <CardImgStyled variant="top" src={ExampleBalloon} className="mx-auto d-block" />
+                <CardImgStyled
+                  variant="top"
+                  src={GeneralEnglishBalloon}
+                  className="mx-auto d-block"
+                />
               </ImgContainer>
               <SectionCardSmall>{t('generalEnglish')}</SectionCardSmall>
               <SectionDescriptionCustom>{t('generalEnglishDescription')}</SectionDescriptionCustom>

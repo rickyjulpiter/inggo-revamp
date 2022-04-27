@@ -35,15 +35,15 @@ export const SectionDescriptionCustom = styled.p`
   }
 
   @media (max-width: 1024px) {
-    min-height: 45vw;
+    min-height: 38vw;
   }
 
   @media (min-width: 1200px) {
-    min-height: 30vw;
+    min-height: 26vw;
   }
 
   @media (min-width: 1400px) {
-    min-height: 20vw;
+    min-height: 17vw;
   }
 
   @media (min-width: 1600px) {

@@ -3,7 +3,6 @@ import { PrimaryColor } from '../../../../Assets/colorPalette';
 import { Row } from 'react-bootstrap';
 
 export const ContainerStyled = styled.div`
-  //padding: 1vw 5vw 8vw 5vw;
   @media (min-width: 1024px) {
     min-height: 602px;
   }
@@ -90,4 +89,18 @@ export const ImgBanner = styled.img`
 export const RowContainer = styled(Row)`
   padding-right: 2vw;
   padding-left: 2vw;
+`;
+
+export const BannerBackground = styled.div.attrs(
+  (props: { mobileBanner: string, desktopBanner: string }) => props
+)`
+  @media (max-width: 500px) {
+    background-image: url(${(props) => props?.mobileBanner});
+    min-height: 24vh;
+  }
+
+  background-image: url(${(props) => props?.desktopBanner});
+  min-height: 35vh;
+  background-size: contain;
+  background-repeat: no-repeat;
 `;

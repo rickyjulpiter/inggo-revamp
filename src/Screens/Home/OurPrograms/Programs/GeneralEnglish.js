@@ -1,22 +1,23 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
+import { useTranslation } from 'react-i18next';
+import PropTypes from 'prop-types';
+
 import {
+  BannerBackground,
   ContainerStyled,
   H5,
-  ImgBanner,
   LiStyled,
   ProgramDescription,
   RowContainer,
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
-import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
-import BannerIndonesia from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_REV_APR_2022_bahasa_inggris_umum_biru.png';
-import BannerEnglish from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_REV_APR_2022_general_english_biru.png';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
+import MobileBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_biru_mobile_english.png';
+import DesktopBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_biru.png';
 
 const GeneralEnglish = ({ lang }) => {
   const { t } = useTranslation();
@@ -25,10 +26,10 @@ const GeneralEnglish = ({ lang }) => {
       <ContainerStyled>
         <Row>
           <Col xl={12} md={12} sm={12}>
-            <ImgBanner
-              className="img-fluid"
-              src={lang === 'id' ? BannerIndonesia : BannerEnglish}
-              alt=""
+            <BannerBackground
+              language={lang}
+              mobileBanner={MobileBanner}
+              desktopBanner={DesktopBanner}
             />
           </Col>
           <Col xl={12} md={12} sm={12}>

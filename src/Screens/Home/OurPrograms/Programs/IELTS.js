@@ -1,9 +1,9 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import {
+  BannerBackground,
   ContainerStyled,
   H5,
-  ImgBanner,
   LiStyled,
   ProgramDescription,
   RowContainer,
@@ -11,12 +11,12 @@ import {
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import BannerIndonesia from '../../../../Assets/Images/new-banner/IELTS/INGGO_REV_APR_2022_ielts_merah.png';
-import BannerEnglish from '../../../../Assets/Images/new-banner/IELTS/INGGO_REV_APR_2022_ielts_merah.png';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
+import MobileBanner from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_biru_Mobile.png';
+import DesktopBanner from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_biru.png';
 
 const IELTS = ({ lang }) => {
   const { t } = useTranslation();
@@ -25,10 +25,10 @@ const IELTS = ({ lang }) => {
       <ContainerStyled>
         <Row>
           <Col xl={12} md={12} sm={12}>
-            <ImgBanner
-              className="img-fluid"
-              src={lang === 'id' ? BannerIndonesia : BannerEnglish}
-              alt=""
+            <BannerBackground
+              language={lang}
+              mobileBanner={MobileBanner}
+              desktopBanner={DesktopBanner}
             />
           </Col>
           <Col xl={12} md={12} sm={12}>

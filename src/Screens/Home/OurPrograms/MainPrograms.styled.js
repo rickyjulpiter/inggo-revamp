@@ -155,7 +155,7 @@ export const CardImgStyled = styled(CardImg)`
 
 export const ImgContainer = styled.div`
   min-height: 13.5vw;
-
+  margin-bottom: 1vw;
   @media (max-width: 768px) {
     min-height: 12.5vw;
   }
