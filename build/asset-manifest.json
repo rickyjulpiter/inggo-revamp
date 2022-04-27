@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.ca613155.js",
+    "main.js": "/static/js/main.cad99d6d.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
-    "static/media/translation_baloon.png": "/static/media/translation_baloon.23b80e6c666888725193.png",
+    "static/media/id_flowchart.png": "/static/media/id_flowchart.192d06e250489802c84e.png",
+    "static/media/en_flowchart.png": "/static/media/en_flowchart.9fc7ccf439f4d1179bc4.png",
     "static/media/logo.png": "/static/media/logo.b82e8cf8dc6aec52f776.png",
-    "static/media/english_course_baloon.png": "/static/media/english_course_baloon.4f65f255a9953b8d3965.png",
     "static/media/INGGO_ielts_biru_Mobile.png": "/static/media/INGGO_ielts_biru_Mobile.3a32a0c420a7f0da41fd.png",
     "static/media/INGGO_general_english_biru_mobile_english.png": "/static/media/INGGO_general_english_biru_mobile_english.60cf941e2f01b205a31d.png",
     "static/media/MuhammadHafizhAsad.jpeg": "/static/media/MuhammadHafizhAsad.17cddbcbcd5da2cf1b79.jpeg",
     "static/media/INGGO_toefl_merah_mobile.png": "/static/media/INGGO_toefl_merah_mobile.01124b3ea1610ebf63e3.png",
+    "static/media/INGGO_translation_n_proofreading_services_biru_mobile_english.png": "/static/media/INGGO_translation_n_proofreading_services_biru_mobile_english.3409609a81fd98f408a5.png",
     "static/media/RifkaCharmelita.jpeg": "/static/media/RifkaCharmelita.7dadda82f47f0a2297df.jpeg",
     "static/media/INGGO_academic_writing_merah_mobile_english.png": "/static/media/INGGO_academic_writing_merah_mobile_english.1ebdfec4c59f78dc30c4.png",
     "static/media/INGGO_ielts_biru.png": "/static/media/INGGO_ielts_biru.ca89034533b7b01f6114.png",
@@ -21,6 +22,7 @@
     "static/media/AkmiliaAswarini.jpeg": "/static/media/AkmiliaAswarini.33c4b84a34267ee19795.jpeg",
     "static/media/INGGO_general_english_biru.png": "/static/media/INGGO_general_english_biru.3acf48c504585882640c.png",
     "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
+    "static/media/INGGO_translation_n_proofreading_services_biru.png": "/static/media/INGGO_translation_n_proofreading_services_biru.695c6599b8f2cf7d402f.png",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/INGGO_academic_writing_merah.png": "/static/media/INGGO_academic_writing_merah.e50b05a442a2b6f07427.png",
     "static/media/INGGO_ielts_lingkaran_merah.png": "/static/media/INGGO_ielts_lingkaran_merah.f1de2bfd2e463889e4e2.png",
@@ -31,6 +33,7 @@
     "static/media/INGGO_english_conversatin_merah.png": "/static/media/INGGO_english_conversatin_merah.5d0c43e02a68f3049f84.png",
     "static/media/INGGO_business_english_biru.png": "/static/media/INGGO_business_english_biru.3a728c5fc0fce623dbe0.png",
     "static/media/AfiyaMaritza.jpeg": "/static/media/AfiyaMaritza.9f4cb7daf29ca464aa5c.jpeg",
+    "static/media/INGGO_translation_n_proofreading_services_lingkaran_merah.png": "/static/media/INGGO_translation_n_proofreading_services_lingkaran_merah.781a99b747adc35d3a96.png",
     "static/media/INGGO_academic_writing_lingkaran_biru.png": "/static/media/INGGO_academic_writing_lingkaran_biru.9b574e5be812f00a99ce.png",
     "static/media/INGGO_business_english_lingkaran_biru.png": "/static/media/INGGO_business_english_lingkaran_biru.8c5eae3759e9c63e1d27.png",
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
@@ -44,11 +47,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.ca613155.js.map": "/static/js/main.ca613155.js.map",
+    "main.cad99d6d.js.map": "/static/js/main.cad99d6d.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.ca613155.js"
+    "static/js/main.cad99d6d.js"
   ]
 }
