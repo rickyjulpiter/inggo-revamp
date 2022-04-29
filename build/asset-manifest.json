@@ -1,21 +1,25 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.da084377.js",
+    "main.js": "/static/js/main.8e7cd5bc.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/id_flowchart.png": "/static/media/id_flowchart.192d06e250489802c84e.png",
     "static/media/en_flowchart.png": "/static/media/en_flowchart.9fc7ccf439f4d1179bc4.png",
-    "static/media/logo.png": "/static/media/logo.b82e8cf8dc6aec52f776.png",
+    "static/media/SitiKarinThalia.jpeg": "/static/media/SitiKarinThalia.e5400f4c36d7cb37899c.jpeg",
     "static/media/INGGO_ielts_biru_Mobile.png": "/static/media/INGGO_ielts_biru_Mobile.3a32a0c420a7f0da41fd.png",
+    "static/media/logo.png": "/static/media/logo.56ca0fb49c77802d507d.png",
     "static/media/INGGO_general_english_biru_mobile_english.png": "/static/media/INGGO_general_english_biru_mobile_english.60cf941e2f01b205a31d.png",
+    "static/media/KathyAiraSurono.jpeg": "/static/media/KathyAiraSurono.2dc56379a32a8ea430c1.jpeg",
     "static/media/MuhammadHafizhAsad.jpeg": "/static/media/MuhammadHafizhAsad.17cddbcbcd5da2cf1b79.jpeg",
+    "static/media/SerliKusumadewi.jpeg": "/static/media/SerliKusumadewi.02d8d70a1e02dadb372f.jpeg",
     "static/media/INGGO_toefl_merah_mobile.png": "/static/media/INGGO_toefl_merah_mobile.01124b3ea1610ebf63e3.png",
     "static/media/INGGO_translation_n_proofreading_services_biru_mobile_english.png": "/static/media/INGGO_translation_n_proofreading_services_biru_mobile_english.3409609a81fd98f408a5.png",
     "static/media/RifkaCharmelita.jpeg": "/static/media/RifkaCharmelita.7dadda82f47f0a2297df.jpeg",
     "static/media/INGGO_academic_writing_merah_mobile_english.png": "/static/media/INGGO_academic_writing_merah_mobile_english.1ebdfec4c59f78dc30c4.png",
     "static/media/INGGO_ielts_biru.png": "/static/media/INGGO_ielts_biru.ca89034533b7b01f6114.png",
     "static/media/BeatrixMarendeng.jpeg": "/static/media/BeatrixMarendeng.8fa325ae9cb2ea56a2de.jpeg",
+    "static/media/LodangJati.jpeg": "/static/media/LodangJati.b268395b6b0b204701c1.jpeg",
     "static/media/INGGO_english_conversatin_merah_mobile_english.png": "/static/media/INGGO_english_conversatin_merah_mobile_english.a82a07dc98c91c42637c.png",
     "static/media/INGGO_business_english_biru_mobile_english.png": "/static/media/INGGO_business_english_biru_mobile_english.264993afe8bbd1ed2f5f.png",
     "static/media/INGGO_toefl_merah.png": "/static/media/INGGO_toefl_merah.4417fe7ea0552d4f3d57.png",
@@ -25,6 +29,7 @@
     "static/media/INGGO_translation_n_proofreading_services_biru.png": "/static/media/INGGO_translation_n_proofreading_services_biru.695c6599b8f2cf7d402f.png",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/INGGO_academic_writing_merah.png": "/static/media/INGGO_academic_writing_merah.e50b05a442a2b6f07427.png",
+    "static/media/MutiaSekarDini.jpeg": "/static/media/MutiaSekarDini.85115ee89cae9dc76a81.jpeg",
     "static/media/INGGO_ielts_lingkaran_merah.png": "/static/media/INGGO_ielts_lingkaran_merah.f1de2bfd2e463889e4e2.png",
     "static/media/SyahzamiPutra.jpeg": "/static/media/SyahzamiPutra.d3938f354747d3d0b778.jpeg",
     "static/media/INGGO_general_english_lingkaran_merah.png": "/static/media/INGGO_general_english_lingkaran_merah.578e61db677e456a3b47.png",
@@ -44,14 +49,15 @@
     "static/media/FachriAkbar.jpeg": "/static/media/FachriAkbar.324bbb8ac3a20164446f.jpeg",
     "static/media/choose.png": "/static/media/choose.864d463212cbcc78788f.png",
     "static/media/seed.jpeg": "/static/media/seed.e4f5714d32fbe5324abc.jpeg",
+    "static/media/ThanthowySyamsuddin.jpeg": "/static/media/ThanthowySyamsuddin.c179471f415d95f0c1b3.jpeg",
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.da084377.js.map": "/static/js/main.da084377.js.map",
+    "main.8e7cd5bc.js.map": "/static/js/main.8e7cd5bc.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.da084377.js"
+    "static/js/main.8e7cd5bc.js"
   ]
 }
