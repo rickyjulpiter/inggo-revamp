@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.cad99d6d.js",
+    "main.js": "/static/js/main.da084377.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/id_flowchart.png": "/static/media/id_flowchart.192d06e250489802c84e.png",
@@ -28,13 +28,13 @@
     "static/media/INGGO_ielts_lingkaran_merah.png": "/static/media/INGGO_ielts_lingkaran_merah.f1de2bfd2e463889e4e2.png",
     "static/media/SyahzamiPutra.jpeg": "/static/media/SyahzamiPutra.d3938f354747d3d0b778.jpeg",
     "static/media/INGGO_general_english_lingkaran_merah.png": "/static/media/INGGO_general_english_lingkaran_merah.578e61db677e456a3b47.png",
-    "static/media/INGGO_toefl_lingkaran_merah.png": "/static/media/INGGO_toefl_lingkaran_merah.2d4f668007283f510785.png",
+    "static/media/INGGO_toefl_lingkaran_biru.png": "/static/media/INGGO_toefl_lingkaran_biru.bd896aa591ad2ce2f81f.png",
     "static/media/NahlaJovial.jpeg": "/static/media/NahlaJovial.e1cb2017fab249f65039.jpeg",
     "static/media/INGGO_english_conversatin_merah.png": "/static/media/INGGO_english_conversatin_merah.5d0c43e02a68f3049f84.png",
     "static/media/INGGO_business_english_biru.png": "/static/media/INGGO_business_english_biru.3a728c5fc0fce623dbe0.png",
     "static/media/AfiyaMaritza.jpeg": "/static/media/AfiyaMaritza.9f4cb7daf29ca464aa5c.jpeg",
     "static/media/INGGO_translation_n_proofreading_services_lingkaran_merah.png": "/static/media/INGGO_translation_n_proofreading_services_lingkaran_merah.781a99b747adc35d3a96.png",
-    "static/media/INGGO_academic_writing_lingkaran_biru.png": "/static/media/INGGO_academic_writing_lingkaran_biru.9b574e5be812f00a99ce.png",
+    "static/media/INGGO_academic_writing_lingkaran_merah.png": "/static/media/INGGO_academic_writing_lingkaran_merah.f9695c9f667ededfc909.png",
     "static/media/INGGO_business_english_lingkaran_biru.png": "/static/media/INGGO_business_english_lingkaran_biru.8c5eae3759e9c63e1d27.png",
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.bae1a4678ac7dab26d05.png",
@@ -47,11 +47,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.cad99d6d.js.map": "/static/js/main.cad99d6d.js.map",
+    "main.da084377.js.map": "/static/js/main.da084377.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.cad99d6d.js"
+    "static/js/main.da084377.js"
   ]
 }
