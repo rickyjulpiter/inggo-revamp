@@ -10,7 +10,7 @@ import {
   ColStyled,
   ContainerStyled,
   ImgContainer,
-  SectionCardSmall,
+  SectionCardSmallMain,
   SectionDescription,
   SectionTitle
 } from './MainPrograms.styled';
@@ -33,7 +33,7 @@ const MainPrograms = () => {
                 </ImgContainer>
               </Col>
               <Col xl={7} sm={7} md={7}>
-                <SectionCardSmall>{t('englishCourses')}</SectionCardSmall>
+                <SectionCardSmallMain>{t('englishCourses')}</SectionCardSmallMain>
                 <SectionDescription>{t('englishCoursesDescription')}</SectionDescription>
               </Col>
               <Col md={12} sm={12} xl={4} className="mx-auto">
@@ -55,9 +55,9 @@ const MainPrograms = () => {
                 </ImgContainer>
               </Col>
               <Col xl={7} sm={7} md={7}>
-                <SectionCardSmall>
+                <SectionCardSmallMain>
                   <span dangerouslySetInnerHTML={{ __html: t('translationServices') }} />
-                </SectionCardSmall>
+                </SectionCardSmallMain>
                 <SectionDescription>{t('translationServicesDescription')}</SectionDescription>
               </Col>
               <Col md={12} sm={12} xl={4} className="mx-auto">

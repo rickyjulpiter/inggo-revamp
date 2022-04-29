@@ -39,7 +39,7 @@ export const SectionDescriptionCustom = styled.p`
   }
 
   @media (min-width: 1200px) {
-    min-height: 26vw;
+    min-height: 28vw;
   }
 
   @media (min-width: 1400px) {

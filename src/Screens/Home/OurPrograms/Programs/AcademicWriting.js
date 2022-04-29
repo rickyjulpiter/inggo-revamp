@@ -36,31 +36,50 @@ const AcademicWriting = ({ lang }) => {
             <RowContainer>
               <Col xl={12} md={12} sm={12}>
                 <Row>
-                  <Col xl={5} md={5} sm={5}>
+                  <Col xl={12} md={12} sm={12}>
                     <ProgramDescription>{t('academicWritingDescription')}</ProgramDescription>
                     <ProgramDescription>{t('academicWritingDescriptionSecond')}</ProgramDescription>
                     <ProgramDescription>{t('academicWritingDescriptionThird')}</ProgramDescription>
                   </Col>
-                  <Col xl={7} md={7} sm={7}>
+                  <Col xl={12} md={12} sm={12}>
                     {lang === 'id' ? (
                       <Row>
-                        <Col>
+                        <Col md={8}>
                           <H5>Anda akan belajar cara:</H5>
-                          <ULStyled>
-                            <LiStyled>Menulis sitasi</LiStyled>
-                            <LiStyled>Menulis parafrasa</LiStyled>
-                            <LiStyled>Membentuk argumen</LiStyled>
-                            <LiStyled>
-                              Menyisipkan student voice untuk memperkuat argument dalam esai Anda
-                            </LiStyled>
-                            <LiStyled>
-                              Mengidentifikasi dan menggunakan sumber-sumber terpercaya seperti
-                              jurnal dan buku bacaan
-                            </LiStyled>
-                          </ULStyled>
+                          <Row>
+                            <Col>
+                              <ULStyled>
+                                <LiStyled>Menulis sitasi</LiStyled>
+                                <LiStyled>Menulis parafrasa</LiStyled>
+                                <LiStyled>Membentuk argumen</LiStyled>
+                                <LiStyled>
+                                  Menyisipkan student voice untuk memperkuat argument dalam esai
+                                  Anda
+                                </LiStyled>
+                                <LiStyled>
+                                  Menyusun kata kunci dalam pencarian referensi yang relevan
+                                </LiStyled>
+                                <LiStyled>
+                                  Mengidentifikasi dan menggunakan sumber-sumber terpercaya seperti
+                                  jurnal dan buku bacaan
+                                </LiStyled>
+                              </ULStyled>
+                            </Col>
+                            <Col>
+                              <ULStyled>
+                                <LiStyled>Mengembangkan strategi membaca teks ilmiah</LiStyled>
+                                <LiStyled>Menyusun struktur argumen</LiStyled>
+                                <LiStyled>
+                                  Mengembangkan gagasan dari argumen utama dalam esai akademik.
+                                </LiStyled>
+                                <LiStyled>Menulis esai singkat</LiStyled>
+                                <LiStyled>Menghindari plagiarisme</LiStyled>
+                              </ULStyled>
+                            </Col>
+                          </Row>
                         </Col>
                         <Col>
-                          <H5>Anda akan mendapatkan</H5>
+                          <H5>Anda akan mengikuti dan mendapatkan:</H5>
                           <ULStyled>
                             <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
                             <LiStyled>Laporan Kemajuan Belajar</LiStyled>
@@ -70,19 +89,40 @@ const AcademicWriting = ({ lang }) => {
                       </Row>
                     ) : (
                       <Row>
-                        <Col>
+                        <Col md={8}>
                           <H5>You will learn about:</H5>
-                          <ULStyled>
-                            <LiStyled>Citing</LiStyled>
-                            <LiStyled>Paraphrasing</LiStyled>
-                            <LiStyled>Building arguments</LiStyled>
-                            <LiStyled>
-                              Inserting student voice to strengthen your arguments in your essay
-                            </LiStyled>
-                            <LiStyled>
-                              Identifying and using reliable sources, such as journal and text books
-                            </LiStyled>
-                          </ULStyled>
+                          <Row>
+                            <Col>
+                              <ULStyled>
+                                <LiStyled>Citing</LiStyled>
+                                <LiStyled>Paraphrasing</LiStyled>
+                                <LiStyled>Building arguments</LiStyled>
+                                <LiStyled>
+                                  Inserting student voice to strengthen your arguments in your essay
+                                </LiStyled>
+                                <LiStyled>
+                                  Using appropriate keywords to search for relevant references
+                                </LiStyled>
+                                <LiStyled>
+                                  Identifying and using reliable sources, such as journal and text
+                                  books
+                                </LiStyled>
+                              </ULStyled>
+                            </Col>
+                            <Col>
+                              <ULStyled>
+                                <LiStyled>
+                                  Developing strategies for reading academic texts
+                                </LiStyled>
+                                <LiStyled>Arranging argument structures</LiStyled>
+                                <LiStyled>
+                                  Developing details from main arguments in academic essays
+                                </LiStyled>
+                                <LiStyled>Writing short essays</LiStyled>
+                                <LiStyled>Avoiding plagiarism</LiStyled>
+                              </ULStyled>
+                            </Col>
+                          </Row>
                         </Col>
                         <Col>
                           <H5>You will have and obtain:</H5>

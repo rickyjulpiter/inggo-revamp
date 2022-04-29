@@ -28,10 +28,10 @@ import {
 } from '../../../../Assets/utils';
 
 import BusinessEnglishBalloon from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_lingkaran_biru.png';
-import AcademicWritingBalloon from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/INGGO_academic_writing_lingkaran_biru.png';
+import AcademicWritingBalloon from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/INGGO_academic_writing_lingkaran_merah.png';
 import EnglishConversationBalloon from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_lingkaran_biru.png';
 import IELTSBalloon from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_lingkaran_merah.png';
-import TOEFLBalloon from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_lingkaran_merah.png';
+import TOEFLBalloon from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_lingkaran_biru.png';
 import GeneralEnglishBalloon from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_lingkaran_merah.png';
 
 const EnglishCoursesContainer = () => {

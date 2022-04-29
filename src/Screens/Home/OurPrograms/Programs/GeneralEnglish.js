@@ -34,29 +34,42 @@ const GeneralEnglish = ({ lang }) => {
           </Col>
           <Col xl={12} md={12} sm={12}>
             <RowContainer>
-              <Col xl={6} md={6} sm={6}>
+              <Col xl={12} md={12} sm={12}>
                 <ProgramDescription>{t('generalEnglishDescription')}</ProgramDescription>
                 <ProgramDescription>{t('generalEnglishDescriptionSecond')}</ProgramDescription>
                 <ProgramDescription>{t('generalEnglishDescriptionThird')}</ProgramDescription>
               </Col>
-              <Col xl={6} md={6} sm={6}>
+              <Col xl={12} md={12} sm={12}>
                 {lang === 'id' ? (
                   <Row>
-                    <Col>
+                    <Col xl={8} md={8} sm={8}>
                       <H5>Anda akan belajar tentang:</H5>
-                      <ULStyled>
-                        <LiStyled>Lesson 1: Personal details</LiStyled>
-                        <LiStyled>Lesson 2: Country and Languages</LiStyled>
-                        <LiStyled>Lesson 3: Gadgets</LiStyled>
-                        <LiStyled>Lesson 4: Small talk</LiStyled>
-                        <LiStyled>Lesson 5: Interests</LiStyled>
-                        <LiStyled>Lesson 6: Lifelong learning</LiStyled>
-                        <LiStyled>Lesson 7: Memorable Encounter</LiStyled>
-                        <LiStyled>Lesson 8: Uncommon Jobs</LiStyled>
-                      </ULStyled>
+                      <Row>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 1: Personal details</LiStyled>
+                            <LiStyled>Lesson 2: Country and Languages</LiStyled>
+                            <LiStyled>Lesson 3: Gadgets</LiStyled>
+                            <LiStyled>Lesson 4: Small talk</LiStyled>
+                            <LiStyled>Lesson 5: Interests</LiStyled>
+                            <LiStyled>Lesson 6: Lifelong learning</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 7: Memorable Encounter</LiStyled>
+                            <LiStyled>Lesson 8: Uncommon Jobs</LiStyled>
+                            <LiStyled>Lesson 9: Blockbuster movies</LiStyled>
+                            <LiStyled>Lesson 10: Tertiary Education</LiStyled>
+                            <LiStyled>Lesson 11: Religious holidays</LiStyled>
+                            <LiStyled>Lesson 12: Friendships</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <i>*topik dapat sewaktu-waktu berubah tanpa pemberitahuan.</i>
+                      </Row>
                     </Col>
                     <Col>
-                      <H5>Anda akan mendapatkan</H5>
+                      <H5>Anda akan mengikuti dan mendapatkan:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, post-test</LiStyled>
                         <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
@@ -67,18 +80,31 @@ const GeneralEnglish = ({ lang }) => {
                   </Row>
                 ) : (
                   <Row>
-                    <Col>
+                    <Col xl={8} md={8} sm={8}>
                       <H5>You will learn about:</H5>
-                      <ULStyled>
-                        <LiStyled>Lesson 1: Personal details</LiStyled>
-                        <LiStyled>Lesson 2: Country and Languages</LiStyled>
-                        <LiStyled>Lesson 3: Gadgets</LiStyled>
-                        <LiStyled>Lesson 4: Small talk</LiStyled>
-                        <LiStyled>Lesson 5: Interests</LiStyled>
-                        <LiStyled>Lesson 6: Lifelong learning</LiStyled>
-                        <LiStyled>Lesson 7: Memorable Encounter</LiStyled>
-                        <LiStyled>Lesson 8: Uncommon Jobs</LiStyled>
-                      </ULStyled>
+                      <Row>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 1: Personal details</LiStyled>
+                            <LiStyled>Lesson 2: Country and Languages</LiStyled>
+                            <LiStyled>Lesson 3: Gadgets</LiStyled>
+                            <LiStyled>Lesson 4: Small talk</LiStyled>
+                            <LiStyled>Lesson 5: Interests</LiStyled>
+                            <LiStyled>Lesson 6: Lifelong learning</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 7: Memorable Encounter</LiStyled>
+                            <LiStyled>Lesson 8: Uncommon Jobs</LiStyled>
+                            <LiStyled>Lesson 9: Blockbuster movies</LiStyled>
+                            <LiStyled>Lesson 10: Tertiary Education</LiStyled>
+                            <LiStyled>Lesson 11: Religious holidays</LiStyled>
+                            <LiStyled>Lesson 12: Friendships</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <i>*topics are subject to change without prior notice.</i>
+                      </Row>
                     </Col>
                     <Col>
                       <H5>You will have and obtain:</H5>

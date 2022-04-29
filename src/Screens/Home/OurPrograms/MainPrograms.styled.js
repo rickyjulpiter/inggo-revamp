@@ -65,8 +65,29 @@ export const SectionCardSmall = styled.h3`
   font-size: 24px;
   font-weight: bolder;
   line-height: 32px;
-  min-height: 5vw;
+  min-height: 6.5vw;
+  @media (max-width: 768px) {
+    font-size: 16px !important;
+  }
 
+  @media (max-width: 1024px) {
+    font-size: 18px;
+    line-height: 24px;
+    min-height: 6.5vw;
+  }
+
+  @media (max-width: 1280px) {
+    min-height: 8vw;
+  }
+`;
+
+export const SectionCardSmallMain = styled.h3`
+  color: ${PrimaryColor};
+  text-align: center;
+  font-size: 24px;
+  font-weight: bolder;
+  line-height: 32px;
+  min-height: 4vw;
   @media (max-width: 768px) {
     font-size: 16px !important;
   }

@@ -33,15 +33,15 @@ const IELTS = ({ lang }) => {
           </Col>
           <Col xl={12} md={12} sm={12}>
             <RowContainer>
-              <Col xl={4} md={4} sm={4}>
+              <Col xl={12} md={12} sm={12}>
                 <ProgramDescription>{t('toeflDescription')}</ProgramDescription>
                 <ProgramDescription>{t('toeflDescriptionSecond')}</ProgramDescription>
                 <ProgramDescription>{t('toeflDescriptionThird')}</ProgramDescription>
               </Col>
-              <Col xl={8} md={8} sm={8}>
+              <Col xl={12} md={12} sm={12}>
                 {lang === 'id' ? (
                   <Row>
-                    <Col>
+                    <Col xl={8} md={8} sm={8}>
                       <H5>Anda akan belajar tentang:</H5>
                       <h6>
                         <b>TOEFL iBT</b>
@@ -89,7 +89,7 @@ const IELTS = ({ lang }) => {
                       </ULStyled>
                     </Col>
                     <Col>
-                      <H5>Anda akan mendapatkan</H5>
+                      <H5>Anda akan mengikuti dan mendapatkan:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, post-test</LiStyled>
                         <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
@@ -100,7 +100,7 @@ const IELTS = ({ lang }) => {
                   </Row>
                 ) : (
                   <Row>
-                    <Col>
+                    <Col xl={8} md={8} sm={8}>
                       <H5>You will learn about:</H5>
                       <h6>
                         <b>TOEFL iBT</b>

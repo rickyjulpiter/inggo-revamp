@@ -43,19 +43,35 @@ const BusinessEnglish = ({ lang }) => {
               <Col xl={12} md={12} sm={12}>
                 {lang === 'id' ? (
                   <Row>
-                    <Col>
+                    <Col md={8}>
                       <H5>Anda akan belajar cara:</H5>
-                      <ULStyled>
-                        <LiStyled>Memberikan presentasi</LiStyled>
-                        <LiStyled>Menulis email</LiStyled>
-                        <LiStyled>Menulis proposal</LiStyled>
-                        <LiStyled>Menulis laporan</LiStyled>
-                        <LiStyled>Menjelaskan grafik</LiStyled>
-                        <LiStyled>Berbasa-basi dalam konteks bisnis</LiStyled>
-                      </ULStyled>
+                      <Row>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Memperkenalkan diri dalam konteks bisnis</LiStyled>
+                            <LiStyled>Menghadapi wawancara kerja</LiStyled>
+                            <LiStyled>Memberikan presentasi</LiStyled>
+                            <LiStyled>Menulis email</LiStyled>
+                            <LiStyled>Menulis proposal</LiStyled>
+                            <LiStyled>Menulis laporan singkat</LiStyled>
+                            <LiStyled>Menjelaskan grafik</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Berbasa-basi dalam konteks bisnis</LiStyled>
+                            <LiStyled>Bersosialisasi dan membangun relasi</LiStyled>
+                            <LiStyled>Memimpin pertemuan</LiStyled>
+                            <LiStyled>Berpartisipasi dalam diskusi</LiStyled>
+                            <LiStyled>Bernegosiasi</LiStyled>
+                            <LiStyled>Menangani keluhan</LiStyled>
+                            <LiStyled>Menelepon</LiStyled>
+                          </ULStyled>
+                        </Col>
+                      </Row>
                     </Col>
                     <Col>
-                      <H5>Anda akan mendapatkan</H5>
+                      <H5>Anda akan mengikuti dan mendapatkan:</H5>
                       <ULStyled>
                         <LiStyled>Ujian awal, ujian progress dan ujian akhir</LiStyled>
                         <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
@@ -66,16 +82,32 @@ const BusinessEnglish = ({ lang }) => {
                   </Row>
                 ) : (
                   <Row>
-                    <Col>
+                    <Col md={8}>
                       <H5>You will learn about:</H5>
-                      <ULStyled>
-                        <LiStyled>Giving presentations</LiStyled>
-                        <LiStyled>Writing emails</LiStyled>
-                        <LiStyled>Writing proposals</LiStyled>
-                        <LiStyled>Writing reports</LiStyled>
-                        <LiStyled>Explaining graphs and charts</LiStyled>
-                        <LiStyled>Giving small talks in Business English</LiStyled>
-                      </ULStyled>
+                      <Row>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Introducing yourself in the business setting</LiStyled>
+                            <LiStyled>Job interviews</LiStyled>
+                            <LiStyled>Giving presentations</LiStyled>
+                            <LiStyled>Writing emails</LiStyled>
+                            <LiStyled>Writing proposals</LiStyled>
+                            <LiStyled>Writing short reports</LiStyled>
+                            <LiStyled>Explaining graphs and charts</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Giving small talks in Business English</LiStyled>
+                            <LiStyled>Socializing and networking</LiStyled>
+                            <LiStyled>Leading meetings</LiStyled>
+                            <LiStyled>Participating in discussion</LiStyled>
+                            <LiStyled>Negotiation</LiStyled>
+                            <LiStyled>Dealing with complaints</LiStyled>
+                            <LiStyled>Telephoning</LiStyled>
+                          </ULStyled>
+                        </Col>
+                      </Row>
                     </Col>
                     <Col>
                       <H5>You will have and obtain:</H5>

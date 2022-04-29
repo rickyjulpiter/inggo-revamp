@@ -34,29 +34,42 @@ const EnglishConversation = ({ lang }) => {
           </Col>
           <Col xl={12} md={12} sm={12}>
             <RowContainer>
-              <Col xl={4} md={4} sm={4}>
+              <Col xl={12} md={12} sm={12}>
                 <ProgramDescription>{t('englishConversationDescription')}</ProgramDescription>
                 <ProgramDescription>{t('englishConversationDescriptionSecond')}</ProgramDescription>
                 <ProgramDescription>{t('englishConversationDescriptionThird')}</ProgramDescription>
               </Col>
-              <Col xl={8} md={8} sm={8}>
+              <Col xl={12} md={12} sm={12}>
                 {lang === 'id' ? (
                   <Row>
-                    <Col>
+                    <Col xl={8} md={8} sm={8}>
                       <H5>Anda akan belajar tentang:</H5>
-                      <ULStyled>
-                        <LiStyled>Lesson 1: Personal details</LiStyled>
-                        <LiStyled>Lesson 2: Expectations</LiStyled>
-                        <LiStyled>Lesson 3: Studying/Working abroad</LiStyled>
-                        <LiStyled>Lesson 4: Future goals</LiStyled>
-                        <LiStyled>Lesson 5: Directions</LiStyled>
-                        <LiStyled>Lesson 6: Foods around the world</LiStyled>
-                        <LiStyled>Lesson 7: Traveling plans</LiStyled>
-                        <LiStyled>Lesson 8: New Year’s resolutions</LiStyled>
-                      </ULStyled>
+                      <Row>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 1: Personal details</LiStyled>
+                            <LiStyled>Lesson 2: Expectations</LiStyled>
+                            <LiStyled>Lesson 3: Studying/Working abroad</LiStyled>
+                            <LiStyled>Lesson 4: Future goals</LiStyled>
+                            <LiStyled>Lesson 5: Directions</LiStyled>
+                            <LiStyled>Lesson 6: Foods around the world</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 7: Traveling plans</LiStyled>
+                            <LiStyled>Lesson 8: New Year’s resolutions</LiStyled>
+                            <LiStyled>Lesson 9: University life</LiStyled>
+                            <LiStyled>Lesson 10: Culture Shock</LiStyled>
+                            <LiStyled>Lesson 11: Gadgets</LiStyled>
+                            <LiStyled>Lesson 12: Social Media</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <i>*topik dapat sewaktu-waktu berubah tanpa pemberitahuan.</i>
+                      </Row>
                     </Col>
                     <Col>
-                      <H5>Anda akan mendapatkan</H5>
+                      <H5>Anda akan mengikuti dan mendapatkan:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, post-test</LiStyled>
                         <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
@@ -67,18 +80,31 @@ const EnglishConversation = ({ lang }) => {
                   </Row>
                 ) : (
                   <Row>
-                    <Col>
+                    <Col xl={8} md={8} sm={8}>
                       <H5>You will learn about:</H5>
-                      <ULStyled>
-                        <LiStyled>Lesson 1: Personal details</LiStyled>
-                        <LiStyled>Lesson 2: Expectations</LiStyled>
-                        <LiStyled>Lesson 3: Studying/Working abroad</LiStyled>
-                        <LiStyled>Lesson 4: Future goals</LiStyled>
-                        <LiStyled>Lesson 5: Directions</LiStyled>
-                        <LiStyled>Lesson 6: Foods around the world</LiStyled>
-                        <LiStyled>Lesson 7: Traveling plans</LiStyled>
-                        <LiStyled>Lesson 8: New Year’s resolutions</LiStyled>
-                      </ULStyled>
+                      <Row>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 1: Personal details</LiStyled>
+                            <LiStyled>Lesson 2: Expectations</LiStyled>
+                            <LiStyled>Lesson 3: Studying/Working abroad</LiStyled>
+                            <LiStyled>Lesson 4: Future goals</LiStyled>
+                            <LiStyled>Lesson 5: Directions</LiStyled>
+                            <LiStyled>Lesson 6: Foods around the world</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <Col>
+                          <ULStyled>
+                            <LiStyled>Lesson 7: Traveling plans</LiStyled>
+                            <LiStyled>Lesson 8: New Year’s resolutions</LiStyled>
+                            <LiStyled>Lesson 9: University life</LiStyled>
+                            <LiStyled>Lesson 10: Culture Shock</LiStyled>
+                            <LiStyled>Lesson 11: Gadgets</LiStyled>
+                            <LiStyled>Lesson 12: Social Media</LiStyled>
+                          </ULStyled>
+                        </Col>
+                        <i>*topics are subject to change without prior notice.</i>
+                      </Row>
                     </Col>
                     <Col>
                       <H5>You will have and obtain:</H5>
