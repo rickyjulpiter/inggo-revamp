@@ -9,11 +9,17 @@ import {
   BeatrixMarendengImages,
   FachriAkbarImages,
   FandiAfianataDarmawanImages,
+  KathyAiraSuronoImages,
+  LodangJatiImages,
   MuhammadHafizhAsadImages,
+  MutiaSekarDiniImages,
   NahlaJovialImages,
   PutriAyuditaImages,
   RifkaCharmelitaImages,
-  SyahzamiPutraImages
+  SerliKusumadewiImages,
+  SitiKarinThaliaImages,
+  SyahzamiPutraImages,
+  ThantowySyamsuddinImages
 } from '../../../../Assets/Images/testimonials';
 
 export const PutriAyudita = () => (
@@ -55,7 +61,7 @@ export const BeatrixMarendeng = () => (
 export const SyahzamiPutra = () => (
   <Col md={4} xl={4} className="mb-4">
     <ExampleCardPersonBlue
-      description="INGGO banyak berjasa kepada saya dalam proses persiapan sekolah hingga proses kuliah saya sekarang. Saya berhutang budi kepada para pengajar di INGGO karena berhasil mengantarkan saya meraih nilai IELTS yang saya butuhkan utk meraih beasiswa dan kuliah di Jepang. Selain itu saya mendapatkan bekal Academic Writing juga sehingga saya dapat meraih nilai yang sangat baik selama saya kuliah. Saya selalu merekomendasikan INGGO kepada rekan kantor saya dan teman-teman lainnya yang ingin persiapan sekolah ke luar negeri, konsultasi, IELTS, maupun kursus Academic Writing yang sangat dibutuhkan dalam pembuatan paper, tugas, maupun tesis."
+      description="INGGO banyak berjasa kepada saya dalam proses persiapan sekolah hingga proses kuliah saya sekarang. Saya berhutang budi kepada para pengajar di INGGO karena berhasil mengantarkan saya meraih nilai IELTS yang saya butuhkan untuk meraih beasiswa dan kuliah di Jepang. Selain itu saya mendapatkan bekal Academic Writing juga sehingga saya dapat meraih nilai yang sangat baik selama saya kuliah. Saya selalu merekomendasikan INGGO kepada rekan kantor saya dan teman-teman lainnya yang ingin persiapan sekolah ke luar negeri, konsultasi, IELTS, maupun kursus Academic Writing yang sangat dibutuhkan dalam pembuatan paper, tugas, maupun tesis."
       person="Syahzami Putra"
       source="Master of Law, Kobe University"
       images={SyahzamiPutraImages}
@@ -136,6 +142,72 @@ export const RifkaCharmelita = () => (
       images={RifkaCharmelitaImages}
       programs="TOEFL"
       person="Rifka Charmelita"
+    />
+  </Col>
+);
+
+export const MutiaSekarDini = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Setelah saya mengikuti kelas Business English di INGGO, saya jadi lebih paham istilah-istilah bisnis dalam Bahasa inggris yang sangat membantu pekerjaan saya. Selain itu, saya juga belajar mengenai etika dalam dunia bisnis, hal-hal apa saja yang boleh dilakukan dan tidak boleh dilakukan. Tutor saya juga sangat mengerti kebutuhan saya dan saya juga diberi tambahan pelajaran mengenai basic English yang saya masih kurang. Saya pasti akan merekomendasikan INGGO kepada teman-teman saya. "
+      images={MutiaSekarDiniImages}
+      programs="Business English"
+      person="Mutia Sekar Dini"
+    />
+  </Col>
+);
+
+export const LodangJati = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Saya mengikuti kelas persiapan IELTS untuk persiapan beasiswa dan kuliah S2 saya. Saya sangat senang belajar di INGGO karena penyampaian tutor saya tentang strategi IELTS sangatlah jelas. Sebelumnya saya cukup berjuang untuk mendapatkan nilai 7 di Writing saya dan akhirnya saya berhasil mencapai target saya setelah persiapan di INGGO. Saya juga mempersiapkan aplikasi beasiswa dan review essay di INGGO.  Saat ini saya sudah menjadi penerima beasiswa bergengsi dan tanpa INGGO, perjalanan ini akan mustahil! Terima kasih, INGGO!"
+      images={LodangJatiImages}
+      programs="IELTS"
+      person="Lodang Jati"
+    />
+  </Col>
+);
+
+export const SerlyKusumadewi = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Terima kasih banyak ya INGGO sudah bantu aku belajar dan mempersiapkan diri buat menghadapi ujian IELTS di tengah pandemi dan PPKM ini. Meski beberapa kali jadwal ujian IELTS ditunda karena PPKM, tutorku selalu menyemangati dan terus ngingetin apa yang perlu aku tingkatkan dan perbaiki. Alhasil setelah ujian, aku berhasil mencapai nilai overall score 7.5!"
+      images={SerliKusumadewiImages}
+      programs="IELTS"
+      person="Serly Kusumadewi"
+    />
+  </Col>
+);
+
+export const KathyAiraSurono = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Akhirnya aku bisa mencapai overall score 7.5 setelah belajar IELTS dengan INGGO! Aku awalnya agak struggle dengan banyak aspek tapi setelah les di INGGO, aku jadi lebih paham tips dan triks yang penting. Aku banyak dikirimi Latihan dan catatan apa saja yang harus diperbaiki di akhir setiap sesi yang benar-benar sangat membantu. Thank you INGGO!"
+      images={KathyAiraSuronoImages}
+      programs="IELTS"
+      person="Kathy Aira Surono"
+    />
+  </Col>
+);
+
+export const ThantowySyamsuddin = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Di percobaan pertama ujian IELTS, saya hanya mendapatkan 6 di Speaking. Tetapi setelah 1 bulan belajar intensif di INGGO, nilai speaking saya meningkat drastis ke 7.5, dengan overall score 7.5 juga. Tutor saya sangat membantu saya. Materinya sangat terstruktur dan sesuai dengan kebutuhan saya. Di setiap sesi, saya banyak mendapat masukan untuk menyiapkan saya untuk hari ujian nanti. Tutor saya sangat bagus dan saya berharap saya les di INGGO lebih awal."
+      images={ThantowySyamsuddinImages}
+      programs="IELTS"
+      person="Thantowy Syamsuddin"
+    />
+  </Col>
+);
+
+export const SitiKarinThaliaMirza = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Setelah persiapan IELTS di INGGO, kemampuan  reading dan writing saya meningkat dan ketika ujian, saya dapat mengerjakan dengan lancar. Alhasil, saya mencapai overall score 7. Strategi yang diajarkan sangat jelas dan saya jadi lebih percaya diri ketika ujian. Thank you!"
+      images={SitiKarinThaliaImages}
+      programs="IELTS"
+      person="Siti Karin Thalia Mirza"
     />
   </Col>
 );

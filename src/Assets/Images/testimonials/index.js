@@ -9,6 +9,12 @@ import FachriAkbarImages from './FachriAkbar.jpeg';
 import FandiAfianataDarmawanImages from './FandiAfianataDarmawan.png';
 import MuhammadHafizhAsadImages from './MuhammadHafizhAsad.jpeg';
 import RifkaCharmelitaImages from './RifkaCharmelita.jpeg';
+import LodangJatiImages from './LodangJati.jpeg';
+import KathyAiraSuronoImages from './KathyAiraSurono.jpeg';
+import SerliKusumadewiImages from './SerliKusumadewi.jpeg';
+import MutiaSekarDiniImages from './MutiaSekarDini.jpeg';
+import ThantowySyamsuddinImages from './ThanthowySyamsuddin.jpeg';
+import SitiKarinThaliaImages from './SitiKarinThalia.jpeg';
 
 export {
   PutriAyuditaImages,
@@ -21,5 +27,11 @@ export {
   FachriAkbarImages,
   FandiAfianataDarmawanImages,
   MuhammadHafizhAsadImages,
-  RifkaCharmelitaImages
+  RifkaCharmelitaImages,
+  LodangJatiImages,
+  KathyAiraSuronoImages,
+  SerliKusumadewiImages,
+  MutiaSekarDiniImages,
+  ThantowySyamsuddinImages,
+  SitiKarinThaliaImages
 };

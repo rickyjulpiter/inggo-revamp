@@ -15,11 +15,17 @@ import {
   BeatrixMarendeng,
   FachriAkbar,
   FandiAfianataDarmawan,
+  KathyAiraSurono,
+  LodangJati,
   MuhammadHafizhAsad,
+  MutiaSekarDini,
   NahlaJovial,
   PutriAyudita,
   RifkaCharmelita,
-  SyahzamiPutra
+  SerlyKusumadewi,
+  SitiKarinThaliaMirza,
+  SyahzamiPutra,
+  ThantowySyamsuddin
 } from '../Home/TestimonialsComponent/List/TestimonialComponentList';
 import { FloatingImage } from '../Home/Home.styled';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
@@ -76,6 +82,23 @@ const TestimonialsContainer = () => {
         <Carousel.Item interval={5000}>
           <Row>
             <RifkaCharmelita />
+            <MutiaSekarDini />
+            <LodangJati />
+          </Row>
+        </Carousel.Item>
+      </CarouselResponsive>
+      <hr />
+      <CarouselResponsive fade variant="dark">
+        <Carousel.Item interval={5000}>
+          <Row>
+            <SerlyKusumadewi />
+            <KathyAiraSurono />
+            <ThantowySyamsuddin />
+          </Row>
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
+          <Row>
+            <SitiKarinThaliaMirza />
           </Row>
         </Carousel.Item>
       </CarouselResponsive>
