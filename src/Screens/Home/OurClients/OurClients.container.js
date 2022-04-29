@@ -28,11 +28,10 @@ const OurClientsContainer = () => {
     <ContainerStyled>
       <SectionTitle className="mb-5">{t('ourClients')}</SectionTitle>
       <CarouselResponsive variant="light">
-        {/*interval={3000}*/}
-        <Carousel.Item>
+        <Carousel.Item interval={300000}>
           <Row style={{ paddingTop: '3vw' }}>
             <Col md={COL} xl={COL}>
-              <OurClientsComponent images={ClientEcody} />
+              <OurClientsComponent images={ClientYayasanMataAirBiru} />
             </Col>
             <Col md={COL} xl={COL}>
               <OurClientsComponent images={ClientPusaka} />
@@ -48,7 +47,7 @@ const OurClientsContainer = () => {
         <Carousel.Item>
           <Row style={{ paddingTop: '3vw' }}>
             <Col md={COL} xl={COL}>
-              <OurClientsComponent images={ClientYayasanMataAirBiru} />
+              <OurClientsComponent images={ClientEcody} />
             </Col>
           </Row>
         </Carousel.Item>

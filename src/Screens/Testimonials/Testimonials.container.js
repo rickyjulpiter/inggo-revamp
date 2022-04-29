@@ -63,9 +63,9 @@ const TestimonialsContainer = () => {
           </Carousel.Item>
           <Carousel.Item interval={5000}>
             <Row>
-              <SyahzamiPutra />
-              <AkmiliaAswarini />
-              <AyuDewilestariNapitupulu />
+              <FachriAkbar />
+              <MuhammadHafizhAsad />
+              <RifkaCharmelita />
             </Row>
           </Carousel.Item>
         </CarouselResponsive>
@@ -74,16 +74,15 @@ const TestimonialsContainer = () => {
       <CarouselResponsive fade variant="dark">
         <Carousel.Item interval={5000}>
           <Row>
-            <FachriAkbar />
-            <FandiAfianataDarmawan />
-            <MuhammadHafizhAsad />
+            <SyahzamiPutra />
+            <AkmiliaAswarini />
+            <AyuDewilestariNapitupulu />
           </Row>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <Row>
-            <RifkaCharmelita />
-            <MutiaSekarDini />
-            <LodangJati />
+            <SitiKarinThaliaMirza />
+            <FandiAfianataDarmawan />
           </Row>
         </Carousel.Item>
       </CarouselResponsive>
@@ -91,14 +90,15 @@ const TestimonialsContainer = () => {
       <CarouselResponsive fade variant="dark">
         <Carousel.Item interval={5000}>
           <Row>
-            <SerlyKusumadewi />
-            <KathyAiraSurono />
+            <MutiaSekarDini />
+            <LodangJati />
             <ThantowySyamsuddin />
           </Row>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <Row>
-            <SitiKarinThaliaMirza />
+            <SerlyKusumadewi />
+            <KathyAiraSurono />
           </Row>
         </Carousel.Item>
       </CarouselResponsive>

@@ -4,7 +4,7 @@ import { Carousel, Row } from 'react-bootstrap';
 
 import {
   CarouselResponsive,
-  ContainerStyled,
+  ContainerStyledMain,
   SectionSectionTitle,
   SectionTitle
 } from './TestimonialsComponent.styled';
@@ -23,7 +23,7 @@ import {
 const TestimonialsComponentContainer = () => {
   const { t } = useTranslation();
   return (
-    <ContainerStyled>
+    <ContainerStyledMain>
       <SectionTitle>{t('testimonials')}</SectionTitle>
       <SectionSectionTitle className="mb-5">{t('testimonialsDescription')}</SectionSectionTitle>
       <CarouselResponsive fade variant="dark">
@@ -50,7 +50,7 @@ const TestimonialsComponentContainer = () => {
           text="Lihat Testimoni Lainnya"
         />
       </div>
-    </ContainerStyled>
+    </ContainerStyledMain>
   );
 };
 

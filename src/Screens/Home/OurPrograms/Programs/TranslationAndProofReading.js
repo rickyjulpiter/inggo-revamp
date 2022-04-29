@@ -21,11 +21,12 @@ import ContactContainer from '../../Contact/Contact.container';
 import MobileBanner from '../../../../Assets/Images/new-banner/TRANSLATION-PROOFREADING-SERVICES/INGGO_translation_n_proofreading_services_biru_mobile_english.png';
 import DesktopBanner from '../../../../Assets/Images/new-banner/TRANSLATION-PROOFREADING-SERVICES/INGGO_translation_n_proofreading_services_biru.png';
 import FlowChartEn from '../../../../Assets/Images/new-banner/en_flowchart.png';
-import FlowChartId from '../../../../Assets/Images/new-banner/id_flowchart.png';
+// import FlowChartId from '../../../../Assets/Images/new-banner/id_flowchart.png';
 
 const BannerImage = styled.img`
-  border-radius: 20px;
-  height: 400px;
+  border-radius: 8px;
+  text-align: center;
+  //height: 400px;
 `;
 
 const TranslationAndProofReading = ({ lang }) => {
@@ -50,7 +51,7 @@ const TranslationAndProofReading = ({ lang }) => {
               <Col xl={12} md={12} sm={12}>
                 {lang === 'id' ? (
                   <Row>
-                    <Col xl={8} md={8} sm={8}>
+                    <Col xl={12} md={12} sm={12}>
                       <ULStyled>
                         <LiStyled>
                           <b>Sumber teknis</b> (manual, panduan pengguna, buku pegangan, dan jenis
@@ -112,14 +113,16 @@ const TranslationAndProofReading = ({ lang }) => {
                         </LiStyledArrow>
                       </ULStyled>
                     </Col>
-                    <Col>
-                      <H4>Bagaimana prosedurnya?</H4>
-                      <BannerImage src={FlowChartId} className="img-fluid" alt="banner" />
+                    <Col md={12} className="mb-5">
+                      <H4>How does it work?</H4>
+                      <center>
+                        <BannerImage src={FlowChartEn} className="img-fluid" alt="banner" />
+                      </center>
                     </Col>
                   </Row>
                 ) : (
                   <Row>
-                    <Col xl={8} md={8} sm={8}>
+                    <Col xl={12} md={12} sm={12}>
                       <ULStyled>
                         <LiStyled>
                           <b>Highly technical sources</b> (manuals, user guides, handbooks, and
@@ -180,13 +183,15 @@ const TranslationAndProofReading = ({ lang }) => {
                         </LiStyledArrow>
                         <LiStyledArrow>
                           For more information on pricing, please contact us through Whatsapp or
-                          email.{' '}
+                          email.
                         </LiStyledArrow>
                       </ULStyled>
                     </Col>
-                    <Col>
-                      <H4>How does it work?</H4>
-                      <BannerImage src={FlowChartEn} className="img-fluid" alt="banner" />
+                    <Col md={12} className="mb-5">
+                      <H4>Bagaimana prosedurnya?</H4>
+                      <center>
+                        <BannerImage src={FlowChartEn} className="img-fluid" alt="banner" />
+                      </center>
                     </Col>
                   </Row>
                 )}

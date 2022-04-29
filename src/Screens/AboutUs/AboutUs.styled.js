@@ -1,8 +1,13 @@
 import styled from 'styled-components';
 import { PrimaryColor } from '../../Assets/colorPalette';
+import BannerHomeTransparent from '../../Assets/Images/bannerhome-transparent.png';
 
 export const ContainerStyled = styled.div`
-  margin: 2vw 6vw 8vw 6vw;
+  padding: 2vw 6vw 8vw 6vw;
+  background-image: url(${BannerHomeTransparent});
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right 0 top 0;
   @media (min-width: 1024px) {
     min-height: 602px;
   }

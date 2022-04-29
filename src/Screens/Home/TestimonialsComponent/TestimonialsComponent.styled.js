@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { PrimaryColor, SecondaryColor } from '../../../Assets/colorPalette';
 import { Card, Carousel } from 'react-bootstrap';
+import BannerHomeTransparent from '../../../Assets/Images/bannerhome-transparent.png';
 
 export const SectionTitle = styled.h3`
   color: ${SecondaryColor};
@@ -16,6 +17,43 @@ export const SectionSectionTitle = styled.h1`
 `;
 
 export const ContainerStyled = styled.div`
+  padding: 2vw 11vw 8vw 11vw;
+  background-image: url(${BannerHomeTransparent});
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right 0 top 0;
+  @media (min-width: 1024px) {
+    min-height: 602px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 668px;
+    background-image: none;
+  }
+
+  @media (max-width: 425px) {
+    min-height: 400px;
+    background-image: none;
+  }
+
+  &:hover {
+    .t_four {
+      top: 90px;
+    }
+
+    .t_two {
+      right: 180px;
+      bottom: 185px;
+    }
+
+    .t_first {
+      left: 50px;
+      top: 275px;
+    }
+  }
+`;
+
+export const ContainerStyledMain = styled.div`
   padding: 2vw 11vw 8vw 11vw;
   @media (min-width: 1024px) {
     min-height: 602px;
