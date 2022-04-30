@@ -36,10 +36,10 @@ const NavtopComponent = ({ onChangeLang }) => {
     <ContainerStyled>
       <div className="d-flex justify-content-between">
         <div>
-          <LinkStyled>
+          <LinkStyled href="https://api.whatsapp.com/send?phone=6285772900593" target="_blank">
             <i className="bi-telephone" /> (+62) 857-7290-0593
           </LinkStyled>
-          <LinkStyled>
+          <LinkStyled href="mailto:info@inggo.co" target="_blank">
             <i className="bi-envelope" /> info@inggo.co
           </LinkStyled>
         </div>

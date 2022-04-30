@@ -47,7 +47,7 @@ const TestimonialsComponentContainer = () => {
         <ButtonComponent
           color={SecondaryColor}
           actionhref="/testimonials"
-          text="Lihat Testimoni Lainnya"
+          text={t('otherTestimonials')}
         />
       </div>
     </ContainerStyledMain>

@@ -16,7 +16,7 @@ import {
 } from './MainPrograms.styled';
 import EnglishCourseBalloon from '../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_lingkaran_biru.png';
 import TranslationCourseBalloon from '../../../Assets/Images/new-banner/TRANSLATION-PROOFREADING-SERVICES/INGGO_translation_n_proofreading_services_lingkaran_merah.png';
-import { ROUTE_ENGLISH_COURSES } from '../../../Assets/utils';
+import { ROUTE_ENGLISH_COURSES, ROUTE_TRANSLATION_SERVICE } from '../../../Assets/utils';
 
 const MainPrograms = () => {
   const { t } = useTranslation();
@@ -62,7 +62,9 @@ const MainPrograms = () => {
               </Col>
               <Col md={12} sm={12} xl={4} className="mx-auto">
                 <CenterDiv>
-                  <ButtonMore className="mt-2">{t('exploreMore')}</ButtonMore>
+                  <ButtonMore href={ROUTE_TRANSLATION_SERVICE} className="mt-2">
+                    {t('exploreMore')}
+                  </ButtonMore>
                 </CenterDiv>
               </Col>
             </Row>

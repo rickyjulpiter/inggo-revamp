@@ -15,8 +15,8 @@ import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
-import MobileBanner from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_biru_Mobile.png';
-import DesktopBanner from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_biru.png';
+import MobileBanner from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_merah_Mobile.png';
+import DesktopBanner from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_merah.png';
 
 const IELTS = ({ lang }) => {
   const { t } = useTranslation();

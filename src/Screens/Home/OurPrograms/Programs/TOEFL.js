@@ -11,8 +11,8 @@ import {
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
 import PropTypes from 'prop-types';
-import MobileBanner from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_merah_mobile.png';
-import DesktopBanner from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_merah.png';
+import MobileBanner from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_biru_Mobile.png';
+import DesktopBanner from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_biru.png';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';

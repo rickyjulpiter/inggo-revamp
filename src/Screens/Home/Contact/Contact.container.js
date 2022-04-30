@@ -21,9 +21,13 @@ const ContactContainer = () => {
         <SectionTitle>{t('contactTitle')}</SectionTitle>
         <SectionParagraph>{t('contactDescription')}</SectionParagraph>
         <CenterDiv className="d-flex justify-content-center ">
-          <IconContainer icon="bi bi-whatsapp" color="#25d366" />
+          <IconContainer
+            href="https://api.whatsapp.com/send?phone=6285772900593"
+            icon="bi bi-whatsapp"
+            color="#25d366"
+          />
           <div className="m-1" />
-          <IconContainer icon="bi bi-envelope" color={PrimaryColor} />
+          <IconContainer href="mailto:info@inggo.co" icon="bi bi-envelope" color={PrimaryColor} />
         </CenterDiv>
       </ContainerStyled>
     </>

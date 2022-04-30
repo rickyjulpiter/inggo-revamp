@@ -16,8 +16,8 @@ import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
-import MobileBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_biru_mobile_english.png';
-import DesktopBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_biru.png';
+import MobileBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_merah_mobile_english.png';
+import DesktopBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_merah.png';
 
 const GeneralEnglish = ({ lang }) => {
   const { t } = useTranslation();

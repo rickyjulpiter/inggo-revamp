@@ -15,10 +15,9 @@ const IconStyled = styled.a.attrs((props: { color: string }) => props)`
   }
 `;
 
-const IconContainer = ({ icon, color }) => {
-  console.log(icon);
+const IconContainer = ({ icon, color, href = '' }) => {
   return (
-    <IconStyled color={color}>
+    <IconStyled color={color} href={href} target="_blank">
       <i className={icon} />
     </IconStyled>
   );
@@ -26,7 +25,8 @@ const IconContainer = ({ icon, color }) => {
 
 IconContainer.propTypes = {
   icon: PropTypes.string,
-  color: PropTypes.string
+  color: PropTypes.string,
+  href: PropTypes.string
 };
 
 export default IconContainer;

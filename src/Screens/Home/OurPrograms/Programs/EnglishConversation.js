@@ -12,8 +12,8 @@ import {
   RowContainer,
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
-import MobileBanner from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_merah_mobile_english.png';
-import DesktopBanner from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_merah.png';
+import MobileBanner from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_biru_mobile_english.png';
+import DesktopBanner from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_biru.png';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
