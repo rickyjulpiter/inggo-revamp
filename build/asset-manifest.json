@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.0dbc3276.js",
+    "main.js": "/static/js/main.08ca5693.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/SitiKarinThalia.jpeg": "/static/media/SitiKarinThalia.e5400f4c36d7cb37899c.jpeg",
@@ -42,6 +42,7 @@
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
     "static/media/en_flowchart.png": "/static/media/en_flowchart.e293d777aeefd974d905.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.bae1a4678ac7dab26d05.png",
+    "static/media/id_flowchart.png": "/static/media/id_flowchart.1f394be8feb328200786.png",
     "static/media/reynolds.png": "/static/media/reynolds.478752d2fdee40937c36.png",
     "static/media/INGGO_english_conversatin_lingkaran_biru.png": "/static/media/INGGO_english_conversatin_lingkaran_biru.837f79ee39948ca0e61c.png",
     "static/media/PutriAyudita.jpeg": "/static/media/PutriAyudita.2d40c5ce37b3a4c0b1bf.jpeg",
@@ -52,11 +53,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.0dbc3276.js.map": "/static/js/main.0dbc3276.js.map",
+    "main.08ca5693.js.map": "/static/js/main.08ca5693.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.0dbc3276.js"
+    "static/js/main.08ca5693.js"
   ]
 }

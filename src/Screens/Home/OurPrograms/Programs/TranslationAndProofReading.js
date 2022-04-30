@@ -21,7 +21,7 @@ import ContactContainer from '../../Contact/Contact.container';
 import MobileBanner from '../../../../Assets/Images/new-banner/TRANSLATION-PROOFREADING-SERVICES/INGGO_translation_n_proofreading_services_biru_mobile_english.png';
 import DesktopBanner from '../../../../Assets/Images/new-banner/TRANSLATION-PROOFREADING-SERVICES/INGGO_translation_n_proofreading_services_biru.png';
 import FlowChartEn from '../../../../Assets/Images/new-banner/en_flowchart.png';
-// import FlowChartId from '../../../../Assets/Images/new-banner/id_flowchart.png';
+import FlowChartId from '../../../../Assets/Images/new-banner/id_flowchart.png';
 
 const BannerImage = styled.img`
   border-radius: 8px;
@@ -114,9 +114,9 @@ const TranslationAndProofReading = ({ lang }) => {
                       </ULStyled>
                     </Col>
                     <Col md={12} className="mb-5">
-                      <H4>How does it work?</H4>
+                      <H4>Bagaimana prosedurnya?</H4>
                       <center>
-                        <BannerImage src={FlowChartEn} className="img-fluid" alt="banner" />
+                        <BannerImage src={FlowChartId} className="img-fluid" alt="banner" />
                       </center>
                     </Col>
                   </Row>
@@ -188,7 +188,7 @@ const TranslationAndProofReading = ({ lang }) => {
                       </ULStyled>
                     </Col>
                     <Col md={12} className="mb-5">
-                      <H4>Bagaimana prosedurnya?</H4>
+                      <H4>How does it work?</H4>
                       <center>
                         <BannerImage src={FlowChartEn} className="img-fluid" alt="banner" />
                       </center>
