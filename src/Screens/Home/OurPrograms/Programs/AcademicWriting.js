@@ -78,7 +78,7 @@ const AcademicWriting = ({ lang }) => {
                             </Col>
                           </Row>
                         </Col>
-                        <Col>
+                        <Col className="mt-3">
                           <H5>Anda akan mengikuti dan mendapatkan:</H5>
                           <ULStyled>
                             <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
@@ -124,7 +124,7 @@ const AcademicWriting = ({ lang }) => {
                             </Col>
                           </Row>
                         </Col>
-                        <Col>
+                        <Col className="mt-3">
                           <H5>You will have and obtain:</H5>
                           <ULStyled>
                             <LiStyled>Regular and constructive feedback from your tutor</LiStyled>

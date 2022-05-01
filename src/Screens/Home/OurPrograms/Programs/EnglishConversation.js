@@ -70,7 +70,7 @@ const EnglishConversation = ({ lang }) => {
                         </small>
                       </Row>
                     </Col>
-                    <Col className="mt-4">
+                    <Col className="mt-3">
                       <H5>Anda akan mengikuti dan mendapatkan:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, post-test</LiStyled>
@@ -110,7 +110,7 @@ const EnglishConversation = ({ lang }) => {
                         </small>
                       </Row>
                     </Col>
-                    <Col>
+                    <Col className="mt-3">
                       <H5>You will have and obtain:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, and post-test</LiStyled>

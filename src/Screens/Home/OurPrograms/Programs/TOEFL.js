@@ -88,7 +88,7 @@ const IELTS = ({ lang }) => {
                         </LiStyled>
                       </ULStyled>
                     </Col>
-                    <Col>
+                    <Col className="mt-3">
                       <H5>Anda akan mengikuti dan mendapatkan:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, post-test</LiStyled>
@@ -147,7 +147,7 @@ const IELTS = ({ lang }) => {
                         </LiStyled>
                       </ULStyled>
                     </Col>
-                    <Col>
+                    <Col className="mt-3">
                       <H5>You will have and obtain:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, post-test</LiStyled>
