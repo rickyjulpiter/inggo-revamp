@@ -5,6 +5,8 @@ import { ExampleCardPersonBlue } from '../TestimonialsComponent.component';
 import {
   AfiyaMaritzaImages,
   AkmiliaAswariniImages,
+  AnnisaRWardhaniImages,
+  AnnisaSBaskaraImages,
   AyuDewilestariNapitupuluImages,
   BeatrixMarendengImages,
   FachriAkbarImages,
@@ -65,7 +67,7 @@ export const SyahzamiPutra = () => (
       person="Syahzami Putra"
       source="Master of Law, Kobe University"
       images={SyahzamiPutraImages}
-      programs="Academic Writing"
+      programs="IELTS & Academic Writing"
     />
   </Col>
 );
@@ -208,6 +210,28 @@ export const SitiKarinThaliaMirza = () => (
       images={SitiKarinThaliaImages}
       programs="IELTS"
       person="Siti Karin Thalia Mirza"
+    />
+  </Col>
+);
+
+export const AnnisaWardhani = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Tutor Academic Writing saya di INGGO benar-benar sangat membantu saya di setiap sesi saya! Dia mengikuti kebutuhan saya dan selama berdiskusi mengenai tugas-tugas saya, dia selalu memberikan ide yang sangat berguna. Saya pertama kali belajar tentang cara mengkonstruksi ide, membuat pertanyaan untuk riset saya dan sebagainya. Setiap sesi sangat terstruktur dengan baik karena tutor saya selalu memberitahukan apa objektif kelas kita untuk sesi-sesi berikutnya. Saya benar-benar merasa puas dengan pengetahuan yang dibagikan oleh tutor saya. Makasih INGGO!"
+      images={AnnisaRWardhaniImages}
+      programs="Academic Writing"
+      person="Annisa R Wardhani"
+    />
+  </Col>
+);
+
+export const AnnisaSriBaskara = () => (
+  <Col md={4} xl={4} className="mb-4">
+    <ExampleCardPersonBlue
+      description="Perjalanan beasiswa saya tidak akan berhasil tanpa bantuan dari tutor INGGO. Saya pernah gagal beasiswa Chevening sekali ketika saya mencoba sendiri tapi dengan bantuan tutor tersebut, saya akhirnya mendapatkan beasiswa Chevening di tahun 2020. Tutor saya membantu proofread esai-esai saya dan saya juga mengikuti simulasi interview beasiswa dimana saya mendapatkan banyak tips berguna. Selain itu, saya juga mempersiapkan kelas IELTS saya di INGGO dan saya berhasil meningkatkan nilai Writing saya dari 5.5 ke 7! Terima kasih INGGO!"
+      images={AnnisaSBaskaraImages}
+      programs="IELTS"
+      person="Annisa Sri Bakara"
     />
   </Col>
 );

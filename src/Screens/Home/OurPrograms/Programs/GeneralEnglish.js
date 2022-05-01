@@ -65,7 +65,9 @@ const GeneralEnglish = ({ lang }) => {
                             <LiStyled>Lesson 12: Friendships</LiStyled>
                           </ULStyled>
                         </Col>
-                        <i>*topik dapat sewaktu-waktu berubah tanpa pemberitahuan.</i>
+                        <small>
+                          <i>*topik dapat sewaktu-waktu berubah tanpa pemberitahuan.</i>
+                        </small>
                       </Row>
                     </Col>
                     <Col>
@@ -103,7 +105,10 @@ const GeneralEnglish = ({ lang }) => {
                             <LiStyled>Lesson 12: Friendships</LiStyled>
                           </ULStyled>
                         </Col>
-                        <i>*topics are subject to change without prior notice.</i>
+                        <small>
+                          {' '}
+                          <i>*topics are subject to change without prior notice.</i>
+                        </small>
                       </Row>
                     </Col>
                     <Col>

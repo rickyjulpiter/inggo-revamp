@@ -15,6 +15,8 @@ import SerliKusumadewiImages from './SerliKusumadewi.jpeg';
 import MutiaSekarDiniImages from './MutiaSekarDini.jpeg';
 import ThantowySyamsuddinImages from './ThanthowySyamsuddin.jpeg';
 import SitiKarinThaliaImages from './SitiKarinThalia.jpeg';
+import AnnisaSBaskaraImages from './AnnisaSBakara.jpg';
+import AnnisaRWardhaniImages from './AnnisaRWardhani.jpeg';
 
 export {
   PutriAyuditaImages,
@@ -33,5 +35,7 @@ export {
   SerliKusumadewiImages,
   MutiaSekarDiniImages,
   ThantowySyamsuddinImages,
-  SitiKarinThaliaImages
+  SitiKarinThaliaImages,
+  AnnisaSBaskaraImages,
+  AnnisaRWardhaniImages
 };

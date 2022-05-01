@@ -1,7 +1,12 @@
 import React from 'react';
-import { Carousel, Col, Row } from 'react-bootstrap';
-import { CardClients, ImgStyled } from './OurClients.styled';
-import { ClientPusaka } from '../../../Assets/Images/client';
+import { Carousel } from 'react-bootstrap';
+import {
+  ClientEcody,
+  ClientPusaka,
+  ClientReynolds,
+  ClientSeedScholarship,
+  ClientYayasanMataAirBiru
+} from '../../../Assets/Images/client';
 import OurClientsComponent from './OurClients.component';
 import styled from 'styled-components';
 
@@ -15,25 +20,19 @@ const MobileList = () => {
   return (
     <MobileResponsive variant="light">
       <Carousel.Item>
-        <Row>
-          <Col md={3} xl={3} className="mb-4">
-            <CardClients>
-              <ImgStyled
-                src={ClientPusaka}
-                className="img-fluid"
-                alt="client-logo"
-                style={{ background: '#cecece' }}
-              />
-            </CardClients>
-          </Col>
-        </Row>
+        <OurClientsComponent images={ClientYayasanMataAirBiru} />
       </Carousel.Item>
       <Carousel.Item>
-        <Row>
-          <Col md={3} xl={3} className="mb-4">
-            <OurClientsComponent />
-          </Col>
-        </Row>
+        <OurClientsComponent images={ClientPusaka} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <OurClientsComponent images={ClientReynolds} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <OurClientsComponent images={ClientSeedScholarship} />
+      </Carousel.Item>
+      <Carousel.Item>
+        <OurClientsComponent images={ClientEcody} />
       </Carousel.Item>
     </MobileResponsive>
   );

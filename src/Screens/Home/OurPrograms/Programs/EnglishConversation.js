@@ -42,7 +42,7 @@ const EnglishConversation = ({ lang }) => {
               <Col xl={12} md={12} sm={12}>
                 {lang === 'id' ? (
                   <Row>
-                    <Col xl={8} md={8} sm={8}>
+                    <Col xl={8} md={8} sm={8} className="mt-2">
                       <H5>Anda akan belajar tentang:</H5>
                       <Row>
                         <Col>
@@ -65,10 +65,12 @@ const EnglishConversation = ({ lang }) => {
                             <LiStyled>Lesson 12: Social Media</LiStyled>
                           </ULStyled>
                         </Col>
-                        <i>*topik dapat sewaktu-waktu berubah tanpa pemberitahuan.</i>
+                        <small>
+                          <i>*topik dapat sewaktu-waktu berubah tanpa pemberitahuan.</i>
+                        </small>
                       </Row>
                     </Col>
-                    <Col>
+                    <Col className="mt-4">
                       <H5>Anda akan mengikuti dan mendapatkan:</H5>
                       <ULStyled>
                         <LiStyled>Pre-test, progress test, post-test</LiStyled>
@@ -103,7 +105,9 @@ const EnglishConversation = ({ lang }) => {
                             <LiStyled>Lesson 12: Social Media</LiStyled>
                           </ULStyled>
                         </Col>
-                        <i>*topics are subject to change without prior notice.</i>
+                        <small>
+                          <i>*topics are subject to change without prior notice.</i>
+                        </small>
                       </Row>
                     </Col>
                     <Col>

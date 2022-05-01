@@ -11,6 +11,8 @@ import {
 import { Carousel, Row } from 'react-bootstrap';
 import {
   AkmiliaAswarini,
+  AnnisaSriBaskara,
+  AnnisaWardhani,
   AyuDewilestariNapitupulu,
   BeatrixMarendeng,
   FachriAkbar,
@@ -31,9 +33,16 @@ import { FloatingImage } from '../Home/Home.styled';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
 import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
+import MobileListTestimonialsScreen from '../Home/TestimonialsComponent/MobileListTestimonialsScreen';
 
 const ContainerCarousel = styled.div`
   min-height: 48vw;
+`;
+
+const HR = styled.hr`
+  @media (max-width: 500px) {
+    display: none;
+  }
 `;
 
 const TestimonialsContainer = () => {
@@ -52,6 +61,7 @@ const TestimonialsContainer = () => {
       </div>
       <SectionTitle>{t('testimonials')}</SectionTitle>
       <SectionSectionTitle className="mb-5">{t('testimonialsDescription')}</SectionSectionTitle>
+      <MobileListTestimonialsScreen />
       <ContainerCarousel>
         <CarouselResponsive fade variant="dark">
           <Carousel.Item interval={5000}>
@@ -70,7 +80,8 @@ const TestimonialsContainer = () => {
           </Carousel.Item>
         </CarouselResponsive>
       </ContainerCarousel>
-      <hr />
+      <HR />
+
       <CarouselResponsive fade variant="dark">
         <Carousel.Item interval={5000}>
           <Row>
@@ -81,12 +92,14 @@ const TestimonialsContainer = () => {
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <Row>
+            <AnnisaWardhani />
             <SitiKarinThaliaMirza />
             <FandiAfianataDarmawan />
           </Row>
         </Carousel.Item>
       </CarouselResponsive>
-      <hr />
+      <HR />
+
       <CarouselResponsive fade variant="dark">
         <Carousel.Item interval={5000}>
           <Row>
@@ -97,6 +110,7 @@ const TestimonialsContainer = () => {
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <Row>
+            <AnnisaSriBaskara />
             <SerlyKusumadewi />
             <KathyAiraSurono />
           </Row>

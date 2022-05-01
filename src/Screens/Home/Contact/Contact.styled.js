@@ -66,10 +66,11 @@ export const IconStyled = styled.i`
   padding: 14px 15px 9px 15px;
   color: ${SecondaryColor};
 
-  @media (max-width: 400px) {
-    margin-right: 40%;
-    margin-left: 40%;
-    font-size: 25px;
-    padding: 15px 15px 10px 15px;
+  @media (max-width: 500px) {
+    //margin-right: 40%;
+    //margin-left: 40%;
+    font-size: 35px;
+    padding: 0;
+    //padding: 15px 15px 10px 15px;
   }
 `;

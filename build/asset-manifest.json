@@ -1,8 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.08ca5693.js",
+    "main.js": "/static/js/main.daf3bef2.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
+    "static/media/AnnisaSBakara.jpg": "/static/media/AnnisaSBakara.3254100c914353be928f.jpg",
     "static/media/FandiAfianataDarmawan.png": "/static/media/FandiAfianataDarmawan.dbf8a0ab9ca7df440ba1.png",
     "static/media/SitiKarinThalia.jpeg": "/static/media/SitiKarinThalia.e5400f4c36d7cb37899c.jpeg",
     "static/media/INGGO_ielts_merah_Mobile.png": "/static/media/INGGO_ielts_merah_Mobile.cb44963bad3ce1cda7de.png",
@@ -27,6 +28,7 @@
     "static/media/INGGO_translation_n_proofreading_services_biru.png": "/static/media/INGGO_translation_n_proofreading_services_biru.695c6599b8f2cf7d402f.png",
     "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/INGGO_academic_writing_merah.png": "/static/media/INGGO_academic_writing_merah.e50b05a442a2b6f07427.png",
+    "static/media/AnnisaRWardhani.jpeg": "/static/media/AnnisaRWardhani.6e2bdc38717ccadb4f09.jpeg",
     "static/media/MutiaSekarDini.jpeg": "/static/media/MutiaSekarDini.85115ee89cae9dc76a81.jpeg",
     "static/media/INGGO_ielts_lingkaran_merah.png": "/static/media/INGGO_ielts_lingkaran_merah.f1de2bfd2e463889e4e2.png",
     "static/media/SyahzamiPutra.jpeg": "/static/media/SyahzamiPutra.d3938f354747d3d0b778.jpeg",
@@ -53,11 +55,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.08ca5693.js.map": "/static/js/main.08ca5693.js.map",
+    "main.daf3bef2.js.map": "/static/js/main.daf3bef2.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.08ca5693.js"
+    "static/js/main.daf3bef2.js"
   ]
 }

@@ -210,7 +210,9 @@ export const ImgStyled = styled.img`
   }
 
   @media (max-width: 425px) {
+    height: 50px;
     width: 50px;
+    display: none;
   }
 `;
 
