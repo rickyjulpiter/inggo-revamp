@@ -12,6 +12,7 @@ import {
   ROUTE_FREE_TRIAL,
   ROUTE_GENERAL_ENGLISH,
   ROUTE_IELTS,
+  ROUTE_OUR_TEAM,
   ROUTE_TESTIMONIALS,
   ROUTE_TOEFL,
   ROUTE_TRANSLATION_SERVICE
@@ -30,6 +31,7 @@ import TOEFL from './Screens/Home/OurPrograms/Programs/TOEFL';
 import EnglishConversation from './Screens/Home/OurPrograms/Programs/EnglishConversation';
 import GeneralEnglish from './Screens/Home/OurPrograms/Programs/GeneralEnglish';
 import TranslationAndProofReading from './Screens/Home/OurPrograms/Programs/TranslationAndProofReading';
+import TeacherContainer from './Screens/Teacher/Teacher.container';
 
 const App = () => {
   const [language, setLanguage] = useState('id');
@@ -68,6 +70,7 @@ const App = () => {
             path={ROUTE_TRANSLATION_SERVICE}
             element={<TranslationAndProofReading lang={language} />}
           />
+          <Route path={ROUTE_OUR_TEAM} element={<TeacherContainer lang={language} />} />
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />

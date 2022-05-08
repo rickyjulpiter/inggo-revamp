@@ -28,8 +28,8 @@ const AboutUsContainer = () => {
         </div>
 
         <Row className="slideDown">
-          <Col xl={7} md={7} sm={12}>
-            <Title>{t('about')} Inggo</Title>
+          <Col xl={7} md={7} sm={12} className="mx-auto">
+            <Title>{t('about')} INGGO</Title>
             <Paragraph>{t('aboutUsDescription')}</Paragraph>
           </Col>
         </Row>

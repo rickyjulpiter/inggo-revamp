@@ -6,7 +6,7 @@ export const TRANSLATIONS_ID = {
   menuHome: 'Beranda',
   menuAboutUs: 'Tentang Kami',
   about: 'Tentang',
-  menuOurTeam: 'Tim Kami',
+  menuOurTeam: 'Profil Guru',
   menuOurPrograms: 'Program',
   menuLanguages: 'Bahasa',
   beOurTeacher: 'Jadi Guru',
@@ -119,7 +119,7 @@ export const TRANSLATIONS_ID = {
     'Anda akan mendapatkan satu kelas gratis selama satu jam sebelum memulai program Anda. Jangan bayar dulu sebelum Anda yakin dengan tutor dan program kami!',
 
   aboutUsDescription:
-    'INGGO didirikan di Jakarta di tahun 2020 dengan tujuan menciptakan sebuah pengalaman belajar bahasa Inggris yang berbeda untuk murid-murid. Tim kami terdiri dari guru-guru berkualitas lulusan universitas lokal dan asing. Daya tarik yang utama dari guru kami adalah sebagian besar merupakan lulusan S2 universitas ternama dunia dengan mengambil jurusan pengajaran bahasa Inggris (Teaching English to Speakers of Other Languages/TESOL atau Linguistik Terapan). Selain itu, kami berfokus di kelas privat 1-1 agar murid-murid dapat belajar sesuai dengan kecepatan mereka sendiri dan juga kelas grup kecil (maksimal 6 orang) agar suasana tetap kondusif!',
+    'INGGO didirikan di Jakarta di tahun 2020 dengan tujuan menciptakan sebuah pengalaman belajar bahasa Inggris yang berbeda untuk murid-murid. Tim kami terdiri dari guru-guru berkualitas lulusan universitas lokal dan asing. Daya tarik yang utama dari guru kami adalah sebagian besar merupakan lulusan S2 universitas ternama dunia dengan mengambil jurusan pengajaran bahasa Inggris (Teaching English to Speakers of Other Languages/TESOL atau Linguistik Terapan). ',
 
   otherTestimonials: 'Lihat testimoni lainnya'
 };
