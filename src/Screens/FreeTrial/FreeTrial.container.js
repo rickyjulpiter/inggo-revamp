@@ -101,7 +101,7 @@ const FreeTrialContainer = () => {
                 <Row>
                   <Col xl={4} md={4} sm={12} className="mx-auto text-center">
                     <Title className="mb-4">Choose Schedule</Title>
-                    <InlineWidget url="https://calendly.com/inggodev/free-trial-class?hide_gdpr_banner=1" />
+                    <InlineWidget url="https://calendly.com/inggo_co/trial" />
                   </Col>
                 </Row>
               </CardStyled>
