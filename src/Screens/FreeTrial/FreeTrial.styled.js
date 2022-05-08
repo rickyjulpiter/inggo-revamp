@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Card, Container } from 'react-bootstrap';
-import { PrimaryColor } from '../../Assets/colorPalette';
+import { PrimaryColor, SecondaryColor, WhiteColor } from '../../Assets/colorPalette';
 
 export const ContainerStyled = styled(Container)`
   margin-top: 5vw;
@@ -42,12 +42,19 @@ export const CardStyled = styled(Card)`
 export const ProgramCard = styled.div`
   align-items: center;
   text-align: center;
-  background-color: rgb(230, 239, 252);
+  background-color: ${SecondaryColor};
+  color: ${WhiteColor};
   border-radius: 20px;
-  padding: 1rem;
+  padding: 1rem 0.1rem;
   cursor: pointer;
-  font-size: 20px;
-  font-weight: 600;
+  font-weight: bold;
+  border: 1px solid ${SecondaryColor};
+
+  &:hover {
+    color: ${SecondaryColor};
+    background-color: ${WhiteColor};
+    border: 1px solid ${SecondaryColor};
+  }
 
   @media (max-width: 1024px) {
     min-height: 10vw;

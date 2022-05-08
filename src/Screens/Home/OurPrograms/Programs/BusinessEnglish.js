@@ -21,7 +21,6 @@ import MobileBanner from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/
 
 const BusinessEnglish = ({ lang }) => {
   const { t } = useTranslation();
-  console.log(lang);
   return (
     <>
       <ContainerStyled>

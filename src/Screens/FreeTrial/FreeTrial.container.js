@@ -1,11 +1,11 @@
-/* eslint-disable no-unused-vars */
+/* eslint-disable */
 import React, { useState } from 'react';
 import { Col, Modal, Row } from 'react-bootstrap';
 import { InlineWidget } from 'react-calendly';
 import { useTranslation } from 'react-i18next';
 
 import { PrimaryColor, SecondaryColor } from '../../Assets/colorPalette';
-import ImgChoose from '../../Assets/Images/choose.png';
+import ImgChoose from '../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_lingkaran_merah.png';
 import ProgramDetailModalContainer from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
 import ButtonComponent from '../../Components/Button/Button.component';
 import { CardStyled, ContainerStyled, ProgramCard, Title } from './FreeTrial.styled';
@@ -13,8 +13,16 @@ import { FloatingImage } from '../Home/Home.styled';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
 import Playfull1 from '../../Assets/Images/playfull/playfull1.png';
+import {
+  ROUTE_ACADEMIC_WRITING,
+  ROUTE_BUSINESS_ENGLISH,
+  ROUTE_ENGLISH_CONVERSATION,
+  ROUTE_GENERAL_ENGLISH,
+  ROUTE_IELTS,
+  ROUTE_TOEFL
+} from '../../Assets/utils';
 
-const FreeTrialContainer = () => {
+const FreeTrialContainer = ({ lang }) => {
   const { t } = useTranslation();
 
   const [show, setShow] = useState(false);
@@ -29,9 +37,6 @@ const FreeTrialContainer = () => {
 
   const PlayFull = () => (
     <>
-      <div className="t_two p_absoulte">
-        <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull2} alt="" />
-      </div>
       <div className="t_first p_absoulte">
         <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull1} alt="" />
       </div>
@@ -46,38 +51,67 @@ const FreeTrialContainer = () => {
             <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull3} alt="" />
           </div>
           <CardStyled className="p-5">
-            <PlayFull />
+            {/*<PlayFull />*/}
             <Row>
-              <Col md={4} sm={4} xl={4}>
+              <Col md={3} sm={3} xl={3}>
                 <img src={ImgChoose} alt="img" className="img-fluid rounded" />
               </Col>
-              <Col md={8} sm={8} xl={8}>
+              <Col md={9} sm={9} xl={9}>
                 <Title>Welcome to our Free Trial Programs</Title>
-                <p className="mt-4">
-                  Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
-                  vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
-                </p>
                 <Row className="mt-5">
                   <Col md={4} xl={4} sm={6} className="mb-2">
                     <ProgramCard
                       onClick={() => {
                         handleShow();
-                        setProgram('Bahasa Inggris Bisnis');
+                        setProgram(ROUTE_BUSINESS_ENGLISH);
                       }}>
                       {t('businessEnglish')}
                     </ProgramCard>
                   </Col>
                   <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard>{t('academicWriting')}</ProgramCard>
+                    <ProgramCard
+                      onClick={() => {
+                        handleShow();
+                        setProgram(ROUTE_ACADEMIC_WRITING);
+                      }}>
+                      {t('academicWriting')}
+                    </ProgramCard>
                   </Col>
                   <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard>{t('ielts')}</ProgramCard>
+                    <ProgramCard
+                      onClick={() => {
+                        handleShow();
+                        setProgram(ROUTE_ENGLISH_CONVERSATION);
+                      }}>
+                      {t('englishConversation')}
+                    </ProgramCard>
                   </Col>
                   <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard>{t('toefl')}</ProgramCard>
+                    <ProgramCard
+                      onClick={() => {
+                        handleShow();
+                        setProgram(ROUTE_IELTS);
+                      }}>
+                      {t('ielts')}
+                    </ProgramCard>
                   </Col>
                   <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard>{t('generalEnglish')}</ProgramCard>
+                    <ProgramCard
+                      onClick={() => {
+                        handleShow();
+                        setProgram(ROUTE_TOEFL);
+                      }}>
+                      {t('toefl')}
+                    </ProgramCard>
+                  </Col>
+                  <Col md={4} xl={4} sm={6} className="mb-2">
+                    <ProgramCard
+                      onClick={() => {
+                        handleShow();
+                        setProgram(ROUTE_GENERAL_ENGLISH);
+                      }}>
+                      {t('generalEnglish')}
+                    </ProgramCard>
                   </Col>
                 </Row>
               </Col>
@@ -111,7 +145,7 @@ const FreeTrialContainer = () => {
       )}
       <Modal className="rounded" show={show} onHide={handleClose} size="xl" centered>
         <Modal.Body>
-          <ProgramDetailModalContainer />
+          <ProgramDetailModalContainer program={program} lang={lang} />
           <div className="mt-3 mb-4" style={{ textAlign: 'right' }}>
             <ButtonComponent color="grey" handleClick={handleClose} text="Close" />
             <ButtonComponent

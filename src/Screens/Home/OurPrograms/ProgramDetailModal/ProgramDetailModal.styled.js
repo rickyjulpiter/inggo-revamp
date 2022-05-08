@@ -13,6 +13,7 @@ export const ImgStyled = styled.img`
 export const ProgramTitle = styled.h1`
   color: ${PrimaryColor};
   font-weight: bolder;
+  font-size: 25px;
 `;
 
 export const ProgramDescription = styled.p`
