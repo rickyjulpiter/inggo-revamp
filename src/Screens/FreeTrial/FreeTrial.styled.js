@@ -1,11 +1,14 @@
 import styled from 'styled-components';
-import { Card, Container } from 'react-bootstrap';
 import { PrimaryColor, SecondaryColor, WhiteColor } from '../../Assets/colorPalette';
+import BannerHomeTransparent from '../../Assets/Images/bannerhome-transparent.png';
 
-export const ContainerStyled = styled(Container)`
-  margin-top: 5vw;
-  margin-bottom: 5vw;
-  min-height: 30.5vw;
+export const ContainerStyled = styled.div`
+  min-height: 40vw;
+  background-color: white;
+  background-image: url(${BannerHomeTransparent});
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-position: right 0 top 0;
 
   &:hover {
     .t_four {
@@ -27,6 +30,7 @@ export const ContainerStyled = styled(Container)`
 export const Title = styled.h2`
   color: ${PrimaryColor};
   font-weight: bolder;
+  text-align: center;
 `;
 
 export const SecondTitle = styled.h4`
@@ -34,9 +38,10 @@ export const SecondTitle = styled.h4`
   font-weight: bolder;
 `;
 
-export const CardStyled = styled(Card)`
+export const CardStyled = styled.div`
   border: none;
   border-radius: 8px;
+  padding: 5vw;
 `;
 
 export const ProgramCard = styled.div`

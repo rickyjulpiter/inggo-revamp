@@ -45,85 +45,85 @@ const FreeTrialContainer = ({ lang }) => {
 
   return (
     <>
-      {!isProgramSelected && (
-        <ContainerStyled>
-          <div className="t_four p_absoulte">
-            <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull3} alt="" />
-          </div>
-          <CardStyled className="p-5">
-            {/*<PlayFull />*/}
-            <Row>
-              <Col md={3} sm={3} xl={3}>
-                <img src={ImgChoose} alt="img" className="img-fluid rounded" />
-              </Col>
-              <Col md={9} sm={9} xl={9}>
-                <Title>Welcome to our Free Trial Programs</Title>
-                <Row className="mt-5">
-                  <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard
-                      onClick={() => {
-                        handleShow();
-                        setProgram(ROUTE_BUSINESS_ENGLISH);
-                      }}>
-                      {t('businessEnglish')}
-                    </ProgramCard>
-                  </Col>
-                  <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard
-                      onClick={() => {
-                        handleShow();
-                        setProgram(ROUTE_ACADEMIC_WRITING);
-                      }}>
-                      {t('academicWriting')}
-                    </ProgramCard>
-                  </Col>
-                  <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard
-                      onClick={() => {
-                        handleShow();
-                        setProgram(ROUTE_ENGLISH_CONVERSATION);
-                      }}>
-                      {t('englishConversation')}
-                    </ProgramCard>
-                  </Col>
-                  <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard
-                      onClick={() => {
-                        handleShow();
-                        setProgram(ROUTE_IELTS);
-                      }}>
-                      {t('ielts')}
-                    </ProgramCard>
-                  </Col>
-                  <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard
-                      onClick={() => {
-                        handleShow();
-                        setProgram(ROUTE_TOEFL);
-                      }}>
-                      {t('toefl')}
-                    </ProgramCard>
-                  </Col>
-                  <Col md={4} xl={4} sm={6} className="mb-2">
-                    <ProgramCard
-                      onClick={() => {
-                        handleShow();
-                        setProgram(ROUTE_GENERAL_ENGLISH);
-                      }}>
-                      {t('generalEnglish')}
-                    </ProgramCard>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </CardStyled>
-        </ContainerStyled>
-      )}
+      <ContainerStyled>
+        {!isProgramSelected && (
+          <>
+            <div className="t_four p_absoulte">
+              <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull3} alt="" />
+            </div>
+            <CardStyled>
+              <PlayFull />
+              <Row>
+                <Col md={3} sm={3} xl={3}>
+                  <img src={ImgChoose} alt="img" className="img-fluid rounded" />
+                </Col>
+                <Col md={9} sm={9} xl={9}>
+                  <Title>Welcome to our Free Trial Programs</Title>
+                  <Row className="mt-5">
+                    <Col md={4} xl={4} sm={6} className="mb-2">
+                      <ProgramCard
+                        onClick={() => {
+                          handleShow();
+                          setProgram(ROUTE_BUSINESS_ENGLISH);
+                        }}>
+                        {t('businessEnglish')}
+                      </ProgramCard>
+                    </Col>
+                    <Col md={4} xl={4} sm={6} className="mb-2">
+                      <ProgramCard
+                        onClick={() => {
+                          handleShow();
+                          setProgram(ROUTE_ACADEMIC_WRITING);
+                        }}>
+                        {t('academicWriting')}
+                      </ProgramCard>
+                    </Col>
+                    <Col md={4} xl={4} sm={6} className="mb-2">
+                      <ProgramCard
+                        onClick={() => {
+                          handleShow();
+                          setProgram(ROUTE_ENGLISH_CONVERSATION);
+                        }}>
+                        {t('englishConversation')}
+                      </ProgramCard>
+                    </Col>
+                    <Col md={4} xl={4} sm={6} className="mb-2">
+                      <ProgramCard
+                        onClick={() => {
+                          handleShow();
+                          setProgram(ROUTE_IELTS);
+                        }}>
+                        {t('ielts')}
+                      </ProgramCard>
+                    </Col>
+                    <Col md={4} xl={4} sm={6} className="mb-2">
+                      <ProgramCard
+                        onClick={() => {
+                          handleShow();
+                          setProgram(ROUTE_TOEFL);
+                        }}>
+                        {t('toefl')}
+                      </ProgramCard>
+                    </Col>
+                    <Col md={4} xl={4} sm={6} className="mb-2">
+                      <ProgramCard
+                        onClick={() => {
+                          handleShow();
+                          setProgram(ROUTE_GENERAL_ENGLISH);
+                        }}>
+                        {t('generalEnglish')}
+                      </ProgramCard>
+                    </Col>
+                  </Row>
+                </Col>
+              </Row>
+            </CardStyled>
+          </>
+        )}
 
-      {!isDateSelected && (
-        <>
-          {isProgramSelected && (
-            <ContainerStyled className="mb-5">
+        {!isDateSelected && (
+          <>
+            {isProgramSelected && (
               <CardStyled className="p-5">
                 <div>
                   <ButtonComponent
@@ -139,10 +139,10 @@ const FreeTrialContainer = ({ lang }) => {
                   </Col>
                 </Row>
               </CardStyled>
-            </ContainerStyled>
-          )}
-        </>
-      )}
+            )}
+          </>
+        )}
+      </ContainerStyled>
       <Modal className="rounded" show={show} onHide={handleClose} size="xl" centered>
         <Modal.Body>
           <ProgramDetailModalContainer program={program} lang={lang} />
