@@ -2,8 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { useTranslation } from 'react-i18next';
 import { Card, Col, Image, Row } from 'react-bootstrap';
-
-import { PrimaryColor } from '../../Assets/colorPalette';
 import PutriImages from '../../Assets/Images/teachers/Putri.jpg';
 import DisaImages from '../../Assets/Images/teachers/Disa.jpg';
 import NiaImages from '../../Assets/Images/teachers/Nia.JPG';
@@ -13,10 +11,7 @@ import DessyImages from '../../Assets/Images/teachers/Dessy.jpg';
 import KomarImages from '../../Assets/Images/teachers/Komar.jpg';
 import AndinImages from '../../Assets/Images/teachers/Andin.jpeg';
 import MedImages from '../../Assets/Images/teachers/Med.jpeg';
-import WhyChooseUsContainer from '../Home/WhyChooseUs/WhyChooseUs.container';
-import TestimonialsComponentContainer from '../Home/TestimonialsComponent/TestimonialsComponent.container';
-import OurClientsContainer from '../Home/OurClients/OurClients.container';
-import ContactContainer from '../Home/Contact/Contact.container';
+import { WhiteColor } from '../../Assets/colorPalette';
 
 const TeacherContainer = () => {
   const { t } = useTranslation();
@@ -132,10 +127,6 @@ const TeacherContainer = () => {
           </Col>
         </Row>
       </ContainerStyled>
-      <WhyChooseUsContainer />
-      <TestimonialsComponentContainer />
-      <OurClientsContainer />
-      <ContactContainer />
     </>
   );
 };
@@ -175,10 +166,11 @@ const ContainerStyled = styled.div`
   padding: 2vw 8vw 8vw 8vw;
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   font-weight: 700;
-  color: ${PrimaryColor};
+  color: ${WhiteColor};
   margin-bottom: 1rem;
   text-align: center;
+  margin-top: 2vw;
 `;
 export default TeacherContainer;

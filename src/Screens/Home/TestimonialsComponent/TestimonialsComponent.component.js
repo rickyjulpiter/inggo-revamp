@@ -26,7 +26,7 @@ export const ExampleCardPersonBlue = ({
 }) => (
   <>
     <CenterDiv>
-      <ImgStyled className="position-absolute index-1 center" src={images} alt="images" />
+      <ImgStyled className="" src={images} alt="images" />
     </CenterDiv>
     <CardTestimonials>
       <TestimonialsDescription>{description}</TestimonialsDescription>

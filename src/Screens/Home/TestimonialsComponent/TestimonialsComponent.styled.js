@@ -101,8 +101,8 @@ export const CardTestimonials = styled(Card)`
   }
 
   @media (max-width: 425px) {
-    padding: 5vw;
-    margin-top: 7vw;
+    padding: 10vw 5vw 5vw 5vw;
+    margin-top: 7vw !important;
   }
   @media (min-width: 1400px) {
     min-height: 5vw;
@@ -134,6 +134,7 @@ export const TestimonialsDescription = styled.p`
   color: #ffffff;
   margin-top: 1vw;
   min-height: 30vw;
+  text-align: justify;
 
   @media (max-width: 1024px) {
     font-size: 12px;
@@ -203,22 +204,25 @@ export const ImgStyled = styled.img`
   border-style: none;
   display: flex;
   justify-content: center;
-  border-radius: 80px;
+  border-radius: 50%;
 
   @media (max-width: 1024px) {
     width: 50px;
   }
 
   @media (max-width: 425px) {
-    height: 50px;
-    width: 50px;
-    display: none;
+    height: 70px;
+    width: 70px;
   }
 `;
 
 export const CenterDiv = styled.div`
   margin: auto;
   width: 20%;
+
+  @media (max-width: 425px) {
+    padding-bottom: 2vw;
+  }
 `;
 
 export const CarouselResponsive = styled(Carousel)`

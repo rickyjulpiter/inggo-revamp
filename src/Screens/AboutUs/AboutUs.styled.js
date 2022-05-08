@@ -1,19 +1,16 @@
 import styled from 'styled-components';
-import { PrimaryColor } from '../../Assets/colorPalette';
+import { PrimaryColor, WhiteColor } from '../../Assets/colorPalette';
 import BannerHomeTransparent from '../../Assets/Images/bannerhome-transparent.png';
 
 export const ContainerStyled = styled.div`
-  padding: 2vw 6vw 8vw 6vw;
-  background-image: url(${BannerHomeTransparent});
+  //background-image: url(${BannerHomeTransparent});
   background-repeat: no-repeat;
   background-size: 60%;
   background-position: right 0 top 0;
-  @media (min-width: 1024px) {
-    min-height: 602px;
-  }
+  margin-bottom: 2vw;
+  background-color: ${PrimaryColor};
 
   @media (max-width: 768px) {
-    min-height: 668px;
     background-image: none;
   }
 
@@ -34,15 +31,17 @@ export const ContainerStyled = styled.div`
   }
 `;
 
-export const Title = styled.h2`
+export const Title = styled.h1`
   font-weight: 700;
   color: ${PrimaryColor};
   margin-bottom: 1rem;
   text-align: center;
+  color: ${WhiteColor};
 `;
 
 export const Paragraph = styled.p`
-  line-height: 24px !important;
+  line-height: 28px !important;
   text-align: justify;
   margin-bottom: 1rem;
+  color: ${WhiteColor};
 `;
