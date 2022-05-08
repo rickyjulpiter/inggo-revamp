@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.2b6f5dcc.js",
+    "main.js": "/static/js/main.c0efd776.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/Nia.JPG": "/static/media/Nia.b09ffb58913c3eb064ca.JPG",
     "static/media/Putri.jpg": "/static/media/Putri.b69d7ce44757353698b6.jpg",
@@ -32,7 +32,6 @@
     "static/media/INGGO_general_english_merah.png": "/static/media/INGGO_general_english_merah.76ba2d38516e17c83367.png",
     "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
     "static/media/INGGO_translation_n_proofreading_services_biru.png": "/static/media/INGGO_translation_n_proofreading_services_biru.695c6599b8f2cf7d402f.png",
-    "static/media/business_english_detail.png": "/static/media/business_english_detail.b0f1d49105a63f6d9f7b.png",
     "static/media/Nisa.jpeg": "/static/media/Nisa.ea09770523d42da728d9.jpeg",
     "static/media/INGGO_academic_writing_merah.png": "/static/media/INGGO_academic_writing_merah.e50b05a442a2b6f07427.png",
     "static/media/AnnisaRWardhani.jpeg": "/static/media/AnnisaRWardhani.6e2bdc38717ccadb4f09.jpeg",
@@ -49,6 +48,7 @@
     "static/media/Andin.jpeg": "/static/media/Andin.fce9c45bf146a51ecb3a.jpeg",
     "static/media/INGGO_academic_writing_lingkaran_merah.png": "/static/media/INGGO_academic_writing_lingkaran_merah.f9695c9f667ededfc909.png",
     "static/media/INGGO_business_english_lingkaran_biru.png": "/static/media/INGGO_business_english_lingkaran_biru.8c5eae3759e9c63e1d27.png",
+    "static/media/INGGO_business_english_lingkaran_merah.png": "/static/media/INGGO_business_english_lingkaran_merah.101525e43cbb744abb48.png",
     "static/media/bannerhome-transparent-copy.png": "/static/media/bannerhome-transparent-copy.ff3236cfeb191fc7425d.png",
     "static/media/en_flowchart.png": "/static/media/en_flowchart.e293d777aeefd974d905.png",
     "static/media/bannerhome-transparent.png": "/static/media/bannerhome-transparent.bae1a4678ac7dab26d05.png",
@@ -58,17 +58,16 @@
     "static/media/PutriAyudita.jpeg": "/static/media/PutriAyudita.2d40c5ce37b3a4c0b1bf.jpeg",
     "static/media/Med.jpeg": "/static/media/Med.6f760efc8e4dec3ec9b9.jpeg",
     "static/media/FachriAkbar.jpeg": "/static/media/FachriAkbar.324bbb8ac3a20164446f.jpeg",
-    "static/media/choose.png": "/static/media/choose.864d463212cbcc78788f.png",
     "static/media/seed.jpeg": "/static/media/seed.e4f5714d32fbe5324abc.jpeg",
     "static/media/ThanthowySyamsuddin.jpeg": "/static/media/ThanthowySyamsuddin.c179471f415d95f0c1b3.jpeg",
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.2b6f5dcc.js.map": "/static/js/main.2b6f5dcc.js.map",
+    "main.c0efd776.js.map": "/static/js/main.c0efd776.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.2b6f5dcc.js"
+    "static/js/main.c0efd776.js"
   ]
 }
