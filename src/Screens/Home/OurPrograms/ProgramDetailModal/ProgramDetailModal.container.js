@@ -21,18 +21,12 @@ import {
   ROUTE_IELTS,
   ROUTE_TOEFL
 } from '../../../../Assets/utils';
-import BusinessEnglishBalloon
-  from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_lingkaran_biru.png';
-import AcademicWritingBalloon
-  from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/INGGO_academic_writing_lingkaran_merah.png';
-import EnglishConversationBalloon
-  from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_lingkaran_biru.png';
-import IELTSBalloon
-  from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_lingkaran_merah.png';
-import TOEFLBalloon
-  from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_lingkaran_biru.png';
-import GeneralEnglishBalloon
-  from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_lingkaran_merah.png';
+import BusinessEnglishBalloon from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_lingkaran_biru.png';
+import AcademicWritingBalloon from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/INGGO_academic_writing_lingkaran_merah.png';
+import EnglishConversationBalloon from '../../../../Assets/Images/new-banner/ENGLISH-CONVERSATION/INGGO_english_conversatin_lingkaran_biru.png';
+import IELTSBalloon from '../../../../Assets/Images/new-banner/IELTS/INGGO_ielts_lingkaran_merah.png';
+import TOEFLBalloon from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_lingkaran_biru.png';
+import GeneralEnglishBalloon from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_lingkaran_merah.png';
 import { H5 } from '../ProgramDetail/ProgramDetail.styled';
 
 const ProgramDetailModalContainer = ({ program, lang }) => {
@@ -204,7 +198,7 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
           <ProgramDescription>{t('englishConversationDescription')}</ProgramDescription>
           {lang === 'id' ? (
             <>
-              <H5>Anda akan belajar cara:</H5>
+              <H5>Anda akan belajar tentang:</H5>
               <Row>
                 <Col>
                   <ULStyled>
@@ -272,8 +266,8 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
           {lang === 'id' ? (
             <>
               <Row>
-                <Col xl={8} md={8} sm={8}>
-                  <H5>Anda akan belajar tentang:</H5>
+                <H5>Anda akan belajar tentang:</H5>
+                <Col>
                   <ULStyled>
                     <LiStyled>
                       Strategi yang berguna untuk menjawab berbagai jenis pertanyaan Listening,
@@ -286,6 +280,10 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
                       Reading (short-answer questions, True/False/Not Given, multiple choice,
                       summary/table completion, headings)
                     </LiStyled>
+                  </ULStyled>
+                </Col>
+                <Col>
+                  <ULStyled>
                     <LiStyled>
                       Writing Task 1 (pie chart, bar graphs, maps, diagrams, dan tables)
                     </LiStyled>
@@ -296,21 +294,12 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
                     <LiStyled>Speaking (part 1 to 3)</LiStyled>
                   </ULStyled>
                 </Col>
-                <Col className="mt-3">
-                  <H5>Anda akan mengikuti dan mendapatkan:</H5>
-                  <ULStyled>
-                    <LiStyled>Pre-test, progress test, post-test</LiStyled>
-                    <LiStyled>Masukan berkala yang bermanfaat dari tutor</LiStyled>
-                    <LiStyled>Laporan Kemajuan Belajar</LiStyled>
-                    <LiStyled>Sertifikat elektronik</LiStyled>
-                  </ULStyled>
-                </Col>
               </Row>
             </>
           ) : (
             <Row>
-              <Col xl={8} md={8} sm={8}>
-                <H5>You will learn about:</H5>
+              <H5>You will learn about:</H5>
+              <Col>
                 <ULStyled>
                   <LiStyled>
                     Useful strategies to deal with numerous question types in Listening, Reading,
@@ -323,6 +312,10 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
                     Reading (short-answer questions, True/False/Not Given, multiple choice,
                     summary/table completion, headings)
                   </LiStyled>
+                </ULStyled>
+              </Col>
+              <Col>
+                <ULStyled>
                   <LiStyled>
                     Writing Task 1 (pie chart, bar graphs, maps, diagrams, dan tables)
                   </LiStyled>
@@ -331,15 +324,6 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
                     cause-solution, positive-negative, dan open questions)
                   </LiStyled>
                   <LiStyled>Speaking (part 1 to 3)</LiStyled>
-                </ULStyled>
-              </Col>
-              <Col className="mt-3">
-                <H5>You will have and obtain:</H5>
-                <ULStyled>
-                  <LiStyled>Pre-test, progress test, post-test</LiStyled>
-                  <LiStyled>Regular and constructive feedback from your tutor</LiStyled>
-                  <LiStyled>Performance report</LiStyled>
-                  <LiStyled>E-certificate</LiStyled>
                 </ULStyled>
               </Col>
             </Row>
@@ -451,7 +435,7 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
           <ProgramDescription>{t('generalEnglishDescription')}</ProgramDescription>
           {lang === 'id' ? (
             <>
-              <H5>Anda akan belajar cara:</H5>
+              <H5>Anda akan belajar tentang:</H5>
               <Row>
                 <Col>
                   <ULStyled>
@@ -518,7 +502,7 @@ const ProgramDetailModalContainer = ({ program, lang }) => {
     <ContainerStyled>
       <Row>
         <Col xl={3} md={3} sm={0} className="mb-3">
-          <ImgStyled src={BannerDisplay()} className="img-fluid" alt="img" />
+          <ImgStyled src={BannerDisplay()} className="img-fluid mt-5" alt="img" />
         </Col>
         <Col xl={9} md={9} sm={12}>
           <TitleDisplay />

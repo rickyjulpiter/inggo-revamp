@@ -10,7 +10,7 @@ const NavbottomComponent = () => {
           <Brand>inggo.co</Brand>
         </div>
         <div>
-          <LinkStyled>
+          <LinkStyled href="https://www.instagram.com/inggo_co/" target="_blank">
             <i className="bi bi-instagram" />
           </LinkStyled>
           <LinkStyled>

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
 import {
@@ -22,15 +21,16 @@ import MobileBanner from '../../../../Assets/Images/new-banner/TRANSLATION-PROOF
 import DesktopBanner from '../../../../Assets/Images/new-banner/TRANSLATION-PROOFREADING-SERVICES/INGGO_translation_n_proofreading_services_biru.png';
 import FlowChartEn from '../../../../Assets/Images/new-banner/en_flowchart.png';
 import FlowChartId from '../../../../Assets/Images/new-banner/id_flowchart.png';
+import i18n from '../../../../Assets/Translations/i18n';
 
 const BannerImage = styled.img`
   border-radius: 8px;
   text-align: center;
-  //height: 400px;
 `;
 
-const TranslationAndProofReading = ({ lang }) => {
+const TranslationAndProofReading = () => {
   const { t } = useTranslation();
+  const lang = i18n.language;
   return (
     <>
       <ContainerStyled>
@@ -207,9 +207,4 @@ const TranslationAndProofReading = ({ lang }) => {
     </>
   );
 };
-
-TranslationAndProofReading.propTypes = {
-  lang: PropTypes.string
-};
-
 export default TranslationAndProofReading;

@@ -51,7 +51,12 @@ const HomeContainer = () => {
                       text={t('freeTrial')}
                       actionhref={ROUTE_FREE_TRIAL}
                     />
-                    <ButtonComponent color={SecondaryColor} text={t('contactUs')} actionhref="#" />
+                    <ButtonComponent
+                      color={SecondaryColor}
+                      text={t('contactUs')}
+                      actionhref="https://api.whatsapp.com/send?phone=6285772900593"
+                      target="_blank"
+                    />
                   </div>
                 </CustomMarginToParent>
               </Col>

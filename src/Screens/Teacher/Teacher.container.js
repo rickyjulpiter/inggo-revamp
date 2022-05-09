@@ -11,6 +11,7 @@ import DessyImages from '../../Assets/Images/teachers/Dessy.jpg';
 import KomarImages from '../../Assets/Images/teachers/Komar.jpg';
 import AndinImages from '../../Assets/Images/teachers/Andin.jpeg';
 import MedImages from '../../Assets/Images/teachers/Med.jpeg';
+import FitriImages from '../../Assets/Images/teachers/Fitri.jpeg';
 import { WhiteColor } from '../../Assets/colorPalette';
 
 const TeacherContainer = () => {
@@ -18,21 +19,36 @@ const TeacherContainer = () => {
   return (
     <>
       <ContainerStyled>
-        <Title>{t('menuOurTeam')}</Title>
-        <Row style={{ marginTop: '3vw' }}>
-          <Col xl={3} md={3} sm={12} className="mx-auto">
-            <TeacherCard>
-              <center>
-                <TeacherCardImage variant="top" src={PutriImages} />
-              </center>
-              <Card.Body>
-                <TeacherCardTitle>Ms. Putri</TeacherCardTitle>
-                <TeacherCardPosition>Founder</TeacherCardPosition>
-                <TeacherCardSubject>MA TESOL - King’s College London</TeacherCardSubject>
-              </Card.Body>
-            </TeacherCard>
+        <Title>Founders</Title>
+        <Row className="mb-5 mt-5">
+          <Col xl={6} md={6} sm={12} className="mx-auto">
+            <Row>
+              <Col xl={6} md={6} sm={12} className="mx-auto">
+                <TeacherCard>
+                  <center>
+                    <TeacherCardImage variant="top" src={PutriImages} />
+                  </center>
+                  <Card.Body>
+                    <TeacherCardTitle>Ms. Putri</TeacherCardTitle>
+                    <TeacherCardSubject>MA TESOL - UK</TeacherCardSubject>
+                  </Card.Body>
+                </TeacherCard>
+              </Col>
+              <Col xl={6} md={5} sm={12} className="mx-auto">
+                <TeacherCard>
+                  <center>
+                    <TeacherCardImage variant="top" src={FitriImages} />
+                  </center>
+                  <Card.Body>
+                    <TeacherCardTitle>Ms. Fitri Naviati</TeacherCardTitle>
+                    <TeacherCardSubject>International Business Management - UK</TeacherCardSubject>
+                  </Card.Body>
+                </TeacherCard>
+              </Col>
+            </Row>
           </Col>
         </Row>
+        <Title>{t('menuOurTeam')}</Title>
         <Row style={{ marginTop: '3vw' }}>
           <Col xl={3} md={3} sm={12} className="mx-auto">
             <TeacherCard>
@@ -152,10 +168,10 @@ const TeacherCardTitle = styled(Card.Title)`
   font-weight: 600;
 `;
 
-const TeacherCardPosition = styled(Card.Text)`
-  text-align: center;
-  font-style: italic;
-`;
+// const TeacherCardPosition = styled(Card.Text)`
+//   text-align: center;
+//   font-style: italic;
+// `;
 
 const TeacherCardSubject = styled(Card.Text)`
   text-align: center;

@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 
 import {
   BannerBackground,
@@ -18,9 +17,11 @@ import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
 import MobileBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_merah_mobile_english.png';
 import DesktopBanner from '../../../../Assets/Images/new-banner/GENERAL-ENGLISH/INGGO_general_english_merah.png';
+import i18n from '../../../../Assets/Translations/i18n';
 
-const GeneralEnglish = ({ lang }) => {
+const GeneralEnglish = () => {
   const { t } = useTranslation();
+  const lang = i18n.language;
   return (
     <>
       <ContainerStyled>
@@ -133,10 +134,6 @@ const GeneralEnglish = ({ lang }) => {
       <ContactContainer />
     </>
   );
-};
-
-GeneralEnglish.propTypes = {
-  lang: PropTypes.string
 };
 
 export default GeneralEnglish;

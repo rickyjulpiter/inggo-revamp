@@ -1,7 +1,13 @@
 import { Carousel, Col, Row } from 'react-bootstrap';
 import React from 'react';
 import styled from 'styled-components';
-import { PutriAyudita, SyahzamiPutra } from './List/TestimonialComponentList';
+import {
+  AnnisaSriBaskara,
+  BeatrixMarendeng,
+  MutiaSekarDini,
+  NahlaJovial,
+  ThantowySyamsuddin
+} from './List/TestimonialComponentList';
 
 const MobileResponsive = styled.div`
   @media (min-width: 768px) {
@@ -16,14 +22,35 @@ const MobileList = () => {
         <Carousel.Item interval={5000}>
           <Row>
             <Col md={4} xl={4} className="mb-4">
-              <SyahzamiPutra />
+              <NahlaJovial />
             </Col>
           </Row>
         </Carousel.Item>
         <Carousel.Item interval={5000}>
           <Row>
             <Col md={4} xl={4} className="mb-4">
-              <PutriAyudita />
+              <BeatrixMarendeng />
+            </Col>
+          </Row>
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
+          <Row>
+            <Col md={4} xl={4} className="mb-4">
+              <AnnisaSriBaskara />
+            </Col>
+          </Row>
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
+          <Row>
+            <Col md={4} xl={4} className="mb-4">
+              <ThantowySyamsuddin />
+            </Col>
+          </Row>
+        </Carousel.Item>
+        <Carousel.Item interval={5000}>
+          <Row>
+            <Col md={4} xl={4} className="mb-4">
+              <MutiaSekarDini />
             </Col>
           </Row>
         </Carousel.Item>

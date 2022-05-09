@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import NavbarComponent from './Components/Navbar/Navbar.component';
@@ -34,10 +34,7 @@ import TranslationAndProofReading from './Screens/Home/OurPrograms/Programs/Tran
 import TeacherContainer from './Screens/Teacher/Teacher.container';
 
 const App = () => {
-  const [language, setLanguage] = useState('id');
-
   const handleLanguage = async (lang) => {
-    setLanguage(lang);
     await i18n.changeLanguage(lang);
   };
 
@@ -47,30 +44,21 @@ const App = () => {
       <NavbarComponent onChangeLang={handleLanguage} />
       <BrowserRouter>
         <Routes>
-          <Route exact path="/" element={<HomeContainer lang={language} />} />
-          <Route path={ROUTE_ABOUT_US} element={<AboutUsContainer lang={language} />} />
-          <Route
-            path={ROUTE_ENGLISH_COURSES}
-            element={<EnglishCoursesContainer lang={language} />}
-          />
-          <Route path={ROUTE_FREE_TRIAL} element={<FreeTrialContainer lang={language} />} />
+          <Route exact path="/" element={<HomeContainer />} />
+          <Route path={ROUTE_ABOUT_US} element={<AboutUsContainer />} />
+          <Route path={ROUTE_ENGLISH_COURSES} element={<EnglishCoursesContainer />} />
+          <Route path={ROUTE_FREE_TRIAL} element={<FreeTrialContainer />} />
 
-          <Route path={ROUTE_BUSINESS_ENGLISH} element={<BusinessEnglish lang={language} />} />
-          <Route path={ROUTE_ACADEMIC_WRITING} element={<AcademicWriting lang={language} />} />
-          <Route path={ROUTE_IELTS} element={<IELTS lang={language} />} />
-          <Route path={ROUTE_TOEFL} element={<TOEFL lang={language} />} />
-          <Route
-            path={ROUTE_ENGLISH_CONVERSATION}
-            element={<EnglishConversation lang={language} />}
-          />
-          <Route path={ROUTE_GENERAL_ENGLISH} element={<GeneralEnglish lang={language} />} />
+          <Route path={ROUTE_BUSINESS_ENGLISH} element={<BusinessEnglish />} />
+          <Route path={ROUTE_ACADEMIC_WRITING} element={<AcademicWriting />} />
+          <Route path={ROUTE_IELTS} element={<IELTS />} />
+          <Route path={ROUTE_TOEFL} element={<TOEFL />} />
+          <Route path={ROUTE_ENGLISH_CONVERSATION} element={<EnglishConversation />} />
+          <Route path={ROUTE_GENERAL_ENGLISH} element={<GeneralEnglish />} />
 
-          <Route path={ROUTE_TESTIMONIALS} element={<TestimonialsContainer lang={language} />} />
-          <Route
-            path={ROUTE_TRANSLATION_SERVICE}
-            element={<TranslationAndProofReading lang={language} />}
-          />
-          <Route path={ROUTE_OUR_TEAM} element={<TeacherContainer lang={language} />} />
+          <Route path={ROUTE_TESTIMONIALS} element={<TestimonialsContainer />} />
+          <Route path={ROUTE_TRANSLATION_SERVICE} element={<TranslationAndProofReading />} />
+          <Route path={ROUTE_OUR_TEAM} element={<TeacherContainer />} />
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />

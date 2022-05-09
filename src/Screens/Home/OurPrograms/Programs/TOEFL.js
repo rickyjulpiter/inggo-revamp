@@ -10,16 +10,17 @@ import {
   ULStyled
 } from '../ProgramDetail/ProgramDetail.styled';
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 import MobileBanner from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_biru_Mobile.png';
 import DesktopBanner from '../../../../Assets/Images/new-banner/TOEFL/INGGO_toefl_biru.png';
 import WhyChooseUsContainer from '../../WhyChooseUs/WhyChooseUs.container';
 import TestimonialsComponentContainer from '../../TestimonialsComponent/TestimonialsComponent.container';
 import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
+import i18n from '../../../../Assets/Translations/i18n';
 
-const IELTS = ({ lang }) => {
+const IELTS = () => {
   const { t } = useTranslation();
+  const lang = i18n.language;
   return (
     <>
       <ContainerStyled>
@@ -169,10 +170,6 @@ const IELTS = ({ lang }) => {
       <ContactContainer />
     </>
   );
-};
-
-IELTS.propTypes = {
-  lang: PropTypes.string
 };
 
 export default IELTS;

@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.085c0f30.css",
-    "main.js": "/static/js/main.0ef3ea86.js",
+    "main.js": "/static/js/main.4de8c5c8.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/Nia.JPG": "/static/media/Nia.b09ffb58913c3eb064ca.JPG",
     "static/media/Putri.jpg": "/static/media/Putri.b69d7ce44757353698b6.jpg",
@@ -32,6 +32,7 @@
     "static/media/INGGO_general_english_merah.png": "/static/media/INGGO_general_english_merah.76ba2d38516e17c83367.png",
     "static/media/AyuDewilestariNapitupulu.jpeg": "/static/media/AyuDewilestariNapitupulu.f11c90d7b10d94721ced.jpeg",
     "static/media/INGGO_translation_n_proofreading_services_biru.png": "/static/media/INGGO_translation_n_proofreading_services_biru.695c6599b8f2cf7d402f.png",
+    "static/media/Fitri.jpeg": "/static/media/Fitri.9235a2361b70baeed952.jpeg",
     "static/media/Nisa.jpeg": "/static/media/Nisa.ea09770523d42da728d9.jpeg",
     "static/media/INGGO_academic_writing_merah.png": "/static/media/INGGO_academic_writing_merah.e50b05a442a2b6f07427.png",
     "static/media/AnnisaRWardhani.jpeg": "/static/media/AnnisaRWardhani.6e2bdc38717ccadb4f09.jpeg",
@@ -63,11 +64,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.085c0f30.css.map": "/static/css/main.085c0f30.css.map",
-    "main.0ef3ea86.js.map": "/static/js/main.0ef3ea86.js.map",
+    "main.4de8c5c8.js.map": "/static/js/main.4de8c5c8.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.085c0f30.css",
-    "static/js/main.0ef3ea86.js"
+    "static/js/main.4de8c5c8.js"
   ]
 }

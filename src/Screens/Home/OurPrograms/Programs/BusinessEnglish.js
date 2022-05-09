@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 
 import {
   BannerBackground,
@@ -18,8 +17,10 @@ import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
 import DesktopBanner from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_biru.png';
 import MobileBanner from '../../../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_biru_mobile_english.png';
+import i18n from '../../../../Assets/Translations/i18n';
 
-const BusinessEnglish = ({ lang }) => {
+const BusinessEnglish = () => {
+  const lang = i18n.language;
   const { t } = useTranslation();
   return (
     <>
@@ -130,10 +131,6 @@ const BusinessEnglish = ({ lang }) => {
       <ContactContainer />
     </>
   );
-};
-
-BusinessEnglish.propTypes = {
-  lang: PropTypes.string
 };
 
 export default BusinessEnglish;

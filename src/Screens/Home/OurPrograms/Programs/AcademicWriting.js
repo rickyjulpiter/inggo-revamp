@@ -1,7 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'react-bootstrap';
 import { useTranslation } from 'react-i18next';
-import PropTypes from 'prop-types';
 
 import {
   BannerBackground,
@@ -18,9 +17,11 @@ import OurClientsContainer from '../../OurClients/OurClients.container';
 import ContactContainer from '../../Contact/Contact.container';
 import MobileBanner from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/INGGO_academic_writing_merah_mobile_english.png';
 import DesktopBanner from '../../../../Assets/Images/new-banner/ACADEMIC-WRITING/INGGO_academic_writing_merah.png';
+import i18n from '../../../../Assets/Translations/i18n';
 
-const AcademicWriting = ({ lang }) => {
+const AcademicWriting = () => {
   const { t } = useTranslation();
+  const lang = i18n.language;
   return (
     <>
       <ContainerStyled>
@@ -147,10 +148,6 @@ const AcademicWriting = ({ lang }) => {
       <ContactContainer />
     </>
   );
-};
-
-AcademicWriting.propTypes = {
-  lang: PropTypes.string
 };
 
 export default AcademicWriting;

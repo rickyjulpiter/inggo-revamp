@@ -27,9 +27,9 @@ const ButtonStyled = styled.a.attrs((props: { color: string }) => props)`
   }
 `;
 
-const ButtonComponent = ({ text, color, actionhref, handleClick }) => {
+const ButtonComponent = ({ text, color, actionhref, handleClick, target }) => {
   return (
-    <ButtonStyled color={color} href={actionhref} onClick={handleClick}>
+    <ButtonStyled color={color} href={actionhref} onClick={handleClick} target={target}>
       {text}
     </ButtonStyled>
   );
@@ -39,14 +39,16 @@ ButtonComponent.propTypes = {
   text: PropTypes.string,
   color: PropTypes.string,
   actionhref: PropTypes.string,
-  handleClick: PropTypes.func
+  handleClick: PropTypes.func,
+  target: PropTypes.string
 };
 
 ButtonComponent.defaultProps = {
   handleClick: () => console.log('clicked'),
   color: PrimaryColor,
   text: 'Submit',
-  actionhref: '#'
+  actionhref: '#',
+  target: ''
 };
 
 export default ButtonComponent;

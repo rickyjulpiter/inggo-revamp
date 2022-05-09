@@ -21,9 +21,15 @@ import {
   ROUTE_IELTS,
   ROUTE_TOEFL
 } from '../../Assets/utils';
+import i18n from '../../Assets/Translations/i18n';
+import WhyChooseUsContainer from '../Home/WhyChooseUs/WhyChooseUs.container';
+import TestimonialsComponentContainer from '../Home/TestimonialsComponent/TestimonialsComponent.container';
+import OurClientsContainer from '../Home/OurClients/OurClients.container';
+import ContactContainer from '../Home/Contact/Contact.container';
 
-const FreeTrialContainer = ({ lang }) => {
+const FreeTrialContainer = () => {
   const { t } = useTranslation();
+  const lang = i18n.language;
 
   const [show, setShow] = useState(false);
   const [program, setProgram] = useState('');
@@ -37,9 +43,9 @@ const FreeTrialContainer = ({ lang }) => {
 
   const PlayFull = () => (
     <>
-      <div className="t_first p_absoulte">
-        <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull1} alt="" />
-      </div>
+      {/*<div className="t_first p_absoulte">*/}
+      {/*  <FloatingImage className="layer layer2" data-depth="0.30" src={Playfull1} alt="" />*/}
+      {/*</div>*/}
     </>
   );
 
@@ -55,7 +61,7 @@ const FreeTrialContainer = ({ lang }) => {
               <PlayFull />
               <Row>
                 <Col md={3} sm={3} xl={3}>
-                  <img src={ImgChoose} alt="img" className="img-fluid rounded" />
+                  <img src={ImgChoose} alt="img" className="img-fluid rounded mt-4" />
                 </Col>
                 <Col md={9} sm={9} xl={9}>
                   <Title>{t('freeTrialClassTitle')}</Title>
@@ -145,11 +151,15 @@ const FreeTrialContainer = ({ lang }) => {
           </>
         )}
       </ContainerStyled>
+      <WhyChooseUsContainer />
+      <TestimonialsComponentContainer />
+      <OurClientsContainer />
+      <ContactContainer />
       <Modal className="rounded" show={show} onHide={handleClose} size="xl" centered>
         <Modal.Body>
           <ProgramDetailModalContainer program={program} lang={lang} />
           <div className="mt-3 mb-4" style={{ textAlign: 'right' }}>
-            <ButtonComponent color="grey" handleClick={handleClose} text="Close" />
+            <ButtonComponent color={SecondaryColor} handleClick={handleClose} text="Close" />
             <ButtonComponent
               color={PrimaryColor}
               handleClick={() => {
