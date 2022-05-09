@@ -127,5 +127,8 @@ export const TRANSLATIONS_ID = {
   freeTrialClassFirstDescription:
     'Anda dapat mencoba langsung belajar dengan tutor kami di kelas trial gratis selama 1 jam sebelum Anda memutuskan untuk belajar dengan kami. Di kelas trial ini, tutor kami akan menilai kemampuan awal Anda agar dapat memilih materi yang terbaik untuk Anda. Sampaikan juga segala kebutuhan dan permintaan materi tertentu (apabila ada) saat kelas trial ini. ',
   freeTrialClassSecondDescription:
-    'Kelas trial ini tersedia untuk kelas privat 1-1 sehingga suasana belajar sangat kondusif. Anda juga dapat memilih jadwal yang Anda inginkan. Selama tutor kami tersedia di jam yang Anda pilih, tutor kami siap membantu Anda. Jangan bayar sebelum Anda merasa puas dan yakin dengan tutor kami!'
+    'Kelas trial ini tersedia untuk kelas privat 1-1 sehingga suasana belajar sangat kondusif. Anda juga dapat memilih jadwal yang Anda inginkan. Selama tutor kami tersedia di jam yang Anda pilih, tutor kami siap membantu Anda. Jangan bayar sebelum Anda merasa puas dan yakin dengan tutor kami!',
+
+  "close": "Tutup",
+  "tryNow": "Coba Sekarang"
 };

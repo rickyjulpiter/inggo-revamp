@@ -125,5 +125,8 @@ export const TRANSLATIONS_EN = {
   freeTrialClassFirstDescription:
     'You can study directly with one of our tutors in this free trial class for one hour before you decide to continue studying with us. In this trial class, our tutor will assess your ability so that we can choose the best material for you. Please let our tutor know your needs and any specific material requests if you have any.',
   freeTrialClassSecondDescription:
-    'This trial class is available for 1-1 private lessons, so the class ambiance will be very conducive. You can also choose any schedule you want. As long as our tutor is available at your preferred time slot, s/he is ready to help you. Don’t pay unless you feel satisfied and sure of our tutor.'
+    'This trial class is available for 1-1 private lessons, so the class ambiance will be very conducive. You can also choose any schedule you want. As long as our tutor is available at your preferred time slot, s/he is ready to help you. Don’t pay unless you feel satisfied and sure of our tutor.',
+
+  "close": "Close",
+  "tryNow": "Try Now"
 };

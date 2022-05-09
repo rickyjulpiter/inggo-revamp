@@ -159,14 +159,14 @@ const FreeTrialContainer = () => {
         <Modal.Body>
           <ProgramDetailModalContainer program={program} lang={lang} />
           <div className="mt-3 mb-4" style={{ textAlign: 'right' }}>
-            <ButtonComponent color={SecondaryColor} handleClick={handleClose} text="Close" />
+            <ButtonComponent color={SecondaryColor} handleClick={handleClose} text={t('close')} />
             <ButtonComponent
               color={PrimaryColor}
               handleClick={() => {
                 handleClose();
                 setIsProgramSelected(true);
               }}
-              text="Try Now"
+              text={t('tryNow')}
             />
           </div>
         </Modal.Body>

@@ -4,11 +4,10 @@ import BannerHomeTransparent from '../../Assets/Images/bannerhome-transparent.pn
 
 export const ContainerStyled = styled.div`
   min-height: 40vw;
-  background-color: white;
-  background-image: url(${BannerHomeTransparent});
-  background-repeat: no-repeat;
-  background-size: 60%;
-  background-position: right 0 top 0;
+  // background-image: url(${BannerHomeTransparent});
+  // background-repeat: no-repeat;
+  // background-size: 60%;
+  // background-position: right 0 top 0;
 
   &:hover {
     .t_four {
