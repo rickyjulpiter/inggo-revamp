@@ -121,5 +121,11 @@ export const TRANSLATIONS_ID = {
   aboutUsDescription:
     'INGGO didirikan di Jakarta di tahun 2020 dengan tujuan menciptakan sebuah pengalaman belajar bahasa Inggris yang berbeda untuk murid-murid. Tim kami terdiri dari guru-guru berkualitas lulusan universitas lokal dan asing. Daya tarik yang utama dari guru kami adalah sebagian besar merupakan lulusan S2 universitas ternama dunia dengan mengambil jurusan pengajaran bahasa Inggris (Teaching English to Speakers of Other Languages/TESOL atau Linguistik Terapan). ',
 
-  otherTestimonials: 'Lihat testimoni lainnya'
+  otherTestimonials: 'Lihat testimoni lainnya',
+
+  freeTrialClassTitle: 'Silakan pilih kelas yang Anda inginkan.',
+  freeTrialClassFirstDescription:
+    'Anda dapat mencoba langsung belajar dengan tutor kami di kelas trial gratis selama 1 jam sebelum Anda memutuskan untuk belajar dengan kami. Di kelas trial ini, tutor kami akan menilai kemampuan awal Anda agar dapat memilih materi yang terbaik untuk Anda. Sampaikan juga segala kebutuhan dan permintaan materi tertentu (apabila ada) saat kelas trial ini. ',
+  freeTrialClassSecondDescription:
+    'Kelas trial ini tersedia untuk kelas privat 1-1 sehingga suasana belajar sangat kondusif. Anda juga dapat memilih jadwal yang Anda inginkan. Selama tutor kami tersedia di jam yang Anda pilih, tutor kami siap membantu Anda. Jangan bayar sebelum Anda merasa puas dan yakin dengan tutor kami!'
 };

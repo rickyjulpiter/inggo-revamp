@@ -8,7 +8,7 @@ import { PrimaryColor, SecondaryColor } from '../../Assets/colorPalette';
 import ImgChoose from '../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_lingkaran_merah.png';
 import ProgramDetailModalContainer from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
 import ButtonComponent from '../../Components/Button/Button.component';
-import { CardStyled, ContainerStyled, ProgramCard, Title } from './FreeTrial.styled';
+import { CardStyled, ContainerStyled, Paragraph, ProgramCard, Title } from './FreeTrial.styled';
 import { FloatingImage } from '../Home/Home.styled';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
@@ -58,7 +58,9 @@ const FreeTrialContainer = ({ lang }) => {
                   <img src={ImgChoose} alt="img" className="img-fluid rounded" />
                 </Col>
                 <Col md={9} sm={9} xl={9}>
-                  <Title>Welcome to our Free Trial Programs</Title>
+                  <Title>{t('freeTrialClassTitle')}</Title>
+                  <Paragraph>{t('freeTrialClassFirstDescription')}</Paragraph>
+                  <Paragraph>{t('freeTrialClassSecondDescription')}</Paragraph>
                   <Row className="mt-5">
                     <Col md={4} xl={4} sm={6} className="mb-2">
                       <ProgramCard

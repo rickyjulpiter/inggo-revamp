@@ -38,6 +38,9 @@ export const SecondTitle = styled.h4`
   font-weight: bolder;
 `;
 
+export const Paragraph = styled.p`
+text-align: justify`;
+
 export const CardStyled = styled.div`
   border: none;
   border-radius: 8px;

@@ -42,6 +42,7 @@ export const Title = styled.h1`
 export const Paragraph = styled.p`
   line-height: 28px !important;
   text-align: justify;
-  margin-bottom: 1rem;
   color: ${WhiteColor};
+  padding: 3vw;
+  margin-bottom: 5vh;
 `;
