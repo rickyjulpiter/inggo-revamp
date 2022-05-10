@@ -129,6 +129,8 @@ export const TRANSLATIONS_ID = {
   freeTrialClassSecondDescription:
     'Kelas trial ini tersedia untuk kelas privat 1-1 sehingga suasana belajar sangat kondusif. Anda juga dapat memilih jadwal yang Anda inginkan. Selama tutor kami tersedia di jam yang Anda pilih, tutor kami siap membantu Anda. Jangan bayar sebelum Anda merasa puas dan yakin dengan tutor kami!',
 
-  "close": "Tutup",
-  "tryNow": "Coba Sekarang"
+  close: 'Tutup',
+  tryNow: 'Coba Sekarang',
+  back: 'Kembali',
+  chooseSchedule: 'Pilih jadwal'
 };

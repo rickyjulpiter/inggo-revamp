@@ -35,10 +35,13 @@ const NavbarComponent = ({ onChangeLang }) => {
       </Navbar.Brand>
       <Navbar.Collapse id="responsive-navbar-nav">
         <Nav className="me-auto">
-          <Nav.Link href="#phone" className="responsive-hidden">
+          <Nav.Link
+            href="https://api.whatsapp.com/send?phone=6285772900593"
+            target="_blank"
+            className="responsive-hidden">
             <i className="bi-telephone" /> (+62) 857-7290-0593
           </Nav.Link>
-          <Nav.Link href="#email" className="responsive-hidden">
+          <Nav.Link href="mailto:info@inggo.co" target="_blank" className="responsive-hidden">
             <i className="bi-envelope" /> info@inggo.co
           </Nav.Link>
         </Nav>

@@ -8,7 +8,14 @@ import { PrimaryColor, SecondaryColor } from '../../Assets/colorPalette';
 import ImgChoose from '../../Assets/Images/new-banner/BUSINESS-ENGLISH/INGGO_business_english_lingkaran_merah.png';
 import ProgramDetailModalContainer from '../Home/OurPrograms/ProgramDetailModal/ProgramDetailModal.container';
 import ButtonComponent from '../../Components/Button/Button.component';
-import { CardStyled, ContainerStyled, Paragraph, ProgramCard, Title } from './FreeTrial.styled';
+import {
+  CardStyled,
+  ContainerStyled,
+  ImageBanner,
+  Paragraph,
+  ProgramCard,
+  Title
+} from './FreeTrial.styled';
 import { FloatingImage } from '../Home/Home.styled';
 import Playfull3 from '../../Assets/Images/playfull/playfull3.png';
 import Playfull2 from '../../Assets/Images/playfull/playfull2.png';
@@ -60,8 +67,8 @@ const FreeTrialContainer = () => {
             <CardStyled>
               <PlayFull />
               <Row>
-                <Col md={3} sm={3} xl={3}>
-                  <img src={ImgChoose} alt="img" className="img-fluid rounded mt-4" />
+                <Col md={3} sm={3} xl={3} className="mx-auto">
+                  <ImageBanner src={ImgChoose} alt="img" className="img-fluid rounded mt-4" />
                 </Col>
                 <Col md={9} sm={9} xl={9}>
                   <Title>{t('freeTrialClassTitle')}</Title>
@@ -126,23 +133,27 @@ const FreeTrialContainer = () => {
                 </Col>
               </Row>
             </CardStyled>
+            <WhyChooseUsContainer />
+            <TestimonialsComponentContainer />
+            <OurClientsContainer />
+            <ContactContainer />
           </>
         )}
 
         {!isDateSelected && (
           <>
             {isProgramSelected && (
-              <CardStyled className="p-5">
+              <CardStyled className="3-5">
                 <div>
                   <ButtonComponent
-                    text="Back to class"
+                    text={t('back')}
                     handleClick={() => setIsProgramSelected(false)}
                     color={SecondaryColor}
                   />
                 </div>
-                <Row>
-                  <Col xl={4} md={4} sm={12} className="mx-auto text-center">
-                    <Title className="mb-4">Choose Schedule</Title>
+                <Row className="mt-5">
+                  <Col xl={12} md={12} sm={12} className="mx-auto text-center">
+                    <Title className="mb-4">{t('chooseSchedule')}</Title>
                     <InlineWidget url="https://calendly.com/inggo_co/trial" />
                   </Col>
                 </Row>
@@ -151,10 +162,7 @@ const FreeTrialContainer = () => {
           </>
         )}
       </ContainerStyled>
-      <WhyChooseUsContainer />
-      <TestimonialsComponentContainer />
-      <OurClientsContainer />
-      <ContactContainer />
+
       <Modal className="rounded" show={show} onHide={handleClose} size="xl" centered>
         <Modal.Body>
           <ProgramDetailModalContainer program={program} lang={lang} />

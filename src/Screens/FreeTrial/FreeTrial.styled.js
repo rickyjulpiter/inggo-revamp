@@ -38,7 +38,8 @@ export const SecondTitle = styled.h4`
 `;
 
 export const Paragraph = styled.p`
-text-align: justify`;
+  text-align: justify;
+`;
 
 export const CardStyled = styled.div`
   border: none;
@@ -65,5 +66,15 @@ export const ProgramCard = styled.div`
 
   @media (max-width: 1024px) {
     min-height: 10vw;
+  }
+`;
+
+export const ImageBanner = styled.img`
+  @media (max-width: 500px) {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 4vw;
   }
 `;

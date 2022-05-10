@@ -127,6 +127,8 @@ export const TRANSLATIONS_EN = {
   freeTrialClassSecondDescription:
     'This trial class is available for 1-1 private lessons, so the class ambiance will be very conducive. You can also choose any schedule you want. As long as our tutor is available at your preferred time slot, s/he is ready to help you. Don’t pay unless you feel satisfied and sure of our tutor.',
 
-  "close": "Close",
-  "tryNow": "Try Now"
+  close: 'Close',
+  tryNow: 'Try Now',
+  back: 'Back',
+  chooseSchedule: 'Choose your schedule'
 };

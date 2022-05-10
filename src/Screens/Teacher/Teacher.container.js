@@ -29,7 +29,7 @@ const TeacherContainer = () => {
                     <TeacherCardImage variant="top" src={PutriImages} />
                   </center>
                   <Card.Body>
-                    <TeacherCardTitle>Ms. Putri</TeacherCardTitle>
+                    <TeacherCardTitle>Ms. Putri Mandara</TeacherCardTitle>
                     <TeacherCardSubject>MA TESOL - UK</TeacherCardSubject>
                   </Card.Body>
                 </TeacherCard>
