@@ -27,7 +27,7 @@ import {
 export const PutriAyudita = () => (
   <Col md={4} xl={4} className="mb-4">
     <ExampleCardPersonBlue
-      description="Program Academic Writing dari INGGO sangat terstruktur, logis, dan fokus kepada skill siswa yang butuh diperbaiki. Metode pembelajaran seperti idea structuring dan paraphrasing sangat cocok untuk yang sedang mengambil S2. Tutor saya sangat flexible walaupun ada perbedaan waktu antara Indonesia dan Belanda. Aku ngerasa terbantu banget karena sempat kesulitan lulus salah satu mata kuliah karena keterbatasan linguistik untuk membangun argumen di law examku dan dengan bantuan tutorku, Disa, akhirnya aku bisa lulus dan mendapat gelar Masters of Law. Aku sangat merekomendasikan INGGO untuk program Academic Writing."
+      description="Program Academic Writing dari INGGO sangat terstruktur, logis, dan fokus kepada skill siswa yang butuh diperbaiki. Metode pembelajaran seperti idea structuring dan paraphrasing sangat cocok untuk yang sedang mengambil S2. Tutor saya sangat flexible walaupun ada perbedaan waktu antara Indonesia dan Belanda. Aku ngerasa terbantu banget karena sempat kesulitan lulus salah satu mata kuliah karena keterbatasan linguistik untuk membangun argumen di law examku dan dengan bantuan tutorku, akhirnya aku bisa lulus dan mendapat gelar Masters of Law. Aku sangat merekomendasikan INGGO untuk program Academic Writing."
       person="Putri Ayudita"
       source="Master of Law, University of Amsterdam"
       images={PutriAyuditaImages}
