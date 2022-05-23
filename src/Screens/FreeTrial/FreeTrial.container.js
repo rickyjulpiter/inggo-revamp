@@ -84,15 +84,15 @@ const FreeTrialContainer = () => {
                         {t('businessEnglish')}
                       </ProgramCard>
                     </Col>
-                    <Col md={4} xl={4} sm={6} className="mb-2">
-                      <ProgramCard
-                        onClick={() => {
-                          handleShow();
-                          setProgram(ROUTE_ACADEMIC_WRITING);
-                        }}>
-                        {t('academicWriting')}
-                      </ProgramCard>
-                    </Col>
+                    {/*<Col md={4} xl={4} sm={6} className="mb-2">*/}
+                    {/*  <ProgramCard*/}
+                    {/*    onClick={() => {*/}
+                    {/*      handleShow();*/}
+                    {/*      setProgram(ROUTE_ACADEMIC_WRITING);*/}
+                    {/*    }}>*/}
+                    {/*    {t('academicWriting')}*/}
+                    {/*  </ProgramCard>*/}
+                    {/*</Col>*/}
                     <Col md={4} xl={4} sm={6} className="mb-2">
                       <ProgramCard
                         onClick={() => {
