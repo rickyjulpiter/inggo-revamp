@@ -14,6 +14,9 @@ export const ROUTE_OUR_PROGRAM = 'our-program';
 export const ROUTE_ENGLISH_COURSES = 'english-course';
 export const ROUTE_FREE_TRIAL = 'free-trial';
 
+export const ROUTE_PRE_TEST = 'pre-test';
+export const ROUTE_POST_TEST = 'post-test';
+
 export const DESKTOP_SIZE = '1440px';
 export const LAPTOP_SIZE = '1024px';
 export const TABLET_SIZE = '768px';

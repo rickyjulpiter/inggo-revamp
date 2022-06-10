@@ -59,6 +59,7 @@ const App = () => {
           <Route path={ROUTE_TESTIMONIALS} element={<TestimonialsContainer />} />
           <Route path={ROUTE_TRANSLATION_SERVICE} element={<TranslationAndProofReading />} />
           <Route path={ROUTE_OUR_TEAM} element={<TeacherContainer />} />
+
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />
