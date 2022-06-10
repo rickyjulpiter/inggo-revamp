@@ -11,8 +11,10 @@ import {
   ROUTE_ENGLISH_COURSES,
   ROUTE_FREE_TRIAL,
   ROUTE_GENERAL_ENGLISH,
+  ROUTE_GENERATE_TEST_CODE,
   ROUTE_IELTS,
   ROUTE_OUR_TEAM,
+  ROUTE_PRE_TEST,
   ROUTE_TESTIMONIALS,
   ROUTE_TOEFL,
   ROUTE_TRANSLATION_SERVICE
@@ -32,6 +34,8 @@ import EnglishConversation from './Screens/Home/OurPrograms/Programs/EnglishConv
 import GeneralEnglish from './Screens/Home/OurPrograms/Programs/GeneralEnglish';
 import TranslationAndProofReading from './Screens/Home/OurPrograms/Programs/TranslationAndProofReading';
 import TeacherContainer from './Screens/Teacher/Teacher.container';
+import PreTestContainer from './Screens/Exam/PreTest.container';
+import GenerateTestCodeContainer from './Screens/Exam/GenerateTestCode.container';
 
 const App = () => {
   const handleLanguage = async (lang) => {
@@ -60,6 +64,8 @@ const App = () => {
           <Route path={ROUTE_TRANSLATION_SERVICE} element={<TranslationAndProofReading />} />
           <Route path={ROUTE_OUR_TEAM} element={<TeacherContainer />} />
 
+          <Route path={ROUTE_PRE_TEST} element={<PreTestContainer />} />
+          <Route path={ROUTE_GENERATE_TEST_CODE} element={<GenerateTestCodeContainer />} />
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />
