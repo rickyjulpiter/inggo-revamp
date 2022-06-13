@@ -11,7 +11,7 @@ const PAGE = {
 };
 
 const PreTestContainer = () => {
-  const [page, setPage] = useState(PAGE.AUTH);
+  const [page, setPage] = useState(PAGE.LISTENING);
 
   const handleNextPage = () => {
     setPage(page + 1);

@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Provider } from 'react-redux';
 
 import NavbarComponent from './Components/Navbar/Navbar.component';
 import HomeContainer from './Screens/Home/Home.container';
@@ -36,6 +37,7 @@ import TranslationAndProofReading from './Screens/Home/OurPrograms/Programs/Tran
 import TeacherContainer from './Screens/Teacher/Teacher.container';
 import PreTestContainer from './Screens/Exam/PreTest.container';
 import GenerateTestCodeContainer from './Screens/Exam/GenerateTestCode.container';
+import store from './Redux/store';
 
 const App = () => {
   const handleLanguage = async (lang) => {
@@ -43,7 +45,7 @@ const App = () => {
   };
 
   return (
-    <>
+    <Provider store={store}>
       <NavtopComponent onChangeLang={handleLanguage} />
       <NavbarComponent onChangeLang={handleLanguage} />
       <BrowserRouter>
@@ -69,7 +71,7 @@ const App = () => {
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />
-    </>
+    </Provider>
   );
 };
 

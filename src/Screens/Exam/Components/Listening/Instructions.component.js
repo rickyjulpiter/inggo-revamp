@@ -25,7 +25,7 @@ const InstructionsComponent = ({ start }) => {
         <h5>INFORMATION FOR CANDIDATES</h5>
         <ULStyled>
           <LiStyled>There are 40 questions in this test.</LiStyled>
-          <LiStyled>There are 40 questions in this test.</LiStyled>
+          <LiStyled>Each question carries one mark.</LiStyled>
           <LiStyled>There are four parts to the test.</LiStyled>
           <LiStyled>
             Please note you will only hear each part once in your actual test. However, for
