@@ -3,11 +3,11 @@ import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import { Col, Row, Table } from 'react-bootstrap';
 
-import { Track2 } from '../../../../../Assets/Test/pre-test/pre-test-listening';
+import { Track2 } from '../Test/pre-test/pre-test-listening';
 import { No11, No12, No13, No1415 } from './index';
 import { updateAnswer } from '../../../../../Redux/handleAnswer';
 
-const SecondPage = ({ dispatch, getAnswers }) => {
+const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
       <h3>
@@ -18,11 +18,13 @@ const SecondPage = ({ dispatch, getAnswers }) => {
         <b> Questions 11-20</b>
       </h5>
       <ReactAudioPlayer
-        src={Track2}
+        src={track}
         autoPlay
-        controls
+        controls={false}
         controlsList={'nodownload'}
-        onEnded={() => console.log('audio ended')}
+        onEnded={() => {
+          setPagination(3);
+        }}
       />
       <h5>
         <b> Questions 11-13</b>

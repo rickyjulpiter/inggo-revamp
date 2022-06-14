@@ -11,7 +11,7 @@ const PAGE = {
 };
 
 const ListeningContainer = () => {
-  const [page, setPage] = useState(PAGE.TEST);
+  const [page, setPage] = useState(PAGE.INSTRUCTIONS);
   return (
     <Row>
       {page === PAGE.INSTRUCTIONS && <InstructionsComponent start={() => setPage(PAGE.TEST)} />}

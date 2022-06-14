@@ -1,26 +1,29 @@
 /* eslint-disable */
-import ReactAudioPlayer from 'react-audio-player';
-import { Track1 } from '../../../../../Assets/Test/pre-test/pre-test-listening';
-import { Col, Form, Row, Table } from 'react-bootstrap';
-import { No1, No10, No2, No3, No4, No5, No6, No7, No8, No9 } from './index';
 import React from 'react';
+import ReactAudioPlayer from 'react-audio-player';
+import { Col, Form, Row, Table } from 'react-bootstrap';
 
-const FirstPage = ({ dispatch, getAnswers }) => {
+import { No1, No10, No2, No3, No4, No5, No6, No7, No8, No9 } from './index';
+
+const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
       <h3>
         <b>Section 1</b>
       </h3>
       <hr />
-      <h5>
+      <h5 className="text-center">
         <b> Questions 1-10</b>
       </h5>
       <ReactAudioPlayer
-        src={Track1}
+        src={track}
         autoPlay
+        // controls={false}
         controls
         controlsList={'nodownload'}
-        onEnded={() => console.log('audio ended')}
+        onEnded={() => {
+          setPagination(2);
+        }}
       />
       <h6>
         Choose the correct letter, <b>A</b>, <b>B</b> or <b>C</b>.
@@ -38,6 +41,9 @@ const FirstPage = ({ dispatch, getAnswers }) => {
         </div>
       </div>
 
+      <h5 className="mt-4">
+        <b> Questions 1-2</b>
+      </h5>
       <Row>
         <Col>
           {/*Listening No.1*/}

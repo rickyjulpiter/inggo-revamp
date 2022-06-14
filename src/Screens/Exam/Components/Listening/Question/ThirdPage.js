@@ -2,11 +2,11 @@
 import React from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 
-import { Track3 } from '../../../../../Assets/Test/pre-test/pre-test-listening';
+import { Track3 } from '../Test/pre-test/pre-test-listening';
 import { Col, Form, Row } from 'react-bootstrap';
 import { updateAnswer } from '../../../../../Redux/handleAnswer';
 
-const ThirdPage = ({ dispatch, getAnswers }) => {
+const ThirdPage = ({ dispatch, getAnswers, setPagination }) => {
   return (
     <div>
       <h3>
@@ -19,9 +19,9 @@ const ThirdPage = ({ dispatch, getAnswers }) => {
       <ReactAudioPlayer
         src={Track3}
         autoPlay
-        controls
+        controls={false}
         controlsList={'nodownload'}
-        onEnded={() => console.log('audio ended')}
+        onEnded={() => setPagination(4)}
       />
 
       <Row>
@@ -148,7 +148,7 @@ const ThirdPage = ({ dispatch, getAnswers }) => {
         Choose the correct letter, <b>A</b>, <b>B</b> or <b>C</b>.
       </h6>
       <Row>
-        <Col>
+        <Col md={6}>
           <div>
             <p className="mt-2">27. Why does Harry want to do the presentation?</p>
             <div className="mb-3">
@@ -185,7 +185,7 @@ const ThirdPage = ({ dispatch, getAnswers }) => {
           </div>
         </Col>
 
-        <Col>
+        <Col md={6}>
           <div>
             <p className="mt-2">28. What is Katy's attitude to writing up the project?</p>
             <div className="mb-3">
@@ -222,7 +222,7 @@ const ThirdPage = ({ dispatch, getAnswers }) => {
           </div>
         </Col>
 
-        <Col>
+        <Col md={6}>
           <div>
             <p className="mt-2">
               29. Why does Harry want to involve the other students at the end of the presentation?
@@ -261,7 +261,7 @@ const ThirdPage = ({ dispatch, getAnswers }) => {
           </div>
         </Col>
 
-        <Col>
+        <Col md={6}>
           <div>
             <p className="mt-2">30. Katy agrees to deal with any questions because</p>
             <div className="mb-3">
