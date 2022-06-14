@@ -18,8 +18,7 @@ const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
       <ReactAudioPlayer
         src={track}
         autoPlay
-        // controls={false}
-        controls
+        controls={false}
         controlsList={'nodownload'}
         onEnded={() => {
           setPagination(2);
