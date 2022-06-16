@@ -4,6 +4,8 @@ import { Button, Col, Row } from 'react-bootstrap';
 
 import { CardTest, Input } from '../style';
 import { testCode } from '../../../Assets/utils';
+import ButtonComponent from '../../../Components/Button/Button.component';
+import { SecondaryColor } from '../../../Assets/colorPalette';
 
 const CodeCheckComponent = ({ handleNextPage }) => {
   const [code, setCode] = useState('');
@@ -25,10 +27,13 @@ const CodeCheckComponent = ({ handleNextPage }) => {
             placeholder="Input your test code"
             onChange={(e) => setCode(e.target.value)}
             value={code}
+            style={{ marginBottom: '1vh' }}
           />
-          <Button variant="secondary" type="submit" className="mt-2" onClick={handleCheckCode}>
-            Check Code
-          </Button>
+          <ButtonComponent
+            color={SecondaryColor}
+            text=" Check Code"
+            handleClick={handleCheckCode}
+          />
         </CardTest>
       </Col>
     </Row>
