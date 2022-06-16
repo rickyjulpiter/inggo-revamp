@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Card } from 'react-bootstrap';
 
 export const ContainerTest = styled.div`
-  margin: 2vh 1vw;
+  //margin: 2vh 1vw;
   min-height: 550px;
 `;
 

@@ -15,6 +15,7 @@ const ButtonStyled = styled.a.attrs((props: { color: string }) => props)`
   margin-right: 5px;
   border: 1px solid ${(props) => props.color};
   cursor: pointer;
+  text-align: center;
 
   &:hover {
     color: #484848;

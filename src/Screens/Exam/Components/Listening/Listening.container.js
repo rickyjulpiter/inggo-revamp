@@ -1,6 +1,5 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import { Row } from 'react-bootstrap';
 
 import InstructionsComponent from './Instructions.component';
 import ListeningTestComponent from './ListeningTest.component';
@@ -11,12 +10,12 @@ const PAGE = {
 };
 
 const ListeningContainer = () => {
-  const [page, setPage] = useState(PAGE.TEST);
+  const [page, setPage] = useState(PAGE.INSTRUCTIONS);
   return (
-    <Row>
+    <div>
       {page === PAGE.INSTRUCTIONS && <InstructionsComponent start={() => setPage(PAGE.TEST)} />}
       {page === PAGE.TEST && <ListeningTestComponent />}
-    </Row>
+    </div>
   );
 };
 

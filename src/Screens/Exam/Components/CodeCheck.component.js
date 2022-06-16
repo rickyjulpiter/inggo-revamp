@@ -17,7 +17,7 @@ const CodeCheckComponent = ({ handleNextPage }) => {
   };
 
   return (
-    <Row>
+    <Row className="mt-4">
       <Col xs="6" md="4" sm="4" className="mx-auto">
         <CardTest>
           <Input

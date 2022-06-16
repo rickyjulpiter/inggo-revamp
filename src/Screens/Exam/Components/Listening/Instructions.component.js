@@ -2,11 +2,12 @@
 import React from 'react';
 import { CardTest } from '../../style';
 import { LiStyled, ULStyled } from '../../../Home/OurPrograms/ProgramDetail/ProgramDetail.styled';
-import { Button, Col } from 'react-bootstrap';
+import { SecondaryColor } from '../../../../Assets/colorPalette';
+import ButtonComponent from '../../../../Components/Button/Button.component';
 
 const InstructionsComponent = ({ start }) => {
   return (
-    <Col>
+    <div className="p-3">
       <CardTest>
         <h3>IELTS Listening</h3>
         <h6>Time: Approximately 30 minutes</h6>
@@ -38,11 +39,9 @@ const InstructionsComponent = ({ start }) => {
           </LiStyled>
         </ULStyled>
 
-        <Button variant="secondary" type="submit" className="mt-2" onClick={start}>
-          Start
-        </Button>
+        <ButtonComponent color={SecondaryColor} text="Start" handleClick={start} />
       </CardTest>
-    </Col>
+    </div>
   );
 };
 

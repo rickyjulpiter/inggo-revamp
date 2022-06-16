@@ -8,6 +8,8 @@ import ThirdPage from './Question/ThirdPage';
 import FourthPage from './Question/FourthPage';
 import Countdown from 'react-countdown';
 import { Track1, Track2, Track3, Track4 } from './Test/pre-test/pre-test-listening';
+import { SecondaryColor } from '../../../../Assets/colorPalette';
+import styled from 'styled-components';
 
 const PAGINATION = {
   FIRST: 1,
@@ -15,6 +17,13 @@ const PAGINATION = {
   THIRD: 3,
   FOURTH: 4
 };
+
+const ContainerCountDown = styled.div`
+  background-color: #cfd3e1;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 1vh;
+`;
 
 const ListeningTestComponent = () => {
   const [page, setPage] = useState(PAGINATION.FIRST);
@@ -30,49 +39,80 @@ const ListeningTestComponent = () => {
     setPage(value);
   };
 
+  const renderer = ({ hours, minutes, seconds, completed }) => {
+    const formatSeconds = seconds === 0 ? '00' : seconds;
+    if (completed) {
+      return <span>Time's up</span>;
+    }
+    if (minutes === 28) {
+      return (
+        <>
+          <span style={{ color: SecondaryColor, fontWeight: 700, fontSize: 30 }}>
+            {minutes}:{formatSeconds}
+          </span>{' '}
+          left
+        </>
+      );
+    } else {
+      return (
+        <>
+          <span>
+            {minutes}:{formatSeconds}
+          </span>{' '}
+          left
+        </>
+      );
+    }
+  };
+
   return (
-    <div className="p-3">
-      {/*<Countdown date={Date.now() + 2000000} daysInHours/>*/}
-      {page === PAGINATION.FIRST && (
-        <FirstPage
-          dispatch={dispatch}
-          getAnswers={getAnswers}
-          setPagination={(nextPage) => {
-            changePage(nextPage);
-          }}
-          track={Track1}
-        />
-      )}
-      {page === PAGINATION.SECOND && (
-        <SecondPage
-          dispatch={dispatch}
-          getAnswers={getAnswers}
-          setPagination={(nextPage) => {
-            changePage(nextPage);
-          }}
-          track={Track2}
-        />
-      )}
-      {page === PAGINATION.THIRD && (
-        <ThirdPage
-          dispatch={dispatch}
-          getAnswers={getAnswers}
-          setPagination={(nextPage) => {
-            changePage(nextPage);
-          }}
-          track={Track3}
-        />
-      )}
-      {page === PAGINATION.FOURTH && (
-        <FourthPage
-          dispatch={dispatch}
-          getAnswers={getAnswers}
-          setPagination={(nextPage) => {
-            console.log(nextPage);
-          }}
-          track={Track4}
-        />
-      )}
+    <div>
+      <ContainerCountDown>
+        <Countdown date={Date.now() + 1800000} daysInHours renderer={renderer} />
+      </ContainerCountDown>
+      <div className="m-4">
+        {page === PAGINATION.FIRST && (
+          <FirstPage
+            dispatch={dispatch}
+            getAnswers={getAnswers}
+            setPagination={(nextPage) => {
+              changePage(nextPage);
+            }}
+            track={Track1}
+          />
+        )}
+        {page === PAGINATION.SECOND && (
+          <SecondPage
+            dispatch={dispatch}
+            getAnswers={getAnswers}
+            setPagination={(nextPage) => {
+              changePage(nextPage);
+            }}
+            track={Track2}
+          />
+        )}
+        {page === PAGINATION.THIRD && (
+          <ThirdPage
+            dispatch={dispatch}
+            getAnswers={getAnswers}
+            setPagination={(nextPage) => {
+              changePage(nextPage);
+            }}
+            track={Track3}
+          />
+        )}
+        {page === PAGINATION.FOURTH && (
+          <FourthPage
+            dispatch={dispatch}
+            getAnswers={getAnswers}
+            setPagination={(nextPage) => {
+              console.log(nextPage);
+            }}
+            track={Track4}
+          />
+        )}
+      </div>
+
       <hr />
       <Pagination>
         <Pagination.Item
