@@ -1,29 +1,24 @@
 /* eslint-disable */
 import React from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 import { Col, Form, Row, Table } from 'react-bootstrap';
 
 import { No1, No10, No2, No3, No4, No5, No6, No7, No8, No9 } from './index';
+import AudioPlayer from '../AudioPlayer';
 
 const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
-      <h3>
-        <b>Section 1</b>
-      </h3>
-      <hr />
+      <AudioPlayer
+        title="Section 1"
+        track={track}
+        ended={(page) => {
+          setPagination(page);
+        }}
+      />
       <h5 className="text-center">
         <b> Questions 1-10</b>
       </h5>
-      <ReactAudioPlayer
-        src={track}
-        autoPlay
-        controls={false}
-        controlsList={'nodownload'}
-        onEnded={() => {
-          setPagination(2);
-        }}
-      />
+
       <h6>
         Choose the correct letter, <b>A</b>, <b>B</b> or <b>C</b>.
       </h6>

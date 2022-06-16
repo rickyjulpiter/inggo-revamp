@@ -1,29 +1,18 @@
 /* eslint-disable */
 import React from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 import { Col, Row, Table } from 'react-bootstrap';
-
-import { Track2 } from '../Test/pre-test/pre-test-listening';
 import { No11, No12, No13, No1415 } from './index';
 import { updateAnswer } from '../../../../../Redux/handleAnswer';
+import AudioPlayer from '../AudioPlayer';
 
 const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
-      <h3>
-        <b>Section 2</b>
-      </h3>
-      <hr />
-      <h5 className="text-center">
-        <b> Questions 11-20</b>
-      </h5>
-      <ReactAudioPlayer
-        src={track}
-        autoPlay
-        controls={false}
-        controlsList={'nodownload'}
-        onEnded={() => {
-          setPagination(3);
+      <AudioPlayer
+        title="Section 2"
+        track={track}
+        ended={(page) => {
+          setPagination(page);
         }}
       />
       <h5>

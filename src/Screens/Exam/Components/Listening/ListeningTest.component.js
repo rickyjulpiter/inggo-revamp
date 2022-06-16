@@ -1,18 +1,13 @@
 /* eslint-disable */
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { Pagination } from 'react-bootstrap';
+import { Pagination } from 'react-bootstrap';
 
 import { FirstPage, SecondPage } from './Question';
 import ThirdPage from './Question/ThirdPage';
 import FourthPage from './Question/FourthPage';
-// import Countdown from 'react-countdown';
-import {
-  Track1,
-  Track2,
-  Track3,
-  Track4
-} from './Test/pre-test/pre-test-listening';
+import Countdown from 'react-countdown';
+import { Track1, Track2, Track3, Track4 } from './Test/pre-test/pre-test-listening';
 
 const PAGINATION = {
   FIRST: 1,
@@ -78,29 +73,29 @@ const ListeningTestComponent = () => {
           track={Track4}
         />
       )}
-      {/*<hr />*/}
-      {/*<Pagination>*/}
-      {/*  <Pagination.Item*/}
-      {/*    active={isPaginationActive(PAGINATION.FIRST)}*/}
-      {/*    onClick={() => setPagination(1)}>*/}
-      {/*    1*/}
-      {/*  </Pagination.Item>*/}
-      {/*  <Pagination.Item*/}
-      {/*    active={isPaginationActive(PAGINATION.SECOND)}*/}
-      {/*    onClick={() => setPagination(2)}>*/}
-      {/*    2*/}
-      {/*  </Pagination.Item>*/}
-      {/*  <Pagination.Item*/}
-      {/*    active={isPaginationActive(PAGINATION.THIRD)}*/}
-      {/*    onClick={() => setPagination(3)}>*/}
-      {/*    3*/}
-      {/*  </Pagination.Item>*/}
-      {/*  <Pagination.Item*/}
-      {/*    active={isPaginationActive(PAGINATION.FOURTH)}*/}
-      {/*    onClick={() => setPagination(4)}>*/}
-      {/*    4*/}
-      {/*  </Pagination.Item>*/}
-      {/*</Pagination>*/}
+      <hr />
+      <Pagination>
+        <Pagination.Item
+          active={isPaginationActive(PAGINATION.FIRST)}
+          onClick={() => setPage(PAGINATION.FIRST)}>
+          1
+        </Pagination.Item>
+        <Pagination.Item
+          active={isPaginationActive(PAGINATION.SECOND)}
+          onClick={() => setPage(PAGINATION.SECOND)}>
+          2
+        </Pagination.Item>
+        <Pagination.Item
+          active={isPaginationActive(PAGINATION.THIRD)}
+          onClick={() => setPage(PAGINATION.THIRD)}>
+          3
+        </Pagination.Item>
+        <Pagination.Item
+          active={isPaginationActive(PAGINATION.FOURTH)}
+          onClick={() => setPage(PAGINATION.FOURTH)}>
+          4
+        </Pagination.Item>
+      </Pagination>
     </div>
   );
 };

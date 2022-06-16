@@ -1,28 +1,23 @@
 /* eslint-disable */
 import React from 'react';
-import ReactAudioPlayer from 'react-audio-player';
 import { Col, Row, Table } from 'react-bootstrap';
 
-import { Track4 } from '../Test/pre-test/pre-test-listening';
 import { updateAnswer } from '../../../../../Redux/handleAnswer';
+import AudioPlayer from '../AudioPlayer';
 
-const FourthPage = ({ dispatch, getAnswers }) => {
+const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
-      <h3>
-        <b>Section 4</b>
-      </h3>
-      <hr />
+      <AudioPlayer
+        title="Section 4"
+        track={track}
+        ended={(page) => {
+          setPagination(page);
+        }}
+      />
       <h5 className="text-center">
         <b> Questions 31-40</b>
       </h5>
-      <ReactAudioPlayer
-        src={Track4}
-        autoPlay
-        controls={false}
-        controlsList={'nodownload'}
-        onEnded={() => console.log('audio ended')}
-      />
       <h5>
         <b> Questions 31-33</b>
       </h5>

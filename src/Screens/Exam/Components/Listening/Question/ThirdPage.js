@@ -1,28 +1,23 @@
 /* eslint-disable */
 import React from 'react';
-import ReactAudioPlayer from 'react-audio-player';
-
-import { Track3 } from '../Test/pre-test/pre-test-listening';
 import { Col, Form, Row } from 'react-bootstrap';
-import { updateAnswer } from '../../../../../Redux/handleAnswer';
 
-const ThirdPage = ({ dispatch, getAnswers, setPagination }) => {
+import { updateAnswer } from '../../../../../Redux/handleAnswer';
+import AudioPlayer from '../AudioPlayer';
+
+const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
-      <h3>
-        <b>Section 3</b>
-      </h3>
-      <hr />
+      <AudioPlayer
+        title="Section 3"
+        track={track}
+        ended={(page) => {
+          setPagination(page);
+        }}
+      />
       <h5 className="text-center">
         <b> Questions 21-30</b>
       </h5>
-      <ReactAudioPlayer
-        src={Track3}
-        autoPlay
-        controls={false}
-        controlsList={'nodownload'}
-        onEnded={() => setPagination(4)}
-      />
 
       <Row>
         <Col>
