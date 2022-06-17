@@ -10,6 +10,7 @@ const No7 = ({ dispatch, getAnswers }) => {
         see the Personnel Manager, office in <b>7</b>{' '}
         <input
           style={{ border: 'none' }}
+          value={getAnswers[7]}
           onChange={(event) => {
             dispatch(
               updateAnswer({

@@ -10,6 +10,7 @@ const No10 = ({ dispatch, getAnswers }) => {
         a <b>10</b>{' '}
         <input
           style={{ border: 'none' }}
+          value={getAnswers[10]}
           onChange={(event) => {
             dispatch(
               updateAnswer({

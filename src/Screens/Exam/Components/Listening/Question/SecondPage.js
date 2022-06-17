@@ -81,6 +81,7 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
                 <b>16 </b>£
                 <input
                   style={{ border: 'none' }}
+                  value={getAnswers[16]}
                   onChange={(event) => {
                     dispatch(
                       updateAnswer({
@@ -96,6 +97,7 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
                 Entertainment in the <b>17 </b>
                 <input
                   style={{ border: 'none' }}
+                  value={getAnswers[17]}
                   onChange={(event) => {
                     dispatch(
                       updateAnswer({
@@ -114,6 +116,7 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
                 As above, plus: <br />- a <b>18 </b>
                 <input
                   style={{ border: 'none' }}
+                  value={getAnswers[18]}
                   onChange={(event) => {
                     dispatch(
                       updateAnswer({
@@ -130,6 +133,7 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
               <td>
                 <b>19s </b>£
                 <input
+                  value={getAnswers[19]}
                   style={{ border: 'none' }}
                   onChange={(event) => {
                     dispatch(
@@ -146,6 +150,7 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
                 - free beauty therapy on two of the days <br />- full-day membership of a <b>20 </b>
                 <input
                   style={{ border: 'none' }}
+                  value={getAnswers[20]}
                   onChange={(event) => {
                     dispatch(
                       updateAnswer({

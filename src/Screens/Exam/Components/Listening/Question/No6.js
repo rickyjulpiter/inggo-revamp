@@ -10,6 +10,7 @@ const No6 = ({ dispatch, getAnswers }) => {
         staff discount of <b>6</b>{' '}
         <input
           style={{ border: 'none' }}
+          value={getAnswers[6]}
           onChange={(event) => {
             dispatch(
               updateAnswer({

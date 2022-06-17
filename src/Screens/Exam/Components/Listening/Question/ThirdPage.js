@@ -44,6 +44,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
               Their work could be delayed by the <b>21</b>{' '}
               <input
                 style={{ border: 'none' }}
+                value={getAnswers[21]}
                 onChange={(event) => {
                   dispatch(
                     updateAnswer({
@@ -60,6 +61,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
               Before they go to the beach, they need to visit the <b>22</b>{' '}
               <input
                 style={{ border: 'none' }}
+                value={getAnswers[22]}
                 onChange={(event) => {
                   dispatch(
                     updateAnswer({
@@ -89,6 +91,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
             <b>23</b> take photographs{' '}
             <input
               style={{ border: 'none' }}
+              value={getAnswers[23]}
               onChange={(event) => {
                 dispatch(
                   updateAnswer({
@@ -103,6 +106,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
             <b>24</b> collect samples{' '}
             <input
               style={{ border: 'none' }}
+              value={getAnswers[24]}
               onChange={(event) => {
                 dispatch(
                   updateAnswer({
@@ -116,6 +120,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
           <p>
             <b>25</b> interview people{' '}
             <input
+              value={getAnswers[25]}
               style={{ border: 'none' }}
               onChange={(event) => {
                 dispatch(
@@ -130,6 +135,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
           <p>
             <b>26</b> analyse data{' '}
             <input
+              value={getAnswers[26]}
               style={{ border: 'none' }}
               onChange={(event) => {
                 dispatch(
@@ -167,6 +173,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="a"
                   id={`inline-radio-1`}
+                  defaultChecked={getAnswers[27] === 'a'}
                 />
                 <Form.Check
                   label="B. to catch up with his course requirements"
@@ -174,6 +181,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="b"
                   id={`inline-radio-2`}
+                  defaultChecked={getAnswers[27] === 'b'}
                 />
                 <Form.Check
                   label="C. to get a better mark than for his last presentation"
@@ -181,6 +189,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="c"
                   id={`inline-radio-3`}
+                  defaultChecked={getAnswers[27] === 'c'}
                 />
               </Form>
             </div>
@@ -204,6 +213,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="a"
                   id={`inline-radio-1`}
+                  defaultChecked={getAnswers[28] === 'a'}
                 />
                 <Form.Check
                   label="B. She thinks it is unfair if she has to do all the writing."
@@ -211,6 +221,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="b"
                   id={`inline-radio-2`}
+                  defaultChecked={getAnswers[29] === 'a'}
                 />
                 <Form.Check
                   label="C. She is concerned that some parts will be difficult."
@@ -218,6 +229,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="c"
                   id={`inline-radio-3`}
+                  defaultChecked={getAnswers[30] === 'a'}
                 />
               </Form>
             </div>
@@ -243,6 +255,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="a"
                   id={`inline-radio-1`}
+                  defaultChecked={getAnswers[29] === 'a'}
                 />
                 <Form.Check
                   label="B. to help him and Katy reach firm conclusions"
@@ -250,6 +263,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="b"
                   id={`inline-radio-2`}
+                  defaultChecked={getAnswers[29] === 'b'}
                 />
                 <Form.Check
                   label="C. to see if they have reached similar conclusions"
@@ -257,6 +271,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="c"
                   id={`inline-radio-3`}
+                  defaultChecked={getAnswers[29] === 'c'}
                 />
               </Form>
             </div>
@@ -280,6 +295,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="a"
                   id={`inline-radio-1`}
+                  defaultChecked={getAnswers[30] === 'a'}
                 />
                 <Form.Check
                   label="B. Harry will be doing the main presentation."
@@ -287,6 +303,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="b"
                   id={`inline-radio-2`}
+                  defaultChecked={getAnswers[30] === 'b'}
                 />
                 <Form.Check
                   label="C. she has already told Dr Smith she will do this."
@@ -294,6 +311,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
                   type="radio"
                   value="c"
                   id={`inline-radio-3`}
+                  defaultChecked={getAnswers[30] === 'c'}
                 />
               </Form>
             </div>

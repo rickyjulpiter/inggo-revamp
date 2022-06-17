@@ -42,6 +42,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
               <b>31</b> The Peregrine falcons found in{' '}
               <input
                 style={{ border: 'none' }}
+                value={getAnswers[31]}
                 onChange={(event) => {
                   dispatch(
                     updateAnswer({
@@ -57,6 +58,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
               <b>32</b> There is disagreement about their maximum{' '}
               <input
                 style={{ border: 'none' }}
+                value={getAnswers[32]}
                 onChange={(event) => {
                   dispatch(
                     updateAnswer({
@@ -71,6 +73,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
               <b>33</b> When the female is guarding the nest, the male spends most of his time{' '}
               <input
                 style={{ border: 'none' }}
+                value={getAnswers[33]}
                 onChange={(event) => {
                   dispatch(
                     updateAnswer({
@@ -110,6 +113,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
             <td>
               <b>38</b>{' '}
               <input
+                value={getAnswers[38]}
                 style={{ border: 'none' }}
                 onChange={(event) => {
                   dispatch(
@@ -128,6 +132,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
             <td>
               <b>39</b>{' '}
               <input
+                value={getAnswers[39]}
                 style={{ border: 'none' }}
                 onChange={(event) => {
                   dispatch(
@@ -150,6 +155,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
             <td>
               check the <b>40</b>{' '}
               <input
+                value={getAnswers[40]}
                 style={{ border: 'none' }}
                 onChange={(event) => {
                   dispatch(

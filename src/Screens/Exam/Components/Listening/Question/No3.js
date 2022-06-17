@@ -18,6 +18,7 @@ const No3 = ({ dispatch, getAnswers }) => {
               })
             );
           }}
+          value={getAnswers[3]}
         />{' '}
         coffee breaks
       </td>

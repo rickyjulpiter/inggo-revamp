@@ -11,6 +11,7 @@ const No4 = ({ dispatch, getAnswers }) => {
         four weeks a year in the <b>4</b>{' '}
         <input
           style={{ border: 'none' }}
+          value={getAnswers[4]}
           onChange={(event) => {
             dispatch(
               updateAnswer({

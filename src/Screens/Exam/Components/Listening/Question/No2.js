@@ -21,6 +21,7 @@ const No2 = ({ dispatch, getAnswers }) => {
             type="radio"
             value="a"
             id={`inline-radio-1`}
+            defaultChecked={getAnswers[2] === 'a'}
           />
           <Form.Check
             label="B. the Young set"
@@ -28,6 +29,7 @@ const No2 = ({ dispatch, getAnswers }) => {
             type="radio"
             value="b"
             id={`inline-radio-2`}
+            defaultChecked={getAnswers[2] === 'b'}
           />
           <Form.Check
             label="C. the Young Set"
@@ -35,6 +37,7 @@ const No2 = ({ dispatch, getAnswers }) => {
             type="radio"
             value="c"
             id={`inline-radio-3`}
+            defaultChecked={getAnswers[2] === 'c'}
           />
         </Form>
       </div>
