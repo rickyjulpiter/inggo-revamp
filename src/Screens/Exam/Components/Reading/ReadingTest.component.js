@@ -8,7 +8,8 @@ import styled from 'styled-components';
 import { SecondaryColor } from '../../../../Assets/colorPalette';
 import {
   FirstSectionReadingComponent,
-  SecondSectionReadingComponent
+  SecondSectionReadingComponent,
+  ThirdSectionReadingComponent
 } from './Question';
 
 const PAGINATION = {
@@ -83,6 +84,16 @@ const ReadingTestComponent = () => {
 
         {page === PAGINATION.SECOND && (
           <SecondSectionReadingComponent
+            dispatch={dispatch}
+            getAnswers={getAnswers}
+            setPagination={(nextPage) => {
+              changePage(nextPage);
+            }}
+          />
+        )}
+
+        {page === PAGINATION.THIRD && (
+          <ThirdSectionReadingComponent
             dispatch={dispatch}
             getAnswers={getAnswers}
             setPagination={(nextPage) => {
