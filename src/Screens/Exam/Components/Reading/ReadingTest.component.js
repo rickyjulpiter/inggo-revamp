@@ -2,11 +2,14 @@
 import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Pagination } from 'react-bootstrap';
-
 import Countdown from 'react-countdown';
-import { SecondaryColor } from '../../../../Assets/colorPalette';
 import styled from 'styled-components';
-import { FirstSectionReadingComponent } from './Question';
+
+import { SecondaryColor } from '../../../../Assets/colorPalette';
+import {
+  FirstSectionReadingComponent,
+  SecondSectionReadingComponent
+} from './Question';
 
 const PAGINATION = {
   FIRST: 1,
@@ -24,7 +27,7 @@ const ContainerCountDown = styled.div`
 
 const ReadingTestComponent = () => {
   const [page, setPage] = useState(PAGINATION.FIRST);
-  const getAnswers = useSelector((state) => state.answer.value);
+  const getAnswers = useSelector((state) => state.answer.readingAnswer);
   const dispatch = useDispatch();
   console.log(getAnswers);
 
@@ -70,6 +73,16 @@ const ReadingTestComponent = () => {
       <div className="m-4">
         {page === PAGINATION.FIRST && (
           <FirstSectionReadingComponent
+            dispatch={dispatch}
+            getAnswers={getAnswers}
+            setPagination={(nextPage) => {
+              changePage(nextPage);
+            }}
+          />
+        )}
+
+        {page === PAGINATION.SECOND && (
+          <SecondSectionReadingComponent
             dispatch={dispatch}
             getAnswers={getAnswers}
             setPagination={(nextPage) => {

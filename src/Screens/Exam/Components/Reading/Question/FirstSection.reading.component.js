@@ -3,9 +3,9 @@
 import SectionTitle from '../../SectionTitle';
 import { Col, Row, Table } from 'react-bootstrap';
 import React from 'react';
-import { updateAnswer } from '../../../../../Redux/handleAnswer';
+import { updateAnswer, updateReadingAnswer } from '../../../../../Redux/handleAnswer';
 
-const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) => {
+const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
   return (
     <>
       <SectionTitle title="READING PASSAGE 1" />
@@ -30,7 +30,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>A</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           Scientists have succeeded in copying the silk-producing genes of the Golden Orb- Weaver
           spider and are using them to create a synthetic material which they believe is the model
           for a new generation of advanced bio-materials. The new material, biosilk, which has been
@@ -42,7 +42,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>B</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           The attraction of the silk spun by the spider is a combination of great strength and
           enormous elasticity, which man-made fibres have been unable to replicate. On an
           equal-weight basis, spider silk is far stronger than steel and it is estimated that if a
@@ -56,7 +56,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>C</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           For some time, biochemists have been trying to synthesise the drag-line silk of the Golden
           Orb-Weaver. The drag-line silk, which forms the radial arms of the web, is stronger than
           the other parts of the web and some biochemists believe a synthetic version could prove to
@@ -68,7 +68,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>D</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           To recreate the material, scientists, including Randolph Lewis at the University of
           Wyoming, first examined the silk-producing gland of the spider. ‘We took out the glands
           that produce the silk and looked at the coding for the protein material they make, which
@@ -79,7 +79,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>E</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           At DuPont, researchers have used both yeast and bacteria as hosts to grow the raw
           material, which they have spun into fibres. Robert Dorsch, DuPont's director of
           biochemical development, says the globules of protein, comparable with marbles in an egg,
@@ -93,7 +93,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>F</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           ‘The bacteria and the yeast produce the same protein, equivalent to that which the spider
           uses in the drag lines of the web. The spider mixes the protein into a water-based
           solution and then spins it into a solid fibre in one go. Since we are not as clever as the
@@ -106,7 +106,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>G</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           Researchers at DuPont say they envisage many possible uses for a new biosilk material.
           They say the earthquake-resistant suspension bridges hung from cables of synthetic spider
           silk fibres may become a reality. Stronger ropes, safer seat belts, shoe soles that do not
@@ -121,7 +121,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>H</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           At DuPont’s laboratories, Dorsch is excited by the prospect of new super-strong materials
           but he warns they are many years away. ‘We are at an early stage but theoretical
           predictions are that we will wind up with a very strong, tough material, with an ability
@@ -133,7 +133,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
         <Col md={1}>
           <b>I</b>
         </Col>
-        <Col>
+        <Col className="text-justify">
           The spider is not the only creature that has aroused the interest of material scientist.
           They have also become envious of the natural adhesive secreted by the see mussel. It
           produces a protein adhesive to attach itself to rocks. It is tedious and expensive to
@@ -158,11 +158,12 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           <Col md={2}>
             <input
               style={{ border: 'none' }}
+              value={getAnswers[1]}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    41: event.target.value
+                    1: event.target.value
                   })
                 );
               }}
@@ -180,11 +181,12 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           <Col md={2}>
             <input
               style={{ border: 'none' }}
+              value={getAnswers[2]}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    42: event.target.value
+                    2: event.target.value
                   })
                 );
               }}
@@ -200,11 +202,12 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           <Col md={2}>
             <input
               style={{ border: 'none' }}
+              value={getAnswers[3]}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    43: event.target.value
+                    3: event.target.value
                   })
                 );
               }}
@@ -219,12 +222,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           </Col>
           <Col md={2}>
             <input
+              value={getAnswers[4]}
               style={{ border: 'none' }}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    44: event.target.value
+                    4: event.target.value
                   })
                 );
               }}
@@ -239,12 +243,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           </Col>
           <Col md={2}>
             <input
+              value={getAnswers[5]}
               style={{ border: 'none' }}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    45: event.target.value
+                    5: event.target.value
                   })
                 );
               }}
@@ -273,24 +278,26 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
                     Synthetic gene grown <br />
                     in <b>6</b>{' '}
                     <input
+                      value={getAnswers[6]}
                       style={{ border: 'none' }}
                       onChange={(event) => {
                         dispatch(
-                          updateAnswer({
+                          updateReadingAnswer({
                             ...getAnswers,
-                            46: event.target.value
+                            6: event.target.value
                           })
                         );
                       }}
                     />{' '}
                     or <b>7</b>{' '}
                     <input
+                      value={getAnswers[7]}
                       style={{ border: 'none' }}
                       onChange={(event) => {
                         dispatch(
-                          updateAnswer({
+                          updateReadingAnswer({
                             ...getAnswers,
-                            47: event.target.value
+                            7: event.target.value
                           })
                         );
                       }}
@@ -307,11 +314,12 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
                     globules of <b>8</b>{' '}
                     <input
                       style={{ border: 'none' }}
+                      value={getAnswers[8]}
                       onChange={(event) => {
                         dispatch(
-                          updateAnswer({
+                          updateReadingAnswer({
                             ...getAnswers,
-                            48: event.target.value
+                            8: event.target.value
                           })
                         );
                       }}
@@ -327,12 +335,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
                   <td className="text-center">
                     dissolved in of <b>9</b>{' '}
                     <input
+                      value={getAnswers[9]}
                       style={{ border: 'none' }}
                       onChange={(event) => {
                         dispatch(
-                          updateAnswer({
+                          updateReadingAnswer({
                             ...getAnswers,
-                            49: event.target.value
+                            9: event.target.value
                           })
                         );
                       }}
@@ -348,12 +357,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
                   <td className="text-center">
                     passed through <b>10</b>{' '}
                     <input
+                      value={getAnswers[10]}
                       style={{ border: 'none' }}
                       onChange={(event) => {
                         dispatch(
-                          updateAnswer({
+                          updateReadingAnswer({
                             ...getAnswers,
-                            50: event.target.value
+                            10: event.target.value
                           })
                         );
                       }}
@@ -402,11 +412,12 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           <Col md={2}>
             <input
               style={{ border: 'none' }}
+              value={getAnswers[11]}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    51: event.target.value
+                    11: event.target.value
                   })
                 );
               }}
@@ -420,12 +431,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           </Col>
           <Col md={2}>
             <input
+              value={getAnswers[12]}
               style={{ border: 'none' }}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    52: event.target.value
+                    12: event.target.value
                   })
                 );
               }}
@@ -439,12 +451,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers, setPagination }) =
           </Col>
           <Col md={2}>
             <input
+              value={getAnswers[13]}
               style={{ border: 'none' }}
               onChange={(event) => {
                 dispatch(
-                  updateAnswer({
+                  updateReadingAnswer({
                     ...getAnswers,
-                    53: event.target.value
+                    13: event.target.value
                   })
                 );
               }}
