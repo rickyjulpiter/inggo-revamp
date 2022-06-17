@@ -5,7 +5,7 @@ import { LiStyled, ULStyled } from '../../../Home/OurPrograms/ProgramDetail/Prog
 import { SecondaryColor } from '../../../../Assets/colorPalette';
 import ButtonComponent from '../../../../Components/Button/Button.component';
 
-const InstructionsComponent = ({ start }) => {
+const ListeningInstructionsComponent = ({ start }) => {
   return (
     <div className="p-3">
       <CardTest>
@@ -39,10 +39,12 @@ const InstructionsComponent = ({ start }) => {
           </LiStyled>
         </ULStyled>
 
-        <ButtonComponent color={SecondaryColor} text="Start" handleClick={start} />
+        <div className="mb-3 mt-3 text-center">
+          <ButtonComponent color={SecondaryColor} text="Start" handleClick={start} />
+        </div>
       </CardTest>
     </div>
   );
 };
 
-export default InstructionsComponent;
+export default ListeningInstructionsComponent;

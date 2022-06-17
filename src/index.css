@@ -152,6 +152,11 @@ li {
     }
 }
 
+audio {
+    width: 50px;
+    height: 25px;
+}
+
 audio::-webkit-media-controls-pause-button {
     display: none !important;
 }
@@ -170,6 +175,11 @@ audio::-webkit-media-controls-current-time-display {
 }
 audio::-webkit-media-controls-time-remaining-display {
     display: none;
+}
+
+audio::-webkit-media-controls-panel {
+    -webkit-justify-content: center;
+    /*height: 25px;*/
 }
 
 .display-flex-space-between {

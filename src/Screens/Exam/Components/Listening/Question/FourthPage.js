@@ -3,21 +3,28 @@ import React from 'react';
 import { Col, Row, Table } from 'react-bootstrap';
 
 import { updateAnswer } from '../../../../../Redux/handleAnswer';
-import AudioPlayer from '../AudioPlayer';
+import SectionTitle from '../../SectionTitle';
+import ReactAudioPlayer from 'react-audio-player';
 
 const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
-      <AudioPlayer
-        title="Section 4"
-        track={track}
-        ended={(page) => {
-          setPagination(page);
-        }}
-      />
+      <SectionTitle title="Section 4" />
       <h5 className="text-center">
         <b> Questions 31-40</b>
       </h5>
+
+      <ReactAudioPlayer
+        src={track}
+        autoPlay
+        controls={true}
+        controlsList={'nofullscreen nodownload noremoteplayback noplaybackrate foobar'}
+        onEnded={() => {
+          setPagination(5);
+        }}
+        onPause={() => console.log('')}
+        style={{ width: 200 }}
+      />
       <h5>
         <b> Questions 31-33</b>
       </h5>

@@ -3,22 +3,28 @@ import React from 'react';
 import { Col, Form, Row, Table } from 'react-bootstrap';
 
 import { No1, No10, No2, No3, No4, No5, No6, No7, No8, No9 } from './index';
-import AudioPlayer from '../AudioPlayer';
+import SectionTitle from '../../SectionTitle';
+import ReactAudioPlayer from 'react-audio-player';
 
 const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
     <div>
-      <AudioPlayer
-        title="Section 1"
-        track={track}
-        ended={(page) => {
-          setPagination(page);
-        }}
-      />
+      <SectionTitle title="Section 1" />
       <h5 className="text-center">
         <b> Questions 1-10</b>
       </h5>
 
+      <ReactAudioPlayer
+        src={track}
+        autoPlay
+        controls={true}
+        controlsList={'nofullscreen nodownload noremoteplayback noplaybackrate foobar'}
+        onEnded={() => {
+          setPagination(2);
+        }}
+        onPause={() => console.log('')}
+        style={{ width: 200 }}
+      />
       <h6>
         Choose the correct letter, <b>A</b>, <b>B</b> or <b>C</b>.
       </h6>

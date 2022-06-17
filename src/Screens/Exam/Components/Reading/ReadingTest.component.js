@@ -3,13 +3,10 @@ import React, { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Pagination } from 'react-bootstrap';
 
-import { FirstPage, SecondPage } from './Question';
-import ThirdPage from './Question/ThirdPage';
-import FourthPage from './Question/FourthPage';
 import Countdown from 'react-countdown';
-import { Track1, Track2, Track3, Track4 } from './Test/pre-test/pre-test-listening';
 import { SecondaryColor } from '../../../../Assets/colorPalette';
 import styled from 'styled-components';
+import { FirstSectionReadingComponent } from './Question';
 
 const PAGINATION = {
   FIRST: 1,
@@ -25,7 +22,7 @@ const ContainerCountDown = styled.div`
   margin-bottom: 1vh;
 `;
 
-const ListeningTestComponent = () => {
+const ReadingTestComponent = () => {
   const [page, setPage] = useState(PAGINATION.FIRST);
   const getAnswers = useSelector((state) => state.answer.value);
   const dispatch = useDispatch();
@@ -72,43 +69,12 @@ const ListeningTestComponent = () => {
       </ContainerCountDown>
       <div className="m-4">
         {page === PAGINATION.FIRST && (
-          <FirstPage
+          <FirstSectionReadingComponent
             dispatch={dispatch}
             getAnswers={getAnswers}
             setPagination={(nextPage) => {
               changePage(nextPage);
             }}
-            track={Track1}
-          />
-        )}
-        {page === PAGINATION.SECOND && (
-          <SecondPage
-            dispatch={dispatch}
-            getAnswers={getAnswers}
-            setPagination={(nextPage) => {
-              changePage(nextPage);
-            }}
-            track={Track2}
-          />
-        )}
-        {page === PAGINATION.THIRD && (
-          <ThirdPage
-            dispatch={dispatch}
-            getAnswers={getAnswers}
-            setPagination={(nextPage) => {
-              changePage(nextPage);
-            }}
-            track={Track3}
-          />
-        )}
-        {page === PAGINATION.FOURTH && (
-          <FourthPage
-            dispatch={dispatch}
-            getAnswers={getAnswers}
-            setPagination={(nextPage) => {
-              console.log(nextPage);
-            }}
-            track={Track4}
           />
         )}
       </div>
@@ -140,4 +106,4 @@ const ListeningTestComponent = () => {
   );
 };
 
-export default ListeningTestComponent;
+export default ReadingTestComponent;

@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useState } from 'react';
 
-import InstructionsComponent from './Instructions.component';
+import ListeningInstructionsComponent from './ListeningInstructionsComponent';
 import ListeningTestComponent from './ListeningTest.component';
 
 const PAGE = {
@@ -13,7 +13,7 @@ const ListeningContainer = () => {
   const [page, setPage] = useState(PAGE.INSTRUCTIONS);
   return (
     <div>
-      {page === PAGE.INSTRUCTIONS && <InstructionsComponent start={() => setPage(PAGE.TEST)} />}
+      {page === PAGE.INSTRUCTIONS && <ListeningInstructionsComponent start={() => setPage(PAGE.TEST)} />}
       {page === PAGE.TEST && <ListeningTestComponent />}
     </div>
   );
