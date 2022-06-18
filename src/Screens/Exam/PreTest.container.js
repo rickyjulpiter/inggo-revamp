@@ -5,6 +5,8 @@ import { ContainerTest } from './style';
 import CodeCheckComponent from './Components/CodeCheck.component';
 import ListeningContainer from './Components/Listening/Listening.container';
 import ReadingContainer from './Components/Reading/Reading.container';
+import { useDispatch } from 'react-redux';
+import WritingContainer from './Components/Writing/Writing.container';
 
 const PAGE = {
   AUTH: 1,
@@ -14,7 +16,9 @@ const PAGE = {
 };
 
 const PreTestContainer = () => {
-  const [page, setPage] = useState(PAGE.READING);
+  const [page, setPage] = useState(PAGE.AUTH);
+
+  const dispatch = useDispatch();
 
   const handleNextPage = () => {
     setPage(page + 1);
@@ -26,9 +30,18 @@ const PreTestContainer = () => {
 
   return (
     <ContainerTest>
-      {page === PAGE.AUTH && <CodeCheckComponent handleNextPage={handleNextPage} />}
-      {page === PAGE.LISTENING && <ListeningContainer handleNextPage={handleNextPage} />}
-      {page === PAGE.READING && <ReadingContainer handleNextPage={handleNextPage} /> }
+      {page === PAGE.AUTH && (
+        <CodeCheckComponent handleNextPage={handleNextPage} dispatch={dispatch} />
+      )}
+      {page === PAGE.LISTENING && (
+        <ListeningContainer handleNextPage={handleNextPage} dispatch={dispatch} />
+      )}
+      {page === PAGE.READING && (
+        <ReadingContainer handleNextPage={handleNextPage} dispatch={dispatch} />
+      )}
+      {page === PAGE.WRITING && (
+        <WritingContainer handleNextPage={handleNextPage} dispatch={dispatch} />
+      )}
     </ContainerTest>
   );
 };

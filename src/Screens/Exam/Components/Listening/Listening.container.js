@@ -9,12 +9,20 @@ const PAGE = {
   TEST: 2
 };
 
-const ListeningContainer = () => {
+const ListeningContainer = ({ dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGE.INSTRUCTIONS);
   return (
     <div>
-      {page === PAGE.INSTRUCTIONS && <ListeningInstructionsComponent start={() => setPage(PAGE.TEST)} />}
-      {page === PAGE.TEST && <ListeningTestComponent />}
+      {page === PAGE.INSTRUCTIONS && (
+        <ListeningInstructionsComponent start={() => setPage(PAGE.TEST)} />
+      )}
+      {page === PAGE.TEST && (
+        <ListeningTestComponent
+          dispatch={dispatch}
+          handleNextPage={handleNextPage}
+          date={Date.now() + 1800000}
+        />
+      )}
     </div>
   );
 };

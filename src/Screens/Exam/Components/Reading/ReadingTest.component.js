@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React, { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { Pagination } from 'react-bootstrap';
 import Countdown from 'react-countdown';
 import styled from 'styled-components';
@@ -15,8 +15,7 @@ import {
 const PAGINATION = {
   FIRST: 1,
   SECOND: 2,
-  THIRD: 3,
-  FOURTH: 4
+  THIRD: 3
 };
 
 const ContainerCountDown = styled.div`
@@ -26,10 +25,10 @@ const ContainerCountDown = styled.div`
   margin-bottom: 1vh;
 `;
 
-const ReadingTestComponent = () => {
+const ReadingTestComponent = ({ date, dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGINATION.FIRST);
+
   const getAnswers = useSelector((state) => state.answer.readingAnswer);
-  const dispatch = useDispatch();
   console.log(getAnswers);
 
   const isPaginationActive = (value) => {
@@ -40,12 +39,12 @@ const ReadingTestComponent = () => {
     setPage(value);
   };
 
-  const renderer = ({ minutes, seconds, completed }) => {
+  const renderer = ({ hours, minutes, seconds, completed }) => {
     const formatSeconds = seconds === 0 ? '00' : seconds;
     if (completed) {
       return <span>Time's up</span>;
     }
-    if (minutes === 28) {
+    if (minutes === 10 || minutes === 5) {
       return (
         <>
           <span style={{ color: SecondaryColor, fontWeight: 700, fontSize: 30 }}>
@@ -58,6 +57,7 @@ const ReadingTestComponent = () => {
       return (
         <>
           <span>
+            {hours > 0 ? `${hours}:` : ''}
             {minutes}:{formatSeconds}
           </span>{' '}
           left
@@ -69,7 +69,14 @@ const ReadingTestComponent = () => {
   return (
     <div>
       <ContainerCountDown>
-        <Countdown date={Date.now() + 1800000} daysInHours renderer={renderer} />
+        <Countdown
+          date={date}
+          daysInHours
+          renderer={renderer}
+          onComplete={() => {
+            handleNextPage();
+          }}
+        />
       </ContainerCountDown>
       <div className="m-4">
         {page === PAGINATION.FIRST && (
@@ -120,11 +127,7 @@ const ReadingTestComponent = () => {
           onClick={() => setPage(PAGINATION.THIRD)}>
           3
         </Pagination.Item>
-        <Pagination.Item
-          active={isPaginationActive(PAGINATION.FOURTH)}
-          onClick={() => setPage(PAGINATION.FOURTH)}>
-          4
-        </Pagination.Item>
+        <Pagination.Item onClick={() => handleNextPage()}>Next Section</Pagination.Item>
       </Pagination>
     </div>
   );
