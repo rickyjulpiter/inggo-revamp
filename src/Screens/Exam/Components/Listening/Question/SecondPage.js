@@ -1,10 +1,11 @@
 /* eslint-disable */
 import React from 'react';
 import { Col, Row, Table } from 'react-bootstrap';
+import AudioPlayer from 'react-h5-audio-player';
+
 import { No11, No12, No13, No1415 } from './index';
 import { updateAnswer } from '../../../../../Redux/handleAnswer';
 import SectionTitle from '../../SectionTitle';
-import ReactAudioPlayer from 'react-audio-player';
 
 const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
@@ -14,16 +15,18 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
         <b> Questions 11-20</b>
       </h5>
 
-      <ReactAudioPlayer
+      <AudioPlayer
         src={track}
-        autoPlay
-        controls={true}
-        controlsList={'nofullscreen nodownload noremoteplayback noplaybackrate foobar'}
+        autoPlay={true}
         onEnded={() => {
           setPagination(3);
         }}
-        onPause={() => console.log('')}
-        style={{ width: 200 }}
+        showDownloadProgress={false}
+        showFilledProgress={false}
+        showJumpControls={false}
+        showSkipControls={false}
+        loop={false}
+        customControlsSection={['VOLUME_CONTROLS']}
       />
 
       <Row>

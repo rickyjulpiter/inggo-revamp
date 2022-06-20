@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 // Importing the Bootstrap CSS
+import 'react-h5-audio-player/lib/styles.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Assets/style.css';
 import './Assets/Translations/i18n';

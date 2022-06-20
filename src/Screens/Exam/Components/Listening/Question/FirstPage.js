@@ -1,10 +1,10 @@
 /* eslint-disable */
 import React from 'react';
 import { Col, Form, Row, Table } from 'react-bootstrap';
+import AudioPlayer from 'react-h5-audio-player';
 
 import { No1, No10, No2, No3, No4, No5, No6, No7, No8, No9 } from './index';
 import SectionTitle from '../../SectionTitle';
-import ReactAudioPlayer from 'react-audio-player';
 
 const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
@@ -14,16 +14,18 @@ const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
         <b> Questions 1-10</b>
       </h5>
 
-      <ReactAudioPlayer
+      <AudioPlayer
         src={track}
-        autoPlay
-        controls={true}
-        controlsList={'nofullscreen nodownload noremoteplayback noplaybackrate foobar'}
+        autoPlay={true}
         onEnded={() => {
           setPagination(2);
         }}
-        onPause={() => console.log('')}
-        style={{ width: 200 }}
+        showDownloadProgress={false}
+        showFilledProgress={false}
+        showJumpControls={false}
+        showSkipControls={false}
+        loop={false}
+        customControlsSection={['VOLUME_CONTROLS']}
       />
       <h6>
         Choose the correct letter, <b>A</b>, <b>B</b> or <b>C</b>.

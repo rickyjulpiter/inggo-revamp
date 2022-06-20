@@ -1,10 +1,10 @@
 /* eslint-disable */
 import React from 'react';
 import { Col, Row, Table } from 'react-bootstrap';
+import AudioPlayer from 'react-h5-audio-player';
 
 import { updateAnswer } from '../../../../../Redux/handleAnswer';
 import SectionTitle from '../../SectionTitle';
-import ReactAudioPlayer from 'react-audio-player';
 
 const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
   return (
@@ -14,18 +14,21 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
         <b> Questions 31-40</b>
       </h5>
 
-      <ReactAudioPlayer
+      <AudioPlayer
         src={track}
-        autoPlay
-        controls={true}
-        controlsList={'nofullscreen nodownload noremoteplayback noplaybackrate foobar'}
+        autoPlay={true}
         onEnded={() => {
           setPagination(5);
         }}
-        onPause={() => console.log('')}
-        style={{ width: 200 }}
+        showDownloadProgress={false}
+        showFilledProgress={false}
+        showJumpControls={false}
+        showSkipControls={false}
+        loop={false}
+        customControlsSection={['VOLUME_CONTROLS']}
       />
-      <h5>
+
+      <h5 className="mt-2">
         <b> Questions 31-33</b>
       </h5>
       <h6>Complete the sentences below.</h6>

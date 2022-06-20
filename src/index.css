@@ -152,35 +152,28 @@ li {
     }
 }
 
-audio {
-    width: 50px;
-    height: 25px;
-}
-
-audio::-webkit-media-controls-pause-button {
+.rhap_time {
     display: none !important;
 }
 
-audio::-webkit-media-controls-play-button {
-    display: none !important;
-}
-
-audio::-webkit-media-controls-timeline {
-    display: none !important;
-}
-
-/* Removes the time stamp */
-audio::-webkit-media-controls-current-time-display {
+.rhap_progress-bar {
     display: none;
 }
 
-audio::-webkit-media-controls-time-remaining-display {
-    display: none;
+.rhap_container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    font-family: inherit;
+    width: 10% !important;
+    padding: 0 !important;
+    background-color: #f5f8fd !important;
+    box-shadow: none !important;
 }
 
-audio::-webkit-media-controls-panel {
-    -webkit-justify-content: center;
-    /*height: 25px;*/
+.rhap_volume-controls {
+    justify-content: left !important;
 }
 
 .display-flex-space-between {
