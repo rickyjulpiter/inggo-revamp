@@ -602,7 +602,8 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
             <Col md={1}>
               <b>37 </b>
             </Col>
-            <Col md={3}>
+            <Col md={11}>
+              Spiegel is more interested in scientific research than medical practice.
               <Form
                 onChange={(event) => {
                   const {
@@ -641,13 +642,13 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
                 />
               </Form>
             </Col>
-            <Col>Spiegel is more interested in scientific research than medical practice.</Col>
           </Row>
           <Row className="mb-2">
             <Col md={1}>
               <b>38 </b>
             </Col>
-            <Col md={3}>
+            <Col md={11}>
+              Patients in the third group in Spiegel and Lang’s experiment were easily hypnotised.
               <Form
                 onChange={(event) => {
                   const {
@@ -686,15 +687,14 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
                 />
               </Form>
             </Col>
-            <Col>
-              Patients in the third group in Spiegel and Lang’s experiment were easily hypnotised.
-            </Col>
           </Row>
           <Row className="mb-2">
             <Col md={1}>
               <b>39 </b>
             </Col>
-            <Col md={3}>
+            <Col md={11}>
+              In Spiegel and Lang’s experiment, a smaller amount of painkiller was needed by the
+              hypnotised patients than by the other two groups.
               <Form
                 onChange={(event) => {
                   const {
@@ -733,16 +733,13 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
                 />
               </Form>
             </Col>
-            <Col>
-              In Spiegel and Lang’s experiment, a smaller amount of painkiller was needed by the
-              hypnotised patients than by the other two groups.
-            </Col>
           </Row>
           <Row className="mb-2">
             <Col md={1}>
               <b>40 </b>
             </Col>
-            <Col md={3}>
+            <Col md={11}>
+              Spiegel feels that doctors should use hypnotism only when it is fully understood.
               <Form
                 onChange={(event) => {
                   const {
@@ -780,9 +777,6 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
                   defaultChecked={getAnswers[40] === 'notgiven'}
                 />
               </Form>
-            </Col>
-            <Col>
-              Spiegel feels that doctors should use hypnotism only when it is fully understood.
             </Col>
           </Row>
         </Col>

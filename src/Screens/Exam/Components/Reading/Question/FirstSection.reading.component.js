@@ -415,7 +415,8 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
               <Col md={1}>
                 <b>11 </b>
               </Col>
-              <Col md={3}>
+              <Col md={11}>
+                Biosilk has already replaced nylon in parachute manufacture.
                 <Form
                   onChange={(event) => {
                     const {
@@ -454,13 +455,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                   />
                 </Form>
               </Col>
-              <Col>Biosilk has already replaced nylon in parachute manufacture.</Col>
             </Row>
             <Row className="mb-2">
               <Col md={1}>
                 <b>12 </b>
               </Col>
-              <Col md={3}>
+              <Col md={11}>
+                The spider produces silk of varying strengths.
                 <Form
                   onChange={(event) => {
                     const {
@@ -499,13 +500,13 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                   />
                 </Form>
               </Col>
-              <Col>The spider produces silk of varying strengths.</Col>
             </Row>
             <Row className="mb-2">
               <Col md={1}>
                 <b>13 </b>
               </Col>
-              <Col md={3}>
+              <Col md={11}>
+                Lewis and Dorsch co-operated in the synthetic production of silk.
                 <Form
                   onChange={(event) => {
                     const {
@@ -544,7 +545,6 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                   />
                 </Form>
               </Col>
-              <Col>Lewis and Dorsch co-operated in the synthetic production of silk.</Col>
             </Row>
           </div>
         </Col>

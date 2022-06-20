@@ -18,7 +18,7 @@ const PAGE = {
 };
 
 const PreTestContainer = () => {
-  const [page, setPage] = useState(PAGE.AUTH);
+  const [page, setPage] = useState(PAGE.WRITING);
   const writingAnswer = useSelector((state) => state.answer.writingAnswer);
   const readingAnswer = useSelector((state) => state.answer.readingAnswer);
   const listeningAnswer = useSelector((state) => state.answer.value);

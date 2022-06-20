@@ -1,6 +1,6 @@
 /* eslint-disable */
 import React from 'react';
-import { Col, Form, Row } from 'react-bootstrap';
+import { Col, Form, Row, Table } from 'react-bootstrap';
 
 import SectionTitle from '../../SectionTitle';
 import { updateReadingAnswer } from '../../../../../Redux/handleAnswer';
@@ -456,6 +456,43 @@ const SecondSectionReadingComponent = ({ getAnswers, dispatch }) => {
             </Col>
             <Col>laid the foundation for our modern time zones.</Col>
           </Row>
+
+          <div className="bordered-black ">
+            <Table borderless>
+              <tbody>
+                <tr>
+                  <td colSpan={2}>
+                    <b>List of Mapmakers</b>
+                  </td>
+                </tr>
+                <tr>
+                  <td style={{ width: '10%' }}>
+                    <b>A</b>
+                  </td>
+                  <td>Mercator</td>
+                </tr>
+                <tr>
+                  <td style={{ width: '10%' }}>
+                    <b>B</b>
+                  </td>
+                  <td>Ptolemy</td>
+                </tr>
+                <tr>
+                  <td style={{ width: '10%' }}>
+                    <b>C</b>
+                  </td>
+                  <td>Cassini family</td>
+                </tr>
+                <tr>
+                  <td style={{ width: '10%' }}>
+                    <b>D</b>
+                  </td>
+                  <td>Eratosthenes</td>
+                </tr>
+              </tbody>
+            </Table>
+          </div>
+
           <h5 className="mt-4">
             <b> Questions 22-26</b>
           </h5>

@@ -16,7 +16,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
 
       <AudioPlayer
         src={track}
-        autoPlay={true}
+        autoPlay={false}
         onEnded={() => {
           setPagination(5);
         }}
@@ -36,7 +36,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
         Write <b>NO MORE THAN THREE WORDS</b> for each answer
       </h6>
       <Row>
-        <Col md={8}>
+        <Col md={10}>
           <div>
             <p className="text-center mt-3">
               <b>Peregrine Falcons</b>
@@ -91,8 +91,106 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
         </Col>
       </Row>
 
+      <h5 className="mt-2">
+        <b> Questions 34-37</b>
+      </h5>
+      <h6>
+        <i>Complete the table below.</i>
+      </h6>
+      <h6>
+        Write <b>NO MORE THAN THREE WORDS </b> for each answer
+      </h6>
+
+      <div>
+        <Table bordered>
+          <tbody>
+            <tr>
+              <td>
+                <b>Age of falcons</b>
+              </td>
+              <td>
+                <b>What occurs</b>
+              </td>
+            </tr>
+            <tr>
+              <td>20 days old</td>
+              <td>
+                The falcons <b>34</b>{' '}
+                <input
+                  style={{ border: 'none' }}
+                  value={getAnswers[34]}
+                  onChange={(event) => {
+                    dispatch(
+                      updateAnswer({
+                        ...getAnswers,
+                        34: event.target.value
+                      })
+                    );
+                  }}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>28 days old</td>
+              <td>
+                The falcons are <b>35</b>{' '}
+                <input
+                  style={{ border: 'none' }}
+                  value={getAnswers[35]}
+                  onChange={(event) => {
+                    dispatch(
+                      updateAnswer({
+                        ...getAnswers,
+                        35: event.target.value
+                      })
+                    );
+                  }}
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>2 months old</td>
+              <td>
+                The falcons <b>36</b>{' '}
+                <input
+                  style={{ border: 'none' }}
+                  value={getAnswers[36]}
+                  onChange={(event) => {
+                    dispatch(
+                      updateAnswer({
+                        ...getAnswers,
+                        36: event.target.value
+                      })
+                    );
+                  }}
+                />{' '}
+                permanently
+              </td>
+            </tr>
+            <tr>
+              <td>1-12 months old</td>
+              <td>
+                More than half of falcons <b>37</b>{' '}
+                <input
+                  style={{ border: 'none' }}
+                  value={getAnswers[37]}
+                  onChange={(event) => {
+                    dispatch(
+                      updateAnswer({
+                        ...getAnswers,
+                        37: event.target.value
+                      })
+                    );
+                  }}
+                />
+              </td>
+            </tr>
+          </tbody>
+        </Table>
+      </div>
+
       <h5 className="mt-4">
-        <b> Questions 16-20</b>
+        <b> Questions 38-40</b>
       </h5>
       <h6>
         <i>Complete the table below.</i>

@@ -3,13 +3,16 @@ import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Pagination } from 'react-bootstrap';
 import styled from 'styled-components';
+import Countdown from 'react-countdown';
 
 import { FirstPage, SecondPage } from './Question';
 import ThirdPage from './Question/ThirdPage';
 import FourthPage from './Question/FourthPage';
-import Countdown from 'react-countdown';
-import { Track1, Track2, Track3, Track4 } from './Test/pre-test/pre-test-listening';
 import { SecondaryColor } from '../../../../Assets/colorPalette';
+import Track1 from '../../../../Assets/pre-test-listening/track_1.mp3';
+import Track2 from '../../../../Assets/pre-test-listening/track_1.mp3';
+import Track3 from '../../../../Assets/pre-test-listening/track_1.mp3';
+import Track4 from '../../../../Assets/pre-test-listening/track_1.mp3';
 
 const PAGINATION = {
   FIRST: 1,
@@ -140,10 +143,7 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
           onClick={() => setPage(PAGINATION.FOURTH)}>
           4
         </Pagination.Item>
-        <Pagination.Item
-          onClick={() => handleNextPage()}>
-          Next Section
-        </Pagination.Item>
+        <Pagination.Item onClick={() => handleNextPage()}>Next Section</Pagination.Item>
       </Pagination>
     </div>
   );
