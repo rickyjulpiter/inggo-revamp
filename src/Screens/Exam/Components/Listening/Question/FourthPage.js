@@ -16,7 +16,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track }) => {
 
       <AudioPlayer
         src={track}
-        autoPlay={false}
+        autoPlay={true}
         onEnded={() => {
           setPagination(5);
         }}
