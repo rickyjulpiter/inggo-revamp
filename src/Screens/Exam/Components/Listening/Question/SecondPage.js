@@ -134,7 +134,7 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
             <tr>
               <td>5 days</td>
               <td>
-                <b>19s </b>£
+                <b>19 </b>£
                 <input
                   value={getAnswers[19]}
                   style={{ border: 'none' }}

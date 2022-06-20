@@ -1,9 +1,9 @@
 /* eslint-disable */
 
 import SectionTitle from '../../SectionTitle';
-import { Col, Row, Table } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import React from 'react';
-import { updateAnswer, updateReadingAnswer } from '../../../../../Redux/handleAnswer';
+import { updateReadingAnswer } from '../../../../../Redux/handleAnswer';
 
 const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
   return (
@@ -276,13 +276,12 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
             </p>
 
             <Row>
-              <Col md={6} className="mx-auto">
-                <Table borderless>
+              <Col md={12} className="mx-auto text-center">
+                <table>
                   <tbody>
-                    <tr>
-                      <td className="text-center">
-                        Synthetic gene grown <br />
-                        in <b>6</b>{' '}
+                    <tr style={{ border: '1px solid green' }}>
+                      <td className="text-center p-2">
+                        Synthetic gene grown in <b>6</b>{' '}
                         <input
                           value={getAnswers[6]}
                           style={{ border: 'none' }}
@@ -294,7 +293,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                               })
                             );
                           }}
-                        />{' '} <br/><br/>
+                        />{' '}
                         or <b>7</b>{' '}
                         <input
                           value={getAnswers[7]}
@@ -315,8 +314,8 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                         <i className="bi bi-arrow-down-short" style={{ fontSize: 30 }}></i>
                       </td>
                     </tr>
-                    <tr>
-                      <td className="text-center">
+                    <tr style={{ border: '1px solid green' }}>
+                      <td className="text-center p-2">
                         globules of <b>8</b>{' '}
                         <input
                           style={{ border: 'none' }}
@@ -337,8 +336,8 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                         <i className="bi bi-arrow-down-short" style={{ fontSize: 30 }}></i>
                       </td>
                     </tr>
-                    <tr>
-                      <td className="text-center">
+                    <tr style={{ border: '1px solid green' }}>
+                      <td className="text-center p-2">
                         dissolved in of <b>9</b>{' '}
                         <input
                           value={getAnswers[9]}
@@ -359,9 +358,9 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                         <i className="bi bi-arrow-down-short" style={{ fontSize: 30 }}></i>
                       </td>
                     </tr>
-                    <tr>
-                      <td className="text-center">
-                        passed through <br/> <b>10</b>{' '}
+                    <tr style={{ border: '1px solid green' }}>
+                      <td className="text-center p-2">
+                        passed through <b>10</b>{' '}
                         <input
                           value={getAnswers[10]}
                           style={{ border: 'none' }}
@@ -381,11 +380,11 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
                         <i className="bi bi-arrow-down-short" style={{ fontSize: 30 }}></i>
                       </td>
                     </tr>
-                    <tr>
-                      <td className="text-center">to produce a solid fibre</td>
+                    <tr style={{ border: '1px solid green' }}>
+                      <td className="text-center p-2">to produce a solid fibre</td>
                     </tr>
                   </tbody>
-                </Table>
+                </table>
               </Col>
             </Row>
           </div>

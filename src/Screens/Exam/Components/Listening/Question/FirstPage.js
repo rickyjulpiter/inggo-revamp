@@ -36,9 +36,28 @@ const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
         <p className="mt-2">Penny's interview took place</p>
         <div className="mb-3">
           <Form>
-            <Form.Check label="A. yesterday" name="group1" type="radio" id={`inline-radio-1`} />
-            <Form.Check label="B. last Week" name="group1" type="radio" id={`inline-radio-2`} />
-            <Form.Check label="C. two Weeks Ago" name="group1" type="radio" id={`inline-radio-3`} />
+            <Form.Check
+              disabled
+              label="A. yesterday"
+              name="group1"
+              type="radio"
+              id={`inline-radio-1`}
+            />
+            <Form.Check
+              disabled
+              checked
+              label="B. last Week"
+              name="group1"
+              type="radio"
+              id={`inline-radio-2`}
+            />
+            <Form.Check
+              disabled
+              label="C. two Weeks Ago"
+              name="group1"
+              type="radio"
+              id={`inline-radio-3`}
+            />
           </Form>
         </div>
       </div>

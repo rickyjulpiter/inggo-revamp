@@ -16,7 +16,7 @@ const PAGE = {
 };
 
 const PreTestContainer = () => {
-  const [page, setPage] = useState(PAGE.AUTH);
+  const [page, setPage] = useState(PAGE.READING);
 
   const dispatch = useDispatch();
 

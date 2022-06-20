@@ -602,19 +602,44 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
             <Col md={1}>
               <b>37 </b>
             </Col>
-            <Col md={2}>
-              <input
-                style={{ border: 'none', width: '100%' }}
-                value={getAnswers[37]}
+            <Col md={3}>
+              <Form
                 onChange={(event) => {
+                  const {
+                    target: { value }
+                  } = event;
                   dispatch(
                     updateReadingAnswer({
                       ...getAnswers,
-                      37: event.target.value
+                      37: value
                     })
                   );
-                }}
-              />
+                }}>
+                <Form.Check
+                  label="A. True"
+                  name="group1"
+                  type="radio"
+                  value="true"
+                  id={`inline-radio-1`}
+                  defaultChecked={getAnswers[37] === 'true'}
+                />
+                <Form.Check
+                  label="B. False"
+                  name="group1"
+                  type="radio"
+                  value="false"
+                  id={`inline-radio-2`}
+                  defaultChecked={getAnswers[37] === 'false'}
+                />
+                <Form.Check
+                  label="C. Not Given"
+                  name="group1"
+                  type="radio"
+                  value="notgiven"
+                  id={`inline-radio-3`}
+                  defaultChecked={getAnswers[37] === 'notgiven'}
+                />
+              </Form>
             </Col>
             <Col>Spiegel is more interested in scientific research than medical practice.</Col>
           </Row>
@@ -622,19 +647,44 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
             <Col md={1}>
               <b>38 </b>
             </Col>
-            <Col md={2}>
-              <input
-                value={getAnswers[38]}
-                style={{ border: 'none', width: '100%' }}
+            <Col md={3}>
+              <Form
                 onChange={(event) => {
+                  const {
+                    target: { value }
+                  } = event;
                   dispatch(
                     updateReadingAnswer({
                       ...getAnswers,
-                      38: event.target.value
+                      38: value
                     })
                   );
-                }}
-              />
+                }}>
+                <Form.Check
+                  label="A. True"
+                  name="group1"
+                  type="radio"
+                  value="true"
+                  id={`inline-radio-1`}
+                  defaultChecked={getAnswers[38] === 'true'}
+                />
+                <Form.Check
+                  label="B. False"
+                  name="group1"
+                  type="radio"
+                  value="false"
+                  id={`inline-radio-2`}
+                  defaultChecked={getAnswers[38] === 'false'}
+                />
+                <Form.Check
+                  label="C. Not Given"
+                  name="group1"
+                  type="radio"
+                  value="notgiven"
+                  id={`inline-radio-3`}
+                  defaultChecked={getAnswers[38] === 'notgiven'}
+                />
+              </Form>
             </Col>
             <Col>
               Patients in the third group in Spiegel and Lang’s experiment were easily hypnotised.
@@ -644,19 +694,44 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
             <Col md={1}>
               <b>39 </b>
             </Col>
-            <Col md={2}>
-              <input
-                value={getAnswers[39]}
-                style={{ border: 'none', width: '100%' }}
+            <Col md={3}>
+              <Form
                 onChange={(event) => {
+                  const {
+                    target: { value }
+                  } = event;
                   dispatch(
                     updateReadingAnswer({
                       ...getAnswers,
-                      39: event.target.value
+                      39: value
                     })
                   );
-                }}
-              />
+                }}>
+                <Form.Check
+                  label="A. True"
+                  name="group1"
+                  type="radio"
+                  value="true"
+                  id={`inline-radio-1`}
+                  defaultChecked={getAnswers[39] === 'true'}
+                />
+                <Form.Check
+                  label="B. False"
+                  name="group1"
+                  type="radio"
+                  value="false"
+                  id={`inline-radio-2`}
+                  defaultChecked={getAnswers[39] === 'false'}
+                />
+                <Form.Check
+                  label="C. Not Given"
+                  name="group1"
+                  type="radio"
+                  value="notgiven"
+                  id={`inline-radio-3`}
+                  defaultChecked={getAnswers[39] === 'notgiven'}
+                />
+              </Form>
             </Col>
             <Col>
               In Spiegel and Lang’s experiment, a smaller amount of painkiller was needed by the
@@ -667,19 +742,44 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
             <Col md={1}>
               <b>40 </b>
             </Col>
-            <Col md={2}>
-              <input
-                value={getAnswers[40]}
-                style={{ border: 'none', width: '100%' }}
+            <Col md={3}>
+              <Form
                 onChange={(event) => {
+                  const {
+                    target: { value }
+                  } = event;
                   dispatch(
                     updateReadingAnswer({
                       ...getAnswers,
-                      40: event.target.value
+                      40: value
                     })
                   );
-                }}
-              />
+                }}>
+                <Form.Check
+                  label="A. True"
+                  name="group1"
+                  type="radio"
+                  value="true"
+                  id={`inline-radio-1`}
+                  defaultChecked={getAnswers[40] === 'true'}
+                />
+                <Form.Check
+                  label="B. False"
+                  name="group1"
+                  type="radio"
+                  value="false"
+                  id={`inline-radio-2`}
+                  defaultChecked={getAnswers[40] === 'false'}
+                />
+                <Form.Check
+                  label="C. Not Given"
+                  name="group1"
+                  type="radio"
+                  value="notgiven"
+                  id={`inline-radio-3`}
+                  defaultChecked={getAnswers[40] === 'notgiven'}
+                />
+              </Form>
             </Col>
             <Col>
               Spiegel feels that doctors should use hypnotism only when it is fully understood.
