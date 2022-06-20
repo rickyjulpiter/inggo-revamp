@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import SectionTitle from '../../SectionTitle';
-import { Col, Row } from 'react-bootstrap';
+import { Col, Form, Row } from 'react-bootstrap';
 import React from 'react';
 import { updateReadingAnswer } from '../../../../../Redux/handleAnswer';
 
@@ -415,19 +415,44 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
               <Col md={1}>
                 <b>11 </b>
               </Col>
-              <Col md={2}>
-                <input
-                  style={{ border: 'none', width: '100%' }}
-                  value={getAnswers[11]}
+              <Col md={3}>
+                <Form
                   onChange={(event) => {
+                    const {
+                      target: { value }
+                    } = event;
                     dispatch(
                       updateReadingAnswer({
                         ...getAnswers,
-                        11: event.target.value
+                        11: value
                       })
                     );
-                  }}
-                />
+                  }}>
+                  <Form.Check
+                    label="A. True"
+                    name="group1"
+                    type="radio"
+                    value="true"
+                    id={`inline-radio-1`}
+                    defaultChecked={getAnswers[11] === 'true'}
+                  />
+                  <Form.Check
+                    label="B. False"
+                    name="group1"
+                    type="radio"
+                    value="false"
+                    id={`inline-radio-2`}
+                    defaultChecked={getAnswers[11] === 'false'}
+                  />
+                  <Form.Check
+                    label="C. Not Given"
+                    name="group1"
+                    type="radio"
+                    value="notgiven"
+                    id={`inline-radio-3`}
+                    defaultChecked={getAnswers[11] === 'notgiven'}
+                  />
+                </Form>
               </Col>
               <Col>Biosilk has already replaced nylon in parachute manufacture.</Col>
             </Row>
@@ -435,19 +460,44 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
               <Col md={1}>
                 <b>12 </b>
               </Col>
-              <Col md={2}>
-                <input
-                  value={getAnswers[12]}
-                  style={{ border: 'none', width: '100%' }}
+              <Col md={3}>
+                <Form
                   onChange={(event) => {
+                    const {
+                      target: { value }
+                    } = event;
                     dispatch(
                       updateReadingAnswer({
                         ...getAnswers,
-                        12: event.target.value
+                        12: value
                       })
                     );
-                  }}
-                />
+                  }}>
+                  <Form.Check
+                    label="A. True"
+                    name="group1"
+                    type="radio"
+                    value="true"
+                    id={`inline-radio-1`}
+                    defaultChecked={getAnswers[12] === 'true'}
+                  />
+                  <Form.Check
+                    label="B. False"
+                    name="group1"
+                    type="radio"
+                    value="false"
+                    id={`inline-radio-2`}
+                    defaultChecked={getAnswers[12] === 'false'}
+                  />
+                  <Form.Check
+                    label="C. Not Given"
+                    name="group1"
+                    type="radio"
+                    value="notgiven"
+                    id={`inline-radio-3`}
+                    defaultChecked={getAnswers[12] === 'notgiven'}
+                  />
+                </Form>
               </Col>
               <Col>The spider produces silk of varying strengths.</Col>
             </Row>
@@ -455,19 +505,44 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
               <Col md={1}>
                 <b>13 </b>
               </Col>
-              <Col md={2}>
-                <input
-                  value={getAnswers[13]}
-                  style={{ border: 'none', width: '100%' }}
+              <Col md={3}>
+                <Form
                   onChange={(event) => {
+                    const {
+                      target: { value }
+                    } = event;
                     dispatch(
                       updateReadingAnswer({
                         ...getAnswers,
-                        13: event.target.value
+                        13: value
                       })
                     );
-                  }}
-                />
+                  }}>
+                  <Form.Check
+                    label="A. True"
+                    name="group1"
+                    type="radio"
+                    value="true"
+                    id={`inline-radio-1`}
+                    defaultChecked={getAnswers[13] === 'true'}
+                  />
+                  <Form.Check
+                    label="B. False"
+                    name="group1"
+                    type="radio"
+                    value="false"
+                    id={`inline-radio-2`}
+                    defaultChecked={getAnswers[13] === 'false'}
+                  />
+                  <Form.Check
+                    label="C. Not Given"
+                    name="group1"
+                    type="radio"
+                    value="notgiven"
+                    id={`inline-radio-3`}
+                    defaultChecked={getAnswers[13] === 'notgiven'}
+                  />
+                </Form>
               </Col>
               <Col>Lewis and Dorsch co-operated in the synthetic production of silk.</Col>
             </Row>
