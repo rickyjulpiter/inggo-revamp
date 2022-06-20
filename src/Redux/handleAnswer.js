@@ -96,6 +96,10 @@ export const handleAnswer = createSlice({
       38: '',
       39: '',
       40: ''
+    },
+    writingAnswer: {
+      1: '',
+      2: ''
     }
   },
   reducers: {
@@ -104,10 +108,13 @@ export const handleAnswer = createSlice({
     },
     updateReadingAnswer: (state, action) => {
       state.readingAnswer = action.payload;
+    },
+    updateWritingAnswer: (state, action) => {
+      state.writingAnswer = action.payload;
     }
   }
 });
 
-export const { updateAnswer, updateReadingAnswer } = handleAnswer.actions;
+export const { updateAnswer, updateReadingAnswer, updateWritingAnswer } = handleAnswer.actions;
 
 export default handleAnswer.reducer;
