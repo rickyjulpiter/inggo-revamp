@@ -11,7 +11,6 @@ import ReadingContainer from './Components/Reading/Reading.container';
 import WritingContainer from './Components/Writing/Writing.container';
 import { listeningAnswerKey, readingAnswerKey } from './AnswerKey';
 import { convertListeningScore, convertReadingScore } from '../../Assets/utils';
-import ButtonComponent from '../../Components/Button/Button.component';
 import { SecondaryColor, WhiteColor } from '../../Assets/colorPalette';
 
 const PAGE = {
@@ -23,7 +22,7 @@ const PAGE = {
 };
 
 const PreTestContainer = () => {
-  const [page, setPage] = useState(PAGE.READING);
+  const [page, setPage] = useState(PAGE.AUTH);
   const writingAnswer = useSelector((state) => state.answer.writingAnswer);
   const readingAnswer = useSelector((state) => state.answer.readingAnswer);
   const listeningAnswer = useSelector((state) => state.answer.value);
