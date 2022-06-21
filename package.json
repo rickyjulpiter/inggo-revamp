@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@react-pdf/renderer": "^2.2.0",
     "@reduxjs/toolkit": "^1.8.2",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
@@ -30,6 +31,7 @@
     "react-router-dom": "^6.2.2",
     "react-scripts": "5.0.0",
     "react-scroll-to-bottom": "^4.2.0",
+    "react-to-print": "^2.14.7",
     "styled-components": "^5.3.3",
     "web-vitals": "^2.1.4"
   },

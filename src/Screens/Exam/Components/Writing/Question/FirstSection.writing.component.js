@@ -3,7 +3,7 @@ import React from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 
 import SectionTitle from '../../SectionTitle';
-import image from '../../../../../Assets/Images/ielts-process-bricks.jpg';
+import image from '../../../../../Assets/Images/image_writing.png';
 import { updateWritingAnswer } from '../../../../../Redux/handleAnswer';
 
 const FirstSectionWritingComponent = ({ dispatch, getAnswers }) => {
@@ -15,12 +15,11 @@ const FirstSectionWritingComponent = ({ dispatch, getAnswers }) => {
         <Col>
           <p>You should spend about 20 minutes on this task.</p>
           <p>
-            <b>The diagram below shows the process of manufacturing bricks.</b>
+            <b>The diagram below shows the process of using water to produce electricity</b>
           </p>
 
           <p>
-            Summarise the information by selecting and reporting the main features, and make
-            comparisons where relevant.
+            Summarise the information by selecting and reporting the main features, and make comparisons where relevant.
           </p>
 
           <p>Write at least 150 words.</p>

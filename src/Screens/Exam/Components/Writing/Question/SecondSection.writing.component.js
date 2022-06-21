@@ -12,15 +12,14 @@ const SecondSectionWritingComponent = ({ dispatch, getAnswers }) => {
 
       <Row>
         <Col>
-          <p>You should spend about 0 minutes on this task. Write at least 250 words.</p>
+          <p>You should spend about 40 minutes on this task. Write at least 250 words.</p>
           <p>Write about the following topic:</p>
-          <h5 className="text-center">
+          <h6>
             <b>
-              Buying things on the Internet, such as books, air tickets and groceries, is becoming
-              more and more popular. <br /> Do the advantages of shopping this way outweigh the
-              disadvantages?
+              Nowadays, more people are choosing to socialise online than face-to-face. <br />
+              Do the advantages of socialising online outweigh the disadvantages?
             </b>
-          </h5>
+          </h6>
 
           <p className="mt-4">
             Give reasons for your answer and include any relevant examples from your own knowledge
