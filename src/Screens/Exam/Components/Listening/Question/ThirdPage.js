@@ -3,10 +3,10 @@ import React from 'react';
 import { Col, Form, Row } from 'react-bootstrap';
 import AudioPlayer from 'react-h5-audio-player';
 
-import { updateAnswer } from '../../../../../Redux/handleAnswer';
+import { updateAnswer, updateAudio } from '../../../../../Redux/handleAnswer';
 import SectionTitle from '../../SectionTitle';
 
-const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
+const ThirdPage = ({ dispatch, getAnswers, setPagination, track, getAudio }) => {
   return (
     <div>
       <SectionTitle title="Section 3" />
@@ -16,9 +16,10 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track }) => {
 
       <AudioPlayer
         src={track}
-        autoPlay={true}
+        autoPlay={getAudio[3]}
         onEnded={() => {
           setPagination(4);
+          dispatch(updateAudio({ ...getAudio, 3: false }));
         }}
         showDownloadProgress={false}
         showFilledProgress={false}

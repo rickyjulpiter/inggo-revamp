@@ -5,8 +5,9 @@ import AudioPlayer from 'react-h5-audio-player';
 
 import { No1, No10, No2, No3, No4, No5, No6, No7, No8, No9 } from './index';
 import SectionTitle from '../../SectionTitle';
+import { updateAudio } from '../../../../../Redux/handleAnswer';
 
-const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
+const FirstPage = ({ dispatch, getAnswers, setPagination, track, getAudio }) => {
   return (
     <div>
       <SectionTitle title="Section 1" />
@@ -16,9 +17,10 @@ const FirstPage = ({ dispatch, getAnswers, setPagination, track }) => {
 
       <AudioPlayer
         src={track}
-        autoPlay={true}
+        autoPlay={getAudio[1]}
         onEnded={() => {
           setPagination(2);
+          dispatch(updateAudio({ ...getAudio, 1: false }));
         }}
         showDownloadProgress={false}
         showFilledProgress={false}

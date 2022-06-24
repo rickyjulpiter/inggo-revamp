@@ -10,9 +10,10 @@ import ThirdPage from './Question/ThirdPage';
 import FourthPage from './Question/FourthPage';
 import { SecondaryColor } from '../../../../Assets/colorPalette';
 import Track1 from '../../../../Assets/pre-test-listening/track_1.mp3';
-import Track2 from '../../../../Assets/pre-test-listening/track_1.mp3';
-import Track3 from '../../../../Assets/pre-test-listening/track_1.mp3';
-import Track4 from '../../../../Assets/pre-test-listening/track_1.mp3';
+import Track2 from '../../../../Assets/pre-test-listening/track_2.mp3';
+import Track3 from '../../../../Assets/pre-test-listening/track_3.mp3';
+import Track4 from '../../../../Assets/pre-test-listening/track_4.mp3';
+import { updateAudio } from '../../../../Redux/handleAnswer';
 
 const PAGINATION = {
   FIRST: 1,
@@ -31,6 +32,7 @@ const ContainerCountDown = styled.div`
 const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
   const [page, setPage] = useState(PAGINATION.FIRST);
   const getAnswers = useSelector((state) => state.answer.value);
+  const getAudio = useSelector((state) => state.answer.audio);
 
   const isPaginationActive = (value) => {
     return value === page;
@@ -87,6 +89,7 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
               changePage(nextPage);
             }}
             track={Track1}
+            getAudio={getAudio}
           />
         )}
         {page === PAGINATION.SECOND && (
@@ -97,6 +100,7 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
               changePage(nextPage);
             }}
             track={Track2}
+            getAudio={getAudio}
           />
         )}
         {page === PAGINATION.THIRD && (
@@ -107,6 +111,7 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
               changePage(nextPage);
             }}
             track={Track3}
+            getAudio={getAudio}
           />
         )}
         {page === PAGINATION.FOURTH && (
@@ -117,6 +122,7 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
               console.log(nextPage);
             }}
             track={Track4}
+            getAudio={getAudio}
           />
         )}
       </div>
@@ -125,22 +131,58 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
       <Pagination>
         <Pagination.Item
           active={isPaginationActive(PAGINATION.FIRST)}
-          onClick={() => setPage(PAGINATION.FIRST)}>
+          onClick={() => {
+            setPage(PAGINATION.FIRST);
+            // dispatch(updateAudio({ ...getAudio, 1: false }));
+          }}>
           1
         </Pagination.Item>
         <Pagination.Item
           active={isPaginationActive(PAGINATION.SECOND)}
-          onClick={() => setPage(PAGINATION.SECOND)}>
+          onClick={() => {
+            setPage(PAGINATION.SECOND);
+            dispatch(updateAudio({ ...getAudio, 1: false }));
+          }}>
           2
         </Pagination.Item>
         <Pagination.Item
           active={isPaginationActive(PAGINATION.THIRD)}
-          onClick={() => setPage(PAGINATION.THIRD)}>
+          onClick={() => {
+            setPage(PAGINATION.THIRD);
+            dispatch(
+              updateAudio({
+                ...getAudio,
+                1: false,
+                2: false
+              })
+            );
+          }}>
           3
         </Pagination.Item>
         <Pagination.Item
           active={isPaginationActive(PAGINATION.FOURTH)}
-          onClick={() => setPage(PAGINATION.FOURTH)}>
+          onClick={() => {
+            setPage(PAGINATION.FOURTH);
+
+            if (getAudio[5] === false) {
+              dispatch(
+                updateAudio({
+                  ...getAudio,
+                  4: false
+                })
+              );
+            } else {
+              dispatch(
+                updateAudio({
+                  ...getAudio,
+                  1: false,
+                  2: false,
+                  3: false,
+                  5: false
+                })
+              );
+            }
+          }}>
           4
         </Pagination.Item>
         <Pagination.Item onClick={() => handleNextPage()}>Next Section</Pagination.Item>

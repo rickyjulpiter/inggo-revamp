@@ -4,10 +4,10 @@ import { Col, Row, Table } from 'react-bootstrap';
 import AudioPlayer from 'react-h5-audio-player';
 
 import { No11, No12, No13, No1415 } from './index';
-import { updateAnswer } from '../../../../../Redux/handleAnswer';
+import { updateAnswer, updateAudio } from '../../../../../Redux/handleAnswer';
 import SectionTitle from '../../SectionTitle';
 
-const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
+const SecondPage = ({ dispatch, getAnswers, setPagination, track, getAudio }) => {
   return (
     <div>
       <SectionTitle title="Section 2" />
@@ -17,9 +17,10 @@ const SecondPage = ({ dispatch, getAnswers, setPagination, track }) => {
 
       <AudioPlayer
         src={track}
-        autoPlay={true}
+        autoPlay={getAudio[2]}
         onEnded={() => {
           setPagination(3);
+          dispatch(updateAudio({ ...getAudio, 2: false }));
         }}
         showDownloadProgress={false}
         showFilledProgress={false}

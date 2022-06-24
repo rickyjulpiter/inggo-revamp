@@ -100,6 +100,14 @@ export const handleAnswer = createSlice({
     writingAnswer: {
       1: '',
       2: ''
+    },
+    audio: {
+      1: true,
+      2: true,
+      3: true,
+      4: true,
+      // 5 only use as parameter for 4
+      5: true
     }
   },
   reducers: {
@@ -111,10 +119,14 @@ export const handleAnswer = createSlice({
     },
     updateWritingAnswer: (state, action) => {
       state.writingAnswer = action.payload;
+    },
+    updateAudio: (state, action) => {
+      state.audio = action.payload;
     }
   }
 });
 
-export const { updateAnswer, updateReadingAnswer, updateWritingAnswer } = handleAnswer.actions;
+export const { updateAnswer, updateReadingAnswer, updateWritingAnswer, updateAudio } =
+  handleAnswer.actions;
 
 export default handleAnswer.reducer;
