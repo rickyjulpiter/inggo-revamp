@@ -6,10 +6,10 @@ import { Col, Row } from 'react-bootstrap';
 
 import { ContainerTest } from './style';
 import CodeCheckComponent from './Components/CodeCheck.component';
-import ListeningContainer from './Components/Listening/Listening.container';
-import ReadingContainer from './Components/Reading/Reading.container';
-import WritingContainer from './Components/Writing/Writing.container';
-import { listeningAnswerKey, readingAnswerKey } from './AnswerKey';
+import ListeningContainer from './Components/PreTestComponents/Listening/Listening.container';
+import ReadingContainer from './Components/PreTestComponents/Reading/Reading.container';
+import WritingContainer from './Components/PreTestComponents/Writing/Writing.container';
+import { listeningAnswerKey, readingAnswerKey } from './Components/PreTestComponents/AnswerKey';
 import { convertListeningScore, convertReadingScore } from '../../Assets/utils';
 import { SecondaryColor, WhiteColor } from '../../Assets/colorPalette';
 
