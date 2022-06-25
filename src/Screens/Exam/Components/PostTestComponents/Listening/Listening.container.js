@@ -14,7 +14,7 @@ const ListeningContainer = ({ dispatch, handleNextPage }) => {
   return (
     <div>
       {page === PAGE.INSTRUCTIONS && (
-        <ListeningInstructionsComponent start={() => setPage(PAGE.INSTRUCTIONS)} />
+        <ListeningInstructionsComponent start={() => setPage(PAGE.TEST)} />
       )}
       {page === PAGE.TEST && (
         <ListeningTestComponent
