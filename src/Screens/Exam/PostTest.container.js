@@ -6,13 +6,14 @@ import { Col, Row } from 'react-bootstrap';
 
 import { ContainerTest } from './style';
 import CodeCheckComponent from './Components/CodeCheck.component';
+
+import ListeningContainer from './Components/PostTestComponents/Listening/Listening.container';
 import ReadingContainer from './Components/PreTestComponents/Reading/Reading.container';
-import WritingContainer from './Components/PreTestComponents/Writing/Writing.container';
+import WritingContainer from './Components/PostTestComponents/Writing/Writing.container';
+
 import { listeningAnswerKey, readingAnswerKey } from './Components/PreTestComponents/AnswerKey';
 import { convertListeningScore, convertReadingScore } from '../../Assets/utils';
 import { SecondaryColor, WhiteColor } from '../../Assets/colorPalette';
-import ListeningContainer
-  from './Components/PostTestComponents/Listening/Listening.container';
 
 const PAGE = {
   AUTH: 1,
@@ -24,9 +25,9 @@ const PAGE = {
 
 const PostTestContainer = () => {
   const [page, setPage] = useState(PAGE.AUTH);
-  const writingAnswer = useSelector((state) => state.answer.writingAnswer);
-  const readingAnswer = useSelector((state) => state.answer.readingAnswer);
   const listeningAnswer = useSelector((state) => state.answer.postTestListening);
+  const writingAnswer = useSelector((state) => state.answer.postTestWriting);
+  const readingAnswer = useSelector((state) => state.answer.readingAnswer);
 
   const [totalListeningAnswer, setTotalListeningAnswer] = useState(0);
   const [totalReadingAnswer, setTotalReadingAnswer] = useState(0);

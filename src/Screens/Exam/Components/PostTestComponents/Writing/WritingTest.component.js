@@ -25,7 +25,7 @@ const PAGINATION = {
 const WritingTestComponent = ({ date, dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGINATION.FIRST);
 
-  const getAnswers = useSelector((state) => state.answer.writingAnswer);
+  const getAnswers = useSelector((state) => state.answer.postTestWriting);
 
   const isPaginationActive = (value) => {
     return value === page;
