@@ -1,14 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.e76a5555.css",
-    "main.js": "/static/js/main.106a6e2e.js",
+    "main.js": "/static/js/main.99adbeff.js",
     "static/js/787.3375a3a5.chunk.js": "/static/js/787.3375a3a5.chunk.js",
     "static/media/track_3.mp3": "/static/media/track_3.4681aa535c2e461b672f.mp3",
     "static/media/track_1.mp3": "/static/media/track_1.ac1ea0438659f75f9813.mp3",
     "static/media/track_4.mp3": "/static/media/track_4.eb9933840ce7f620e840.mp3",
     "static/media/track_2.mp3": "/static/media/track_2.d747916c404d5c6bd079.mp3",
     "static/media/Nia.JPG": "/static/media/Nia.b09ffb58913c3eb064ca.JPG",
+    "static/media/post_test_track1.mp3": "/static/media/post_test_track1.fa39eb25fce94149e2ce.mp3",
+    "static/media/post_test_track4.mp3": "/static/media/post_test_track4.5bd8d54474de920c72da.mp3",
     "static/media/Putri.jpg": "/static/media/Putri.b69d7ce44757353698b6.jpg",
+    "static/media/post_test_track3.mp3": "/static/media/post_test_track3.84deaf0a0a514123f2ec.mp3",
+    "static/media/post_test_track2.mp3": "/static/media/post_test_track2.6435a6b0288ae9419ad9.mp3",
     "static/media/AnnisaSBakara.jpg": "/static/media/AnnisaSBakara.3254100c914353be928f.jpg",
     "static/media/Dessy.jpg": "/static/media/Dessy.46831283cb9873cb02fc.jpg",
     "static/media/Disa.jpg": "/static/media/Disa.8e0b8510a8ff1a69ccc5.jpg",
@@ -62,6 +66,7 @@
     "static/media/reynolds.png": "/static/media/reynolds.478752d2fdee40937c36.png",
     "static/media/INGGO_english_conversatin_lingkaran_biru.png": "/static/media/INGGO_english_conversatin_lingkaran_biru.837f79ee39948ca0e61c.png",
     "static/media/PutriAyudita.jpeg": "/static/media/PutriAyudita.2d40c5ce37b3a4c0b1bf.jpeg",
+    "static/media/imageListening.jpeg": "/static/media/imageListening.4f0b77f2e75bc9105f0b.jpeg",
     "static/media/Med.jpeg": "/static/media/Med.6f760efc8e4dec3ec9b9.jpeg",
     "static/media/FachriAkbar.jpeg": "/static/media/FachriAkbar.324bbb8ac3a20164446f.jpeg",
     "static/media/seed.jpeg": "/static/media/seed.e4f5714d32fbe5324abc.jpeg",
@@ -69,11 +74,11 @@
     "static/media/client-ecody.png": "/static/media/client-ecody.98b8139948b955f4dc5d.png",
     "index.html": "/index.html",
     "main.e76a5555.css.map": "/static/css/main.e76a5555.css.map",
-    "main.106a6e2e.js.map": "/static/js/main.106a6e2e.js.map",
+    "main.99adbeff.js.map": "/static/js/main.99adbeff.js.map",
     "787.3375a3a5.chunk.js.map": "/static/js/787.3375a3a5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e76a5555.css",
-    "static/js/main.106a6e2e.js"
+    "static/js/main.99adbeff.js"
   ]
 }

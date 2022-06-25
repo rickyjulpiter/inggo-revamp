@@ -43,17 +43,7 @@ export const handleAnswer = createSlice({
       37: '',
       38: '',
       39: '',
-      40: '',
-      41: '',
-      42: '',
-      43: '',
-      44: '',
-      45: '',
-      46: '',
-      47: '',
-      48: '',
-      49: '',
-      50: ''
+      40: ''
     },
     readingAnswer: {
       1: '',
@@ -149,17 +139,15 @@ export const handleAnswer = createSlice({
       37: '',
       38: '',
       39: '',
-      40: '',
-      41: '',
-      42: '',
-      43: '',
-      44: '',
-      45: '',
-      46: '',
-      47: '',
-      48: '',
-      49: '',
-      50: ''
+      40: ''
+    },
+    postTestAudio: {
+      1: true,
+      2: true,
+      3: true,
+      4: true,
+      // 5 only use as parameter for 4
+      5: true
     }
   },
   reducers: {
@@ -176,7 +164,10 @@ export const handleAnswer = createSlice({
       state.audio = action.payload;
     },
     updatePostTestListeningAnswer: (state, action) => {
-      state.readingAnswer = action.payload;
+      state.postTestListening = action.payload;
+    },
+    updatePostTestAudio: (state, action) => {
+      state.postTestAudio = action.payload;
     }
   }
 });
@@ -186,7 +177,8 @@ export const {
   updateReadingAnswer,
   updateWritingAnswer,
   updateAudio,
-  updatePostTestListeningAnswer
+  updatePostTestListeningAnswer,
+  updatePostTestAudio
 } = handleAnswer.actions;
 
 export default handleAnswer.reducer;

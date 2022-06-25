@@ -15,6 +15,7 @@ import {
   ROUTE_GENERATE_TEST_CODE,
   ROUTE_IELTS,
   ROUTE_OUR_TEAM,
+  ROUTE_POST_TEST,
   ROUTE_PRE_TEST,
   ROUTE_TESTIMONIALS,
   ROUTE_TOEFL,
@@ -38,6 +39,7 @@ import TeacherContainer from './Screens/Teacher/Teacher.container';
 import PreTestContainer from './Screens/Exam/PreTest.container';
 import GenerateTestCodeContainer from './Screens/Exam/GenerateTestCode.container';
 import store from './Redux/store';
+import PostTestContainer from './Screens/Exam/PostTest.container';
 
 const App = () => {
   const handleLanguage = async (lang) => {
@@ -67,6 +69,7 @@ const App = () => {
           <Route path={ROUTE_OUR_TEAM} element={<TeacherContainer />} />
 
           <Route path={ROUTE_PRE_TEST} element={<PreTestContainer />} />
+          <Route path={ROUTE_POST_TEST} element={<PostTestContainer />} />
           <Route path={ROUTE_GENERATE_TEST_CODE} element={<GenerateTestCodeContainer />} />
         </Routes>
       </BrowserRouter>
