@@ -24,7 +24,7 @@ const No2 = ({ dispatch, getAnswers }) => {
             defaultChecked={getAnswers[2] === 'a'}
           />
           <Form.Check
-            label="B. the Young set"
+            label="B. the Young Star"
             name="group1"
             type="radio"
             value="b"

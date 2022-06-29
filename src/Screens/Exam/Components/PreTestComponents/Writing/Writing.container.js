@@ -1,8 +1,9 @@
 /* eslint-disable */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import WritingInstructionsComponent from './WritingInstructionsComponent';
 import WritingTestComponent from './WritingTest.component';
+import axios from 'axios';
 
 const PAGE = {
   INSTRUCTIONS: 1,
@@ -11,6 +12,15 @@ const PAGE = {
 
 const WritingContainer = ({ dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGE.INSTRUCTIONS);
+
+  useEffect(() => {
+    hitServer();
+  }, []);
+
+  const hitServer = async () => {
+    await axios.get('  https://inggo-be.herokuapp.com/');
+  };
+
   return (
     <>
       {page === PAGE.INSTRUCTIONS && (

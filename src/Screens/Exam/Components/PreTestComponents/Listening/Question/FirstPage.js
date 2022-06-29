@@ -48,14 +48,14 @@ const FirstPage = ({ dispatch, getAnswers, setPagination, track, getAudio }) => 
             <Form.Check
               disabled
               checked
-              label="B. last Week"
+              label="B. last week"
               name="group1"
               type="radio"
               id={`inline-radio-2`}
             />
             <Form.Check
               disabled
-              label="C. two Weeks Ago"
+              label="C. two weeks ago"
               name="group1"
               type="radio"
               id={`inline-radio-3`}

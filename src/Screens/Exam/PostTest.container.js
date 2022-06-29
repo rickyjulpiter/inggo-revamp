@@ -8,7 +8,7 @@ import { ContainerTest } from './style';
 import CodeCheckComponent from './Components/CodeCheck.component';
 
 import ListeningContainer from './Components/PostTestComponents/Listening/Listening.container';
-import ReadingContainer from './Components/PreTestComponents/Reading/Reading.container';
+import ReadingContainer from './Components/PostTestComponents/Reading/Reading.container';
 import WritingContainer from './Components/PostTestComponents/Writing/Writing.container';
 
 import { listeningAnswerKey, readingAnswerKey } from './Components/PreTestComponents/AnswerKey';
@@ -24,10 +24,10 @@ const PAGE = {
 };
 
 const PostTestContainer = () => {
-  const [page, setPage] = useState(PAGE.AUTH);
+  const [page, setPage] = useState(PAGE.READING);
   const listeningAnswer = useSelector((state) => state.answer.postTestListening);
   const writingAnswer = useSelector((state) => state.answer.postTestWriting);
-  const readingAnswer = useSelector((state) => state.answer.readingAnswer);
+  const readingAnswer = useSelector((state) => state.answer.postTestReading);
 
   const [totalListeningAnswer, setTotalListeningAnswer] = useState(0);
   const [totalReadingAnswer, setTotalReadingAnswer] = useState(0);

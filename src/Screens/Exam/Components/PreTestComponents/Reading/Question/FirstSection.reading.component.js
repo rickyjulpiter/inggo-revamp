@@ -18,7 +18,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
       <Row>
         <Col>
           <h5 className="text-center mt-5">
-            <b>Spider silk cuts weight of bridges</b>
+            <b>Spider Silk Cuts Weight of Bridges</b>
           </h5>
 
           <h6 className="text-center">
@@ -36,8 +36,8 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
               Scientists have succeeded in copying the silk-producing genes of the Golden Orb-
               Weaver spider and are using them to create a synthetic material which they believe is
               the model for a new generation of advanced bio-materials. The new material, biosilk,
-              which has been spun for the first time by researchers at DuPont, has an enormous range
-              of potential uses in construction and manufacturing.
+              which was spun for the first time by researchers at DuPont, has an enormous range of
+              potential uses in construction and manufacturing.
             </Col>
           </Row>
           <Row className="mt-3">
@@ -62,9 +62,9 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
               For some time, biochemists have been trying to synthesise the drag-line silk of the
               Golden Orb-Weaver. The drag-line silk, which forms the radial arms of the web, is
               stronger than the other parts of the web and some biochemists believe a synthetic
-              version could prove to be as important a material as nylon, which has been around for
-              50 years, since the discoveries of Wallace Carothers and his team ushered in the age
-              of polymers.
+              version could prove to be as important as nylon, which has been around for 50 years,
+              since the discoveries of Wallace Carothers and his team ushered in the age of
+              polymers.
             </Col>
           </Row>
           <Row className="mt-3">
@@ -127,7 +127,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
             </Col>
             <Col className="text-justify">
               At DuPont’s laboratories, Dorsch is excited by the prospect of new super-strong
-              materials but he warns they are many years away. ‘We are at an early stage but
+              materials but he warns that they are many years away. ‘We are at an early stage but
               theoretical predictions are that we will wind up with a very strong, tough material,
               with an ability to absorb shock, which is stronger and tougher than the man-made
               materials that are conventionally available to us,’ he says.
@@ -139,7 +139,7 @@ const FirstSectionReadingComponent = ({ dispatch, getAnswers }) => {
             </Col>
             <Col className="text-justify">
               The spider is not the only creature that has aroused the interest of material
-              scientist. They have also become envious of the natural adhesive secreted by the see
+              scientists. They have also become envious of the natural adhesive secreted by the sea
               mussel. It produces a protein adhesive to attach itself to rocks. It is tedious and
               expensive to extract the protein from the mussel, so researchers have already produced
               a synthetic gene for use in surrogate bacteria.

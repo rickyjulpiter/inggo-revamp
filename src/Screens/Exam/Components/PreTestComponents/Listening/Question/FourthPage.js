@@ -197,7 +197,7 @@ const FourthPage = ({ dispatch, getAnswers, setPagination, track, getAudio }) =>
         <i>Complete the table below.</i>
       </h6>
       <h6>
-        Write <b>NO MORE THAN TWO WORDS AND OR A NUMBER</b> for each answer
+        Write <b>NO MORE THAN THREE WORDS</b> for each answer
       </h6>
       <Table borderless>
         <tbody>

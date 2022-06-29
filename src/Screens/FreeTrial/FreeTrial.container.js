@@ -154,7 +154,13 @@ const FreeTrialContainer = () => {
                 <Row className="mt-5">
                   <Col xl={12} md={12} sm={12} className="mx-auto text-center">
                     <Title className="mb-4">{t('chooseSchedule')}</Title>
-                    <InlineWidget url="https://calendly.com/inggo_co/trial" />
+                    <InlineWidget
+                      url="https://calendly.com/inggo_co/trial"
+                      prefill={{
+                        class: 'English',
+                        email: 'test@test.com',
+                      }}
+                    />
                   </Col>
                 </Row>
               </CardStyled>

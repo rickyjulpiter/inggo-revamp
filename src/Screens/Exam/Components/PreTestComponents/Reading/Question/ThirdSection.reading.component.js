@@ -17,7 +17,7 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
       <Row>
         <Col>
           <h5 className="text-center mt-5">
-            <b> Hypnotism - is it real or just a circus trick?</b>
+            <b> Hypnotism: Is It Real or Just a Circus Trick?</b>
           </h5>
           <Row className="mb-4">
             <Col md={1}>
@@ -80,9 +80,9 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
               the circuit lit up only in the right hemisphere. Under hypnosis, however, both sides
               of the brain became active, just as in the regular sight; imagination seemed to take
               on the quality of a hallucination. <br />
-              After the experiment, Kosslyn was forced to admit, I'm absolutely convinced now that
-              hypnosis can boost what mental imagery does. But Kirsch remain sceptical, saying, the
-              experiment has demonstrated that people are experiencing the effects of hypnotic
+              After the experiment, Kosslyn was forced to admit, ‘I'm absolutely convinced now that
+              hypnosis can boost what mental imagery does.’ But Kirsch remained sceptical, saying,
+              ‘The experiment has demonstrated that people are experiencing the effects of hypnotic
               suggestion but don't prove that they are entering a trance.’ He also argued that
               subjects were told to see the cart in colour when they were hypnotised but only to
               imagine it in colour when they weren't. Being told to pretend you are having an
@@ -147,7 +147,7 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
                   </tr>
                   <tr>
                     <td>I.</td>
-                    <td>An experiment using people who are receiving medical treatment</td>
+                    <td>An experiment using people who were receiving medical treatment</td>
                   </tr>
                   <tr>
                     <td>II.</td>
@@ -495,7 +495,7 @@ const ThirdSectionReadingComponent = ({ getAnswers, dispatch }) => {
                       defaultChecked={getAnswers[35] === 'a'}
                     />
                     <Form.Check
-                      label="B. put make colour appear as black and white."
+                      label="B. makes colour appear as black and white."
                       name="group1"
                       type="radio"
                       value="b"

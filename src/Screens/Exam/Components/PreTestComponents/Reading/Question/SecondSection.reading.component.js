@@ -503,7 +503,7 @@ const SecondSectionReadingComponent = ({ getAnswers, dispatch }) => {
             Write your answers in boxes 22-26 on your answer sheet.
           </p>
           <p className="text-justify">
-            Ancient maps allow us to see how we have come to make sense of the world see. They also
+            Ancient maps allow us to see how we have come to make sense of the world. They also
             reflect the attitudes and knowledge of the day. The first great step in mapmaking took
             place in <b> 22</b>{' '}
             <input
