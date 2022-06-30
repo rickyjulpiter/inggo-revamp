@@ -19,7 +19,8 @@ import {
   ROUTE_PRE_TEST,
   ROUTE_TESTIMONIALS,
   ROUTE_TOEFL,
-  ROUTE_TRANSLATION_SERVICE
+  ROUTE_TRANSLATION_SERVICE,
+  SCORE_VIEW
 } from './Assets/utils';
 import AboutUsContainer from './Screens/AboutUs/AboutUs.container';
 import i18n from './Assets/Translations/i18n';
@@ -40,6 +41,7 @@ import PreTestContainer from './Screens/Exam/PreTest.container';
 import GenerateTestCodeContainer from './Screens/Exam/GenerateTestCode.container';
 import store from './Redux/store';
 import PostTestContainer from './Screens/Exam/PostTest.container';
+import ScoreView from './Screens/Exam/ScoreView';
 
 const App = () => {
   const handleLanguage = async (lang) => {
@@ -71,6 +73,7 @@ const App = () => {
           <Route path={ROUTE_PRE_TEST} element={<PreTestContainer />} />
           <Route path={ROUTE_POST_TEST} element={<PostTestContainer />} />
           <Route path={ROUTE_GENERATE_TEST_CODE} element={<GenerateTestCodeContainer />} />
+          <Route path={SCORE_VIEW} element={<ScoreView />} />
         </Routes>
       </BrowserRouter>
       <NavbottomComponent />

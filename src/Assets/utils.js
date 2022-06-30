@@ -19,6 +19,7 @@ export const ROUTE_FREE_TRIAL = 'free-trial';
 export const ROUTE_PRE_TEST = 'pre-test';
 export const ROUTE_POST_TEST = 'post-test';
 export const ROUTE_GENERATE_TEST_CODE = 'generate-test-code';
+export const SCORE_VIEW = 'score-view';
 
 export const DESKTOP_SIZE = '1440px';
 export const LAPTOP_SIZE = '1024px';
