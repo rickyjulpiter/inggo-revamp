@@ -55,7 +55,11 @@ const ScoreView = () => {
                   <i
                     className="bi bi-trash"
                     onClick={() => {
-                      deleteData(item?.id);
+                      window.confirm('Are you sure you wish to delete this item?')
+                        ? deleteData(item?.id)
+                        : () => {
+                            console.log('');
+                          };
                     }}
                     style={{
                       color: WhiteColor,
