@@ -201,11 +201,11 @@ const PreTestContainer = () => {
           <Col>
             <Row>
               <Col md={12} sm={12}>
-                <b>Part 1</b> <br />
+                <b>Task 1</b> <br />
                 {writingAnswer[1]}
               </Col>
               <Col className="mt-5" md={12} sm={12}>
-                <b>Part 2</b> <br />
+                <b>Task 2</b> <br />
                 {writingAnswer[2]}
               </Col>
             </Row>
@@ -219,7 +219,7 @@ const PreTestContainer = () => {
           <Col md={1} sm={1}>
             :
           </Col>
-          <Col md={12} sm={12} className="mt-4">
+          <Col md={12} sm={12} className="mt-5">
             <b>Example Part 1</b> <br />
             The diagram illustrates how seawater is used to generate electricity. Overall, there are
             several steps involved in the process, beginning with natural phenomena, including the
@@ -371,8 +371,9 @@ const PreTestContainer = () => {
       )}
       {page === PAGE.COUNTING_ANSWER && (
         <>
-          <div style={{ display: 'none' }}>
-            <ComponentToPrint ref={componentRef} />
+          {/*<div style={{ display: 'none' }}>*/}
+          <div>
+          <ComponentToPrint ref={componentRef} />
           </div>
 
           {fillFormPage && (
