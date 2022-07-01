@@ -95,8 +95,7 @@ const PreTestContainer = () => {
       reading: totalReadingAnswer
     };
 
-    const response = await axios.post('https://inggo-be.herokuapp.com/pre-test', payload);
-    console.log(response);
+    await axios.post('https://inggo-be.herokuapp.com/pre-test', payload);
     setFillFormPage(false);
   };
 
@@ -210,6 +209,63 @@ const PreTestContainer = () => {
                 {writingAnswer[2]}
               </Col>
             </Row>
+          </Col>
+        </Row>
+        <hr />
+        <Row className="mt-5">
+          <Col md={4} sm={4}>
+            <b>Writing Example Answers</b>
+          </Col>
+          <Col md={1} sm={1}>
+            :
+          </Col>
+          <Col md={12} sm={12} className="mt-4">
+            <b>Example Part 1</b> <br />
+            The diagram illustrates how seawater is used to generate electricity. Overall, there are
+            several steps involved in the process, beginning with natural phenomena, including the
+            evaporation process and rain, and culminating in the generation of electricity as the
+            final product. <br />
+            <br />
+            The process starts when seawater evaporates, forming clouds that produce rain. The
+            rainwater is then collected in a reservoir backed up by a dam, which has an opening with
+            a retractable valve at its base. Once the valve is opened, the water circulates through
+            a turbine and a pump and flows back to the reservoir to repeat the process. <br />
+            <br />
+            The movement of water through the turbine generates electricity, which is then fed
+            through high voltage cables to a transformer station where the voltage is adjusted. Once
+            adjusted, the electricity is ready to be sent to households, factories, and public
+            facilities, including hospitals and schools, through underground cables.
+          </Col>
+          <Col className="mt-5" md={12} sm={12}>
+            <b>Example Part 2</b> <br />
+            An increasing number of people meet and talk to their friends online instead of in
+            person. Such a phenomenon has become increasingly popular, especially among young
+            people. Although socializing online might bring some benefits, I believe the
+            disadvantages outweigh its advantages. <br />
+            <br />
+            On the one hand, several problems can arise from people socializing online. Firstly,
+            people can become addicted to this way of communication. This means that some people
+            might spend a long time online chatting with their friends or strangers on the Internet
+            instead of leaving their house to meet their friends face-to-face. If this situation
+            continues, they can become isolated and develop anti-social behavior, which will lead to
+            the inability to communicate effectively. A further problem is that socializing online
+            can be highly dangerous. In other words, it is almost impossible for people to know whom
+            they interact with because they cannot see others’ faces. This increases the chance of
+            fraud and even serious crimes such as kidnapping. <br />
+            <br />
+            On the other hand, socializing online also brings several positive effects. One is that
+            online interaction helps people connect regardless of time and distance. For example,
+            people who live in one country do not have to travel to other countries to meet their
+            friends. Another benefit is that socializing online is much more convenient than meeting
+            face-to-face. This means people will no longer feel the hassle of commuting to other
+            places to have meetings or being stuck in traffic for hours. It is much easier to just
+            communicate directly with other people using online messengers, such as Whatsapp or
+            Line. <br />
+            <br />
+            In conclusion, despite some benefits of socializing online such as being connected and
+            communicating more efficiently, I believe that the drawbacks of socializing online are
+            more significant than the benefits. Those drawbacks include addiction which might lead
+            to mental health problems and potentially dangerous situations.
           </Col>
         </Row>
       </div>
@@ -374,14 +430,15 @@ const PreTestContainer = () => {
                         borderRadius: '100px',
                         padding: '11px 42px'
                       }}
-                      type="submit"
                       disabled={
                         profile.name === '' ||
                         profile.phone === '' ||
                         profile.email === '' ||
                         !validateEmail(profile.email)
                       }
-                      onClick={() => sendResults()}>
+                      onClick={() => {
+                        sendResults();
+                      }}>
                       See my results
                     </Button>
                   </CenterDiv>
