@@ -43,8 +43,6 @@ const PreTestContainer = () => {
     phone: ''
   });
 
-  console.log(profile);
-
   const dispatch = useDispatch();
 
   const renderAnswerToArray = () => {
@@ -269,6 +267,7 @@ const PreTestContainer = () => {
   const componentRef = useRef();
 
   const checkingAnswer = () => {
+    console.log('checkingAnswer')
     let listeningAnswerTemp = 0;
     let readingAnswerTemp = 0;
 
@@ -345,6 +344,10 @@ const PreTestContainer = () => {
         }
       }
     }
+
+    console.log('readingAnswerTemp', readingAnswerTemp);
+    console.log('listeningAnswerTemp', listeningAnswerTemp);
+
     setTotalReadingAnswer(readingAnswerTemp);
     setTotalListeningAnswer(listeningAnswerTemp);
   };
@@ -432,6 +435,7 @@ const PreTestContainer = () => {
                       }
                       onClick={() => {
                         sendResults();
+                        checkingAnswer();
                       }}>
                       See my results
                     </Button>
