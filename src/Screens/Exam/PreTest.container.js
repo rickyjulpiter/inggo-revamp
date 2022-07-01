@@ -266,8 +266,7 @@ const PreTestContainer = () => {
 
   const componentRef = useRef();
 
-  const checkingAnswer = () => {
-    console.log('checkingAnswer')
+  const checkingAnswer = async () => {
     let listeningAnswerTemp = 0;
     let readingAnswerTemp = 0;
 
@@ -345,11 +344,10 @@ const PreTestContainer = () => {
       }
     }
 
-    console.log('readingAnswerTemp', readingAnswerTemp);
-    console.log('listeningAnswerTemp', listeningAnswerTemp);
-
     setTotalReadingAnswer(readingAnswerTemp);
     setTotalListeningAnswer(listeningAnswerTemp);
+
+    await sendResults();
   };
 
   return (
@@ -434,7 +432,6 @@ const PreTestContainer = () => {
                         !validateEmail(profile.email)
                       }
                       onClick={() => {
-                        sendResults();
                         checkingAnswer();
                       }}>
                       See my results

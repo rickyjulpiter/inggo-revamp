@@ -7,7 +7,7 @@ import { CardTest, ContainerTest, Input } from './style';
 const GenerateTestCodeContainer = () => {
   return (
     <ContainerTest>
-      <Row>
+      <Row className="mt-4">
         <Col xs="6" md="4" sm="4" className="mx-auto">
           <CardTest>
             <Input type="text" value={testCode} />
