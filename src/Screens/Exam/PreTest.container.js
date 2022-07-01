@@ -213,14 +213,8 @@ const PreTestContainer = () => {
         </Row>
         <hr />
         <Row className="mt-5">
-          <Col md={4} sm={4}>
-            <b>Writing Example Answers</b>
-          </Col>
-          <Col md={1} sm={1}>
-            :
-          </Col>
           <Col md={12} sm={12} className="mt-5">
-            <b>Example Part 1</b> <br />
+            <b>Writing Task 1 - sample answer</b> <br />
             The diagram illustrates how seawater is used to generate electricity. Overall, there are
             several steps involved in the process, beginning with natural phenomena, including the
             evaporation process and rain, and culminating in the generation of electricity as the
@@ -237,7 +231,7 @@ const PreTestContainer = () => {
             facilities, including hospitals and schools, through underground cables.
           </Col>
           <Col className="mt-5" md={12} sm={12}>
-            <b>Example Part 2</b> <br />
+            <b>Writing Task 2 - sample answer</b> <br />
             An increasing number of people meet and talk to their friends online instead of in
             person. Such a phenomenon has become increasingly popular, especially among young
             people. Although socializing online might bring some benefits, I believe the
@@ -371,9 +365,8 @@ const PreTestContainer = () => {
       )}
       {page === PAGE.COUNTING_ANSWER && (
         <>
-          {/*<div style={{ display: 'none' }}>*/}
-          <div>
-          <ComponentToPrint ref={componentRef} />
+          <div style={{ display: 'none' }}>
+            <ComponentToPrint ref={componentRef} />
           </div>
 
           {fillFormPage && (
