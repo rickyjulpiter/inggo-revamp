@@ -84,13 +84,13 @@ const PreTestContainer = () => {
     );
   };
 
-  const sendResults = async () => {
+  const sendResults = async (listening, reading) => {
     const payload = {
       name: profile.name,
       email: profile.email,
       notelp: profile.phone,
-      listening: totalListeningAnswer,
-      reading: totalReadingAnswer
+      listening,
+      reading
     };
 
     await axios.post('https://inggo-be.herokuapp.com/pre-test', payload);
@@ -347,7 +347,10 @@ const PreTestContainer = () => {
     setTotalReadingAnswer(readingAnswerTemp);
     setTotalListeningAnswer(listeningAnswerTemp);
 
-    await sendResults();
+    await sendResults(
+      convertListeningScore(listeningAnswerTemp),
+      convertReadingScore(readingAnswerTemp)
+    );
   };
 
   return (

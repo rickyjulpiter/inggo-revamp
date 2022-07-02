@@ -23,6 +23,10 @@ const ScoreView = () => {
     }
   };
 
+  const convertTimeStamp = (time) => {
+    return new Date(time).toLocaleString('id-ID');
+  };
+
   useEffect(() => {
     fetch();
   }, []);
@@ -38,6 +42,7 @@ const ScoreView = () => {
             <td>Phone Number</td>
             <td className="text-center">Listening Score</td>
             <td className="text-center">Reading Score</td>
+            <td className="text-center">Timestamp</td>
             <td className="text-center">#</td>
           </tr>
         </thead>
@@ -51,6 +56,7 @@ const ScoreView = () => {
                 <td>{item?.notelp}</td>
                 <td className="text-center">{item?.listening}</td>
                 <td className="text-center">{item?.reading}</td>
+                <td className="text-center">{convertTimeStamp(item?.createdAt)}</td>
                 <td className="text-center">
                   <i
                     className="bi bi-trash"
