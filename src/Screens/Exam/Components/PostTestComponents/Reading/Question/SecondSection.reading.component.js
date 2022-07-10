@@ -4,6 +4,11 @@ import React from 'react';
 import SectionTitle from '../../../SectionTitle';
 import { Col, Row } from 'react-bootstrap';
 
+import FirstImage from '../../../../../../Assets/post-test-reading/postTest14.jpeg';
+import SecondImage from '../../../../../../Assets/post-test-reading/postTest1516.png';
+import ThirdImage from '../../../../../../Assets/post-test-reading/postTest17.png';
+import { updatePostTestReadingAnswer } from '../../../../../../Redux/handleAnswer';
+
 const SecondSectionReadingComponent = ({ dispatch, getAnswers }) => {
   return (
     <div>
@@ -120,6 +125,81 @@ const SecondSectionReadingComponent = ({ dispatch, getAnswers }) => {
           <p>
             <i>Write your answers in boxes 14 - 17 on your answer sheet </i>
           </p>
+          <p className="text-center">
+            <b>THREE TOOLS MADE BY CROWS</b>
+          </p>
+
+          <p>
+            <b> a) 14</b>{' '}
+            <input
+              style={{ border: 'none', width: '20%' }}
+              value={getAnswers[14]}
+              onChange={(event) => {
+                dispatch(
+                  updatePostTestReadingAnswer({
+                    ...getAnswers,
+                    14: event.target.value
+                  })
+                );
+              }}
+            />
+          </p>
+          <img src={FirstImage} alt="image" className="img-fluid" />
+
+          <p className="mt-3">
+            <b>b) Barbed vine-leaf stick</b>
+          </p>
+          <p className="mt-3">
+            <b> 15</b>{' '}
+            <input
+              style={{ border: 'none', width: '20%' }}
+              value={getAnswers[15]}
+              onChange={(event) => {
+                dispatch(
+                  updatePostTestReadingAnswer({
+                    ...getAnswers,
+                    15: event.target.value
+                  })
+                );
+              }}
+            />
+          </p>
+          <p className="mt-1">
+            <b> 16. a</b>{' '}
+            <input
+              style={{ border: 'none', width: '20%' }}
+              value={getAnswers[16]}
+              onChange={(event) => {
+                dispatch(
+                  updatePostTestReadingAnswer({
+                    ...getAnswers,
+                    16: event.target.value
+                  })
+                );
+              }}
+            />
+          </p>
+          <img src={SecondImage} alt="image" className="img-fluid" />
+          <p className="mt-3">
+            <b>c) Padanus Brobe</b>
+          </p>
+          <p className="mt-1">
+            series of <b> 17</b>{' '}
+            <input
+              style={{ border: 'none', width: '20%' }}
+              value={getAnswers[17]}
+              onChange={(event) => {
+                dispatch(
+                  updatePostTestReadingAnswer({
+                    ...getAnswers,
+                    17: event.target.value
+                  })
+                );
+              }}
+            />{' '}
+            created by nipping and tearing
+          </p>
+          <img src={ThirdImage} alt="image" className="img-fluid" style={{ width: '50%' }} />
         </Col>
       </Row>
     </div>

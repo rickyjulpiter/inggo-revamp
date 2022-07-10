@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Table } from 'react-bootstrap';
 import axios from 'axios';
+
 import { SecondaryColor, WhiteColor } from '../../Assets/colorPalette';
 
 const ScoreView = () => {
@@ -24,7 +25,7 @@ const ScoreView = () => {
   };
 
   const convertTimeStamp = (time) => {
-    return new Date(time).toLocaleString('id-ID');
+    return new Date(time).toISOString().slice(0, 19).replace('T', ' ');
   };
 
   useEffect(() => {

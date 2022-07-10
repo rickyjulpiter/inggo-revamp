@@ -127,7 +127,7 @@ const ReadingTestComponent = ({ date, dispatch, handleNextPage }) => {
           onClick={() => setPage(PAGINATION.THIRD)}>
           3
         </Pagination.Item>
-        <Pagination.Item onClick={() => handleNextPage()}>Next Section</Pagination.Item>
+        <Pagination.Item onClick={() => handleNextPage()}>CONTINUE TO WRITING SECTION</Pagination.Item>
       </Pagination>
     </div>
   );

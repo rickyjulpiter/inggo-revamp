@@ -38,7 +38,7 @@ const SecondSectionWritingComponent = ({ dispatch, getAnswers }) => {
                 );
               }}>
               <Form.Group className="mb-3" controlId="form.ControlTextarea1">
-                <Form.Control as="textarea" rows={19} />
+                <Form.Control as="textarea" rows={19} value={getAnswers[2]} />
               </Form.Group>
             </Form>
             <small>{getAnswers[2].length} words</small>
