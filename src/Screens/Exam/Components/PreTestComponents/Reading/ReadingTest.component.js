@@ -29,7 +29,6 @@ const ReadingTestComponent = ({ date, dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGINATION.FIRST);
 
   const getAnswers = useSelector((state) => state.answer.readingAnswer);
-  console.log(getAnswers);
 
   const isPaginationActive = (value) => {
     return value === page;

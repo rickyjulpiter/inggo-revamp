@@ -7,9 +7,9 @@ import styled from 'styled-components';
 
 import { SecondaryColor } from '../../../../../Assets/colorPalette';
 import {
-  FirstSectionReadingComponent, SecondSectionReadingComponent
-  // SecondSectionReadingComponent,
-  // ThirdSectionReadingComponent
+  FirstSectionReadingComponent,
+  SecondSectionReadingComponent,
+  ThirdSectionReadingComponent
 } from './Question';
 
 const PAGINATION = {
@@ -99,15 +99,15 @@ const ReadingTestComponent = ({ date, dispatch, handleNextPage }) => {
           />
         )}
 
-        {/*{page === PAGINATION.THIRD && (*/}
-        {/*  <ThirdSectionReadingComponent*/}
-        {/*    dispatch={dispatch}*/}
-        {/*    getAnswers={getAnswers}*/}
-        {/*    setPagination={(nextPage) => {*/}
-        {/*      changePage(nextPage);*/}
-        {/*    }}*/}
-        {/*  />*/}
-        {/*)}*/}
+        {page === PAGINATION.THIRD && (
+          <ThirdSectionReadingComponent
+            dispatch={dispatch}
+            getAnswers={getAnswers}
+            setPagination={(nextPage) => {
+              changePage(nextPage);
+            }}
+          />
+        )}
       </div>
 
       <hr />
@@ -127,7 +127,9 @@ const ReadingTestComponent = ({ date, dispatch, handleNextPage }) => {
           onClick={() => setPage(PAGINATION.THIRD)}>
           3
         </Pagination.Item>
-        <Pagination.Item onClick={() => handleNextPage()}>Next Section</Pagination.Item>
+        <Pagination.Item onClick={() => handleNextPage()}>
+          CONTINUE TO WRITING SECTION
+        </Pagination.Item>
       </Pagination>
     </div>
   );

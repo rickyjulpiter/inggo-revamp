@@ -24,7 +24,7 @@ const PAGE = {
 };
 
 const PostTestContainer = () => {
-  const [page, setPage] = useState(PAGE.READING);
+  const [page, setPage] = useState(PAGE.AUTH);
   const listeningAnswer = useSelector((state) => state.answer.postTestListening);
   const writingAnswer = useSelector((state) => state.answer.postTestWriting);
   const readingAnswer = useSelector((state) => state.answer.postTestReading);

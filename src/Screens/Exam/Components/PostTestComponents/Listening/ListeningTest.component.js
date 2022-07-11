@@ -183,7 +183,7 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
           }}>
           4
         </Pagination.Item>
-        <Pagination.Item onClick={() => handleNextPage()}>Next Section</Pagination.Item>
+        <Pagination.Item onClick={() => handleNextPage()}>CONTINUE TO READING SECTION</Pagination.Item>
       </Pagination>
     </div>
   );

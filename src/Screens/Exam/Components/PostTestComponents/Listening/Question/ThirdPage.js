@@ -10,7 +10,7 @@ import {
 } from '../../../../../../Redux/handleAnswer';
 
 const ThirdPage = ({ dispatch, getAnswers, setPagination, track, getAudio }) => {
-  const [answer, setAnswer] = useState([]);
+  const [answer, setAnswer] = useState(getAnswers[21]);
 
   const checkIfExists = (value) => {
     return answer?.includes(value);

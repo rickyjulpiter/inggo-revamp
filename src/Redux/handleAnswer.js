@@ -188,12 +188,12 @@ export const handleAnswer = createSlice({
       2: ''
     },
     postTestAudio: {
-      1: false,
-      2: false,
-      3: false,
-      4: false,
+      1: true,
+      2: true,
+      3: true,
+      4: true,
       // 5 only use as parameter for 4
-      5: false
+      5: true
     }
   },
   reducers: {
