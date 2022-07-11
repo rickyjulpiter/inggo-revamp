@@ -27,9 +27,9 @@ const PreTestContainer = () => {
   const [page, setPage] = useState(PAGE.AUTH);
   const [fillFormPage, setFillFormPage] = useState(true);
 
-  const writingAnswer = useSelector((state) => state.answer.writingAnswer);
-  const readingAnswer = useSelector((state) => state.answer.readingAnswer);
   const listeningAnswer = useSelector((state) => state.answer.value);
+  const readingAnswer = useSelector((state) => state.answer.readingAnswer);
+  const writingAnswer = useSelector((state) => state.answer.writingAnswer);
 
   const [totalListeningAnswer, setTotalListeningAnswer] = useState(0);
   const [totalReadingAnswer, setTotalReadingAnswer] = useState(0);
@@ -84,13 +84,14 @@ const PreTestContainer = () => {
     );
   };
 
-  const sendResults = async (listening, reading) => {
+  const sendResults = async (listening, reading, answer) => {
     const payload = {
       name: profile.name,
       email: profile.email,
       notelp: profile.phone,
       listening,
-      reading
+      reading,
+      answer: JSON.stringify(answer)
     };
 
     await axios.post('https://inggo-be.herokuapp.com/pre-test', payload);
@@ -349,7 +350,12 @@ const PreTestContainer = () => {
 
     await sendResults(
       convertListeningScore(listeningAnswerTemp),
-      convertReadingScore(readingAnswerTemp)
+      convertReadingScore(readingAnswerTemp),
+      {
+        listeningAnswer,
+        readingAnswer,
+        writingAnswer
+      }
     );
   };
 
