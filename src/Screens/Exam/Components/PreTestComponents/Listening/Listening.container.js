@@ -9,6 +9,8 @@ const PAGE = {
   TEST: 2
 };
 
+const TimeTest = Date.now() + 1800000;
+
 const ListeningContainer = ({ dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGE.INSTRUCTIONS);
   return (
@@ -20,7 +22,7 @@ const ListeningContainer = ({ dispatch, handleNextPage }) => {
         <ListeningTestComponent
           dispatch={dispatch}
           handleNextPage={handleNextPage}
-          date={Date.now() + 1800000}
+          date={TimeTest}
         />
       )}
     </div>

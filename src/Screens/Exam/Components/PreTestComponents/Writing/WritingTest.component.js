@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import Countdown from 'react-countdown';
 import styled from 'styled-components';
@@ -8,6 +8,7 @@ import { Pagination } from 'react-bootstrap';
 import { SecondaryColor } from '../../../../../Assets/colorPalette';
 import FirstSectionWritingComponent from './Question/FirstSection.writing.component';
 import SecondSectionWritingComponent from './Question/SecondSection.writing.component';
+import { renderer, TimeOneHour } from '../../../../../Assets/utils';
 
 const ContainerCountDown = styled.div`
   background-color: #cfd3e1;
@@ -22,8 +23,9 @@ const PAGINATION = {
   THIRD: 3
 };
 
-const WritingTestComponent = ({ date, dispatch, handleNextPage }) => {
+const WritingTestComponent = ({ dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGINATION.FIRST);
+  const [time, setTime] = useState(TimeOneHour);
 
   const getAnswers = useSelector((state) => state.answer.writingAnswer);
 
@@ -35,38 +37,15 @@ const WritingTestComponent = ({ date, dispatch, handleNextPage }) => {
     setPage(value);
   };
 
-  const renderer = ({ hours, minutes, seconds, completed }) => {
-    const formatSeconds = seconds === 0 ? '00' : seconds;
-    if (completed) {
-      return <span>Time's up</span>;
-    }
-    if (minutes === 10 || minutes === 5) {
-      return (
-        <>
-          <span style={{ color: SecondaryColor, fontWeight: 700, fontSize: 30 }}>
-            {minutes}:{formatSeconds}
-          </span>{' '}
-          left
-        </>
-      );
-    } else {
-      return (
-        <>
-          <span>
-            {hours > 0 ? `${hours}:` : ''}
-            {minutes}:{formatSeconds}
-          </span>{' '}
-          left
-        </>
-      );
-    }
-  };
+  useEffect(() => {
+    setTime(Date.now() + 3600000);
+  }, []);
 
   return (
     <div>
       <ContainerCountDown>
         <Countdown
-          date={date}
+          date={time}
           daysInHours
           renderer={renderer}
           onComplete={() => {
@@ -96,19 +75,28 @@ const WritingTestComponent = ({ date, dispatch, handleNextPage }) => {
         )}
       </div>
       <hr />
-      <Pagination>
-        <Pagination.Item
-          active={isPaginationActive(PAGINATION.FIRST)}
-          onClick={() => setPage(PAGINATION.FIRST)}>
-          1
-        </Pagination.Item>
-        <Pagination.Item
-          active={isPaginationActive(PAGINATION.SECOND)}
-          onClick={() => setPage(PAGINATION.SECOND)}>
-          2
-        </Pagination.Item>
-        <Pagination.Item onClick={() => handleNextPage()}>Finish</Pagination.Item>
-      </Pagination>
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          paddingRight: '10px'
+        }}>
+        <Pagination>
+          <Pagination.Item
+            active={isPaginationActive(PAGINATION.FIRST)}
+            onClick={() => setPage(PAGINATION.FIRST)}>
+            1
+          </Pagination.Item>
+          <Pagination.Item
+            active={isPaginationActive(PAGINATION.SECOND)}
+            onClick={() => setPage(PAGINATION.SECOND)}>
+            2
+          </Pagination.Item>
+        </Pagination>
+        <Pagination>
+          <Pagination.Item onClick={() => handleNextPage()}>Finish</Pagination.Item>
+        </Pagination>
+      </div>
     </div>
   );
 };

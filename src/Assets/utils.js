@@ -1,4 +1,6 @@
 import md5 from 'md5';
+import { SecondaryColor } from './colorPalette';
+import React from 'react';
 
 export const ROUTE_BUSINESS_ENGLISH = 'business-english';
 export const ROUTE_TOEFL = 'toefl';
@@ -161,5 +163,38 @@ export const convertReadingScore = (score) => {
 
   if (score >= 0) {
     return 0;
+  }
+};
+
+export const TimeOneHour = Date.now() + 3600000;
+
+export const TimeHalfHour = Date.now() + 1800000;
+
+export const renderer = ({ hours, minutes, seconds, completed }) => {
+  let formatMinutes = minutes <= 10 ? `0${minutes}` : minutes;
+  let formatSeconds = seconds <= 10 ? `0${seconds}` : seconds;
+
+  if (completed) {
+    return <span>Times up</span>;
+  }
+  if (minutes === 10 || minutes === 5) {
+    return (
+      <>
+        <span style={{ color: SecondaryColor, fontWeight: 700, fontSize: 30 }}>
+          {formatMinutes}:{formatSeconds}
+        </span>{' '}
+        left
+      </>
+    );
+  } else {
+    return (
+      <>
+        <span>
+          {hours > 0 ? `${hours}:` : ''}
+          {formatMinutes}:{formatSeconds}
+        </span>{' '}
+        left
+      </>
+    );
   }
 };

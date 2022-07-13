@@ -1,5 +1,5 @@
 /* eslint-disable */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Pagination } from 'react-bootstrap';
 import styled from 'styled-components';
@@ -14,6 +14,7 @@ import Track2 from '../../../../../Assets/pre-test-listening/track_2.mp3';
 import Track3 from '../../../../../Assets/pre-test-listening/track_3.mp3';
 import Track4 from '../../../../../Assets/pre-test-listening/track_4.mp3';
 import { updateAudio } from '../../../../../Redux/handleAnswer';
+import { renderer, TimeHalfHour } from '../../../../../Assets/utils';
 
 const PAGINATION = {
   FIRST: 1,
@@ -31,6 +32,12 @@ const ContainerCountDown = styled.div`
 
 const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
   const [page, setPage] = useState(PAGINATION.FIRST);
+  const [time, setTime] = useState(TimeHalfHour);
+
+  useEffect(() => {
+    setTime(Date.now() + 3600000);
+  }, []);
+
   const getAnswers = useSelector((state) => state.answer.value);
   const getAudio = useSelector((state) => state.answer.audio);
 
@@ -42,37 +49,11 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
     setPage(value);
   };
 
-  const renderer = ({ minutes, seconds, completed }) => {
-    const formatSeconds = seconds === 0 ? '00' : seconds;
-    if (completed) {
-      return <span>Time's up</span>;
-    }
-    if (minutes === 10) {
-      return (
-        <>
-          <span style={{ color: SecondaryColor, fontWeight: 700, fontSize: 30 }}>
-            {minutes}:{formatSeconds}
-          </span>{' '}
-          left
-        </>
-      );
-    } else {
-      return (
-        <>
-          <span>
-            {minutes}:{formatSeconds}
-          </span>{' '}
-          left
-        </>
-      );
-    }
-  };
-
   return (
     <div>
       <ContainerCountDown>
         <Countdown
-          date={date}
+          date={time}
           daysInHours
           renderer={renderer}
           onComplete={() => {
@@ -128,65 +109,76 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
       </div>
 
       <hr />
-      <Pagination>
-        <Pagination.Item
-          active={isPaginationActive(PAGINATION.FIRST)}
-          onClick={() => {
-            setPage(PAGINATION.FIRST);
-            // dispatch(updateAudio({ ...getAudio, 1: false }));
-          }}>
-          1
-        </Pagination.Item>
-        <Pagination.Item
-          active={isPaginationActive(PAGINATION.SECOND)}
-          onClick={() => {
-            setPage(PAGINATION.SECOND);
-            dispatch(updateAudio({ ...getAudio, 1: false }));
-          }}>
-          2
-        </Pagination.Item>
-        <Pagination.Item
-          active={isPaginationActive(PAGINATION.THIRD)}
-          onClick={() => {
-            setPage(PAGINATION.THIRD);
-            dispatch(
-              updateAudio({
-                ...getAudio,
-                1: false,
-                2: false
-              })
-            );
-          }}>
-          3
-        </Pagination.Item>
-        <Pagination.Item
-          active={isPaginationActive(PAGINATION.FOURTH)}
-          onClick={() => {
-            setPage(PAGINATION.FOURTH);
-
-            if (getAudio[5] === false) {
-              dispatch(
-                updateAudio({
-                  ...getAudio,
-                  4: false
-                })
-              );
-            } else {
+      <div
+        style={{
+          display: 'flex',
+          justifyContent: 'space-between',
+          paddingRight: '10px'
+        }}>
+        <Pagination>
+          <Pagination.Item
+            active={isPaginationActive(PAGINATION.FIRST)}
+            onClick={() => {
+              setPage(PAGINATION.FIRST);
+              // dispatch(updateAudio({ ...getAudio, 1: false }));
+            }}>
+            1
+          </Pagination.Item>
+          <Pagination.Item
+            active={isPaginationActive(PAGINATION.SECOND)}
+            onClick={() => {
+              setPage(PAGINATION.SECOND);
+              dispatch(updateAudio({ ...getAudio, 1: false }));
+            }}>
+            2
+          </Pagination.Item>
+          <Pagination.Item
+            active={isPaginationActive(PAGINATION.THIRD)}
+            onClick={() => {
+              setPage(PAGINATION.THIRD);
               dispatch(
                 updateAudio({
                   ...getAudio,
                   1: false,
-                  2: false,
-                  3: false,
-                  5: false
+                  2: false
                 })
               );
-            }
-          }}>
-          4
-        </Pagination.Item>
-        <Pagination.Item onClick={() => handleNextPage()}>CONTINUE TO READING SECTION</Pagination.Item>
-      </Pagination>
+            }}>
+            3
+          </Pagination.Item>
+          <Pagination.Item
+            active={isPaginationActive(PAGINATION.FOURTH)}
+            onClick={() => {
+              setPage(PAGINATION.FOURTH);
+
+              if (getAudio[5] === false) {
+                dispatch(
+                  updateAudio({
+                    ...getAudio,
+                    4: false
+                  })
+                );
+              } else {
+                dispatch(
+                  updateAudio({
+                    ...getAudio,
+                    1: false,
+                    2: false,
+                    3: false,
+                    5: false
+                  })
+                );
+              }
+            }}>
+            4
+          </Pagination.Item>
+        </Pagination>
+        <Pagination>
+          <Pagination.Item onClick={() => handleNextPage()}>
+            CONTINUE TO READING SECTION
+          </Pagination.Item>
+        </Pagination>
+      </div>
     </div>
   );
 };

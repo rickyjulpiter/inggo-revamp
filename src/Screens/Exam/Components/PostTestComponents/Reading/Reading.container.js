@@ -9,6 +9,8 @@ const PAGE = {
   TEST: 2
 };
 
+const TimeTest = Date.now() + 3600000;
+
 const ReadingContainer = ({ dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGE.INSTRUCTIONS);
   return (
@@ -18,7 +20,7 @@ const ReadingContainer = ({ dispatch, handleNextPage }) => {
       )}
       {page === PAGE.TEST && (
         <ReadingTestComponent
-          date={Date.now() + 3600000}
+          date={TimeTest}
           dispatch={dispatch}
           handleNextPage={handleNextPage}
         />

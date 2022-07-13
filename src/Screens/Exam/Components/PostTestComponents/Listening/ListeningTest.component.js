@@ -41,7 +41,8 @@ const ListeningTestComponent = ({ dispatch, handleNextPage, date }) => {
   };
 
   const renderer = ({ minutes, seconds, completed }) => {
-    const formatSeconds = seconds === 0 ? '00' : seconds;
+    let formatSeconds = seconds === 0 ? '00' : seconds;
+    formatSeconds = formatSeconds < 10 ? `0${formatSeconds}` : formatSeconds;
     if (completed) {
       return <span>Time's up</span>;
     }

@@ -10,8 +10,11 @@ const PAGE = {
   TEST: 2
 };
 
+// const TimeTest = Date.now() + 3600000;
+
 const WritingContainer = ({ dispatch, handleNextPage }) => {
   const [page, setPage] = useState(PAGE.INSTRUCTIONS);
+  const TimeTest = 1657687858527;
 
   useEffect(() => {
     hitServer();
@@ -28,7 +31,7 @@ const WritingContainer = ({ dispatch, handleNextPage }) => {
       )}
       {page === PAGE.TEST && (
         <WritingTestComponent
-          date={Date.now() + 3600000}
+          date={TimeTest}
           dispatch={dispatch}
           handleNextPage={handleNextPage}
         />
