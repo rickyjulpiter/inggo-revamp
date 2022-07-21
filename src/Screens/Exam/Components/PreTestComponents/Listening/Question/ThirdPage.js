@@ -16,7 +16,7 @@ const ThirdPage = ({ dispatch, getAnswers, setPagination, track, getAudio }) => 
 
       <AudioPlayer
         src={track}
-        autoPlay={getAudio[3]}
+        autoPlay={true}
         onEnded={() => {
           setPagination(4);
           dispatch(updateAudio({ ...getAudio, 3: false }));
